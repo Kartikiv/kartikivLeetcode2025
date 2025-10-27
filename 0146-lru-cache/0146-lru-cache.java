@@ -15,7 +15,7 @@ class LRUCache {
     HashMap<Integer, Node> map;
     Node head;
     Node tail;
-
+    // loads the capacity and map
     public LRUCache(int capacity) {
         this.capacity = capacity;
         this.map = new HashMap<>();
@@ -40,6 +40,10 @@ class LRUCache {
     }
     /* 
     1. if the cache contains the key then we simply update the node at make it the head
+    2. else if the head and tail are null put the key and the node in the map then make and head and tail point to the current node
+    3. else make the current node as head and put the key and created node in the map
+    4. if capacity < map.size we evict the tail node when evicing the tail if tail.prev is null that means the tail node is also the head node so we make the tail node as our head else we make our tail node as tail.prev 
+    4. since we made our tails as tail.prev, the new tail.next is made null
      */
 
     public void put(int key, int value) {
