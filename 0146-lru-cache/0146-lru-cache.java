@@ -41,8 +41,9 @@ class LRUCache {
 
     public void put(int key, int value) {
         if (map.containsKey(key)) {
-            get(key);
-            map.get(key).value = value;
+            Node node = map.get(key);
+            node.value = value;
+            insertAtHead(node);
         } else {
             Node node = new Node(key, value, head, null);
             if (head == null && tail == null) {
