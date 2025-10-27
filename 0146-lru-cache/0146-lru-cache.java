@@ -38,6 +38,9 @@ class LRUCache {
             return node.value;
         }
     }
+    /* 
+    1. if the cache contains the key then we simply update the node at make it the head
+     */
 
     public void put(int key, int value) {
         if (map.containsKey(key)) {
@@ -55,28 +58,29 @@ class LRUCache {
             head.prev = node;
             head = node;
             map.put(key, node);
-            if(capacity == 1){
-                map.remove(tail.key);    
-                head = node;
-                tail = node;
-                return ; 
-            }
-            if(map.size() > capacity){
+           
+            if(map.size() > capacity ){
             map.remove(tail.key);    
-            tail = tail.prev;
+            tail = (tail.prev != null)? tail.prev : head;
             tail.next = null;
           
             }
         }
 
     }
-
+    /*
+    1. If node is the head and tail we do nothing also if the node is head we do nothing 
+    2. if the node is a tail node then we make the tail node the head and the node before the previous tail the new tail
+    3. if node is neither the head nor the tail we connect the node.prev and node.next as adjactent nodes and make the node as head 
+     */
+    
     void insertAtHead(Node node) {
         if (node != head && node != tail) {
             node.prev.next = node.next;
             node.next.prev = node.prev;
-            node.next = head;
+            
             node.prev = null;
+            node.next = head;
             head.prev = node;
             head = node;
         } else if (node != head && node == tail) {
