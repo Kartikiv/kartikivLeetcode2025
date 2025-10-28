@@ -12,14 +12,22 @@
 class Solution {
     public ListNode mergeKLists(ListNode[] lists) {
         if(lists.length == 0) return null;
-        ListNode merged = lists[0];
-        for (int i = 1 ; i < lists.length ; i++){
+        if(lists.length == 1) return lists[0];
+        else{
+            ListNode[] list = new ListNode[(lists.length + 1)/2]; 
+            int j = 0 ;
+            for (int i = 0 ; i < lists.length - 1; i = i + 2){
+                ListNode merge = mergeTwo(lists[i], lists[i + 1]);
+                list[j++] = merge;
+
+            }
+            if(lists.length != 1 && lists.length % 2 != 0){
+                list[j] = lists[lists.length - 1];
+            }
+           return mergeKLists(list);
+           }
         
-        merged = mergeTwo(merged, lists[i]);
-        }
-
-
-return merged;    }
+            }
 
     public ListNode mergeTwo(ListNode list1, ListNode list2) {
         ListNode head = new ListNode(-1);
