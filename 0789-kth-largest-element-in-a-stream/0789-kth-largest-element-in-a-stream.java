@@ -1,60 +1,30 @@
 class KthLargest {
-
-    int[] minHeap;
-    int capacity;
-    int currSize;
+    int k;
+    PriorityQueue<Integer> pq;
 
     public KthLargest(int k, int[] nums) {
-        capacity = k;
-        minHeap = new int[k];
-        currSize = 0;
-
-        // Add all elements using add() method to ensure heap size = k
+        this.k = k;
+        this.pq = new PriorityQueue<>();
         for (int num : nums) {
-            add(num);
+            pq.add(num);
+            if (pq.size() > k) {
+                pq.poll();
+            }
         }
     }
 
     public int add(int val) {
-        if (currSize < capacity) {
-            // Heap not full, insert at end
-            minHeap[currSize] = val;
-            heapifyUp(currSize);
-            currSize++;
-        } else if (val > minHeap[0]) {
-            // Replace root and heapify down
-            minHeap[0] = val;
-            heapifyDown(0);
+        pq.add(val);
+        if (pq.size() > k) {
+            pq.poll();
         }
-        return minHeap[0];
+        return pq.peek();
     }
 
-    void heapifyDown(int i) {
-        int smallest = i;
-        int left = 2 * i + 1;
-        int right = 2 * i + 2;
-
-        if (left < currSize && minHeap[left] < minHeap[smallest])
-            smallest = left;
-        if (right < currSize && minHeap[right] < minHeap[smallest])
-            smallest = right;
-
-        if (smallest != i) {
-            int temp = minHeap[i];
-            minHeap[i] = minHeap[smallest];
-            minHeap[smallest] = temp;
-            heapifyDown(smallest);
-        }
-    }
-
-    void heapifyUp(int i) {
-        int parent = (i - 1) / 2;
-        while (i > 0 && minHeap[parent] > minHeap[i]) {
-            int temp = minHeap[parent];
-            minHeap[parent] = minHeap[i];
-            minHeap[i] = temp;
-            i = parent;
-            parent = (i - 1) / 2;
-        }
-    }
 }
+
+/**
+ * Your KthLargest object will be instantiated and called as such:
+ * KthLargest obj = new KthLargest(k, nums);
+ * int param_1 = obj.add(val);
+ */
