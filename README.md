@@ -26,6 +26,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0146-lru-cache](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0146-lru-cache) |
 | [0155-min-stack](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0155-min-stack) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0297-serialize-and-deserialize-binary-tree) |
+| [0789-kth-largest-element-in-a-stream](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0789-kth-largest-element-in-a-stream) |
 ## Array
 |  |
 | ------- |
@@ -89,6 +90,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0023-merge-k-sorted-lists](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0023-merge-k-sorted-lists) |
+| [0789-kth-largest-element-in-a-stream](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0789-kth-largest-element-in-a-stream) |
 ## Merge Sort
 |  |
 | ------- |
@@ -106,6 +108,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0543-diameter-of-binary-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0543-diameter-of-binary-tree) |
 | [0572-subtree-of-another-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0572-subtree-of-another-tree) |
+| [0789-kth-largest-element-in-a-stream](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0789-kth-largest-element-in-a-stream) |
 ## Depth-First Search
 |  |
 | ------- |
@@ -137,6 +140,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0543-diameter-of-binary-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0543-diameter-of-binary-tree) |
 | [0572-subtree-of-another-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0572-subtree-of-another-tree) |
+| [0789-kth-largest-element-in-a-stream](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0789-kth-largest-element-in-a-stream) |
 ## String Matching
 |  |
 | ------- |
@@ -149,4 +153,9 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0230-kth-smallest-element-in-a-bst](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0230-kth-smallest-element-in-a-bst) |
+| [0789-kth-largest-element-in-a-stream](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0789-kth-largest-element-in-a-stream) |
+## Data Stream
+|  |
+| ------- |
+| [0789-kth-largest-element-in-a-stream](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0789-kth-largest-element-in-a-stream) |
 <!---LeetCode Topics End-->
