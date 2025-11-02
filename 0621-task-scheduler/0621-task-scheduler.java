@@ -1,47 +1,43 @@
-class task{
-char a;
-int frequency;
-int time;
-public task(char a, int frequency, int time ){
-    this.a = a;
-    this.frequency = frequency;
-    
+import java.util.*;
 
-}
-}
 class Solution {
     public int leastInterval(char[] tasks, int n) {
-        int ans = 0;
-        int [] freq = new int [26];
-        for (char task : tasks){
-            freq[task - 'A']++;
-        }
+        if (n == 0) return tasks.length;   // no cooldown → run back-to-back
+
+        // 1) Count frequencies
+        int[] freq = new int[26];
+        for (char t : tasks) freq[t - 'A']++;
+
+        // 2) Max-heap of remaining counts
         PriorityQueue<Integer> pq = new PriorityQueue<>(Comparator.reverseOrder());
-        for(int frequency : freq){
-            if(frequency > 0){
-                pq.offer(frequency);
+        for (int f : freq) if (f > 0) pq.offer(f);
+
+        int time = 0;
+        final int CYCLE = n + 1;
+
+        // 3) Process in cycles of up to (n+1) different tasks
+        while (!pq.isEmpty()) {
+            int executed = 0;
+            List<Integer> pending = new ArrayList<>(CYCLE);
+
+            for (int i = 0; i < CYCLE && !pq.isEmpty(); i++) {
+                int f = pq.poll() - 1;   // run once
+                executed++;
+                if (f > 0) pending.add(f);
+            }
+
+            // count the actual work done this cycle
+            time += executed;
+
+            // put back the tasks that still remain
+            for (int f : pending) pq.offer(f);
+
+            // if tasks remain but we didn’t fill the whole cycle, we must idle
+            if (!pq.isEmpty() && executed < CYCLE) {
+                time += (CYCLE - executed);
             }
         }
-        List<Integer> pending = new ArrayList<>();
-        while(!pq.isEmpty()){
-        int executeInCycle = 0;
-            for(int i = 0 ;!pq.isEmpty() && i  <= n ; i++){
-            int frequency = pq.poll();
-            frequency--;
-            executeInCycle++;
-            
-            if(frequency > 0){
-                pending.add(frequency);
-            }
-            }
-            ans += executeInCycle;
-            pq.addAll(pending);
-            pending.clear();
-            
-            if(!pq.isEmpty() && executeInCycle < n + 1){
-                ans = ans + (n + 1) - executeInCycle;
-               
-            }
-        }   
-    return ans; }
+
+        return time;
+    }
 }
