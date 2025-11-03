@@ -1,88 +1,67 @@
-class User {
-    int userId;
-    Set<Integer> follows;
-
-    public User(int id) {
-        follows = new HashSet<>();
-        follows.add(id);
-        userId = id;
-    }
-}
-
-class Tweet {
-    int tweetId;
-    int userId;
-    int timeStamp;
-
-    public Tweet(int id, int userId, int stamp) {
-        this.tweetId = id;
-        this.timeStamp = stamp;
-        this.userId = userId;
-    }
-}
+import java.util.*;
 
 class Twitter {
-    List<Tweet> tweets;
-    HashMap<Integer, User> users;
-    int timeStamp;
+    private static class TweetNode {
+        int id, time;
+        TweetNode next;
+        TweetNode(int id, int time, TweetNode next) {
+            this.id = id;
+            this.time = time;
+            this.next = next;
+        }
+    }
 
-    public Twitter() {
-        this.tweets = new ArrayList<>();
-        this.users = new HashMap<>();
-        timeStamp = 0;
+    private Map<Integer, Set<Integer>> follows = new HashMap<>();
+    private Map<Integer, TweetNode> head = new HashMap<>(); // user's tweet list head (most recent first)
+    private int time = 0;
+
+    public Twitter() {}
+
+    private void ensureUser(int u) {
+        follows.computeIfAbsent(u, k -> {
+            Set<Integer> s = new HashSet<>();
+            s.add(u); // self-follow
+            return s;
+        });
     }
 
     public void postTweet(int userId, int tweetId) {
-        if (!users.containsKey(userId)) {
-            users.put(userId, new User(userId));
-        }
-        tweets.add(new Tweet(tweetId, userId, timeStamp));
-        timeStamp++;
+        ensureUser(userId);
+        // prepend to user's list
+        head.put(userId, new TweetNode(tweetId, time++, head.get(userId)));
     }
 
     public List<Integer> getNewsFeed(int userId) {
-        if (!users.containsKey(userId)) {
-            users.put(userId, new User(userId));
+        ensureUser(userId);
+
+        // max-heap by time (most recent first)
+        PriorityQueue<TweetNode> pq = new PriorityQueue<>((a, b) -> b.time - a.time);
+
+        // seed heap with the head tweet of each followee
+        for (int f : follows.get(userId)) {
+            TweetNode h = head.get(f);
+            if (h != null) pq.offer(h);
         }
-        List<Integer> ans = new ArrayList<>();
-        Set<Integer> follows = users.get(userId).follows;
-        int j = 0 ;
-        for (int i = tweets.size()-1 ;j < 10 && i >= 0 ; i--){
-            Tweet tweet = tweets.get(i);
-            if(follows.contains(tweet.userId)){
-                ans.add(tweet.tweetId);
-                j++;
-            }
+
+        List<Integer> res = new ArrayList<>(10);
+        while (!pq.isEmpty() && res.size() < 10) {
+            TweetNode cur = pq.poll();
+            res.add(cur.id);
+            if (cur.next != null) pq.offer(cur.next); // advance that user's list
         }
-    return ans;}
+        return res;
+    }
 
     public void follow(int followerId, int followeeId) {
-        if(!users.containsKey(followerId)){
-            users.put(followerId, new User(followerId));
-        }
-        if(!users.containsKey(followeeId)){
-            users.put(followeeId, new User(followeeId));
-        }
-        users.get(followerId).follows.add(followeeId);
-        
+        ensureUser(followerId);
+        ensureUser(followeeId);
+        follows.get(followerId).add(followeeId);
     }
 
     public void unfollow(int followerId, int followeeId) {
-        if(!users.containsKey(followerId)){
-            users.put(followerId, new User(followerId));
-        }
-        if(!users.containsKey(followeeId)){
-            users.put(followeeId, new User(followeeId));
-        }
-        users.get(followerId).follows.remove(followeeId);
+        if (followerId == followeeId) return; // cannot unfollow self
+        ensureUser(followerId);
+        ensureUser(followeeId);
+        follows.get(followerId).remove(followeeId);
     }
 }
-
-/**
- * Your Twitter object will be instantiated and called as such:
- * Twitter obj = new Twitter();
- * obj.postTweet(userId,tweetId);
- * List<Integer> param_2 = obj.getNewsFeed(userId);
- * obj.follow(followerId,followeeId);
- * obj.unfollow(followerId,followeeId);
- */
