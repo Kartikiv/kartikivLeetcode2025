@@ -4,22 +4,25 @@ class Solution {
     public List<List<Integer>> permute(int[] nums) {
         this.nums = nums;
         List<Integer> current = new ArrayList<>();
-        helper(current);
+        boolean [] used = new boolean[nums.length];
+        helper(current, used);
         return ans;
     }
 
-    public void helper(List<Integer> current){
+    public void helper(List<Integer> current, boolean used[]){
         if(current.size() == nums.length){
             ans.add(new ArrayList<>(current));
             return;
         }
         
-        for(int n : nums){
+        for(int i = 0 ; i < nums.length ; i++){
           
-            if(!current.contains(n)){
-                current.add(n);
-                helper(current);
+            if(!used[i]){
+                current.add(nums[i]);
+                used[i] = true;
+                helper(current, used);
                 current.remove(current.size() - 1);
+                used[i] = false;
             
             }
 
