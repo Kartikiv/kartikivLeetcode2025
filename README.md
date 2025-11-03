@@ -12,6 +12,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0032-longest-valid-parentheses](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0032-longest-valid-parentheses) |
+| [0079-word-search](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0079-word-search) |
 | [0125-valid-palindrome](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0125-valid-palindrome) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0297-serialize-and-deserialize-binary-tree) |
 ## Stack
@@ -37,6 +38,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0040-combination-sum-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0040-combination-sum-ii) |
 | [0046-permutations](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0046-permutations) |
 | [0078-subsets](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0078-subsets) |
+| [0079-word-search](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0079-word-search) |
 | [0090-subsets-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0090-subsets-ii) |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
 | [0150-evaluate-reverse-polish-notation](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0150-evaluate-reverse-polish-notation) |
@@ -129,6 +131,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Depth-First Search
 |  |
 | ------- |
+| [0079-word-search](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0079-word-search) |
 | [0100-same-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0100-same-tree) |
 | [0104-maximum-depth-of-binary-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0110-balanced-binary-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0110-balanced-binary-tree) |
@@ -191,10 +194,15 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0040-combination-sum-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0040-combination-sum-ii) |
 | [0046-permutations](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0046-permutations) |
 | [0078-subsets](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0078-subsets) |
+| [0079-word-search](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0079-word-search) |
 | [0090-subsets-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0090-subsets-ii) |
 ## Bit Manipulation
 |  |
 | ------- |
 | [0078-subsets](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0078-subsets) |
 | [0090-subsets-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0090-subsets-ii) |
+## Matrix
+|  |
+| ------- |
+| [0079-word-search](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0079-word-search) |
 <!---LeetCode Topics End-->
