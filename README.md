@@ -16,6 +16,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0079-word-search](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0079-word-search) |
 | [0125-valid-palindrome](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0125-valid-palindrome) |
 | [0131-palindrome-partitioning](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0131-palindrome-partitioning) |
+| [0208-implement-trie-prefix-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0208-implement-trie-prefix-tree) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0297-serialize-and-deserialize-binary-tree) |
 ## Stack
 |  |
@@ -29,6 +30,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0146-lru-cache](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0146-lru-cache) |
 | [0155-min-stack](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0155-min-stack) |
+| [0208-implement-trie-prefix-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0208-implement-trie-prefix-tree) |
 | [0295-find-median-from-data-stream](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0295-find-median-from-data-stream) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0355-design-twitter](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0355-design-twitter) |
@@ -97,6 +99,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
 | [0138-copy-list-with-random-pointer](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0138-copy-list-with-random-pointer) |
 | [0146-lru-cache](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0146-lru-cache) |
+| [0208-implement-trie-prefix-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0208-implement-trie-prefix-tree) |
 | [0355-design-twitter](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0355-design-twitter) |
 | [0621-task-scheduler](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0621-task-scheduler) |
 ## Doubly-Linked List
@@ -227,4 +230,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0239-sliding-window-maximum](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0239-sliding-window-maximum) |
+## Trie
+|  |
+| ------- |
+| [0208-implement-trie-prefix-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0208-implement-trie-prefix-tree) |
 <!---LeetCode Topics End-->
