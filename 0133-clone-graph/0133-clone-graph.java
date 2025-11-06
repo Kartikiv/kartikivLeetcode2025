@@ -28,14 +28,14 @@ class Solution {
         map.put(node.val, ans);
         queue.add(node);
         while(!queue.isEmpty()){
-            Node queuNode = queue.poll();
+            Node queueNode = queue.poll();
 
-            for (Node neighbNode : queuNode.neighbors){
-                if(!map.containsKey(neighbNode.val)){
-                    map.put(neighbNode.val, new Node(neighbNode.val));
-                    queue.add(neighbNode);
+            for (Node neighborNode : queueNode.neighbors){
+                if(!map.containsKey(neighborNode.val)){
+                    map.put(neighborNode.val, new Node(neighborNode.val));
+                    queue.add(neighborNode);
                 }
-                map.get(queuNode.val).neighbors.add(map.get(neighbNode.val));
+                map.get(queueNode.val).neighbors.add(map.get(neighborNode.val));
             }
 
         }
