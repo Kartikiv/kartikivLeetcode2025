@@ -17,6 +17,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0125-valid-palindrome](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0125-valid-palindrome) |
 | [0131-palindrome-partitioning](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0131-palindrome-partitioning) |
 | [0208-implement-trie-prefix-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0208-implement-trie-prefix-tree) |
+| [0211-design-add-and-search-words-data-structure](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0211-design-add-and-search-words-data-structure) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0297-serialize-and-deserialize-binary-tree) |
 ## Stack
 |  |
@@ -31,6 +32,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0146-lru-cache](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0146-lru-cache) |
 | [0155-min-stack](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0155-min-stack) |
 | [0208-implement-trie-prefix-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0208-implement-trie-prefix-tree) |
+| [0211-design-add-and-search-words-data-structure](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0211-design-add-and-search-words-data-structure) |
 | [0295-find-median-from-data-stream](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0295-find-median-from-data-stream) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0355-design-twitter](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0355-design-twitter) |
@@ -146,6 +148,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0104-maximum-depth-of-binary-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0110-balanced-binary-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0110-balanced-binary-tree) |
 | [0124-binary-tree-maximum-path-sum](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0124-binary-tree-maximum-path-sum) |
+| [0211-design-add-and-search-words-data-structure](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0211-design-add-and-search-words-data-structure) |
 | [0230-kth-smallest-element-in-a-bst](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0230-kth-smallest-element-in-a-bst) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0543-diameter-of-binary-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0543-diameter-of-binary-tree) |
@@ -234,4 +237,5 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0208-implement-trie-prefix-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0208-implement-trie-prefix-tree) |
+| [0211-design-add-and-search-words-data-structure](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0211-design-add-and-search-words-data-structure) |
 <!---LeetCode Topics End-->
