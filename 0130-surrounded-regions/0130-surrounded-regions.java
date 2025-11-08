@@ -7,7 +7,6 @@
 
  */
 class Solution {
-    List<int[]> ans;
     boolean[][] visited;
     char[][] board;
     boolean hitBoundary;
@@ -19,7 +18,7 @@ class Solution {
         this.visited = new boolean[m][n];
         for (int i = 1; i < m - 1; i++) {
             for (int j = 1; j < n - 1; j++) {
-                List<int[]> current = new ArrayList<>();
+                List<int[]> current = new LinkedList<>();
                 this.hitBoundary = false;
                 if (board[i][j] == 'O' && !visited[i][j]) {
                     visited[i][j] = true;
@@ -61,3 +60,10 @@ class Solution {
 
     }
 }
+/* 
+Optimization Plan : 
+1. In this process we are starting from the innernode and doing bfs
+2. In an other way we can use the fact that all the nodes which connect the outerbounderies
+cannot be made 'X'
+3. There we can start from the outside and mark all the non flipable node, then after all the  boundary nodes checked then flip the remain flipable nodes.
+ */
