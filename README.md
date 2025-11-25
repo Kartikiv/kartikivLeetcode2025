@@ -135,6 +135,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0295-find-median-from-data-stream](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0295-find-median-from-data-stream) |
 | [0355-design-twitter](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0355-design-twitter) |
 | [0621-task-scheduler](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0621-task-scheduler) |
+| [0743-network-delay-time](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0743-network-delay-time) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0789-kth-largest-element-in-a-stream) |
 ## Merge Sort
 |  |
@@ -176,6 +177,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0572-subtree-of-another-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0572-subtree-of-another-tree) |
 | [0684-redundant-connection](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0684-redundant-connection) |
 | [0695-max-area-of-island](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0695-max-area-of-island) |
+| [0743-network-delay-time](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0743-network-delay-time) |
 ## Breadth-First Search
 |  |
 | ------- |
@@ -193,6 +195,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0417-pacific-atlantic-water-flow](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0417-pacific-atlantic-water-flow) |
 | [0684-redundant-connection](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0684-redundant-connection) |
 | [0695-max-area-of-island](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0695-max-area-of-island) |
+| [0743-network-delay-time](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0743-network-delay-time) |
 | [1036-rotting-oranges](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1036-rotting-oranges) |
 ## Binary Tree
 |  |
@@ -296,6 +299,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0323-number-of-connected-components-in-an-undirected-graph](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0323-number-of-connected-components-in-an-undirected-graph) |
 | [0332-reconstruct-itinerary](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0332-reconstruct-itinerary) |
 | [0684-redundant-connection](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0684-redundant-connection) |
+| [0743-network-delay-time](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0743-network-delay-time) |
 ## Topological Sort
 |  |
 | ------- |
@@ -304,4 +308,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0332-reconstruct-itinerary](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0332-reconstruct-itinerary) |
+## Shortest Path
+|  |
+| ------- |
+| [0743-network-delay-time](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0743-network-delay-time) |
 <!---LeetCode Topics End-->
