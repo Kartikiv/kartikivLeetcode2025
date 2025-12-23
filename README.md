@@ -57,6 +57,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0198-house-robber](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0198-house-robber) |
 | [0200-number-of-islands](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0200-number-of-islands) |
 | [0212-word-search-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0212-word-search-ii) |
+| [0213-house-robber-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0213-house-robber-ii) |
 | [0239-sliding-window-maximum](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0239-sliding-window-maximum) |
 | [0322-coin-change](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0322-coin-change) |
 | [0417-pacific-atlantic-water-flow](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0417-pacific-atlantic-water-flow) |
@@ -91,6 +92,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0124-binary-tree-maximum-path-sum](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0124-binary-tree-maximum-path-sum) |
 | [0131-palindrome-partitioning](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0131-palindrome-partitioning) |
 | [0198-house-robber](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0198-house-robber) |
+| [0213-house-robber-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0213-house-robber-ii) |
 | [0322-coin-change](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0322-coin-change) |
 | [0746-min-cost-climbing-stairs](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0746-min-cost-climbing-stairs) |
 ## Binary Search
