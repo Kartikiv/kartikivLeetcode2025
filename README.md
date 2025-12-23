@@ -61,6 +61,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0417-pacific-atlantic-water-flow](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0417-pacific-atlantic-water-flow) |
 | [0621-task-scheduler](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0621-task-scheduler) |
 | [0695-max-area-of-island](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0695-max-area-of-island) |
+| [0746-min-cost-climbing-stairs](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0746-min-cost-climbing-stairs) |
 | [0883-car-fleet](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0883-car-fleet) |
 | [1036-rotting-oranges](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1036-rotting-oranges) |
 | [1584-min-cost-to-connect-all-points](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1584-min-cost-to-connect-all-points) |
@@ -89,6 +90,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0124-binary-tree-maximum-path-sum](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0124-binary-tree-maximum-path-sum) |
 | [0131-palindrome-partitioning](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0131-palindrome-partitioning) |
 | [0322-coin-change](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0322-coin-change) |
+| [0746-min-cost-climbing-stairs](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0746-min-cost-climbing-stairs) |
 ## Binary Search
 |  |
 | ------- |
