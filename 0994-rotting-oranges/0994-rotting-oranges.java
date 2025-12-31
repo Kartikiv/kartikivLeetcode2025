@@ -7,7 +7,7 @@ class Cell{
 }
 class Solution {
     public int orangesRotting(int[][] rooms) {
-        if(rooms.length == 1 && rooms[0].length == 1 && rooms[0][0] == 1 ) return -1;
+        
         int count = 0 ;
         Queue<Cell> queue = new LinkedList<Cell>();
         for (int i = 0 ; i < rooms.length; i++){
