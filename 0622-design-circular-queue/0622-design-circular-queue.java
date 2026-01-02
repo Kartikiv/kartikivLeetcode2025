@@ -21,7 +21,7 @@ public class MyCircularQueue {
         this.tail = null;
         this.size = 0;
     }
-   // Operational Cost is  O (1)
+    // Operational Cost is  O (1)
     public boolean enQueue(int value) {
         if  (size >= maxSize) { return false; }
         Node node = new Node(value);
@@ -30,7 +30,7 @@ public class MyCircularQueue {
             tail = node;
             size++;
             return true;
-        } 
+        }
         tail.next = node;
         node.prev = tail;
         node.next = head;
@@ -38,7 +38,7 @@ public class MyCircularQueue {
         size++;
 
         return true;}
-
+// O(1)
     public boolean deQueue() {
         if(size == 0 ) return false;
         if(head == tail ) {
@@ -50,23 +50,23 @@ public class MyCircularQueue {
         head = head.next;
         head.prev = tail;
         size--;
-        
-    return true;}
 
+        return true;}
+// O(1)
     public int Front() {
         if(size == 0 ) return -1;
         return head.val;
     }
-
+// O(1)
     public int Rear() {
         if(size == 0 ) return -1;
         return tail.val;
     }
-
+// O(1)
     public boolean isEmpty() {
         return size == 0;
     }
-
+// O(1)
     public boolean isFull() {
         return  size == maxSize;
     }
