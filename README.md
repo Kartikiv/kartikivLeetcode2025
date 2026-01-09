@@ -15,6 +15,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0010-regular-expression-matching](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0010-regular-expression-matching) |
 | [0017-letter-combinations-of-a-phone-number](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0017-letter-combinations-of-a-phone-number) |
 | [0032-longest-valid-parentheses](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0032-longest-valid-parentheses) |
+| [0067-add-binary](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0067-add-binary) |
 | [0072-edit-distance](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0072-edit-distance) |
 | [0079-word-search](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0079-word-search) |
 | [0125-valid-palindrome](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0125-valid-palindrome) |
@@ -91,6 +92,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0002-add-two-numbers](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0002-add-two-numbers) |
 | [0062-unique-paths](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0062-unique-paths) |
+| [0067-add-binary](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0067-add-binary) |
 | [0070-climbing-stairs](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0070-climbing-stairs) |
 | [0150-evaluate-reverse-polish-notation](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0150-evaluate-reverse-polish-notation) |
 | [1636-number-of-substrings-with-only-1s](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1636-number-of-substrings-with-only-1s) |
@@ -307,6 +309,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Bit Manipulation
 |  |
 | ------- |
+| [0067-add-binary](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0067-add-binary) |
 | [0078-subsets](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0078-subsets) |
 | [0090-subsets-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0090-subsets-ii) |
 ## Matrix
@@ -384,4 +387,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0062-unique-paths](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0062-unique-paths) |
+## Simulation
+|  |
+| ------- |
+| [0067-add-binary](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0067-add-binary) |
 <!---LeetCode Topics End-->
