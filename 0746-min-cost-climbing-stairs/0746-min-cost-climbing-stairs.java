@@ -1,16 +1,13 @@
+// 
 class Solution {
     public int minCostClimbingStairs(int[] cost) {
-        int n = cost.length;
-        int [] dpCost = new int [n + 1];
-        dpCost[0] = cost[0];
-        dpCost[1] = cost[1];
-        for ( int i = 2 ; i < n + 1  ; i++ ){
-            // recurrence relation 
-            int firstPart = (i > 0 && i < cost.length) ? cost[i] : 0;
-            dpCost[i] =  firstPart + Math.min(dpCost[i - 1] , dpCost[i - 2]);
-         
-        }
-
-    return dpCost[n];
+        int [] dp = new int [cost.length + 1] ;
+         dp [0] = cost[0];
+         dp [1] = cost[1];
+         for(int i = 2; i < dp.length; i++ ){
+            int price = i < cost.length ? cost[i] : 0; 
+            dp[i] = Math.min(dp[i - 1] + price,dp[i - 2] + price);
+         }
+    return dp[cost.length];
     }
 }
