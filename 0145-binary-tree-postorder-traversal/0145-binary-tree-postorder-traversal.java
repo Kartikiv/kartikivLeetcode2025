@@ -14,10 +14,10 @@
  * }
  */
 class Solution {
-    List<Integer> ans = new ArrayList<>();
     public List<Integer> postorderTraversal(TreeNode root) {
         
-    return postorderDfs(root, new ArrayList<>());}
+    return postorderDfs(root, new ArrayList<>());
+    }
     public List<Integer> postorderDfs(TreeNode root, List<Integer> ans){
         if(root == null) return ans;
         postorderDfs(root.left, ans);
