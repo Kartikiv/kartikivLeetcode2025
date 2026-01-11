@@ -1,23 +1,25 @@
 class Solution {
-    Set<List<Integer>> ans = new HashSet<>();
-    int [] nums;
+    Set< List<Integer> >ans = new HashSet<>();
+    int [] nums; 
     public List<List<Integer>> subsetsWithDup(int[] nums) {
         this.nums = nums;
-        
-        List<Integer> current = new ArrayList<>();
-        helper(current, 0);
+        Arrays.sort(nums);
 
-    return new ArrayList<>(ans);
+        dfs(0, new ArrayList<>());
+          
+return new ArrayList<>(ans);
     }
-    public void helper(List<Integer> current, int index){
-        if(index >= nums.length){
-            ans.add(new ArrayList<>(current));
+    public void dfs(int index, List<Integer> list){
+        if(index == nums.length){
+            ans.add(new ArrayList<>(list));
+       
             return;
         }
-        current.add(nums[index]);
-        helper(current, index + 1);
-        current.remove(current.size() - 1);
-        helper(current, index+1);
-
+       
+        dfs(index + 1, list);
+        list.add(nums[index]);
+        
+        dfs(index + 1, list);
+        list.remove(list.size() -1);
     }
 }
