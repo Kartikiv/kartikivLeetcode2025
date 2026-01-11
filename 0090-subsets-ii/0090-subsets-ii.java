@@ -3,7 +3,7 @@ class Solution {
     int [] nums;
     public List<List<Integer>> subsetsWithDup(int[] nums) {
         this.nums = nums;
-        Arrays.sort(nums);
+        
         List<Integer> current = new ArrayList<>();
         helper(current, 0);
 
