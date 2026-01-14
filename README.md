@@ -68,6 +68,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0040-combination-sum-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0040-combination-sum-ii) |
 | [0046-permutations](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0046-permutations) |
 | [0051-n-queens](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0051-n-queens) |
+| [0066-plus-one](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0066-plus-one) |
 | [0078-subsets](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0078-subsets) |
 | [0079-word-search](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0079-word-search) |
 | [0090-subsets-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0090-subsets-ii) |
@@ -112,6 +113,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0002-add-two-numbers](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0002-add-two-numbers) |
 | [0013-roman-to-integer](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0013-roman-to-integer) |
 | [0062-unique-paths](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0062-unique-paths) |
+| [0066-plus-one](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0066-plus-one) |
 | [0067-add-binary](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0067-add-binary) |
 | [0070-climbing-stairs](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0070-climbing-stairs) |
 | [0150-evaluate-reverse-polish-notation](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0150-evaluate-reverse-polish-notation) |
