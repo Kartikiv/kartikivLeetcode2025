@@ -79,6 +79,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0150-evaluate-reverse-polish-notation](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0152-maximum-product-subarray](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0152-maximum-product-subarray) |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0153-find-minimum-in-rotated-sorted-array) |
+| [0169-majority-element](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0169-majority-element) |
 | [0198-house-robber](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0198-house-robber) |
 | [0200-number-of-islands](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0200-number-of-islands) |
 | [0212-word-search-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0212-word-search-ii) |
@@ -125,6 +126,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Sorting
 |  |
 | ------- |
+| [0169-majority-element](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0169-majority-element) |
 | [0217-contains-duplicate](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0217-contains-duplicate) |
 | [0252-meeting-rooms](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0252-meeting-rooms) |
 | [0268-missing-number](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0268-missing-number) |
@@ -205,6 +207,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0139-word-break](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0139-word-break) |
 | [0141-linked-list-cycle](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0141-linked-list-cycle) |
 | [0146-lru-cache](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0146-lru-cache) |
+| [0169-majority-element](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0169-majority-element) |
 | [0208-implement-trie-prefix-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0208-implement-trie-prefix-tree) |
 | [0217-contains-duplicate](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0217-contains-duplicate) |
 | [0219-contains-duplicate-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0219-contains-duplicate-ii) |
@@ -222,6 +225,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0023-merge-k-sorted-lists](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0023-merge-k-sorted-lists) |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
+| [0169-majority-element](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0169-majority-element) |
 | [0190-reverse-bits](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0190-reverse-bits) |
 ## Heap (Priority Queue)
 |  |
@@ -342,6 +346,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Counting
 |  |
 | ------- |
+| [0169-majority-element](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0169-majority-element) |
 | [0621-task-scheduler](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0621-task-scheduler) |
 ## Backtracking
 |  |
