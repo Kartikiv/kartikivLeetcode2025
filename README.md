@@ -154,6 +154,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0309-best-time-to-buy-and-sell-stock-with-cooldown](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0309-best-time-to-buy-and-sell-stock-with-cooldown) |
 | [0312-burst-balloons](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0312-burst-balloons) |
 | [0322-coin-change](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0322-coin-change) |
+| [0338-counting-bits](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0338-counting-bits) |
 | [0416-partition-equal-subset-sum](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0416-partition-equal-subset-sum) |
 | [0494-target-sum](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0494-target-sum) |
 | [0518-coin-change-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0518-coin-change-ii) |
@@ -365,6 +366,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0136-single-number](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0136-single-number) |
 | [0190-reverse-bits](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0190-reverse-bits) |
 | [0268-missing-number](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0268-missing-number) |
+| [0338-counting-bits](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0338-counting-bits) |
 ## Matrix
 |  |
 | ------- |
