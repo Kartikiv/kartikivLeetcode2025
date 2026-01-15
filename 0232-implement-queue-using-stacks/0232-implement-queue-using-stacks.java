@@ -1,41 +1,37 @@
-
 import java.util.*;
 
 class MyQueue {
- Stack<Integer> stack;
+    private Stack<Integer> in;
+    private Stack<Integer> out;
+
     public MyQueue() {
-       this.stack = new Stack<>();
+        in = new Stack<>();
+        out = new Stack<>();
     }
-    
+
     public void push(int x) {
-        Stack<Integer> tempStack = new Stack<>();
-        while(!stack.isEmpty()){
-            tempStack.add(stack.pop());
-        }
-        tempStack.add(x);
-        while(!tempStack.isEmpty()){
-            stack.add(tempStack.pop());
-        }
+        in.push(x); // O(1)
     }
-    
+
     public int pop() {
-        return stack.pop();
+        shiftIfNeeded();
+        return out.pop();
     }
-    
+
     public int peek() {
-        return stack.peek();
+        shiftIfNeeded();
+        return out.peek();
     }
-    
+
     public boolean empty() {
-        return stack.isEmpty();
+        return in.isEmpty() && out.isEmpty();
+    }
+
+    private void shiftIfNeeded() {
+        if (out.isEmpty()) {
+            while (!in.isEmpty()) {
+                out.push(in.pop());
+            }
+        }
     }
 }
-
-/**
- * Your MyQueue object will be instantiated and called as such:
- * MyQueue obj = new MyQueue();
- * obj.push(x);
- * int param_2 = obj.pop();
- * int param_3 = obj.peek();
- * boolean param_4 = obj.empty();
- */
