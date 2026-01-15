@@ -2,32 +2,32 @@
 import java.util.*;
 
 class MyQueue {
- Queue<Integer> queue;
+ Stack<Integer> stack;
     public MyQueue() {
-       this.queue = new LinkedList<>();
+       this.stack = new Stack<>();
     }
     
     public void push(int x) {
-        Queue<Integer> tempQueue = new LinkedList<>();
-        while(!queue.isEmpty()){
-            tempQueue.add(queue.poll());
+        Stack<Integer> tempStack = new Stack<>();
+        while(!stack.isEmpty()){
+            tempStack.add(stack.pop());
         }
-        tempQueue.add(x);
-        while(!tempQueue.isEmpty()){
-            queue.add(tempQueue.poll());
+        tempStack.add(x);
+        while(!tempStack.isEmpty()){
+            stack.add(tempStack.pop());
         }
     }
     
     public int pop() {
-        return queue.poll();
+        return stack.pop();
     }
     
     public int peek() {
-        return queue.peek();
+        return stack.peek();
     }
     
     public boolean empty() {
-        return queue.isEmpty();
+        return stack.isEmpty();
     }
 }
 
