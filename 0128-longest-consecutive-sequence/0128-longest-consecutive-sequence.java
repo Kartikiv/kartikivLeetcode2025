@@ -1,20 +1,21 @@
+/**
+ * Finds the length of the longest consecutive sequence in an unsorted array of integers.
+ * This method uses a HashSet to achieve O(n) time complexity. It first adds all numbers
+ * to the set, then iterates through the set to find the start of each sequence (a number
+ * whose predecessor is not in the set). For each such start, it counts the length of the
+ * consecutive sequence. The search can terminate early if the longest streak found so far
+ * is at least half the length of the input array plus one.
+ * @param nums the input array of integers
+ * @return the length of the longest consecutive sequence
+ */
 import java.util.HashSet;
 
 class Solution {
-    /**
-     * 
-     * @param nums array of integers
-     * @return length of the longest consecutive elements sequence
-     * starting from any number in the array check if it's the start of a sequence
-     * if it is, count the length of the sequence
-     * update the longest streak found  
-     * Time complexity: O(n)
-     * Space complexity: O(n)
-     * 
-     */
+ 
     public int longestConsecutive(int[] nums) {
         HashSet<Integer> numSet = new HashSet<>();
         for (int num : nums) {
+            
             numSet.add(num);
         }
         int longestStreak = 0;
@@ -34,8 +35,8 @@ class Solution {
                     break;
                 }
             }
-
         }
+        
 
         return longestStreak;
     }
