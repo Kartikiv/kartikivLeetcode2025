@@ -91,6 +91,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0090-subsets-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0090-subsets-ii) |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0121-best-time-to-buy-and-sell-stock) |
+| [0128-longest-consecutive-sequence](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0128-longest-consecutive-sequence) |
 | [0130-surrounded-regions](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0130-surrounded-regions) |
 | [0136-single-number](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0136-single-number) |
 | [0139-word-break](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0139-word-break) |
@@ -241,6 +242,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0049-group-anagrams](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0049-group-anagrams) |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
 | [0127-word-ladder](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0127-word-ladder) |
+| [0128-longest-consecutive-sequence](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0128-longest-consecutive-sequence) |
 | [0133-clone-graph](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0133-clone-graph) |
 | [0138-copy-list-with-random-pointer](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0138-copy-list-with-random-pointer) |
 | [0139-word-break](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0139-word-break) |
@@ -538,4 +540,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0347-top-k-frequent-elements](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0347-top-k-frequent-elements) |
+## Union-Find
+|  |
+| ------- |
+| [0128-longest-consecutive-sequence](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0128-longest-consecutive-sequence) |
 <!---LeetCode Topics End-->
