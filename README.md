@@ -85,6 +85,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0046-permutations](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0046-permutations) |
 | [0049-group-anagrams](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0049-group-anagrams) |
 | [0051-n-queens](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0051-n-queens) |
+| [0053-maximum-subarray](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0053-maximum-subarray) |
 | [0066-plus-one](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0066-plus-one) |
 | [0078-subsets](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0078-subsets) |
 | [0079-word-search](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0079-word-search) |
@@ -175,6 +176,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0010-regular-expression-matching](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0010-regular-expression-matching) |
 | [0032-longest-valid-parentheses](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0032-longest-valid-parentheses) |
+| [0053-maximum-subarray](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0053-maximum-subarray) |
 | [0062-unique-paths](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0062-unique-paths) |
 | [0070-climbing-stairs](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0070-climbing-stairs) |
 | [0072-edit-distance](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0072-edit-distance) |
@@ -269,6 +271,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0023-merge-k-sorted-lists](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0023-merge-k-sorted-lists) |
+| [0053-maximum-subarray](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0053-maximum-subarray) |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
 | [0169-majority-element](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0169-majority-element) |
 | [0190-reverse-bits](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0190-reverse-bits) |
