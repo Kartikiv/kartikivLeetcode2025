@@ -39,6 +39,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0394-decode-string](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0394-decode-string) |
 | [0647-palindromic-substrings](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0647-palindromic-substrings) |
 | [0680-valid-palindrome-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0680-valid-palindrome-ii) |
+| [0721-accounts-merge](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0721-accounts-merge) |
 | [1071-greatest-common-divisor-of-strings](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1071-greatest-common-divisor-of-strings) |
 | [1143-longest-common-subsequence](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1143-longest-common-subsequence) |
 | [1636-number-of-substrings-with-only-1s](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1636-number-of-substrings-with-only-1s) |
@@ -125,6 +126,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0695-max-area-of-island](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0695-max-area-of-island) |
 | [0705-design-hashset](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0705-design-hashset) |
 | [0706-design-hashmap](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0706-design-hashmap) |
+| [0721-accounts-merge](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0721-accounts-merge) |
 | [0739-daily-temperatures](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0739-daily-temperatures) |
 | [0746-min-cost-climbing-stairs](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0746-min-cost-climbing-stairs) |
 | [0860-lemonade-change](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0860-lemonade-change) |
@@ -166,6 +168,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0295-find-median-from-data-stream](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0295-find-median-from-data-stream) |
 | [0347-top-k-frequent-elements](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0347-top-k-frequent-elements) |
 | [0621-task-scheduler](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0621-task-scheduler) |
+| [0721-accounts-merge](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0721-accounts-merge) |
 | [0883-car-fleet](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0883-car-fleet) |
 ## Monotonic Stack
 |  |
@@ -264,6 +267,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0621-task-scheduler](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0621-task-scheduler) |
 | [0705-design-hashset](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0705-design-hashset) |
 | [0706-design-hashmap](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0706-design-hashmap) |
+| [0721-accounts-merge](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0721-accounts-merge) |
 ## Doubly-Linked List
 |  |
 | ------- |
@@ -338,6 +342,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0572-subtree-of-another-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0572-subtree-of-another-tree) |
 | [0684-redundant-connection](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0684-redundant-connection) |
 | [0695-max-area-of-island](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0695-max-area-of-island) |
+| [0721-accounts-merge](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0721-accounts-merge) |
 | [0743-network-delay-time](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0743-network-delay-time) |
 | [1448-count-good-nodes-in-binary-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1448-count-good-nodes-in-binary-tree) |
 ## Breadth-First Search
@@ -360,6 +365,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0463-island-perimeter](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0463-island-perimeter) |
 | [0684-redundant-connection](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0684-redundant-connection) |
 | [0695-max-area-of-island](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0695-max-area-of-island) |
+| [0721-accounts-merge](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0721-accounts-merge) |
 | [0743-network-delay-time](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0743-network-delay-time) |
 | [0994-rotting-oranges](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0994-rotting-oranges) |
 | [1036-rotting-oranges](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1036-rotting-oranges) |
@@ -553,6 +559,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0128-longest-consecutive-sequence](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0128-longest-consecutive-sequence) |
+| [0721-accounts-merge](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0721-accounts-merge) |
 ## Number Theory
 |  |
 | ------- |
