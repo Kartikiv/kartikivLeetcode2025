@@ -38,6 +38,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0212-word-search-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0212-word-search-ii) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0394-decode-string](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0394-decode-string) |
+| [0424-longest-repeating-character-replacement](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0424-longest-repeating-character-replacement) |
 | [0647-palindromic-substrings](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0647-palindromic-substrings) |
 | [0680-valid-palindrome-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0680-valid-palindrome-ii) |
 | [0721-accounts-merge](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0721-accounts-merge) |
@@ -266,6 +267,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0268-missing-number](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0268-missing-number) |
 | [0347-top-k-frequent-elements](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0347-top-k-frequent-elements) |
 | [0355-design-twitter](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0355-design-twitter) |
+| [0424-longest-repeating-character-replacement](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0424-longest-repeating-character-replacement) |
 | [0460-lfu-cache](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0460-lfu-cache) |
 | [0560-subarray-sum-equals-k](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0560-subarray-sum-equals-k) |
 | [0621-task-scheduler](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0621-task-scheduler) |
@@ -478,6 +480,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0219-contains-duplicate-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0219-contains-duplicate-ii) |
 | [0239-sliding-window-maximum](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0239-sliding-window-maximum) |
+| [0424-longest-repeating-character-replacement](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0424-longest-repeating-character-replacement) |
 ## Monotonic Queue
 |  |
 | ------- |
