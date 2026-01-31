@@ -128,6 +128,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0494-target-sum](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0494-target-sum) |
 | [0503-next-greater-element-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0503-next-greater-element-ii) |
 | [0518-coin-change-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0518-coin-change-ii) |
+| [0523-continuous-subarray-sum](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0523-continuous-subarray-sum) |
 | [0560-subarray-sum-equals-k](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0560-subarray-sum-equals-k) |
 | [0621-task-scheduler](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0621-task-scheduler) |
 | [0622-design-circular-queue](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0622-design-circular-queue) |
@@ -163,6 +164,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0202-happy-number](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0202-happy-number) |
 | [0268-missing-number](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0268-missing-number) |
 | [0279-perfect-squares](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0279-perfect-squares) |
+| [0523-continuous-subarray-sum](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0523-continuous-subarray-sum) |
 | [1071-greatest-common-divisor-of-strings](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1071-greatest-common-divisor-of-strings) |
 | [1137-n-th-tribonacci-number](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1137-n-th-tribonacci-number) |
 | [1636-number-of-substrings-with-only-1s](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1636-number-of-substrings-with-only-1s) |
@@ -279,6 +281,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0424-longest-repeating-character-replacement](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0424-longest-repeating-character-replacement) |
 | [0438-find-all-anagrams-in-a-string](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0438-find-all-anagrams-in-a-string) |
 | [0460-lfu-cache](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0460-lfu-cache) |
+| [0523-continuous-subarray-sum](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0523-continuous-subarray-sum) |
 | [0560-subarray-sum-equals-k](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0560-subarray-sum-equals-k) |
 | [0621-task-scheduler](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0621-task-scheduler) |
 | [0705-design-hashset](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0705-design-hashset) |
@@ -589,6 +592,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Prefix Sum
 |  |
 | ------- |
+| [0523-continuous-subarray-sum](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0523-continuous-subarray-sum) |
 | [0560-subarray-sum-equals-k](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0560-subarray-sum-equals-k) |
 ## Sweep Line
 |  |
