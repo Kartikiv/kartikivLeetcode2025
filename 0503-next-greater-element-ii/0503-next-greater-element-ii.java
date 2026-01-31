@@ -15,6 +15,25 @@ class StackNode {
     }
 }
 
+/**
+ * Finds the next greater element for each element in a circular array.
+ * 
+ * For each element in the input array, this method finds the first element
+ * to its right that is greater than the current element. Since the array is
+ * treated as circular, after the last element, the search continues from
+ * the first element.
+ * 
+ * @param nums an array of integers in which to find next greater elements
+ * @return an array where each element at index i contains the next greater
+ *         element for nums[i], or -1 if no greater element exists in the
+ *         circular array
+ * 
+ * Time Complexity: O(n) where n is the length of the input array.
+ *                  Each element is pushed and popped from the stack at most once.
+ * Space Complexity: O(n) for the stack and output array in the worst case.
+ * 
+ * @see StackNode
+ */
 class Solution {
 
     public int[] nextGreaterElements(int[] nums) {
