@@ -46,6 +46,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0647-palindromic-substrings](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0647-palindromic-substrings) |
 | [0680-valid-palindrome-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0680-valid-palindrome-ii) |
 | [0721-accounts-merge](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0721-accounts-merge) |
+| [0981-time-based-key-value-store](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0981-time-based-key-value-store) |
 | [1071-greatest-common-divisor-of-strings](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1071-greatest-common-divisor-of-strings) |
 | [1143-longest-common-subsequence](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1143-longest-common-subsequence) |
 | [1636-number-of-substrings-with-only-1s](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1636-number-of-substrings-with-only-1s) |
@@ -80,6 +81,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0705-design-hashset](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0705-design-hashset) |
 | [0706-design-hashmap](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0706-design-hashmap) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0789-kth-largest-element-in-a-stream) |
+| [0981-time-based-key-value-store](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0981-time-based-key-value-store) |
 ## Array
 |  |
 | ------- |
@@ -230,6 +232,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0268-missing-number](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0268-missing-number) |
 | [0300-longest-increasing-subsequence](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0300-longest-increasing-subsequence) |
 | [0374-guess-number-higher-or-lower](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0374-guess-number-higher-or-lower) |
+| [0981-time-based-key-value-store](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0981-time-based-key-value-store) |
 ## Linked List
 |  |
 | ------- |
@@ -290,6 +293,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0705-design-hashset](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0705-design-hashset) |
 | [0706-design-hashmap](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0706-design-hashmap) |
 | [0721-accounts-merge](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0721-accounts-merge) |
+| [0981-time-based-key-value-store](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0981-time-based-key-value-store) |
 | [0992-subarrays-with-k-different-integers](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0992-subarrays-with-k-different-integers) |
 ## Doubly-Linked List
 |  |
