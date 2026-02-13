@@ -161,6 +161,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1834-single-threaded-cpu](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1834-single-threaded-cpu) |
 | [1863-sum-of-all-subset-xor-totals](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1863-sum-of-all-subset-xor-totals) |
 | [1929-concatenation-of-array](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1929-concatenation-of-array) |
+| [2461-maximum-sum-of-distinct-subarrays-with-length-k](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/2461-maximum-sum-of-distinct-subarrays-with-length-k) |
 ## Math
 |  |
 | ------- |
@@ -309,6 +310,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0904-fruit-into-baskets](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0904-fruit-into-baskets) |
 | [0981-time-based-key-value-store](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0981-time-based-key-value-store) |
 | [0992-subarrays-with-k-different-integers](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0992-subarrays-with-k-different-integers) |
+| [2461-maximum-sum-of-distinct-subarrays-with-length-k](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/2461-maximum-sum-of-distinct-subarrays-with-length-k) |
 ## Doubly-Linked List
 |  |
 | ------- |
@@ -525,6 +527,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0904-fruit-into-baskets](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0904-fruit-into-baskets) |
 | [0992-subarrays-with-k-different-integers](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0992-subarrays-with-k-different-integers) |
 | [1004-max-consecutive-ones-iii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1004-max-consecutive-ones-iii) |
+| [2461-maximum-sum-of-distinct-subarrays-with-length-k](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/2461-maximum-sum-of-distinct-subarrays-with-length-k) |
 ## Monotonic Queue
 |  |
 | ------- |
