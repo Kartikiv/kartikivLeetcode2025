@@ -157,6 +157,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0994-rotting-oranges](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0994-rotting-oranges) |
 | [1004-max-consecutive-ones-iii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1004-max-consecutive-ones-iii) |
 | [1036-rotting-oranges](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1036-rotting-oranges) |
+| [1052-grumpy-bookstore-owner](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1052-grumpy-bookstore-owner) |
 | [1584-min-cost-to-connect-all-points](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1584-min-cost-to-connect-all-points) |
 | [1834-single-threaded-cpu](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1834-single-threaded-cpu) |
 | [1863-sum-of-all-subset-xor-totals](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1863-sum-of-all-subset-xor-totals) |
@@ -527,6 +528,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0904-fruit-into-baskets](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0904-fruit-into-baskets) |
 | [0992-subarrays-with-k-different-integers](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0992-subarrays-with-k-different-integers) |
 | [1004-max-consecutive-ones-iii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1004-max-consecutive-ones-iii) |
+| [1052-grumpy-bookstore-owner](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1052-grumpy-bookstore-owner) |
 | [2461-maximum-sum-of-distinct-subarrays-with-length-k](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/2461-maximum-sum-of-distinct-subarrays-with-length-k) |
 ## Monotonic Queue
 |  |
