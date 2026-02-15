@@ -161,6 +161,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1036-rotting-oranges](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1036-rotting-oranges) |
 | [1052-grumpy-bookstore-owner](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1052-grumpy-bookstore-owner) |
 | [1248-count-number-of-nice-subarrays](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1248-count-number-of-nice-subarrays) |
+| [1493-longest-subarray-of-1s-after-deleting-one-element](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1493-longest-subarray-of-1s-after-deleting-one-element) |
 | [1584-min-cost-to-connect-all-points](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1584-min-cost-to-connect-all-points) |
 | [1658-minimum-operations-to-reduce-x-to-zero](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1658-minimum-operations-to-reduce-x-to-zero) |
 | [1834-single-threaded-cpu](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1834-single-threaded-cpu) |
@@ -238,6 +239,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0746-min-cost-climbing-stairs](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0746-min-cost-climbing-stairs) |
 | [1137-n-th-tribonacci-number](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1137-n-th-tribonacci-number) |
 | [1143-longest-common-subsequence](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1143-longest-common-subsequence) |
+| [1493-longest-subarray-of-1s-after-deleting-one-element](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1493-longest-subarray-of-1s-after-deleting-one-element) |
 ## Binary Search
 |  |
 | ------- |
@@ -541,6 +543,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1052-grumpy-bookstore-owner](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1052-grumpy-bookstore-owner) |
 | [1248-count-number-of-nice-subarrays](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1248-count-number-of-nice-subarrays) |
 | [1456-maximum-number-of-vowels-in-a-substring-of-given-length](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1456-maximum-number-of-vowels-in-a-substring-of-given-length) |
+| [1493-longest-subarray-of-1s-after-deleting-one-element](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1493-longest-subarray-of-1s-after-deleting-one-element) |
 | [1658-minimum-operations-to-reduce-x-to-zero](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1658-minimum-operations-to-reduce-x-to-zero) |
 | [2461-maximum-sum-of-distinct-subarrays-with-length-k](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/2461-maximum-sum-of-distinct-subarrays-with-length-k) |
 ## Monotonic Queue
