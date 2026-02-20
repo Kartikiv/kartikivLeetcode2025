@@ -9,6 +9,7 @@
 win 1 : [1, 3 ]
 win 2 : []
  */
+import java.util.*;
  class QueueNode{
     int val; 
     int index;
