@@ -83,6 +83,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0295-find-median-from-data-stream](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0295-find-median-from-data-stream) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0303-range-sum-query-immutable](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0303-range-sum-query-immutable) |
+| [0304-range-sum-query-2d-immutable](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0304-range-sum-query-2d-immutable) |
 | [0355-design-twitter](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0355-design-twitter) |
 | [0460-lfu-cache](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0460-lfu-cache) |
 | [0622-design-circular-queue](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0622-design-circular-queue) |
@@ -134,6 +135,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0268-missing-number](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0268-missing-number) |
 | [0300-longest-increasing-subsequence](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0300-longest-increasing-subsequence) |
 | [0303-range-sum-query-immutable](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0303-range-sum-query-immutable) |
+| [0304-range-sum-query-2d-immutable](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0304-range-sum-query-2d-immutable) |
 | [0309-best-time-to-buy-and-sell-stock-with-cooldown](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0309-best-time-to-buy-and-sell-stock-with-cooldown) |
 | [0312-burst-balloons](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0312-burst-balloons) |
 | [0322-coin-change](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0322-coin-change) |
@@ -538,6 +540,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0130-surrounded-regions](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0130-surrounded-regions) |
 | [0200-number-of-islands](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0200-number-of-islands) |
 | [0212-word-search-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0212-word-search-ii) |
+| [0304-range-sum-query-2d-immutable](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0304-range-sum-query-2d-immutable) |
 | [0417-pacific-atlantic-water-flow](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0417-pacific-atlantic-water-flow) |
 | [0463-island-perimeter](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0463-island-perimeter) |
 | [0695-max-area-of-island](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0695-max-area-of-island) |
@@ -674,6 +677,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0209-minimum-size-subarray-sum](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0209-minimum-size-subarray-sum) |
 | [0303-range-sum-query-immutable](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0303-range-sum-query-immutable) |
+| [0304-range-sum-query-2d-immutable](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0304-range-sum-query-2d-immutable) |
 | [0523-continuous-subarray-sum](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0523-continuous-subarray-sum) |
 | [0560-subarray-sum-equals-k](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0560-subarray-sum-equals-k) |
 | [0724-find-pivot-index](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0724-find-pivot-index) |
