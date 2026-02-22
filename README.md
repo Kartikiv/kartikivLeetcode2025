@@ -139,6 +139,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0309-best-time-to-buy-and-sell-stock-with-cooldown](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0309-best-time-to-buy-and-sell-stock-with-cooldown) |
 | [0312-burst-balloons](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0312-burst-balloons) |
 | [0322-coin-change](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0322-coin-change) |
+| [0325-maximum-size-subarray-sum-equals-k](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0325-maximum-size-subarray-sum-equals-k) |
 | [0347-top-k-frequent-elements](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0347-top-k-frequent-elements) |
 | [0416-partition-equal-subset-sum](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0416-partition-equal-subset-sum) |
 | [0417-pacific-atlantic-water-flow](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0417-pacific-atlantic-water-flow) |
@@ -322,6 +323,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0217-contains-duplicate](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0217-contains-duplicate) |
 | [0219-contains-duplicate-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0219-contains-duplicate-ii) |
 | [0268-missing-number](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0268-missing-number) |
+| [0325-maximum-size-subarray-sum-equals-k](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0325-maximum-size-subarray-sum-equals-k) |
 | [0340-longest-substring-with-at-most-k-distinct-characters](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0340-longest-substring-with-at-most-k-distinct-characters) |
 | [0347-top-k-frequent-elements](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0347-top-k-frequent-elements) |
 | [0355-design-twitter](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0355-design-twitter) |
@@ -678,6 +680,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0209-minimum-size-subarray-sum](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0209-minimum-size-subarray-sum) |
 | [0303-range-sum-query-immutable](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0303-range-sum-query-immutable) |
 | [0304-range-sum-query-2d-immutable](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0304-range-sum-query-2d-immutable) |
+| [0325-maximum-size-subarray-sum-equals-k](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0325-maximum-size-subarray-sum-equals-k) |
 | [0523-continuous-subarray-sum](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0523-continuous-subarray-sum) |
 | [0560-subarray-sum-equals-k](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0560-subarray-sum-equals-k) |
 | [0724-find-pivot-index](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0724-find-pivot-index) |
