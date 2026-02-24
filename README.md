@@ -174,6 +174,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1004-max-consecutive-ones-iii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1004-max-consecutive-ones-iii) |
 | [1036-rotting-oranges](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1036-rotting-oranges) |
 | [1052-grumpy-bookstore-owner](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1052-grumpy-bookstore-owner) |
+| [1094-car-pooling](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1094-car-pooling) |
 | [1248-count-number-of-nice-subarrays](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1248-count-number-of-nice-subarrays) |
 | [1423-maximum-points-you-can-obtain-from-cards](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1423-maximum-points-you-can-obtain-from-cards) |
 | [1438-longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1438-longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit) |
@@ -223,6 +224,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0621-task-scheduler](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0621-task-scheduler) |
 | [0721-accounts-merge](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0721-accounts-merge) |
 | [0883-car-fleet](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0883-car-fleet) |
+| [1094-car-pooling](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1094-car-pooling) |
 | [1679-max-number-of-k-sum-pairs](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1679-max-number-of-k-sum-pairs) |
 | [1834-single-threaded-cpu](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1834-single-threaded-cpu) |
 ## Monotonic Stack
@@ -380,6 +382,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0703-kth-largest-element-in-a-stream](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0703-kth-largest-element-in-a-stream) |
 | [0743-network-delay-time](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0743-network-delay-time) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0789-kth-largest-element-in-a-stream) |
+| [1094-car-pooling](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1094-car-pooling) |
 | [1438-longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1438-longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit) |
 | [1834-single-threaded-cpu](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1834-single-threaded-cpu) |
 ## Merge Sort
@@ -655,6 +658,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0067-add-binary](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0067-add-binary) |
 | [0682-baseball-game](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0682-baseball-game) |
 | [0867-transpose-matrix](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0867-transpose-matrix) |
+| [1094-car-pooling](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1094-car-pooling) |
 | [1929-concatenation-of-array](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1929-concatenation-of-array) |
 ## Enumeration
 |  |
@@ -695,6 +699,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0930-binary-subarrays-with-sum](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0930-binary-subarrays-with-sum) |
 | [0974-subarray-sums-divisible-by-k](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0974-subarray-sums-divisible-by-k) |
 | [1004-max-consecutive-ones-iii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1004-max-consecutive-ones-iii) |
+| [1094-car-pooling](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1094-car-pooling) |
 | [1208-get-equal-substrings-within-budget](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1208-get-equal-substrings-within-budget) |
 | [1248-count-number-of-nice-subarrays](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1248-count-number-of-nice-subarrays) |
 | [1423-maximum-points-you-can-obtain-from-cards](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1423-maximum-points-you-can-obtain-from-cards) |
