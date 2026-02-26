@@ -142,6 +142,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0312-burst-balloons](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0312-burst-balloons) |
 | [0322-coin-change](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0322-coin-change) |
 | [0325-maximum-size-subarray-sum-equals-k](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0325-maximum-size-subarray-sum-equals-k) |
+| [0327-count-of-range-sum](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0327-count-of-range-sum) |
 | [0347-top-k-frequent-elements](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0347-top-k-frequent-elements) |
 | [0416-partition-equal-subset-sum](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0416-partition-equal-subset-sum) |
 | [0417-pacific-atlantic-water-flow](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0417-pacific-atlantic-water-flow) |
@@ -277,6 +278,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0209-minimum-size-subarray-sum](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0209-minimum-size-subarray-sum) |
 | [0268-missing-number](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0268-missing-number) |
 | [0300-longest-increasing-subsequence](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0300-longest-increasing-subsequence) |
+| [0327-count-of-range-sum](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0327-count-of-range-sum) |
 | [0374-guess-number-higher-or-lower](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0374-guess-number-higher-or-lower) |
 | [0875-koko-eating-bananas](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0875-koko-eating-bananas) |
 | [0981-time-based-key-value-store](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0981-time-based-key-value-store) |
@@ -374,6 +376,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0169-majority-element](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0169-majority-element) |
 | [0190-reverse-bits](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0190-reverse-bits) |
 | [0191-number-of-1-bits](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0191-number-of-1-bits) |
+| [0327-count-of-range-sum](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0327-count-of-range-sum) |
 | [0347-top-k-frequent-elements](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0347-top-k-frequent-elements) |
 ## Heap (Priority Queue)
 |  |
@@ -394,6 +397,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0023-merge-k-sorted-lists](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0023-merge-k-sorted-lists) |
+| [0327-count-of-range-sum](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0327-count-of-range-sum) |
 ## Tree
 |  |
 | ------- |
@@ -721,5 +725,14 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Ordered Set
 |  |
 | ------- |
+| [0327-count-of-range-sum](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0327-count-of-range-sum) |
 | [1438-longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1438-longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit) |
+## Binary Indexed Tree
+|  |
+| ------- |
+| [0327-count-of-range-sum](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0327-count-of-range-sum) |
+## Segment Tree
+|  |
+| ------- |
+| [0327-count-of-range-sum](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0327-count-of-range-sum) |
 <!---LeetCode Topics End-->
