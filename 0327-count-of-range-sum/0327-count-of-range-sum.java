@@ -1,57 +1,46 @@
-import java.util.*;
-
 class Solution {
-
-    static class Fenwick {
-        long[] bit;
-        Fenwick(int n) { bit = new long[n + 1]; }
-        void add(int i, long delta) { // 1-based
-            for (; i < bit.length; i += i & -i) bit[i] += delta;
-        }
-        long sum(int i) { // prefix [1..i]
-            long res = 0;
-            for (; i > 0; i -= i & -i) res += bit[i];
-            return res;
-        }
-    }
 
     public int countRangeSum(int[] nums, int lower, int upper) {
         int n = nums.length;
 
-        // 1) prefix sums (MUST be long)
-        long[] psum = new long[n + 1];
-        for (int i = 0; i < n; i++) psum[i + 1] = psum[i] + nums[i];
+        long[] prefix = new long[n + 1];
+        for (int i = 0; i < n; i++)
+            prefix[i + 1] = prefix[i] + nums[i];
 
-        // 2) coordinate compression using TreeMap: value -> rank (1..m)
-        TreeMap<Long, Integer> rank = new TreeMap<>();
-        for (long v : psum) rank.put(v, 0);
+        return mergeSort(prefix, 0, n + 1, lower, upper);
+    }
 
+    private int mergeSort(long[] arr, int left, int right, int lower, int upper) {
+        if (right - left <= 1) return 0;
+
+        int mid = (left + right) / 2;
+        int count = mergeSort(arr, left, mid, lower, upper)
+                  + mergeSort(arr, mid, right, lower, upper);
+
+        int j = mid, k = mid, t = mid;
+        long[] temp = new long[right - left];
         int r = 0;
-        for (Long key : rank.keySet()) rank.put(key, ++r);
 
-        Fenwick fw = new Fenwick(r);
-        long result = 0;
+        for (int i = left; i < mid; i++) {
 
-        for (int i = n; i >= 0; i--) {
-            long pval = psum[i];
+            while (k < right && arr[k] - arr[i] < lower) k++;
+            while (j < right && arr[j] - arr[i] <= upper) j++;
 
-            long low = pval + (long) lower;
-            long high = pval + (long) upper;
-
-            // count <= high
-            Long hiKey = rank.floorKey(high);
-            long cntLeHigh = (hiKey == null) ? 0 : fw.sum(rank.get(hiKey));
-
-            // count < low  (strictly less)
-            Long loKey = rank.lowerKey(low);
-            long cntLtLow = (loKey == null) ? 0 : fw.sum(rank.get(loKey));
-
-            result += (cntLeHigh - cntLtLow);
-
-            // insert current pval
-            fw.add(rank.get(pval), 1);
+            count += j - k;
         }
 
-        return (int) result; // LeetCode expects int; safe for constraints they use
+        // standard merge step
+        int i = left;
+        j = mid;
+        while (i < mid || j < right) {
+            if (j == right || (i < mid && arr[i] <= arr[j]))
+                temp[r++] = arr[i++];
+            else
+                temp[r++] = arr[j++];
+        }
+
+        System.arraycopy(temp, 0, arr, left, temp.length);
+
+        return count;
     }
 }
