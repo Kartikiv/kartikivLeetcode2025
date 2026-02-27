@@ -157,6 +157,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0622-design-circular-queue](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0622-design-circular-queue) |
 | [0682-baseball-game](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0682-baseball-game) |
 | [0695-max-area-of-island](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0695-max-area-of-island) |
+| [0704-binary-search](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0704-binary-search) |
 | [0705-design-hashset](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0705-design-hashset) |
 | [0706-design-hashmap](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0706-design-hashmap) |
 | [0721-accounts-merge](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0721-accounts-merge) |
@@ -281,6 +282,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0300-longest-increasing-subsequence](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0300-longest-increasing-subsequence) |
 | [0327-count-of-range-sum](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0327-count-of-range-sum) |
 | [0374-guess-number-higher-or-lower](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0374-guess-number-higher-or-lower) |
+| [0704-binary-search](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0704-binary-search) |
 | [0875-koko-eating-bananas](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0875-koko-eating-bananas) |
 | [0981-time-based-key-value-store](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0981-time-based-key-value-store) |
 | [1004-max-consecutive-ones-iii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1004-max-consecutive-ones-iii) |
