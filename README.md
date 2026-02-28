@@ -182,6 +182,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1094-car-pooling](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1094-car-pooling) |
 | [1109-corporate-flight-bookings](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1109-corporate-flight-bookings) |
 | [1248-count-number-of-nice-subarrays](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1248-count-number-of-nice-subarrays) |
+| [1283-find-the-smallest-divisor-given-a-threshold](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1283-find-the-smallest-divisor-given-a-threshold) |
 | [1423-maximum-points-you-can-obtain-from-cards](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1423-maximum-points-you-can-obtain-from-cards) |
 | [1438-longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1438-longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit) |
 | [1493-longest-subarray-of-1s-after-deleting-one-element](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1493-longest-subarray-of-1s-after-deleting-one-element) |
@@ -289,6 +290,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0981-time-based-key-value-store](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0981-time-based-key-value-store) |
 | [1004-max-consecutive-ones-iii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1004-max-consecutive-ones-iii) |
 | [1208-get-equal-substrings-within-budget](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1208-get-equal-substrings-within-budget) |
+| [1283-find-the-smallest-divisor-given-a-threshold](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1283-find-the-smallest-divisor-given-a-threshold) |
 | [1658-minimum-operations-to-reduce-x-to-zero](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1658-minimum-operations-to-reduce-x-to-zero) |
 ## Linked List
 |  |
