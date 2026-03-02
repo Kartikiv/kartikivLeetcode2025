@@ -1,16 +1,16 @@
 class Solution {
+    // find pivot in rotated sorted array
     public int findMin(int[] nums) {
-        int i = 0;
-        int j = nums.length - 1;
-        while(i < j){
-            int mid = i + ( j - i ) / 2;
-            if(nums [j] < nums [mid]){
-                i = mid + 1;
-            }
-            else{
-                j = mid;
+        int left = 0 ; 
+        int right = nums.length - 1; 
+        while (left  < right) {
+            int mid = left + (right - left) / 2;
+            if(nums[mid] > nums[right]){
+                left = mid + 1;
+            }else{
+                right = mid;
             }
         }
-
-    return nums[i] ;}
+   return nums[left]; 
+ }
 }
