@@ -4,7 +4,7 @@ class Solution {
     public int shipWithinDays(int[] weights, int days) {
         int left = Arrays.stream(weights).max().getAsInt();
 
-        int right = Integer.MAX_VALUE;
+        int right = Arrays.stream(weights).sum();
 
         while (left < right) {
             int mid = left + (right - left) / 2;
