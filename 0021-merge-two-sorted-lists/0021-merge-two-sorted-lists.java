@@ -18,17 +18,21 @@ class Solution {
         if(list2 == null) return list1;
         ListNode dummy = new ListNode(-1);
         ListNode ans = dummy;
-        PriorityQueue<ListNode> pq = new PriorityQueue<>((a,b) -> a.val - b.val);
-        pq.add(list1);
-        pq.add(list2);
-        while(!pq.isEmpty()){
-            ListNode l1 = pq.poll();
-            ans.next = new ListNode(l1.val);
+        while(list1 != null && list2 != null){
+            if(list1.val < list2.val){
+                ans.next = new ListNode(list1.val);
+                list1 = list1.next;
+            }else{
+                ans.next = new ListNode(list2.val);
+                list2 = list2.next;
+            }
             ans = ans.next;
-            if(l1.next != null)  pq.add(l1.next);
-
         }
 
-        return dummy.next;
+        if(list1 == null )  ans.next = list2;
+        if(list2 == null)   ans.next = list1;
+
+
+    return dummy.next;
     }
 }
