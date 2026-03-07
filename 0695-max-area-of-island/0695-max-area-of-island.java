@@ -1,48 +1,46 @@
+import java.util.LinkedList;
+import java.util.Queue;
+class Node{
+    int i;
+    int j;
+    public Node(int i , int j){
+        this.i = i;
+        this.j = j;
+    }
+}
 class Solution {
+
     public int maxAreaOfIsland(int[][] grid) {
-        int max = 0;
-        for(int i = 0; i < grid.length; i++){
-            for(int j = 0; j < grid[0].length; j++){
+        int maxArea = 0;
+        for(int i = 0 ; i < grid.length; i++){
+            for(int j = 0 ; j < grid[0].length; j++){
                 if(grid[i][j] == 1){
-                    max = Math.max(max, bfsGraph(grid, i, j));
+                    maxArea = Math.max(bfs(grid, i,j), maxArea);
                 }
             }
         }
-    return max; }
 
-    public int bfsGraph(int[][] grid, int i , int j){
-        int count = 0; 
-        Queue<int[]> queue  = new LinkedList<>();
-        queue.add(new int [] {i, j});
-        grid[i][j] = 0;
+        return maxArea;
+    }
+    int bfs(int [][] grid, int i , int j){
+        int area = 0;
+        int [][] directions = new int [][] {{-1,0}, {0, -1}, {1,0}, {0,1}};
+        Queue<Node> queue = new LinkedList<>();
+        queue.add(new Node(i,j));
+        grid[i][j] =0 ;
         while(!queue.isEmpty()){
-            int [] node = queue.poll();
-            i = node[0];
-            j = node[1];
-            
-            count++;
-
-            if(i + 1 < grid.length && grid[i + 1][j] == 1){
-                queue.add(new int [] {i + 1, j});
-                grid[i + 1][j] = 0;
+            Node node = queue.poll();
+            area++;
+            for(int [] direction : directions){
+                int newi = node.i + direction[0];
+                int newj = node.j + direction[1];
+                if(newi >= 0 && newi < grid.length && newj >= 0 &&
+                        newj < grid[0].length && grid[newi][newj] == 1){
+                    queue.add(new Node(newi, newj));
+                    grid[newi][newj] = 0;
+                }
             }
-            if(j + 1 < grid[0].length && grid[i][j + 1] == 1){
-                queue.add(new int [] {i, j + 1});
-                 grid[i][j + 1] = 0;
-            }
-            if(j > 0 && grid[i][j - 1] == 1){
-                queue.add(new int[] {i , j - 1});
-                 grid[i][j - 1] = 0;
-            }
-            if(i > 0 && grid[i - 1][j] == 1){
-                queue.add(new int[] {i - 1, j});
-                 grid[i - 1][j] = 0;
-            }
-
-            
-        } 
-
-
-    return count; 
+        }
+        return area;
     }
 }
