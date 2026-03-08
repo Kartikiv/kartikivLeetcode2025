@@ -43,6 +43,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0131-palindrome-partitioning](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0131-palindrome-partitioning) |
 | [0139-word-break](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0139-word-break) |
 | [0168-excel-sheet-column-title](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0168-excel-sheet-column-title) |
+| [0205-isomorphic-strings](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0205-isomorphic-strings) |
 | [0208-implement-trie-prefix-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0208-implement-trie-prefix-tree) |
 | [0211-design-add-and-search-words-data-structure](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0211-design-add-and-search-words-data-structure) |
 | [0212-word-search-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0212-word-search-ii) |
@@ -372,6 +373,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0146-lru-cache](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0146-lru-cache) |
 | [0169-majority-element](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0169-majority-element) |
 | [0202-happy-number](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0202-happy-number) |
+| [0205-isomorphic-strings](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0205-isomorphic-strings) |
 | [0208-implement-trie-prefix-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0208-implement-trie-prefix-tree) |
 | [0217-contains-duplicate](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0217-contains-duplicate) |
 | [0219-contains-duplicate-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0219-contains-duplicate-ii) |
