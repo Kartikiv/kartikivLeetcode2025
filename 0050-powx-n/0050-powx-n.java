@@ -12,7 +12,7 @@ class Solution {
         while(power > 0){
             if(power % 2 == 1){
                 result *= x;
-                power = power - 1;
+               
             }
             x *= x;
             power = power / 2;
