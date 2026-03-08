@@ -1,42 +1,39 @@
+import java.util.*;
+
 class Solution {
-    List<String> ans = new ArrayList<>();
-    HashMap<Character, Character[]> charMap;
-    char[] digitArray;
+    List<String> ans;
 
     public List<String> letterCombinations(String digits) {
-        this.digitArray = digits.toCharArray();
-        setMap();
-        StringBuilder current = new StringBuilder();
-        helper(0, current);
+        this.ans = new ArrayList<>();
+        
+        List<Character>[] charMapping = new ArrayList[10];
+        for (int i = 0; i < 10; i++) {
+            charMapping[i] = new ArrayList<>();
+        }
+        charMapping[2].addAll(Arrays.asList('a', 'b', 'c'));
+        charMapping[3].addAll(Arrays.asList('d', 'e', 'f'));
+        charMapping[4].addAll(Arrays.asList('g', 'h', 'i'));
+        charMapping[5].addAll(Arrays.asList('j', 'k', 'l'));
+        charMapping[6].addAll(Arrays.asList('m', 'n', 'o'));
+        charMapping[7].addAll(Arrays.asList('p', 'q', 'r', 's'));
+        charMapping[8].addAll(Arrays.asList('t', 'u', 'v'));
+        charMapping[9].addAll(Arrays.asList('w', 'x', 'y', 'z'));
+
+        dfs(digits.toCharArray(), charMapping, new StringBuilder(), 0);
         return ans;
     }
 
-    public void setMap() {
-        HashMap<Character, Character[]> charMap = new HashMap<>();
-        charMap.put('2', new Character[] { 'a', 'b', 'c' });
-        charMap.put('3', new Character[] { 'd', 'e', 'f' });
-        charMap.put('4', new Character[] { 'g', 'h', 'i' });
-        charMap.put('5', new Character[] { 'j', 'k', 'l' });
-        charMap.put('6', new Character[] { 'm', 'n', 'o' });
-        charMap.put('7', new Character[] { 'p', 'q', 'r','s' });
-        charMap.put('8', new Character[] { 't', 'u', 'v' });
-        charMap.put('9', new Character[] { 'w', 'x', 'y', 'z' });
-        this.charMap = charMap;
-
-    }
-
-    public void helper(int index, StringBuilder current) {
-        if (index == digitArray.length) {
-            ans.add(current.toString());
+    void dfs(char[] digits, List<Character>[] charMapping, StringBuilder sb, int i) {
+        if (i == digits.length) {
+            ans.add(sb.toString());
             return;
         }
-
-        for (char c : charMap.get(digitArray[index])) {
-            current.append(c);
-            helper(index + 1, current);
-            current.deleteCharAt(current.length() - 1);
-
-        }
-
+            char c = digits[i];
+            for (Character ch : charMapping[c - '0']) {
+                sb.append(ch);
+                dfs(digits, charMapping, sb, i + 1);
+                sb.deleteCharAt(sb.length() - 1);
+            }
+        
     }
 }
