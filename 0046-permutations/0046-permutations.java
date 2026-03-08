@@ -12,7 +12,6 @@ class Solution {
      void dfs(int [] nums , boolean [] used, List<Integer> list){
         if(list.size() == nums.length){
             ans.add(new ArrayList<>(list));
-            list = new ArrayList<>();
             return;
         }
         for(int i = 0 ; i < nums.length; i++){
