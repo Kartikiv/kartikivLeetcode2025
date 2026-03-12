@@ -23,12 +23,12 @@ class Solution {
         if(root == null) return  new ArrayList<>();
         // level order travesal and every alternative level gets flidpped
         Queue<TreeNode> queue = new LinkedList<>();
-        List<List<Integer>> ans = new LinkedList<>();
+        List<List<Integer>> ans = new ArrayList<>();
         queue.add(root);
         boolean isFlipped = false;
         while(!queue.isEmpty()){
             int size = queue.size();
-            List<Integer> level = new ArrayList<>(size);
+            List<Integer> level = new LinkedList<>();
             for (int i = 0; i < size; i++) {
                 TreeNode node = queue.poll();
                 if(isFlipped) level.addFirst(node.val);
