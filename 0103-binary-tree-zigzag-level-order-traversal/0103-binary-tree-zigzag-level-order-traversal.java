@@ -28,19 +28,19 @@ class Solution {
         boolean isFlipped = false;
         while(!queue.isEmpty()){
             int size = queue.size();
-            List<Integer> level = new ArrayList<>();
+            List<Integer> level = new ArrayList<>(size);
             for (int i = 0; i < size; i++) {
                 TreeNode node = queue.poll();
-               level.add(node.val);
+                if(isFlipped) level.addFirst(node.val);
+                else level.addLast(node.val);
                if(node.left != null)  queue.add(node.left);
                if(node.right != null) queue.add(node.right);
+               
+            }
 
-            }
-            if (isFlipped){
-                ans.add(level.reversed());
-            }else {
+
                 ans.add(level);
-            }
+
             isFlipped = !isFlipped;
         }
    return ans;  }
