@@ -13,28 +13,21 @@
  *     }
  * }
  */
- /* 
- BFS : insert in queue and count the children so that we can keep track  
- */
 class Solution {
     public List<List<Integer>> levelOrder(TreeNode root) {
-        if ( root == null ) return new ArrayList<>();
-        Queue<TreeNode> queue = new LinkedList<>();
-        List<List<Integer>> ans = new ArrayList<>();
-        queue.add(root);
-        while (!queue.isEmpty()) {
-            List<Integer> temp = new ArrayList<>();
-            int n = queue.size();
-            for (int i = 0 ; i < n; i++){
-            TreeNode node = queue.poll();
-            temp.add(node.val);
-            if (node.left != null) {queue.add(node.left); }
-            if (node.right != null){ queue.add(node.right); }
-            }
-            ans.add(temp);
+        List<List<Integer>> ans = new ArrayList<>(1);
+        dfs(root, ans, 0);
+        return ans;
+    }
 
+    void dfs(TreeNode root, List<List<Integer>> ans, int depth) {
+        if (root == null)
+            return;
+        if (ans.size() == depth)
+            ans.add(new ArrayList<>());
+        ans.get(depth).add(root.val);
+        dfs(root.left, ans, depth + 1);
+        dfs(root.right, ans, depth + 1);
 
-            
-        }
-    return ans;}
+    }
 }
