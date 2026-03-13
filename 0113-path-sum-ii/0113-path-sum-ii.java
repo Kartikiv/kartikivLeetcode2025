@@ -21,7 +21,7 @@ class Solution {
 
     public List<List<Integer>> pathSum(TreeNode root, int targetSum) {
         this.ans = new ArrayList<>();
-        dfs(root, targetSum, 0, new ArrayList<>());
+        dfs(root, targetSum, 0, new LinkedList<>());
         return ans;
 
     }
@@ -34,13 +34,13 @@ class Solution {
         list.add(root.val);
         if (root.left == null && root.right == null) {
             if (sum == targetSum) {
-                ans.add(new ArrayList<>(list));
+                ans.add(new LinkedList<>(list));
             }
         }
       
         dfs(root.left, targetSum, sum, list);
         dfs(root.right, targetSum, sum, list);
-        list.remove(list.size() - 1);
+        list.removeLast();
 
     }
 }
