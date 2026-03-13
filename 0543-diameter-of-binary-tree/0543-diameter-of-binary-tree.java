@@ -22,9 +22,9 @@ class Solution {
     }
     int dfs (TreeNode root){
         if(root == null) return 0; 
-        int left = dfs(root.left);
+        int left =  dfs(root.left);
         int right = dfs(root.right);
         diameter = Math.max(diameter,  left + right);
-        return Math.max(left, right) + 1;
+        return Math.max(left, right) +1;
     }
 }
