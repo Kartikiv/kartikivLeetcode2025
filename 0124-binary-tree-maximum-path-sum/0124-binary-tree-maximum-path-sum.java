@@ -30,7 +30,6 @@ class Solution {
         int currmax = Math.max(root.val + maxRight, root.val + maxLeft);
         currmax = Math.max(root.val, currmax);
         maxAns = Math.max(maxLeft + maxRight + root.val, maxAns);
-        maxAns = Math.max(maxAns, root.val);
         maxAns = Math.max(maxAns, currmax);
         
 
