@@ -3,8 +3,7 @@ class Solution {
         HashMap<String, List<String>> map = new HashMap<>(); 
         for (String str : strs){
             String key = getSignature(str);
-            if(!map.containsKey(key)) map.put(key, new ArrayList<>());
-            map.get(key).add(str);
+            map.computeIfAbsent(key, k -> new ArrayList<>()).add(str);
         }
     return map.values().stream().toList();}
     
