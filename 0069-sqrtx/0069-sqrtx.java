@@ -10,6 +10,6 @@ class Solution {
                 high = mid - 1;
             }
         }
-    return (int)high ; 
+    return (int) high ; 
     }
 }
