@@ -1,33 +1,30 @@
-import java.util.Arrays;
-
 class Solution {
     public int shipWithinDays(int[] weights, int days) {
-        int left = Arrays.stream(weights).max().getAsInt();     // at least the heaviest package
-        int right = Arrays.stream(weights).sum();               // at most ship all in one day
-
+        int left = Arrays.stream(weights).max().getAsInt();
+        int right = Arrays.stream(weights).sum();
         while (left < right) {
-            int mid = left + (right - left) / 2;
-            if (canShip(weights, mid, days)) {
-                right = mid;            // mid works, try smaller
-            } else {
-                left = mid + 1;         // mid doesn't work, need bigger
+            int mid = left + (right - left) / 2 ;
+            if(canShip(weights,mid, days)){
+                right = mid;
+            }else{
+                left = mid + 1;
             }
         }
-        return left;
+    return right; 
     }
-
-    private boolean canShip(int[] weights, int capacity, int days) {
-        int day = 1;
-        int load = 0;
-
-        for (int w : weights) {
-            load += w;
-            if (load > capacity) {      // start new day
-                day++;
-                load = w;
-                if (day > days) return false; // early exit
-            }
+    boolean canShip(int[] weights, int capacity, int days){
+        int currentDays = 1; 
+        int currentLoad = 0; 
+        int i = 0 ; 
+        while (i < weights.length) {
+           currentLoad += weights[i];
+           if(currentLoad > capacity){
+            currentLoad = weights[i] ;
+            currentDays++;
+           }
+           i++;
+           
         }
-        return true;
+    return currentDays <= days; 
     }
 }
