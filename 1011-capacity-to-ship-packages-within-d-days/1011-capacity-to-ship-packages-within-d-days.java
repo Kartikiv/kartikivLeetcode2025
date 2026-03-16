@@ -1,7 +1,10 @@
 class Solution {
     public int shipWithinDays(int[] weights, int days) {
-        int left = Arrays.stream(weights).max().getAsInt();
-        int right = Arrays.stream(weights).sum();
+         int left = 0, right = 0;
+        for (int w : weights) {
+            left = Math.max(left, w);
+            right += w;
+        }
         while (left < right) {
             int mid = left + (right - left) / 2 ;
             if(canShip(weights,mid, days)){
