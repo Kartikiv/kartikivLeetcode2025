@@ -171,6 +171,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0658-find-k-closest-elements](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0658-find-k-closest-elements) |
 | [0682-baseball-game](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0682-baseball-game) |
 | [0695-max-area-of-island](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0695-max-area-of-island) |
+| [0702-search-in-a-sorted-array-of-unknown-size](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0702-search-in-a-sorted-array-of-unknown-size) |
 | [0704-binary-search](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0704-binary-search) |
 | [0705-design-hashset](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0705-design-hashset) |
 | [0706-design-hashmap](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0706-design-hashmap) |
@@ -312,6 +313,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0374-guess-number-higher-or-lower](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0374-guess-number-higher-or-lower) |
 | [0528-random-pick-with-weight](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0528-random-pick-with-weight) |
 | [0658-find-k-closest-elements](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0658-find-k-closest-elements) |
+| [0702-search-in-a-sorted-array-of-unknown-size](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0702-search-in-a-sorted-array-of-unknown-size) |
 | [0704-binary-search](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0704-binary-search) |
 | [0875-koko-eating-bananas](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0875-koko-eating-bananas) |
 | [0911-online-election](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0911-online-election) |
@@ -759,6 +761,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0374-guess-number-higher-or-lower](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0374-guess-number-higher-or-lower) |
+| [0702-search-in-a-sorted-array-of-unknown-size](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0702-search-in-a-sorted-array-of-unknown-size) |
 ## Bucket Sort
 |  |
 | ------- |
