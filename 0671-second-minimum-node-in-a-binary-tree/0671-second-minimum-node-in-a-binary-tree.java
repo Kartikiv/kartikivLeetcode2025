@@ -1,40 +1,17 @@
-/**
- * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode() {}
- *     TreeNode(int val) { this.val = val; }
- *     TreeNode(int val, TreeNode left, TreeNode right) {
- *         this.val = val;
- *         this.left = left;
- *         this.right = right;
- *     }
- * }
- */
 class Solution {
     public int findSecondMinimumValue(TreeNode root) {
-        long secondSmallest = Long.MAX_VALUE;
-        Queue<TreeNode> queue = new LinkedList<>();
-        queue.add(root);
-        while (!queue.isEmpty()) {
-            TreeNode node = queue.poll();
-            if (node.left != null) {
+      
+      long ans = dfsHelper(root, root.val);
 
-               
-                    queue.add(node.right);
-                    if (node.left.val != root.val)
-                        secondSmallest = Math.min(secondSmallest, node.left.val);
-                
-
-              
-                    if (node.right.val != root.val)
-                        secondSmallest = Math.min(secondSmallest, node.right.val);
-                    queue.add(node.left);
-                
-            }
-        }
-        return secondSmallest == Long.MAX_VALUE ? -1 : (int)secondSmallest;
+        return ans == Long.MAX_VALUE ? -1 : (int) ans ;
+    }
+    public long dfsHelper(TreeNode root, int min){
+        if(root == null) return Long.MAX_VALUE;
+        if(root.val > min){
+          return root.val;
+        } 
+        long left = dfsHelper(root.left, min);
+        long right = dfsHelper(root.right, min);
+        return Math.min(left, right);
     }
 }
