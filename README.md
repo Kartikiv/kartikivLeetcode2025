@@ -48,6 +48,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0208-implement-trie-prefix-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0208-implement-trie-prefix-tree) |
 | [0211-design-add-and-search-words-data-structure](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0211-design-add-and-search-words-data-structure) |
 | [0212-word-search-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0212-word-search-ii) |
+| [0242-valid-anagram](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0242-valid-anagram) |
 | [0249-group-shifted-strings](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0249-group-shifted-strings) |
 | [0290-word-pattern](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0290-word-pattern) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0297-serialize-and-deserialize-binary-tree) |
@@ -253,6 +254,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0169-majority-element](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0169-majority-element) |
 | [0215-kth-largest-element-in-an-array](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0215-kth-largest-element-in-an-array) |
 | [0217-contains-duplicate](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0217-contains-duplicate) |
+| [0242-valid-anagram](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0242-valid-anagram) |
 | [0252-meeting-rooms](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0252-meeting-rooms) |
 | [0268-missing-number](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0268-missing-number) |
 | [0295-find-median-from-data-stream](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0295-find-median-from-data-stream) |
@@ -391,6 +393,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0208-implement-trie-prefix-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0208-implement-trie-prefix-tree) |
 | [0217-contains-duplicate](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0217-contains-duplicate) |
 | [0219-contains-duplicate-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0219-contains-duplicate-ii) |
+| [0242-valid-anagram](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0242-valid-anagram) |
 | [0249-group-shifted-strings](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0249-group-shifted-strings) |
 | [0268-missing-number](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0268-missing-number) |
 | [0290-word-pattern](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0290-word-pattern) |
