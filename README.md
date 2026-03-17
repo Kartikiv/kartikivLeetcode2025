@@ -58,6 +58,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0647-palindromic-substrings](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0647-palindromic-substrings) |
 | [0680-valid-palindrome-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0680-valid-palindrome-ii) |
 | [0721-accounts-merge](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0721-accounts-merge) |
+| [0890-find-and-replace-pattern](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0890-find-and-replace-pattern) |
 | [0981-time-based-key-value-store](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0981-time-based-key-value-store) |
 | [1071-greatest-common-divisor-of-strings](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1071-greatest-common-divisor-of-strings) |
 | [1100-find-k-length-substrings-with-no-repeated-characters](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1100-find-k-length-substrings-with-no-repeated-characters) |
@@ -185,6 +186,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0867-transpose-matrix](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0867-transpose-matrix) |
 | [0875-koko-eating-bananas](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0875-koko-eating-bananas) |
 | [0883-car-fleet](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0883-car-fleet) |
+| [0890-find-and-replace-pattern](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0890-find-and-replace-pattern) |
 | [0904-fruit-into-baskets](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0904-fruit-into-baskets) |
 | [0911-online-election](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0911-online-election) |
 | [0930-binary-subarrays-with-sum](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0930-binary-subarrays-with-sum) |
@@ -404,6 +406,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0705-design-hashset](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0705-design-hashset) |
 | [0706-design-hashmap](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0706-design-hashmap) |
 | [0721-accounts-merge](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0721-accounts-merge) |
+| [0890-find-and-replace-pattern](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0890-find-and-replace-pattern) |
 | [0904-fruit-into-baskets](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0904-fruit-into-baskets) |
 | [0911-online-election](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0911-online-election) |
 | [0930-binary-subarrays-with-sum](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0930-binary-subarrays-with-sum) |
