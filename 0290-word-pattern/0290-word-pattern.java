@@ -1,6 +1,6 @@
 class Solution {
     public boolean wordPattern(String pattern, String s) {
-        Map<Object, Integer> mapIndex = new HashMap<>();
+        Map mapIndex = new HashMap<>();
         String[] words = s.split(" ");
 
         if (words.length != pattern.length()) return false;
