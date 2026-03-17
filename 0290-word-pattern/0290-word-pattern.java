@@ -1,20 +1,20 @@
 class Solution {
     public boolean wordPattern(String pattern, String s) {
-        String [] words = s.split("\\s+");
-        char [] patternArr = pattern.toCharArray();
-        if(words.length != patternArr.length) return false;
+        String[] words = s.split("\\s+");
+        char[] patternArr = pattern.toCharArray();
+        if (words.length != patternArr.length) return false;
 
-        Map<Character, String> charToWord = new HashMap<>(); 
-        Map <String, Character> wordToChar = new HashMap<>();
-        for(int i = 0 ; i < words.length; i++){
-            wordToChar.putIfAbsent(words[i], patternArr[i]);
-            charToWord.putIfAbsent(patternArr[i], words[i]);
-             if (wordToChar.get(words[i]) != patternArr[i] ||
-                !charToWord.get(patternArr[i]).equals(words[i])) {
+        Map<Object, Integer> map = new HashMap<>();
+
+        for (int i = 0; i < words.length; i++) {
+            map.putIfAbsent(patternArr[i], i);
+            map.putIfAbsent(words[i], i);
+
+            if (!map.get(patternArr[i]).equals(map.get(words[i]))) {
                 return false;
             }
         }
 
-    return true; 
+        return true;
     }
 }
