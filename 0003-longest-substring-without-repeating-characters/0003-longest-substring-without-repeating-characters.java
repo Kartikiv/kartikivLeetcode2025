@@ -5,13 +5,13 @@ class Solution {
         int i = 0; 
         int j = 0; 
         int maxWindow = 0 ; 
-        HashMap<Character, Integer> map = new HashMap<>();
+        int [] map = new int[256];
         while (j < s.length()) {
           char c = s.charAt(j);
-           if(map.containsKey(c)){
-            i = Math.max(i, map.get(c) + 1);
+           if(map[c] != 0){
+            i = Math.max(i, map[c]);
            }
-           map.put(c, j);
+           map[c]  = j + 1;
            maxWindow = Math.max(maxWindow, j - i + 1);
            j++;
         }
