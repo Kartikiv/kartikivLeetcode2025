@@ -1,16 +1,18 @@
 class Solution {
     public boolean wordPattern(String pattern, String s) {
-        String[] words = s.split("\\s+");
-        char[] patternArr = pattern.toCharArray();
-        if (words.length != patternArr.length) return false;
+        Map<Object, Integer> mapIndex = new HashMap<>();
+        String[] words = s.split(" ");
 
-        Map<Object, Integer> map = new HashMap<>();
+        if (words.length != pattern.length()) return false;
 
         for (int i = 0; i < words.length; i++) {
-            map.putIfAbsent(patternArr[i], i);
-            map.putIfAbsent(words[i], i);
+            char c = pattern.charAt(i);
+            String w = words[i];
 
-            if (!map.get(patternArr[i]).equals(map.get(words[i]))) {
+            mapIndex.putIfAbsent(c, i);
+            mapIndex.putIfAbsent(w, i);
+
+            if (!mapIndex.get(c).equals(mapIndex.get(w))) {
                 return false;
             }
         }
