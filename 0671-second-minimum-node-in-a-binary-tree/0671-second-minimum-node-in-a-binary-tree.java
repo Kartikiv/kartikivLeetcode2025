@@ -22,17 +22,17 @@ class Solution {
             TreeNode node = queue.poll();
             if (node.left != null) {
 
-                if (node.right.val == node.val) {
+               
                     queue.add(node.right);
                     if (node.left.val != root.val)
                         secondSmallest = Math.min(secondSmallest, node.left.val);
-                }
+                
 
-                if (node.left.val == node.val) {
+              
                     if (node.right.val != root.val)
                         secondSmallest = Math.min(secondSmallest, node.right.val);
                     queue.add(node.left);
-                }
+                
             }
         }
         return secondSmallest == Long.MAX_VALUE ? -1 : (int)secondSmallest;
