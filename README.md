@@ -477,6 +477,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0437-path-sum-iii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0437-path-sum-iii) |
 | [0543-diameter-of-binary-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0543-diameter-of-binary-tree) |
 | [0572-subtree-of-another-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0572-subtree-of-another-tree) |
+| [0671-second-minimum-node-in-a-binary-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0671-second-minimum-node-in-a-binary-tree) |
 | [0703-kth-largest-element-in-a-stream](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0703-kth-largest-element-in-a-stream) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0789-kth-largest-element-in-a-stream) |
 | [1448-count-good-nodes-in-binary-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1448-count-good-nodes-in-binary-tree) |
@@ -511,6 +512,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0463-island-perimeter](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0463-island-perimeter) |
 | [0543-diameter-of-binary-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0543-diameter-of-binary-tree) |
 | [0572-subtree-of-another-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0572-subtree-of-another-tree) |
+| [0671-second-minimum-node-in-a-binary-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0671-second-minimum-node-in-a-binary-tree) |
 | [0684-redundant-connection](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0684-redundant-connection) |
 | [0695-max-area-of-island](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0695-max-area-of-island) |
 | [0721-accounts-merge](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0721-accounts-merge) |
@@ -568,6 +570,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0437-path-sum-iii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0437-path-sum-iii) |
 | [0543-diameter-of-binary-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0543-diameter-of-binary-tree) |
 | [0572-subtree-of-another-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0572-subtree-of-another-tree) |
+| [0671-second-minimum-node-in-a-binary-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0671-second-minimum-node-in-a-binary-tree) |
 | [0703-kth-largest-element-in-a-stream](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0703-kth-largest-element-in-a-stream) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0789-kth-largest-element-in-a-stream) |
 | [1448-count-good-nodes-in-binary-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1448-count-good-nodes-in-binary-tree) |
