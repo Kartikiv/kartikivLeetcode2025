@@ -4,7 +4,7 @@ class Solution {
         
         double ans = x / 2 ;
         int i = 0 ;
-        while (i < 50) {
+        while (i < 20) {
             ans = interpolation(ans, x);
             i++;
         }
