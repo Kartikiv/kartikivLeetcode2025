@@ -1,5 +1,7 @@
+import java.util.*;
 class Solution {
     public int pivotIndex(int[] nums) {
+        List<Integer> ans = new ArrayList<>();
         int total = 0; 
         for(int num : nums){
             total += num; 
@@ -10,12 +12,12 @@ class Solution {
         int leftSum = 0; 
         for(int i = 0 ; i < nums.length; i++){
             if(leftSum == total - leftSum - nums[i]){
-                return i ; 
+                ans.add(i);
             }
             leftSum += nums[i];
         }
 
 
-    return -1 ; 
+    return ans.size() == 0 ? -1 : ans.get(0) ; 
 }
 }
