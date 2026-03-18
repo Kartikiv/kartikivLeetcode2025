@@ -8,7 +8,7 @@ class Solution {
         while (j < nums.length) {
             // expand the window
             if(nums[j] == 0) numZero++;
-            while (i <= j && numZero > k) {
+            if (i <= j && numZero > k) {
                 if(nums[i] == 0) numZero--;
                 i++;
             }
