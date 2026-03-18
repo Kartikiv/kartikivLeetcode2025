@@ -1,15 +1,16 @@
 class Solution {
     public int mySqrt(int x) {
-        long low  = 1; 
-        long high = x; 
-        while (low < high) {
-            long mid = low + (high - low) / 2 + 1;
-            if(mid * mid <= x){
-                low = mid;
-            }else{
-                high = mid - 1;
-            }
+        if(x == 0 || x == 1) return x ;
+        
+        double ans = x / 2 ;
+        int i = 0 ;
+        while (i < 100) {
+            ans = interpolation(ans, x);
+            i++;
         }
-    return (int) high ; 
+    return (int) ans ;
+}
+    public double interpolation(double guess , int x){
+        return (guess + (x / guess)) / 2 ;
     }
 }
