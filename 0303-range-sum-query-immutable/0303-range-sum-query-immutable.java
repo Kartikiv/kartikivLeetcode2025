@@ -1,23 +1,18 @@
-
-import java.util.HashMap;
-
 class NumArray {
-    HashMap<Integer, Integer> map;
-
+    int [] prefix; 
     public NumArray(int[] nums) {
-        this.map = new HashMap<>();
-        int sum = 0;
-
-        for (int i = 0; i < nums.length; i++) {
+        this.prefix = new int [nums.length];
+        int sum = 0 ;
+        for(int i = 0; i < nums.length; i++){
             sum += nums[i];
-            map.put(i, sum);
-
+            prefix[i] = sum; 
         }
-
     }
-
+    
     public int sumRange(int left, int right) {
-        return map.getOrDefault(right, 0) - map.getOrDefault(left - 1, 0);
+        int leftSum = left == 0 ? 0 : prefix[left - 1];
+        int rightSum = prefix[right];
+        return rightSum - leftSum; 
     }
 }
 
