@@ -1,12 +1,12 @@
 class Solution {
-    int [] probalityDistribution;
+    int [] pDistribution;
     int maxWeight ;    
     public Solution(int[] w) {
-        this.probalityDistribution = new int [w.length]; 
+        this.pDistribution = new int [w.length]; 
         int sum = 0 ; 
         for (int i = 0; i < w.length; i++) {
             sum += w[i]; 
-            probalityDistribution[i] = sum ;
+            pDistribution[i] = sum ;
         }
         // assign the max weight
         this.maxWeight = sum; 
@@ -16,10 +16,10 @@ class Solution {
     public int pickIndex() {
        int target = (int) (Math.random() * maxWeight) + 1;
         int left = 0 ; 
-        int right = probalityDistribution.length - 1;
+        int right = pDistribution.length - 1;
         while (left < right) {
             int mid = left + (right - left) / 2;  
-            if(probalityDistribution[mid] >= target){
+            if(pDistribution[mid] >= target){
                 right = mid;
             }else{
                 left = mid + 1; 
