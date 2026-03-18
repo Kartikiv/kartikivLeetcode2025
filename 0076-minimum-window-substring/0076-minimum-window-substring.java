@@ -1,58 +1,52 @@
-import java.util.Arrays;
-
 class Solution {
-    int[] charMap = new int[58];
-    int missing;       // NEW: how many chars still needed
-    String s2;
-
-    public String minWindow(String s1, String s2) {
-        if (s1.length() < s2.length()) return "";
-
-        Arrays.fill(charMap, 0);  // important if Solution reused across tests
-        this.s2 = s2;
-
-        int[] ans = new int[2];
-        Arrays.fill(ans, -1);
-
-        int minLen = Integer.MAX_VALUE;
-        int i = 0;
-
-        // build requirement map
-        for (char c : s2.toCharArray()) {
-            charMap[c - 'A']++;
+    public String minWindow(String s, String t) {
+        if (s.length() == 0 || t.length() == 0)
+            return "";
+        if (s.equals(t))
+            return s;
+        // step 1 : Frequency map of t
+        int[] tMap = new int[60];
+        int needed = 0;
+        for (int i = 0; i < t.length(); i++) {
+            if (tMap[t.charAt(i) - 'A'] == 0)
+                needed++;
+            tMap[t.charAt(i) - 'A']++;
         }
-        missing = s2.length();
+        int minl = -1;
+        int minr = -1;
+        int formed = 0;
 
-        for (int j = 0; j < s1.length(); j++) {
-            int idxR = s1.charAt(j) - 'A';
+        // Step 2 : apply sliding window and move right till the window is valid 
+        // window is valid when formed == neeeded 
+        // when window is valid move left pointer right till the window becomes invalid while moving get the minwindow 
+        int i = 0;
+        int j = 0;
+        int[] sMap = new int[60];
+        while (j < s.length()) {
+            // expand till valid
+            sMap[s.charAt(j) - 'A']++;
+            if (tMap[s.charAt(j) - 'A'] != 0 && tMap[s.charAt(j) - 'A'] == sMap[s.charAt(j) - 'A']) {
+                formed++;
+            }
 
-            // consume right char
-            if (charMap[idxR] > 0) missing--;
-            charMap[idxR]--;
-
-            while (isValid()) { // O(1) now
-                int len = j - i + 1;
-                if (len < minLen) {
-                    minLen = len;
-                    ans[0] = j;
-                    ans[1] = i;
+            // shrink here
+            while (i <= j && formed == needed) {
+                if (minl == -1 || j - i < minr - minl) {
+                    minl = i;
+                    minr = j;
                 }
-
-                int idxL = s1.charAt(i) - 'A';
-                charMap[idxL]++;
-
-                // if we now "owe" this char again, window becomes invalid
-                if (charMap[idxL] > 0) missing++;
-
+                sMap[s.charAt(i) - 'A']--;
+                if (tMap[s.charAt(i) - 'A'] != 0 && sMap[s.charAt(i) - 'A'] < tMap[s.charAt(i) - 'A']) {
+                    formed--;
+                }
                 i++;
             }
+
+            j++;
+
         }
 
-        if (ans[0] == -1) return "";
-        return s1.substring(ans[1], ans[0] + 1);
+        return minl == -1 ? "" : s.substring(minl, minr + 1);
     }
 
-    boolean isValid() {
-        return missing == 0;
-    }
 }
