@@ -16,7 +16,7 @@ class Solution {
             }
             leftSum += nums[i];
         }
-
+        System.out.println(ans);
 
     return ans.size() == 0 ? -1 : ans.get(0) ; 
 }
