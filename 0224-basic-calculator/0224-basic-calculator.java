@@ -19,13 +19,14 @@ class Solution {
                 operator = 1;
             }
             else if(Character.isDigit(arr[index])){
-                StringBuilder sb = new StringBuilder();
+                long num  = 0 ;
+                long base = 1 ;
                 while(index < arr.length && Character.isDigit(arr[index])){
-                    sb.append(arr[index]);
+                    num = num * 10 + (arr[index] - '0');
                     index ++; 
                 }
                 index--;
-                sum += Long.parseLong(sb.toString())  * operator;
+                sum += num * operator;
             }
             index++;
         }
