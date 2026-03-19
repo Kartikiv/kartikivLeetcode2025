@@ -1,9 +1,12 @@
-class StackNode {
-    int value; 
-    int minValue; 
-    public StackNode(int value, int minValue){
-        this.value = value;
-        this.minValue = minValue;
+
+import java.util.Stack;
+
+class StackNode{
+    int val; 
+    int min; 
+    public StackNode(int val, int min){
+        this.val = val;
+        this.min = min;
     }
 }
 class MinStack {
@@ -13,28 +16,26 @@ class MinStack {
     }
     
     public void push(int val) {
-        if ( stack.isEmpty()){
-            stack.add(new StackNode(val, val));
-        }
-        else{
-            int minVal = stack.peek().minValue;
-            if (minVal > val){
-                minVal = val;
-            }
-            stack.add(new StackNode(val, minVal));
+        if(stack.isEmpty()){
+        stack.push(new StackNode(val, val));
+        }else{
+            stack.push(new StackNode(val, Math.min(val, stack.peek().min)));
         }
     }
     
     public void pop() {
+        if(stack.isEmpty()) return; 
         stack.pop();
     }
     
     public int top() {
-        return stack.isEmpty()? null :stack.peek().value;
+        if(stack.isEmpty()) return Integer.MAX_VALUE; 
+        return stack.peek().val;
     }
     
     public int getMin() {
-        return stack.isEmpty()? null :stack.peek().minValue;
+        if(stack.isEmpty()) return Integer.MAX_VALUE; 
+        return stack.peek().min;
     }
 }
 
@@ -45,9 +46,4 @@ class MinStack {
  * obj.pop();
  * int param_3 = obj.top();
  * int param_4 = obj.getMin();
-
-1. On way to solve the problem is use a priority queue and stack but it will be O(nlogn) not optimal
- 2. We need have all operation in O(1) so we will create a stack in that stack everyNode will have a value and min till it was added
- 3. This way getting the min will be reduced to O(1)
- 4. 
  */
