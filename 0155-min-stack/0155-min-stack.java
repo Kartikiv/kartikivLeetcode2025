@@ -10,32 +10,33 @@ class StackNode{
     }
 }
 class MinStack {
-    Stack<StackNode> stack;
+    Stack<Integer> stack;
+    Stack<Integer> minStack;
     public MinStack() {
         this.stack = new Stack<>();
+        this.minStack = new Stack<>();
     }
     
     public void push(int val) {
-        if(stack.isEmpty()){
-        stack.push(new StackNode(val, val));
-        }else{
-            stack.push(new StackNode(val, Math.min(val, stack.peek().min)));
-        }
+        stack.push(val);
+        int min = minStack.isEmpty() ? val : Math.min(minStack.peek(), val);
+        minStack.push(min);
     }
     
     public void pop() {
         if(stack.isEmpty()) return; 
         stack.pop();
+        minStack.pop();
     }
     
     public int top() {
         if(stack.isEmpty()) return Integer.MAX_VALUE; 
-        return stack.peek().val;
+        return stack.peek();
     }
     
     public int getMin() {
         if(stack.isEmpty()) return Integer.MAX_VALUE; 
-        return stack.peek().min;
+        return minStack.peek();
     }
 }
 
