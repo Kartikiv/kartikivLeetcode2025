@@ -1,33 +1,33 @@
-
-import java.util.Stack;
-
 class Solution {
     public boolean isValid(String s) {
-        Stack<Character> stack = new Stack<>();
-
-        for (int i = 0; i < s.length(); i++) {
-            char c = s.charAt(i);
-            switch (c) {
-                case '}':
-                    if (stack.isEmpty() || stack.peek() != '{')
-                        return false;
-                    stack.pop();
-                    break;
-                case ']':
-                    if (stack.isEmpty() || stack.peek() != '[')
-                        return false;
-                    stack.pop();
-                    break;
-                case ')':
-                    if (stack.isEmpty() || stack.peek() != '(')
-                        return false;
-                    stack.pop();
-                    break;
-                default:
-                    stack.add(c);
-                    break;
+        // Step 1 : use the inbuilt array as a store and
+        // insert open bracket and when we reach the close bracket
+        // check if it is the top is the closer else return false
+        char[] arr = s.toCharArray();
+        int top = -1;
+        for (int i = 0; i < arr.length; i++) {
+            char c = arr[i];
+            // open bracket push into the stack
+            if (c == '(' || c == '{' || c == '[') {
+                arr[++top] = c;
             }
+            // process cloesed brackets
+              if (top == -1)
+                    return false;
+            if (c == ')') {
+                if (arr[top--] != '(')
+                    return false;
+            }
+            if (c == '}') {
+                if (arr[top--] != '{')
+                    return false;
+            }
+            if (c == ']') {
+                if (arr[top--] != '[')
+                    return false;
+            }
+
         }
-        return stack.isEmpty();
+        return top == -1;
     }
 }
