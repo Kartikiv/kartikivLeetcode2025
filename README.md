@@ -238,6 +238,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0202-happy-number](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0202-happy-number) |
 | [0268-missing-number](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0268-missing-number) |
 | [0279-perfect-squares](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0279-perfect-squares) |
+| [0398-random-pick-index](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0398-random-pick-index) |
 | [0523-continuous-subarray-sum](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0523-continuous-subarray-sum) |
 | [0528-random-pick-with-weight](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0528-random-pick-with-weight) |
 | [1071-greatest-common-divisor-of-strings](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1071-greatest-common-divisor-of-strings) |
@@ -401,6 +402,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0340-longest-substring-with-at-most-k-distinct-characters](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0340-longest-substring-with-at-most-k-distinct-characters) |
 | [0347-top-k-frequent-elements](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0347-top-k-frequent-elements) |
 | [0355-design-twitter](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0355-design-twitter) |
+| [0398-random-pick-index](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0398-random-pick-index) |
 | [0424-longest-repeating-character-replacement](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0424-longest-repeating-character-replacement) |
 | [0438-find-all-anagrams-in-a-string](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0438-find-all-anagrams-in-a-string) |
 | [0460-lfu-cache](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0460-lfu-cache) |
@@ -846,9 +848,14 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Randomized
 |  |
 | ------- |
+| [0398-random-pick-index](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0398-random-pick-index) |
 | [0528-random-pick-with-weight](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0528-random-pick-with-weight) |
 ## Graph Theory
 |  |
 | ------- |
 | [0261-graph-valid-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0261-graph-valid-tree) |
+## Reservoir Sampling
+|  |
+| ------- |
+| [0398-random-pick-index](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0398-random-pick-index) |
 <!---LeetCode Topics End-->
