@@ -32,6 +32,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0013-roman-to-integer](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0013-roman-to-integer) |
 | [0014-longest-common-prefix](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0014-longest-common-prefix) |
 | [0017-letter-combinations-of-a-phone-number](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0017-letter-combinations-of-a-phone-number) |
+| [0020-valid-parentheses](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0020-valid-parentheses) |
 | [0032-longest-valid-parentheses](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0032-longest-valid-parentheses) |
 | [0049-group-anagrams](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0049-group-anagrams) |
 | [0067-add-binary](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0067-add-binary) |
@@ -72,6 +73,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Stack
 |  |
 | ------- |
+| [0020-valid-parentheses](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0020-valid-parentheses) |
 | [0032-longest-valid-parentheses](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0032-longest-valid-parentheses) |
 | [0071-simplify-path](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0071-simplify-path) |
 | [0145-binary-tree-postorder-traversal](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0145-binary-tree-postorder-traversal) |
