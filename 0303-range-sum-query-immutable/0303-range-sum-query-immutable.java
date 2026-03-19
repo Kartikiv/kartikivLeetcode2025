@@ -1,23 +1,58 @@
-class NumArray {
-    int [] prefix; 
-    public NumArray(int[] nums) {
-        this.prefix = new int [nums.length + 1];
-        int sum = 0 ;
-        for(int i = 0; i < nums.length; i++){
-            sum += nums[i];
-            prefix[i + 1] = sum; 
-        }
+class SegmentTree {
+    int[] tree;
+    int[] arr;
+
+    public SegmentTree(int[] arr) {
+        this.arr = arr;
+        this.tree = new int[4 * arr.length];
+        build(1, 0, arr.length - 1);
     }
-    
-    public int sumRange(int left, int right) {
-        int leftSum = prefix[left];
-        int rightSum = prefix[right + 1];
-        return rightSum - leftSum; 
+
+    void build(int node, int start, int end) {
+        if (start == end) {
+            tree[node] = arr[start];
+            return;
+        }
+
+        int mid = start + (end - start) / 2;
+
+        build(2 * node, start, mid);
+        build(2 * node + 1, mid + 1, end);
+
+        tree[node] = tree[2 * node] + tree[2 * node + 1];
+    }
+
+    public int query(int node, int start, int end, int left, int right) {
+        // no overlap
+        if (end < left || start > right) {
+            return 0;
+        }
+
+        // complete overlap
+        if (left <= start && end <= right) {
+            return tree[node];
+        }
+
+        // partial overlap
+        int mid = start + (end - start) / 2;
+
+        int leftSum = query(2 * node, start, mid, left, right);
+        int rightSum = query(2 * node + 1, mid + 1, end, left, right);
+
+        return leftSum + rightSum;
     }
 }
 
-/**
- * Your NumArray object will be instantiated and called as such:
- * NumArray obj = new NumArray(nums);
- * int param_1 = obj.sumRange(left,right);
- */
+class NumArray {
+    SegmentTree segmentTree;
+    int[] nums;
+
+    public NumArray(int[] nums) {
+        this.nums = nums;
+        this.segmentTree = new SegmentTree(nums);
+    }
+
+    public int sumRange(int left, int right) {
+        return segmentTree.query(1, 0, nums.length - 1, left, right);
+    }
+}
