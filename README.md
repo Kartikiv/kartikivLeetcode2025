@@ -50,6 +50,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0211-design-add-and-search-words-data-structure](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0211-design-add-and-search-words-data-structure) |
 | [0212-word-search-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0212-word-search-ii) |
 | [0224-basic-calculator](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0224-basic-calculator) |
+| [0227-basic-calculator-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0227-basic-calculator-ii) |
 | [0242-valid-anagram](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0242-valid-anagram) |
 | [0249-group-shifted-strings](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0249-group-shifted-strings) |
 | [0290-word-pattern](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0290-word-pattern) |
@@ -81,6 +82,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0150-evaluate-reverse-polish-notation](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0155-min-stack](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0155-min-stack) |
 | [0224-basic-calculator](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0224-basic-calculator) |
+| [0227-basic-calculator-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0227-basic-calculator-ii) |
 | [0232-implement-queue-using-stacks](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0232-implement-queue-using-stacks) |
 | [0234-palindrome-linked-list](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0234-palindrome-linked-list) |
 | [0394-decode-string](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0394-decode-string) |
@@ -243,6 +245,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0168-excel-sheet-column-title](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0168-excel-sheet-column-title) |
 | [0202-happy-number](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0202-happy-number) |
 | [0224-basic-calculator](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0224-basic-calculator) |
+| [0227-basic-calculator-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0227-basic-calculator-ii) |
 | [0268-missing-number](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0268-missing-number) |
 | [0279-perfect-squares](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0279-perfect-squares) |
 | [0398-random-pick-index](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0398-random-pick-index) |
