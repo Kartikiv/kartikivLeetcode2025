@@ -1,46 +1,53 @@
-import java.util.*;
+import java.util.Stack;
 
 class Solution {
     public int calculate(String s) {
-        char[] arr = s.toCharArray();
-        Stack<Integer> stack = new Stack<>();
+        // so we parse the number and when hit an operator we simply
+        // do the operation in the previous operator
+        // and we move forward with the operations
+        Stack<Long> stack = new Stack<>();
+        char operator = '+'; // initial operator
         int index = 0;
-        int currentNumber = 0 ;
-        char operator = '+';
-        while (index < arr.length) {
-            if (Character.isDigit(arr[index])) {
-                while (index < arr.length && Character.isDigit(arr[index])) {
-                    currentNumber = currentNumber * 10 + (arr[index] - '0');
+        long result = 0;
+        long currentNumber = 0;
+        int length = s.length();
+        while (index < length) {
+            if (Character.isDigit(s.charAt(index))) {
+                while (index < length && Character.isDigit(s.charAt(index))) {
+                    // parsing the digits to number
+                    currentNumber = currentNumber * 10 + (s.charAt(index) - '0');
                     index++;
                 }
-                index--; 
-            }
-            if(!Character.isDigit(arr[index]) && !Character.isWhitespace(arr[index]) || index == arr.length - 1){
-                // process previous operation 
-                if(operator == '+'){
-                    stack.push(currentNumber);
-                }else if(operator == '-'){
-                    stack.push(-1 * currentNumber);
-                }else if(operator == '*'){
-                    stack.push(stack.pop() * currentNumber);
-                }else if(operator == '/'){
-                    stack.push(stack.pop() / currentNumber);
-                }
-                // update new operator
-                operator = arr[index];
-                currentNumber = 0 ;
+                index--; // go back on char as it was not a number.
 
             }
-            
+            // process operator and also process operation if reach the end to the string
+             if ((!Character.isDigit(s.charAt(index)) &&
+                    !Character.isWhitespace(s.charAt(index)))
+                    || index == length - 1) {
+                // do the previous operation and push the result onto the stack
+                if (operator == '+' || operator == '-') {
+                    int sign = operator == '+' ? 1 : -1;
+                    stack.add(sign * currentNumber);
+                }
+                // For division and multiplication only compute 
+                if (operator == '/') {
+                    stack.add(stack.pop() / currentNumber);
+                }
+                if (operator == '*') {
+                    stack.add(stack.pop() * currentNumber);
+                }
+                //update the operator and currentNumber
+                currentNumber = 0 ; 
+                operator = s.charAt(index);
+
+            }
             index++;
         }
-        // do addtion and subtraction operation 
-        int result = 0 ; 
         while (!stack.isEmpty()) {
-           result += stack.pop(); 
+            result += stack.pop();
         }
 
-    return result
-    ; 
-}
+   return (int) result; 
+ }
 }
