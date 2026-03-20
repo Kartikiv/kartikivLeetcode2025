@@ -1,47 +1,34 @@
-import java.util.*;
-
 class Solution {
+    int index;
     public int calculate(String s) {
-        int n = s.length();
-        int result = 0;
-        int sign = 1;
-
-        Stack<Integer> stack = new Stack<>();
-        stack.push(1); // outermost sign context
-
-        int i = 0;
-        while (i < n) {
-            char c = s.charAt(i);
-
-            if (c == ' ') {
-                i++;
-            } 
-            else if (c == '+') {
-                sign = stack.peek();
-                i++;
-            } 
-            else if (c == '-') {
-                sign = -stack.peek();
-                i++;
-            } 
-            else if (c == '(') {
-                stack.push(sign);
-                i++;
-            } 
-            else if (c == ')') {
-                stack.pop();
-                i++;
-            } 
-            else if (Character.isDigit(c)) {
-                int num = 0;
-                while (i < n && Character.isDigit(s.charAt(i))) {
-                    num = num * 10 + (s.charAt(i) - '0');
-                    i++;
-                }
-                result += sign * num;
-            }
-        }
-
-        return result;
+        // do dfs 
+        return dfs(s.toCharArray());
     }
+    int dfs (char [] arr){
+        long sum = 0 , operator = 1;
+        while(index < arr.length){
+            if(arr[index] == ')'){
+                break;
+            }
+            if(arr[index] == '('){
+                index++;
+                sum += operator * dfs(arr);
+            }else if(arr[index] == '-'){
+                operator = - 1;
+            }else if(arr[index] == '+'){
+                operator = 1;
+            }
+            else if(Character.isDigit(arr[index])){
+                long num  = 0 ;
+                long base = 1 ;
+                while(index < arr.length && Character.isDigit(arr[index])){
+                    num = num * 10 + (arr[index] - '0');
+                    index ++; 
+                }
+                index--;
+                sum += num * operator;
+            }
+            index++;
+        }
+    return (int) sum ;}
 }
