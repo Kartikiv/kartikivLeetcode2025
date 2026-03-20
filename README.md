@@ -86,6 +86,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0232-implement-queue-using-stacks](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0232-implement-queue-using-stacks) |
 | [0234-palindrome-linked-list](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0234-palindrome-linked-list) |
 | [0394-decode-string](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0394-decode-string) |
+| [0496-next-greater-element-i](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0496-next-greater-element-i) |
 | [0503-next-greater-element-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0503-next-greater-element-ii) |
 | [0682-baseball-game](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0682-baseball-game) |
 | [0739-daily-temperatures](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0739-daily-temperatures) |
@@ -174,6 +175,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0417-pacific-atlantic-water-flow](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0417-pacific-atlantic-water-flow) |
 | [0463-island-perimeter](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0463-island-perimeter) |
 | [0494-target-sum](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0494-target-sum) |
+| [0496-next-greater-element-i](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0496-next-greater-element-i) |
 | [0503-next-greater-element-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0503-next-greater-element-ii) |
 | [0518-coin-change-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0518-coin-change-ii) |
 | [0523-continuous-subarray-sum](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0523-continuous-subarray-sum) |
@@ -281,6 +283,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Monotonic Stack
 |  |
 | ------- |
+| [0496-next-greater-element-i](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0496-next-greater-element-i) |
 | [0503-next-greater-element-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0503-next-greater-element-ii) |
 | [0739-daily-temperatures](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0739-daily-temperatures) |
 | [0883-car-fleet](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0883-car-fleet) |
@@ -417,6 +420,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0424-longest-repeating-character-replacement](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0424-longest-repeating-character-replacement) |
 | [0438-find-all-anagrams-in-a-string](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0438-find-all-anagrams-in-a-string) |
 | [0460-lfu-cache](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0460-lfu-cache) |
+| [0496-next-greater-element-i](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0496-next-greater-element-i) |
 | [0523-continuous-subarray-sum](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0523-continuous-subarray-sum) |
 | [0525-contiguous-array](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0525-contiguous-array) |
 | [0560-subarray-sum-equals-k](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0560-subarray-sum-equals-k) |
