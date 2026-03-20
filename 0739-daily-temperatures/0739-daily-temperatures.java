@@ -1,28 +1,19 @@
 import java.util.*;
-class StackNode{
-    int val; 
-    int index; 
-    public StackNode (int val,int index){
-        this.val = val; 
-        this.index = index;
-    }
-}
+
 class Solution {
     public int[] dailyTemperatures(int[] temperatures) {
-        Stack<StackNode> stack = new Stack<>(); 
-        int [] res = new int [temperatures.length]; 
-        for (int i = 0; i < temperatures.length; i++) {
-            if(stack.isEmpty()){
-                stack.add(new StackNode(temperatures[i], i));
+        int n = temperatures.length;
+        int[] res = new int[n];
+        Stack<Integer> stack = new Stack<>(); // stores indices
+
+        for (int i = 0; i < n; i++) {
+            while (!stack.isEmpty() && temperatures[stack.peek()] < temperatures[i]) {
+                int prevIndex = stack.pop();
+                res[prevIndex] = i - prevIndex;
             }
-            else{
-                while(!stack.isEmpty() && stack.peek().val < temperatures[i]){
-                   StackNode node = stack.pop();
-                   res[node.index] = i - node.index;
-                }
-                stack.add(new StackNode(temperatures[i], i));
-            }
-        } 
-    return res ;
-}
+            stack.push(i);
+        }
+
+        return res;
+    }
 }
