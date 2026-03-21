@@ -61,6 +61,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0438-find-all-anagrams-in-a-string](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0438-find-all-anagrams-in-a-string) |
 | [0567-permutation-in-string](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0567-permutation-in-string) |
 | [0647-palindromic-substrings](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0647-palindromic-substrings) |
+| [0649-dota2-senate](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0649-dota2-senate) |
 | [0680-valid-palindrome-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0680-valid-palindrome-ii) |
 | [0721-accounts-merge](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0721-accounts-merge) |
 | [0890-find-and-replace-pattern](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0890-find-and-replace-pattern) |
@@ -636,6 +637,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0011-container-with-most-water](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0011-container-with-most-water) |
 | [0621-task-scheduler](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0621-task-scheduler) |
+| [0649-dota2-senate](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0649-dota2-senate) |
 | [0680-valid-palindrome-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0680-valid-palindrome-ii) |
 | [0860-lemonade-change](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0860-lemonade-change) |
 ## Counting
@@ -697,6 +699,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0232-implement-queue-using-stacks](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0232-implement-queue-using-stacks) |
 | [0239-sliding-window-maximum](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0239-sliding-window-maximum) |
 | [0622-design-circular-queue](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0622-design-circular-queue) |
+| [0649-dota2-senate](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0649-dota2-senate) |
 | [0933-number-of-recent-calls](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0933-number-of-recent-calls) |
 | [1438-longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1438-longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit) |
 ## Sliding Window
