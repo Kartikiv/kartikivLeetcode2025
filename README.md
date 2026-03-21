@@ -106,6 +106,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0303-range-sum-query-immutable](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0303-range-sum-query-immutable) |
 | [0304-range-sum-query-2d-immutable](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0304-range-sum-query-2d-immutable) |
 | [0307-range-sum-query-mutable](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0307-range-sum-query-mutable) |
+| [0346-moving-average-from-data-stream](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0346-moving-average-from-data-stream) |
 | [0355-design-twitter](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0355-design-twitter) |
 | [0362-design-hit-counter](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0362-design-hit-counter) |
 | [0460-lfu-cache](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0460-lfu-cache) |
@@ -175,6 +176,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0322-coin-change](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0322-coin-change) |
 | [0325-maximum-size-subarray-sum-equals-k](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0325-maximum-size-subarray-sum-equals-k) |
 | [0327-count-of-range-sum](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0327-count-of-range-sum) |
+| [0346-moving-average-from-data-stream](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0346-moving-average-from-data-stream) |
 | [0347-top-k-frequent-elements](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0347-top-k-frequent-elements) |
 | [0362-design-hit-counter](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0362-design-hit-counter) |
 | [0416-partition-equal-subset-sum](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0416-partition-equal-subset-sum) |
@@ -632,6 +634,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0295-find-median-from-data-stream](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0295-find-median-from-data-stream) |
+| [0346-moving-average-from-data-stream](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0346-moving-average-from-data-stream) |
 | [0362-design-hit-counter](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0362-design-hit-counter) |
 | [0703-kth-largest-element-in-a-stream](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0703-kth-largest-element-in-a-stream) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0789-kth-largest-element-in-a-stream) |
@@ -702,6 +705,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0232-implement-queue-using-stacks](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0232-implement-queue-using-stacks) |
 | [0239-sliding-window-maximum](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0239-sliding-window-maximum) |
+| [0346-moving-average-from-data-stream](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0346-moving-average-from-data-stream) |
 | [0362-design-hit-counter](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0362-design-hit-counter) |
 | [0622-design-circular-queue](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0622-design-circular-queue) |
 | [0649-dota2-senate](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0649-dota2-senate) |
