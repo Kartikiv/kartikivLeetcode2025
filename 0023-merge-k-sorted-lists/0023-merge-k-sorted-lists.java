@@ -21,7 +21,7 @@ class Solution {
         ListNode dummy = ans;
         while (!pq.isEmpty()) {
             ListNode node = pq.poll();
-            dummy.next = new ListNode(node.val);
+            dummy.next = node;
             node = node.next; 
             if(node != null) pq.add(node);
             dummy = dummy.next;
