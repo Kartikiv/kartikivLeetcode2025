@@ -1,39 +1,53 @@
+import java.util.concurrent.ThreadLocalRandom;
+
 class Solution {
     public int findKthLargest(int[] nums, int k) {
-        List<Integer> list = new ArrayList<>();
-        for (int num: nums) {
-            list.add(num);
-        }
-        
-        return quickSelect(list, k);
-    }
-    
-    public int quickSelect(List<Integer> nums, int k) {
-        int pivotIndex = new Random().nextInt(nums.size());
-        int pivot = nums.get(pivotIndex);
-        
-        List<Integer> left = new ArrayList<>();
-        List<Integer> mid = new ArrayList<>();
-        List<Integer> right = new ArrayList<>();
-        
-        for (int num: nums) {
-            if (num > pivot) {
-                left.add(num);
-            } else if (num < pivot) {
-                right.add(num);
+        int target = nums.length - k;
+        int l = 0, r = nums.length - 1;
+
+        while (l <= r) {
+            int[] mid = partition3(nums, l, r);
+            int lt = mid[0], gt = mid[1];
+
+            if (target < lt) {
+                r = lt - 1;
+            } else if (target > gt) {
+                l = gt + 1;
             } else {
-                mid.add(num);
+                return nums[target];
             }
         }
-        
-        if (k <= left.size()) {
-            return quickSelect(left, k);
+
+        return -1;
+    }
+
+    private int[] partition3(int[] nums, int l, int r) {
+        int pivotIndex = ThreadLocalRandom.current().nextInt(l, r + 1);
+        int pivot = nums[pivotIndex];
+
+        int lt = l;
+        int i = l;
+        int gt = r;
+
+        while (i <= gt) {
+            if (nums[i] < pivot) {
+                swap(nums, lt, i);
+                lt++;
+                i++;
+            } else if (nums[i] > pivot) {
+                swap(nums, i, gt);
+                gt--;
+            } else {
+                i++;
+            }
         }
-        
-        if (left.size() + mid.size() < k) {
-            return quickSelect(right, k - left.size() - mid.size());
-        }
-        
-        return pivot;
+
+        return new int[]{lt, gt};
+    }
+
+    private void swap(int[] nums, int i, int j) {
+        int temp = nums[i];
+        nums[i] = nums[j];
+        nums[j] = temp;
     }
 }
