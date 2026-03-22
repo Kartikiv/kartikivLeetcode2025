@@ -1,5 +1,3 @@
-import com.sun.source.tree.Tree;
-
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -11,18 +9,15 @@ import com.sun.source.tree.Tree;
  */
 
 class Solution {
-    TreeNode ans = null;
-    public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q){
-    return dfs(root,p,q);
-    }
-    TreeNode dfs (TreeNode node, TreeNode p, TreeNode q){
-        if(node == null) return null;
-        if(node == p) return node;
-        if(node == q) return node;
-        TreeNode left = dfs(node.left, p , q);
-        TreeNode right = dfs(node.right, p , q);
-        if(left != null && right != null) return node;
-        if(left != null) return left;
-        if (right != null ) return right;
-    return  null; }
+    public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+        if(root == null) return root;
+        if(root == p || root == q)  return root;
+        TreeNode left = lowestCommonAncestor(root.left, p, q);
+        TreeNode right = lowestCommonAncestor(root.right, p, q);
+        if(left != null && right != null) return root;
+        
+        
+
+return left == null ? right : left; 
+}
 }
