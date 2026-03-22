@@ -1,52 +1,49 @@
-
-/**
- * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode() {}
- *     ListNode(int val) { this.val = val; }
- *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
- * }
- */
 class Solution {
     public void reorderList(ListNode head) {
-        ListNode middleNode = middle(head);
-        ListNode reverseNode = reverse(middleNode.next);
-        middleNode.next = null;
-        ListNode ans = new ListNode(-1);
-        ListNode dummy = ans;
-        while(head != null && reverseNode != null){
-            dummy.next = head;
-            head = head.next; 
-            dummy = dummy.next; 
-            dummy.next = reverseNode; 
-            reverseNode = reverseNode.next; 
-            dummy = dummy.next; 
+        if (head == null || head.next == null) return;
+
+        // 1. Find end of first half
+        ListNode firstHalfEnd = middle(head);
+
+        // 2. Reverse second half
+        ListNode second = reverse(firstHalfEnd.next);
+        firstHalfEnd.next = null;
+
+        // 3. Merge two halves
+        ListNode first = head;
+        while (second != null) {
+            ListNode temp1 = first.next;
+            ListNode temp2 = second.next;
+
+            first.next = second;
+            second.next = temp1;
+
+            first = temp1;
+            second = temp2;
         }
-        dummy.next = head == null ? reverseNode : head;
-     head = ans.next; }
-    //reverse
-    ListNode middle(ListNode head){
-        ListNode fast = head;
-        ListNode slow = head;
-        while(fast != null && fast.next != null){
-            fast = fast.next.next;
-            slow = slow.next;
-        }
-    return slow;
     }
-    ListNode reverse(ListNode head){
+
+    ListNode middle(ListNode head) {
+        ListNode slow = head;
+        ListNode fast = head;
+        
+        while (fast.next != null && fast.next.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+        return slow;
+    }
+
+    ListNode reverse(ListNode head) {
         ListNode prev = null;
         ListNode curr = head;
-        ListNode next = null;
-        while (curr != null){
-            next = curr.next;
+        
+        while (curr != null) {
+            ListNode next = curr.next;
             curr.next = prev;
             prev = curr;
             curr = next;
         }
-    return prev;
+        return prev;
     }
-
 }
