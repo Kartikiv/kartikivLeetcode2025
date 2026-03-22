@@ -29,6 +29,8 @@ class Solution {
         if(k > 0){
             ans = root.val;
             k--;
+        }else{
+            return; 
         }
         helper(root.right);
     }
