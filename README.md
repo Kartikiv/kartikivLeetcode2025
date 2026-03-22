@@ -13,6 +13,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0125-valid-palindrome](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0125-valid-palindrome) |
 | [0141-linked-list-cycle](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0141-linked-list-cycle) |
 | [0142-linked-list-cycle-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0142-linked-list-cycle-ii) |
+| [0143-reorder-list](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0143-reorder-list) |
 | [0202-happy-number](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0202-happy-number) |
 | [0234-palindrome-linked-list](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0234-palindrome-linked-list) |
 | [0295-find-median-from-data-stream](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0295-find-median-from-data-stream) |
@@ -80,6 +81,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0032-longest-valid-parentheses](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0032-longest-valid-parentheses) |
 | [0071-simplify-path](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0071-simplify-path) |
 | [0084-largest-rectangle-in-histogram](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0084-largest-rectangle-in-histogram) |
+| [0143-reorder-list](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0143-reorder-list) |
 | [0145-binary-tree-postorder-traversal](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0145-binary-tree-postorder-traversal) |
 | [0150-evaluate-reverse-polish-notation](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0155-min-stack](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0155-min-stack) |
@@ -371,6 +373,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0138-copy-list-with-random-pointer](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0138-copy-list-with-random-pointer) |
 | [0141-linked-list-cycle](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0141-linked-list-cycle) |
 | [0142-linked-list-cycle-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0142-linked-list-cycle-ii) |
+| [0143-reorder-list](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0143-reorder-list) |
 | [0146-lru-cache](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0146-lru-cache) |
 | [0206-reverse-linked-list](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0206-reverse-linked-list) |
 | [0234-palindrome-linked-list](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0234-palindrome-linked-list) |
@@ -390,6 +393,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0024-swap-nodes-in-pairs](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0024-swap-nodes-in-pairs) |
 | [0025-reverse-nodes-in-k-group](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0025-reverse-nodes-in-k-group) |
 | [0050-powx-n](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0050-powx-n) |
+| [0143-reorder-list](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0143-reorder-list) |
 | [0206-reverse-linked-list](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0206-reverse-linked-list) |
 | [0224-basic-calculator](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0224-basic-calculator) |
 | [0234-palindrome-linked-list](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0234-palindrome-linked-list) |
