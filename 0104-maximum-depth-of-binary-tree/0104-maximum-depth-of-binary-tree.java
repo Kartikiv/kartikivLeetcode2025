@@ -14,21 +14,17 @@
  * }
  */
 class Solution {
+    int maxDepth; 
     public int maxDepth(TreeNode root) {
-        if(root == null) return 0 ; 
-        Queue<TreeNode> queue = new LinkedList();
-        queue.add(root);
-        int height = 0 ; 
-        while(!queue.isEmpty()){
-            int size = queue.size();
-            for(int i = 0; i < size ;i++){
-                TreeNode node = queue.poll();
-                if(node.left!=null) queue.add(node.left);
-                if(node.right!= null) queue.add(node.right);
+        if(root == null) return 0;
+        helperDfs(root, 1);
+       return maxDepth; 
+    }
+    void helperDfs(TreeNode root, int depth){
+        if(root == null) return; 
+        helperDfs(root.left, depth + 1);
+        helperDfs(root.right, depth + 1);
+        maxDepth = Math.max(depth, maxDepth);
 
-            }
-            height++;
-        }
-    return height; 
     }
 }
