@@ -89,6 +89,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0227-basic-calculator-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0227-basic-calculator-ii) |
 | [0232-implement-queue-using-stacks](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0232-implement-queue-using-stacks) |
 | [0234-palindrome-linked-list](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0234-palindrome-linked-list) |
+| [0364-nested-list-weight-sum-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0364-nested-list-weight-sum-ii) |
 | [0394-decode-string](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0394-decode-string) |
 | [0496-next-greater-element-i](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0496-next-greater-element-i) |
 | [0503-next-greater-element-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0503-next-greater-element-ii) |
@@ -555,6 +556,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0323-number-of-connected-components-in-an-undirected-graph](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0323-number-of-connected-components-in-an-undirected-graph) |
 | [0332-reconstruct-itinerary](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0332-reconstruct-itinerary) |
 | [0339-nested-list-weight-sum](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0339-nested-list-weight-sum) |
+| [0364-nested-list-weight-sum-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0364-nested-list-weight-sum-ii) |
 | [0417-pacific-atlantic-water-flow](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0417-pacific-atlantic-water-flow) |
 | [0437-path-sum-iii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0437-path-sum-iii) |
 | [0463-island-perimeter](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0463-island-perimeter) |
@@ -590,6 +592,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0322-coin-change](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0322-coin-change) |
 | [0323-number-of-connected-components-in-an-undirected-graph](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0323-number-of-connected-components-in-an-undirected-graph) |
 | [0339-nested-list-weight-sum](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0339-nested-list-weight-sum) |
+| [0364-nested-list-weight-sum-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0364-nested-list-weight-sum-ii) |
 | [0417-pacific-atlantic-water-flow](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0417-pacific-atlantic-water-flow) |
 | [0463-island-perimeter](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0463-island-perimeter) |
 | [0637-average-of-levels-in-binary-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0637-average-of-levels-in-binary-tree) |
