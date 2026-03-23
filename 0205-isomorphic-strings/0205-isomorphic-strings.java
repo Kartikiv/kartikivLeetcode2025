@@ -1,22 +1,23 @@
 class Solution {
-    public boolean isIsomorphic(String s, String t) {
-        int[] sMap = new int[256];
-        int[] tMap = new int[256];
-
-        for (int i = 0; i < s.length(); i++) {
-            char sc = s.charAt(i);
-            char tc = t.charAt(i);
-
-            if (sMap[sc] != tMap[tc]) {
+    public boolean isIsomorphic(String firstWord, String secondWord) {
+        if (firstWord == null && secondWord == null)
+            return false;
+        if (firstWord.length() != secondWord.length())
+            return false;
+        if (firstWord.length() < 2)
+            return true; // single character are isomorpphic
+        int[] charMap1 = new int[256];
+        int[] charMap2 = new int[256];
+        // do not fill -1 512 waste 
+        // use i + 1
+        for (int i = 0; i < firstWord.length(); i++) {
+            if (charMap1[firstWord.charAt(i)] != charMap2[secondWord.charAt(i)])
                 return false;
-            }
-
-            if (sMap[sc] == 0) {
-                sMap[sc] = i + 1;
-                tMap[tc] = i + 1;
-            }
+            if (charMap1[firstWord.charAt(i)] == 0)
+                charMap1[firstWord.charAt(i)] = i + 1;
+            if (charMap2[secondWord.charAt(i)] == 0)
+                charMap2[secondWord.charAt(i)] = i + 1;
         }
-
         return true;
     }
 }
