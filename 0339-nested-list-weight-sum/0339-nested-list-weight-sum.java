@@ -1,3 +1,6 @@
+
+import java.util.List;
+
 /**
  * // This is the interface that allows for creating nested lists.
  * // You should not implement it, or speculate about its implementation
@@ -28,22 +31,24 @@
  */
 class Solution {
     public int depthSum(List<NestedInteger> nestedList) {
-    return helper(nestedList, 1); 
-    }
-    public int helper(List<NestedInteger> nestedList, int level){
-        if(nestedList == null){
-            return 0;
+        int sum = 0 ; 
+        for(NestedInteger num : nestedList){ 
+            sum += helper(num, 1);
         }
-        int total = 0 ; 
-        for(NestedInteger list : nestedList){
-        if(list.isInteger()){
-            total += list.getInteger() * level;
+        return sum ; 
+    }
+    int helper(NestedInteger integer, int depth){
+        if(integer == null) return 0 ;
+        if(integer.isInteger()) {
+            return depth * integer.getInteger();
         }else{
-         total += helper(list.getList(), level + 1);
-        }
-        }
-    return total; 
-    
-    }
+            int sum = 0 ;
+            for(NestedInteger num : integer.getList()){
+                sum += helper(num, depth + 1);
+            }
 
+        return sum ;}
+
+    }
+    
 }
