@@ -27,7 +27,6 @@
  * }
  */
 class Solution {
-    
 
     public int depthSumInverse(List<NestedInteger> nestedList) {
         int totalSum = 0;
@@ -50,8 +49,9 @@ class Solution {
 
             }
             totalSum += prevSum;
-            
+
         }
-    return totalSum;}
+        return totalSum;
+    }
 
 }
