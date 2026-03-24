@@ -1,53 +1,53 @@
-
-import java.util.concurrent.ThreadLocalRandom;
-
 class Solution {
     public int findKthLargest(int[] nums, int k) {
-        int target = nums.length - k;
-        int l = 0 ; 
-        int r = nums.length - 1;
-        while (l <= r) {
-            int [] indecies = partition(nums, l, r);
-            if(target < indecies[1]){
-                r = indecies[1] - 1 ;
-            }else if(target > indecies[2]){
-                l = indecies[2] + 1;
-            }else{
-                return nums[target];
-            }
+       int i = 0; 
+       int j = nums.length - 1 ;
+       int target = nums.length - k; 
+       while(i <= j){ 
+        int [] index = partion(nums, i, j); 
+        int lt = index[0];
+        int rt = index[1];
+        if(target < lt){
+            j = lt - 1; 
         }
-        
-    return -1 ; 
-}
-    int [] partition (int [] nums, int l , int r){
-        // select a random pivot 
-        int pivotIndex = ThreadLocalRandom.current().nextInt(l , r + 1);
+        else if(target > rt){
+            i = rt + 1;
+        }else{
+            return nums[rt];
+        }
+       }
+    return -1 ;}
+    public int [] partion(int [] nums , int l, int r){
+        // Select the pivot index
+        int pivotIndex = ThreadLocalRandom.current().nextInt(l, r + 1);
         int pivot = nums[pivotIndex];
-        // partition the array
-        int lt = l;
-        int i = l;
-        int gt = r; 
-        while (i <= gt) {
-            // ith number < pivot swap left and move i right
+        // maintain two pointer 
+        int i = l ;
+        int lt = l; 
+        int rt = r;
+
+        while (i <= rt) {
             if(nums[i] < pivot){
                 swap(nums, i, lt);
                 lt++;
                 i++;
+            }else if(nums[i] > pivot){
+                swap(nums, i, rt);
+                rt--;
+                // do not increment i as it belongs to unknown part
             }
-            // ith element is greater than pivot swap i and gt do not move i as it below to an unknown region
-            else if(nums[i] > pivot){
-                swap(nums, i, gt);
-                gt--;
-            }else{
+            else{ 
                 i++;
             }
+
         }
-    return  new int[]{i, lt,gt}; 
-}
-    // swap util 
-    void swap(int [] nums, int l , int r){
-        int tmp = nums[l];
-        nums[l] = nums[r];
-        nums[r] = tmp;
+
+
+    return new int []{lt,rt}; 
+    }
+    void swap(int [] nums, int a, int b){ 
+        int temp = nums[a];
+        nums[a] = nums[b]; 
+        nums[b] = temp;
     }
 }
