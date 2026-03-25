@@ -1,17 +1,28 @@
 class Solution {
-    public int findSecondMinimumValue(TreeNode root) {
-      
-      long ans = dfsHelper(root, root.val);
+    long secondMin = Long.MAX_VALUE;
+    int min;
 
-        return ans == Long.MAX_VALUE ? -1 : (int) ans ;
+    public int findSecondMinimumValue(TreeNode root) {
+        if (root == null) return -1;
+
+        min = root.val;
+        dfs(root);
+
+        return secondMin == Long.MAX_VALUE ? -1 : (int) secondMin;
     }
-    public long dfsHelper(TreeNode root, int min){
-        if(root == null) return Long.MAX_VALUE;
-        if(root.val > min){
-          return root.val;
-        } 
-        long left = dfsHelper(root.left, min);
-        long right = dfsHelper(root.right, min);
-        return Math.min(left, right);
+
+    private void dfs(TreeNode node) {
+        if (node == null) return;
+
+        // candidate for second minimum
+        if (node.val > min && node.val < secondMin) {
+            secondMin = node.val;
+        }
+
+        // pruning (important optimization)
+        if (node.val == min) {
+            dfs(node.left);
+            dfs(node.right);
+        }
     }
 }
