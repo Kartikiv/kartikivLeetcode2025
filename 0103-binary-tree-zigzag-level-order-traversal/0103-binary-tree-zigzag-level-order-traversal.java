@@ -20,28 +20,37 @@ import java.util.Queue;
  */
 class Solution {
     public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
-        if(root == null) return  new ArrayList<>();
+        if (root == null)
+            return new ArrayList<>();
         // level order travesal and every alternative level gets flidpped
-        Queue<TreeNode> queue = new LinkedList<>();
+        Deque<TreeNode> queue = new LinkedList<>();
         List<List<Integer>> ans = new ArrayList<>();
         queue.add(root);
-        boolean isFlipped = false;
-        while(!queue.isEmpty()){
+        boolean leftToRight = true;
+        while (!queue.isEmpty()) {
             int size = queue.size();
-            List<Integer> level = new LinkedList<>();
+            List<Integer> level = new ArrayList<>();
             for (int i = 0; i < size; i++) {
-                TreeNode node = queue.poll();
-                if(isFlipped) level.addFirst(node.val);
-                else level.addLast(node.val);
-               if(node.left != null)  queue.add(node.left);
-               if(node.right != null) queue.add(node.right);
-               
+                if (leftToRight) {
+                    TreeNode node = queue.pollFirst();
+                    level.add(node.val);
+                    if (node.left != null)
+                        queue.addLast(node.left);
+                    if (node.right != null)
+                        queue.addLast(node.right);
+                } else {
+                    TreeNode node = queue.pollLast();
+                    level.add(node.val);
+                    if (node.right != null)
+                        queue.addFirst(node.right);
+                    if (node.left != null)
+                        queue.addFirst(node.left);
+
+                }
             }
-
-
-                ans.add(level);
-
-            isFlipped = !isFlipped;
+            ans.add(level);
+            leftToRight = !leftToRight;
         }
-   return ans;  }
+        return ans;
+    }
 }
