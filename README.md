@@ -113,6 +113,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0346-moving-average-from-data-stream](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0346-moving-average-from-data-stream) |
 | [0355-design-twitter](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0355-design-twitter) |
 | [0362-design-hit-counter](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0362-design-hit-counter) |
+| [0380-insert-delete-getrandom-o1](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0380-insert-delete-getrandom-o1) |
 | [0460-lfu-cache](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0460-lfu-cache) |
 | [0622-design-circular-queue](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0622-design-circular-queue) |
 | [0703-kth-largest-element-in-a-stream](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0703-kth-largest-element-in-a-stream) |
@@ -183,6 +184,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0346-moving-average-from-data-stream](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0346-moving-average-from-data-stream) |
 | [0347-top-k-frequent-elements](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0347-top-k-frequent-elements) |
 | [0362-design-hit-counter](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0362-design-hit-counter) |
+| [0380-insert-delete-getrandom-o1](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0380-insert-delete-getrandom-o1) |
 | [0416-partition-equal-subset-sum](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0416-partition-equal-subset-sum) |
 | [0417-pacific-atlantic-water-flow](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0417-pacific-atlantic-water-flow) |
 | [0463-island-perimeter](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0463-island-perimeter) |
@@ -264,6 +266,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0279-perfect-squares](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0279-perfect-squares) |
 | [0319-bulb-switcher](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0319-bulb-switcher) |
 | [0367-valid-perfect-square](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0367-valid-perfect-square) |
+| [0380-insert-delete-getrandom-o1](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0380-insert-delete-getrandom-o1) |
 | [0398-random-pick-index](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0398-random-pick-index) |
 | [0464-can-i-win](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0464-can-i-win) |
 | [0523-continuous-subarray-sum](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0523-continuous-subarray-sum) |
@@ -437,6 +440,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0340-longest-substring-with-at-most-k-distinct-characters](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0340-longest-substring-with-at-most-k-distinct-characters) |
 | [0347-top-k-frequent-elements](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0347-top-k-frequent-elements) |
 | [0355-design-twitter](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0355-design-twitter) |
+| [0380-insert-delete-getrandom-o1](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0380-insert-delete-getrandom-o1) |
 | [0398-random-pick-index](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0398-random-pick-index) |
 | [0424-longest-repeating-character-replacement](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0424-longest-repeating-character-replacement) |
 | [0438-find-all-anagrams-in-a-string](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0438-find-all-anagrams-in-a-string) |
@@ -915,6 +919,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Randomized
 |  |
 | ------- |
+| [0380-insert-delete-getrandom-o1](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0380-insert-delete-getrandom-o1) |
 | [0398-random-pick-index](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0398-random-pick-index) |
 | [0528-random-pick-with-weight](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0528-random-pick-with-weight) |
 ## Graph Theory
