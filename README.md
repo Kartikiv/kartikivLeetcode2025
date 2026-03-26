@@ -265,6 +265,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0319-bulb-switcher](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0319-bulb-switcher) |
 | [0367-valid-perfect-square](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0367-valid-perfect-square) |
 | [0398-random-pick-index](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0398-random-pick-index) |
+| [0464-can-i-win](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0464-can-i-win) |
 | [0523-continuous-subarray-sum](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0523-continuous-subarray-sum) |
 | [0528-random-pick-with-weight](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0528-random-pick-with-weight) |
 | [1071-greatest-common-divisor-of-strings](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1071-greatest-common-divisor-of-strings) |
@@ -325,6 +326,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0322-coin-change](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0322-coin-change) |
 | [0338-counting-bits](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0338-counting-bits) |
 | [0416-partition-equal-subset-sum](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0416-partition-equal-subset-sum) |
+| [0464-can-i-win](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0464-can-i-win) |
 | [0494-target-sum](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0494-target-sum) |
 | [0518-coin-change-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0518-coin-change-ii) |
 | [0647-palindromic-substrings](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0647-palindromic-substrings) |
@@ -709,6 +711,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0191-number-of-1-bits](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0191-number-of-1-bits) |
 | [0268-missing-number](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0268-missing-number) |
 | [0338-counting-bits](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0338-counting-bits) |
+| [0464-can-i-win](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0464-can-i-win) |
 | [1863-sum-of-all-subset-xor-totals](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1863-sum-of-all-subset-xor-totals) |
 ## Matrix
 |  |
@@ -819,6 +822,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0070-climbing-stairs](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0070-climbing-stairs) |
 | [0139-word-break](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0139-word-break) |
+| [0464-can-i-win](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0464-can-i-win) |
 | [1137-n-th-tribonacci-number](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1137-n-th-tribonacci-number) |
 ## Combinatorics
 |  |
@@ -925,4 +929,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0319-bulb-switcher](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0319-bulb-switcher) |
+## Game Theory
+|  |
+| ------- |
+| [0464-can-i-win](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0464-can-i-win) |
+## Bitmask
+|  |
+| ------- |
+| [0464-can-i-win](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0464-can-i-win) |
 <!---LeetCode Topics End-->
