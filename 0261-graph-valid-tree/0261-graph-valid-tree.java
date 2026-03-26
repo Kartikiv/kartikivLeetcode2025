@@ -1,43 +1,30 @@
-import java.util.*;
 class Solution {
     public boolean validTree(int n, int[][] edges) {
-        List<Integer> [] adjacencyList = new ArrayList[n];
-        int [] parent = new int[n];
-        Arrays.fill(parent, -1);
-        for (int i = 0; i < adjacencyList.length; i++) {
-            adjacencyList[i] = new ArrayList<>();
-        }
-        for(int [] edge : edges){
-            int node = edge[0];
-            adjacencyList[node].add(edge[1]);
-            adjacencyList[edge[1]].add(node);
-        }
-        boolean[] visited = new boolean[n];
-        Queue<Integer> queue = new LinkedList<>();
-        queue.add(0);
-        visited[0] = true;
-        while (!queue.isEmpty()) {
-            int node = queue.poll();
-            List<Integer> neighbours = adjacencyList[node];
-            for(int neighbour : neighbours){
-                if (!visited[neighbour]){
-                    visited[neighbour] = true;
-                    if(parent[neighbour] == -1 ) parent[neighbour] = node;
-                    queue.add(neighbour);
-                  
-                }else{
-                    if(neighbour != parent[node]) return false;
-                }
-
-
-            }
-
-        }
-        for(boolean node : visited){
-            if(!node) return false;
-
+        int [] nums = new int[n]; 
+        Arrays.fill(nums, -1);
+        for(int [] edge : edges){ 
+            int x = find(nums, edge[0]);
+            int y = find(nums, edge[1]);
+            if(x == y) return false;
+            // union
+            nums[y] = x; 
+            
         }
 
-
-        return true; }
+    return edges.length == n -1;}
+    public int find(int [] nums, int edge){ 
+        int root, node = edge;
+        while(nums[node] != -1){ 
+            node = nums[node];
+        }
+        // found the root
+        root = node;
+        node = edge; 
+        // path compression
+        while(nums[node] != -1){
+            int temp = nums[node];
+            nums[node] = root;
+            node = temp;
+        }
+    return root;}
 }
