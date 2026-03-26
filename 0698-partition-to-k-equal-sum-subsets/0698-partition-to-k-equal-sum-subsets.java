@@ -25,7 +25,7 @@ class Solution {
                 continue;
             }
             used[j] = true;
-            if (dfs(j, used, sum - nums[j], k)) {
+            if (dfs(j + 1, used, sum - nums[j], k)) {
                 return true;
             }
             used[j] = false;
