@@ -1,6 +1,3 @@
-
-import java.util.List;
-
 /**
  * // This is the interface that allows for creating nested lists.
  * // You should not implement it, or speculate about its implementation
@@ -15,7 +12,7 @@ import java.util.List;
  *     public boolean isInteger();
  *
  *     // @return the single integer that this NestedInteger holds, if it holds a single integer
- *     // The result is undefined if this NestedInteger holds a nested list
+ *     // Return null if this NestedInteger holds a nested list
  *     public Integer getInteger();
  *
  *     // Set this NestedInteger to hold a single integer.
@@ -25,40 +22,36 @@ import java.util.List;
  *     public void add(NestedInteger ni);
  *
  *     // @return the nested list that this NestedInteger holds, if it holds a nested list
- *     // The result is undefined if this NestedInteger holds a single integer
+ *     // Return empty list if this NestedInteger holds a single integer
  *     public List<NestedInteger> getList();
  * }
  */
 class Solution {
-    int maxDepth;
+
     public int depthSumInverse(List<NestedInteger> nestedList) {
-        this.maxDepth = 0 ;
-        int sum = 0 ; 
-
-        int [] ans = new int [2];
-        for(NestedInteger num : nestedList){ 
-            int [] temp = helper(num, 1);
-            ans[0] += temp[0];
-            ans[1] += temp[1];
+        int totalSum = 0;
+        int prevSum = 0;
+        Queue<NestedInteger> queue = new LinkedList<>();
+        // add everthing to the queue
+        for (NestedInteger integer : nestedList) {
+            queue.add(integer);
         }
-        return (maxDepth + 1 )* (ans[0]) - ans[1]  ; 
-    }
-    int[] helper(NestedInteger integer, int depth){
-        if(integer == null) return new int []{0,0} ;
-        maxDepth = Math.max(maxDepth, depth);
-        if(integer.isInteger()) {
-            return new int [] {integer.getInteger() ,depth * integer.getInteger()};
-        }else{
-            int sum = 0 ;
-            int weightedSum = 0 ;
-            for(NestedInteger num : integer.getList()){
-                int [] ans = helper(num, depth + 1);
-                sum += ans[0];
-                weightedSum += ans[1];
+        // process each level
+        while (!queue.isEmpty()) {
+            int size = queue.size();
+            for (int i = 0; i < size; i++) {
+                NestedInteger nestedInteger = queue.poll();
+                if (nestedInteger.isInteger()) {
+                    prevSum += nestedInteger.getInteger();
+                } else {
+                    queue.addAll(nestedInteger.getList());
+                }
+
             }
+            totalSum += prevSum;
 
-        return new int [] {sum,weightedSum} ;}
-
+        }
+        return totalSum;
     }
-    
+
 }
