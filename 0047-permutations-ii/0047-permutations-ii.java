@@ -1,34 +1,34 @@
-import java.util.*;
-
 class Solution {
-    List<List<Integer>> ans = new ArrayList<>();
+    Set<List<Integer>> ans;
 
     public List<List<Integer>> permuteUnique(int[] nums) {
-        Arrays.sort(nums);
-        boolean[] used = new boolean[nums.length];
-        dfs(nums, used, new ArrayList<>());
-        return ans;
+        this.ans = new HashSet<>();
+        List<Integer> included = new ArrayList<>();
+        boolean[] visited = new boolean[nums.length];
+        backTrack(nums, 0, visited, included);
+        return new ArrayList<>(ans);
     }
 
-    void dfs(int[] nums, boolean[] used, List<Integer> list) {
-        if (list.size() == nums.length) {
-            ans.add(new ArrayList<>(list));
-            return;
+    public void backTrack(int[] nums, int index, boolean[] visited, List<Integer> included) {
+        if (index == nums.length) {
+            if (included.size() == nums.length) {
+                ans.add(new ArrayList<>(included));
+                return;
+            }
+        }
+        for(int i = 0; i < nums.length; i++){
+            if(visited[i]){
+                continue;
+            }
+            included.add(nums[i]);
+            visited[i] = true;
+
+            backTrack(nums, index + 1, visited, included);
+
+            included.remove(included.size() - 1);
+            visited[i] = false;
+            
         }
 
-        for (int i = 0; i < nums.length; i++) {
-            if (used[i]) continue;
-
-            // skip duplicates
-            if (i > 0 && nums[i] == nums[i - 1] && !used[i - 1]) continue;
-
-            used[i] = true;
-            list.add(nums[i]);
-
-            dfs(nums, used, list);
-
-            list.remove(list.size() - 1);
-            used[i] = false;
-        }
     }
 }
