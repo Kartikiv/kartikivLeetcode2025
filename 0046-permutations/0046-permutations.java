@@ -1,27 +1,34 @@
-import java.util.*;
-
 class Solution {
-    List<List<Integer>> ans = new ArrayList<>();
-    public List<List<Integer>> permute(int[] nums) {
-    List<Integer> list = new ArrayList<>();
-    boolean used[] = new boolean[nums.length];
-    dfs(nums,used,list);
+    List<List<Integer>> ans;
 
-    return  ans;
+    public List<List<Integer>> permute(int[] nums) {
+        this.ans = new ArrayList<>();
+        List<Integer> included = new ArrayList<>();
+        boolean[] visited = new boolean[nums.length];
+        backTrack(nums, 0, visited, included);
+        return ans;
     }
-     void dfs(int [] nums , boolean [] used, List<Integer> list){
-        if(list.size() == nums.length){
-            ans.add(new ArrayList<>(list));
-            return;
-        }
-        for(int i = 0 ; i < nums.length; i++){
-            if(!used[i]){
-                list.add(nums[i]);
-                used[i] = true;
-                dfs(nums, used,list);
-                list.remove(list.size() - 1);
-                used[i] = false;
+
+    public void backTrack(int[] nums, int index, boolean[] visited, List<Integer> included) {
+        if (index == nums.length) {
+            if (included.size() == nums.length) {
+                ans.addLast(new ArrayList<>(included));
+                return;
             }
         }
+        for(int i = 0; i < nums.length; i++){
+            if(visited[i]){
+                continue;
+            }
+            included.add(nums[i]);
+            visited[i] = true;
+
+            backTrack(nums, index + 1, visited, included);
+
+            included.remove(included.size() - 1);
+            visited[i] = false;
+            
+        }
+
     }
 }
