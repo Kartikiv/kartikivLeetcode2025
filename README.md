@@ -95,6 +95,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0496-next-greater-element-i](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0496-next-greater-element-i) |
 | [0503-next-greater-element-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0503-next-greater-element-ii) |
 | [0682-baseball-game](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0682-baseball-game) |
+| [0716-max-stack](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0716-max-stack) |
 | [0739-daily-temperatures](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0739-daily-temperatures) |
 | [0883-car-fleet](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0883-car-fleet) |
 ## Design
@@ -119,6 +120,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0703-kth-largest-element-in-a-stream](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0703-kth-largest-element-in-a-stream) |
 | [0705-design-hashset](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0705-design-hashset) |
 | [0706-design-hashmap](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0706-design-hashmap) |
+| [0716-max-stack](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0716-max-stack) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0789-kth-largest-element-in-a-stream) |
 | [0911-online-election](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0911-online-election) |
 | [0933-number-of-recent-calls](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0933-number-of-recent-calls) |
@@ -395,6 +397,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0622-design-circular-queue](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0622-design-circular-queue) |
 | [0705-design-hashset](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0705-design-hashset) |
 | [0706-design-hashmap](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0706-design-hashmap) |
+| [0716-max-stack](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0716-max-stack) |
 | [0876-middle-of-the-linked-list](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0876-middle-of-the-linked-list) |
 | [2807-insert-greatest-common-divisors-in-linked-list](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/2807-insert-greatest-common-divisors-in-linked-list) |
 ## Recursion
@@ -477,6 +480,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0146-lru-cache](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0146-lru-cache) |
 | [0460-lfu-cache](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0460-lfu-cache) |
+| [0716-max-stack](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0716-max-stack) |
 ## Divide and Conquer
 |  |
 | ------- |
@@ -914,6 +918,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0327-count-of-range-sum](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0327-count-of-range-sum) |
+| [0716-max-stack](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0716-max-stack) |
 | [1438-longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1438-longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit) |
 ## Binary Indexed Tree
 |  |
