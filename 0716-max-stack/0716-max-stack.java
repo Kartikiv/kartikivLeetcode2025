@@ -1,98 +1,83 @@
 import java.util.*;
 
-class ListNode {
-    int val;
-    ListNode prev;
-    ListNode next;
-
-    public ListNode(int val) {
-        this.val = val;
-    }
-}
-
 class MaxStack {
-    ListNode tail;
-    TreeMap<Integer, List<ListNode>> map;
+
+    private static class ListNode<T> {
+        T val;
+        ListNode<T> prev;
+        ListNode<T> next;
+
+        ListNode(T val) {
+            this.val = val;
+        }
+    }
+
+    private ListNode<Integer> tail;
+    private TreeMap<Integer, List<ListNode<Integer>>> map;
 
     public MaxStack() {
-        this.map = new TreeMap<>();
         this.tail = null;
+        this.map = new TreeMap<>();
     }
 
     public void push(int x) {
-        ListNode newNode = new ListNode(x);
+        ListNode<Integer> node = new ListNode<>(x);
 
         if (tail == null) {
-            tail = newNode;
+            tail = node;
         } else {
-            tail.next = newNode;
-            newNode.prev = tail;
-            tail = newNode;
+            tail.next = node;
+            node.prev = tail;
+            tail = node;
         }
 
-        map.computeIfAbsent(x, k -> new ArrayList<>()).add(newNode);
+        map.computeIfAbsent(x, k -> new ArrayList<>()).add(node);
     }
 
     public int pop() {
-        if (tail == null) {
-            return Integer.MIN_VALUE;
-        }
-
-        ListNode removedNode = tail;
+        ListNode<Integer> node = tail;
         tail = tail.prev;
 
         if (tail != null) {
             tail.next = null;
         }
 
-        List<ListNode> list = map.get(removedNode.val);
+        List<ListNode<Integer>> list = map.get(node.val);
         list.remove(list.size() - 1);
         if (list.isEmpty()) {
-            map.remove(removedNode.val);
+            map.remove(node.val);
         }
 
-        return removedNode.val;
+        return node.val;
     }
 
     public int top() {
-        if (tail == null) {
-            return Integer.MIN_VALUE;
-        }
         return tail.val;
     }
 
     public int peekMax() {
-        if (map.isEmpty()) {
-            return Integer.MIN_VALUE;
-        }
         return map.lastKey();
     }
 
     public int popMax() {
-        if (map.isEmpty()) {
-            return Integer.MIN_VALUE;
-        }
-
         int max = map.lastKey();
-        List<ListNode> list = map.get(max);
-        ListNode maxNode = list.remove(list.size() - 1);
+        List<ListNode<Integer>> list = map.get(max);
 
+        ListNode<Integer> node = list.remove(list.size() - 1);
         if (list.isEmpty()) {
             map.remove(max);
         }
 
-        if (maxNode.prev != null) {
-            maxNode.prev.next = maxNode.next;
+        if (node.prev != null) {
+            node.prev.next = node.next;
+        }
+        if (node.next != null) {
+            node.next.prev = node.prev;
+        }
+        if (node == tail) {
+            tail = node.prev;
         }
 
-        if (maxNode.next != null) {
-            maxNode.next.prev = maxNode.prev;
-        }
-
-        if (maxNode == tail) {
-            tail = maxNode.prev;
-        }
-
-        return maxNode.val;
+        return node.val;
     }
 }
