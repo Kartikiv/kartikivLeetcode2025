@@ -257,6 +257,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0002-add-two-numbers](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0002-add-two-numbers) |
 | [0013-roman-to-integer](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0013-roman-to-integer) |
+| [0029-divide-two-integers](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0029-divide-two-integers) |
 | [0050-powx-n](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0050-powx-n) |
 | [0062-unique-paths](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0062-unique-paths) |
 | [0066-plus-one](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0066-plus-one) |
@@ -720,6 +721,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Bit Manipulation
 |  |
 | ------- |
+| [0029-divide-two-integers](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0029-divide-two-integers) |
 | [0067-add-binary](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0067-add-binary) |
 | [0078-subsets](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0078-subsets) |
 | [0090-subsets-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0090-subsets-ii) |
