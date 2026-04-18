@@ -284,6 +284,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1636-number-of-substrings-with-only-1s](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1636-number-of-substrings-with-only-1s) |
 | [1863-sum-of-all-subset-xor-totals](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1863-sum-of-all-subset-xor-totals) |
 | [2807-insert-greatest-common-divisors-in-linked-list](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/2807-insert-greatest-common-divisors-in-linked-list) |
+| [3783-mirror-distance-of-an-integer](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/3783-mirror-distance-of-an-integer) |
 ## Sorting
 |  |
 | ------- |
