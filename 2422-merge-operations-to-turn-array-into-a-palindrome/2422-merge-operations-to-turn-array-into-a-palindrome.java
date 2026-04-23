@@ -2,7 +2,7 @@ class Solution {
     public int minimumOperations(int[] nums) {
         int left = 0;
         int right = nums.length - 1;
-        int leftval = nums[left];
+        int leftVal = nums[left];
         int rightVal = nums[right];
         int operations = 0;
         while (left < right) {
@@ -11,16 +11,16 @@ class Solution {
             // not equal merge small part 
             // i.e leftVal smaller than rightVal merge left 
             // else merge right val
-            if (leftval == rightVal) {
+            if (leftVal == rightVal) {
                 // move both
                 left += 1;
                 right -= 1;
-                leftval = nums[left];
+                leftVal = nums[left];
                 rightVal = nums[right];
-            } else if (leftval < rightVal) {
+            } else if (leftVal < rightVal) {
                 left += 1;
                 // merge left
-                leftval += nums[left];
+                leftVal += nums[left];
                 operations++;
             } else {
                 right -= 1;
