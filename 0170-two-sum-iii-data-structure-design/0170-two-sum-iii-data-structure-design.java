@@ -13,10 +13,9 @@ class TwoSum {
 
         for (int val : numMap.keySet()) {
             if (numMap.containsKey(value - val)) {
-                if (val == value - val && numMap.get(val) <= 1) {
-                } else {
+                if (! (val == value - val && numMap.get(val) <= 1) ) {
                     return true;
-                }
+                } 
             }
         }
 
