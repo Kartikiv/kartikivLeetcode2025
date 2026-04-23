@@ -15,6 +15,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0141-linked-list-cycle](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0141-linked-list-cycle) |
 | [0142-linked-list-cycle-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0142-linked-list-cycle-ii) |
 | [0143-reorder-list](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0143-reorder-list) |
+| [0170-two-sum-iii-data-structure-design](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0170-two-sum-iii-data-structure-design) |
 | [0202-happy-number](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0202-happy-number) |
 | [0234-palindrome-linked-list](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0234-palindrome-linked-list) |
 | [0295-find-median-from-data-stream](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0295-find-median-from-data-stream) |
@@ -109,6 +110,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0146-lru-cache](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0146-lru-cache) |
 | [0155-min-stack](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0155-min-stack) |
+| [0170-two-sum-iii-data-structure-design](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0170-two-sum-iii-data-structure-design) |
 | [0208-implement-trie-prefix-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0208-implement-trie-prefix-tree) |
 | [0211-design-add-and-search-words-data-structure](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0211-design-add-and-search-words-data-structure) |
 | [0232-implement-queue-using-stacks](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0232-implement-queue-using-stacks) |
@@ -167,6 +169,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0162-find-peak-element](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0162-find-peak-element) |
 | [0169-majority-element](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0169-majority-element) |
+| [0170-two-sum-iii-data-structure-design](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0170-two-sum-iii-data-structure-design) |
 | [0198-house-robber](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0198-house-robber) |
 | [0200-number-of-islands](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0200-number-of-islands) |
 | [0209-minimum-size-subarray-sum](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0209-minimum-size-subarray-sum) |
@@ -448,6 +451,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0142-linked-list-cycle-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0142-linked-list-cycle-ii) |
 | [0146-lru-cache](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0146-lru-cache) |
 | [0169-majority-element](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0169-majority-element) |
+| [0170-two-sum-iii-data-structure-design](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0170-two-sum-iii-data-structure-design) |
 | [0202-happy-number](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0202-happy-number) |
 | [0205-isomorphic-strings](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0205-isomorphic-strings) |
 | [0208-implement-trie-prefix-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0208-implement-trie-prefix-tree) |
@@ -694,6 +698,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Data Stream
 |  |
 | ------- |
+| [0170-two-sum-iii-data-structure-design](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0170-two-sum-iii-data-structure-design) |
 | [0295-find-median-from-data-stream](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0295-find-median-from-data-stream) |
 | [0346-moving-average-from-data-stream](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0346-moving-average-from-data-stream) |
 | [0362-design-hit-counter](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0362-design-hit-counter) |
