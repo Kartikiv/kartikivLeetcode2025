@@ -23,6 +23,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0647-palindromic-substrings](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0647-palindromic-substrings) |
 | [0658-find-k-closest-elements](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0658-find-k-closest-elements) |
 | [0680-valid-palindrome-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0680-valid-palindrome-ii) |
+| [0832-flipping-an-image](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0832-flipping-an-image) |
 | [0876-middle-of-the-linked-list](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0876-middle-of-the-linked-list) |
 | [0986-interval-list-intersections](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0986-interval-list-intersections) |
 | [1679-max-number-of-k-sum-pairs](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1679-max-number-of-k-sum-pairs) |
@@ -222,6 +223,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0733-flood-fill](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0733-flood-fill) |
 | [0739-daily-temperatures](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0739-daily-temperatures) |
 | [0746-min-cost-climbing-stairs](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0746-min-cost-climbing-stairs) |
+| [0832-flipping-an-image](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0832-flipping-an-image) |
 | [0860-lemonade-change](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0860-lemonade-change) |
 | [0867-transpose-matrix](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0867-transpose-matrix) |
 | [0875-koko-eating-bananas](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0875-koko-eating-bananas) |
@@ -753,6 +755,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0338-counting-bits](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0338-counting-bits) |
 | [0464-can-i-win](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0464-can-i-win) |
 | [0698-partition-to-k-equal-sum-subsets](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0698-partition-to-k-equal-sum-subsets) |
+| [0832-flipping-an-image](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0832-flipping-an-image) |
 | [1863-sum-of-all-subset-xor-totals](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1863-sum-of-all-subset-xor-totals) |
 ## Matrix
 |  |
@@ -768,6 +771,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0463-island-perimeter](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0463-island-perimeter) |
 | [0695-max-area-of-island](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0695-max-area-of-island) |
 | [0733-flood-fill](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0733-flood-fill) |
+| [0832-flipping-an-image](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0832-flipping-an-image) |
 | [0867-transpose-matrix](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0867-transpose-matrix) |
 | [0994-rotting-oranges](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0994-rotting-oranges) |
 | [1036-rotting-oranges](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1036-rotting-oranges) |
@@ -877,6 +881,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0067-add-binary](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0067-add-binary) |
 | [0682-baseball-game](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0682-baseball-game) |
+| [0832-flipping-an-image](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0832-flipping-an-image) |
 | [0867-transpose-matrix](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0867-transpose-matrix) |
 | [1094-car-pooling](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1094-car-pooling) |
 | [1929-concatenation-of-array](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1929-concatenation-of-array) |
