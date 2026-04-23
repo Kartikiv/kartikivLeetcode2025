@@ -27,16 +27,19 @@ class MyThread extends Thread {
 
 class Solution {
     public int[][] flipAndInvertImage(int[][] image){
-        // this is heavily parallalizable 
-        for (int i = 0; i < image.length; i++) {
-            try{
-            MyThread newThread = new MyThread(image[i]);
-            newThread.start();
-            newThread.join();
-            image[i] = newThread.row;
-            }
-            catch(Exception e){
+        MyThread[] threads = new MyThread[image.length];
 
+        for (int i = 0; i < image.length; i++) {
+            threads[i] = new MyThread(image[i]);
+            threads[i].start();
+        }
+
+        for (int i = 0; i < image.length; i++) {
+            try {
+                threads[i].join();
+            } catch (InterruptedException e) {
+                Thread.currentThread().interrupt();
+                throw new RuntimeException(e);
             }
         }
 
