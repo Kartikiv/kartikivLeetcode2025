@@ -1,27 +1,35 @@
 class Solution {
     public int rob(int[] nums) {
-        if (nums.length == 1)
-            return nums[0];
-        if (nums.length == 2)
-            return Math.max(nums[0], nums[1]);
+        int n = nums.length;
+        if (n == 1) return nums[0];
 
-        int secondPreviousHouse = nums[0];
-        int previousHouse = Math.max(nums[0], nums[1]);
+        // Rob houses [0 → n-2] (exclude last)
+        int[] robExcludingLast = new int[2];
 
-        int secondPreviousHouse1 = 0;
-        int previousHouse1 = nums[1];
+        // Rob houses [1 → n-1] (exclude first)
+        int[] robExcludingFirst = new int[2];
 
-        for (int i = 2; i < nums.length; i++) {
-            int temp = previousHouse;
-            if(i < nums.length - 1){
-            previousHouse = Math.max(previousHouse, secondPreviousHouse + nums[i]);
-            secondPreviousHouse = temp;
+        for (int i = 0; i < n; i++) {
+
+            // Case 1: exclude last house
+            if (i <= n - 2) {
+                int bestWithCurrent =
+                        Math.max(robExcludingLast[1], robExcludingLast[0] + nums[i]);
+
+                robExcludingLast[0] = robExcludingLast[1];
+                robExcludingLast[1] = bestWithCurrent;
             }
 
-            temp = previousHouse1;
-            previousHouse1 = Math.max(previousHouse1, secondPreviousHouse1 + nums[i]);
-            secondPreviousHouse1 = temp;
+            // Case 2: exclude first house
+            if (i >= 1) {
+                int bestWithCurrent =
+                        Math.max(robExcludingFirst[1], robExcludingFirst[0] + nums[i]);
+
+                robExcludingFirst[0] = robExcludingFirst[1];
+                robExcludingFirst[1] = bestWithCurrent;
+            }
         }
-        return Math.max(previousHouse1, previousHouse);
+
+        return Math.max(robExcludingLast[1], robExcludingFirst[1]);
     }
 }
