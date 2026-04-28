@@ -270,6 +270,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1863-sum-of-all-subset-xor-totals](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1863-sum-of-all-subset-xor-totals) |
 | [1929-concatenation-of-array](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1929-concatenation-of-array) |
 | [1991-find-the-middle-index-in-array](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1991-find-the-middle-index-in-array) |
+| [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/2033-minimum-operations-to-make-a-uni-value-grid) |
 | [2187-minimum-time-to-complete-trips](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/2187-minimum-time-to-complete-trips) |
 | [2422-merge-operations-to-turn-array-into-a-palindrome](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/2422-merge-operations-to-turn-array-into-a-palindrome) |
 | [2461-maximum-sum-of-distinct-subarrays-with-length-k](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/2461-maximum-sum-of-distinct-subarrays-with-length-k) |
@@ -304,6 +305,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1248-count-number-of-nice-subarrays](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1248-count-number-of-nice-subarrays) |
 | [1636-number-of-substrings-with-only-1s](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1636-number-of-substrings-with-only-1s) |
 | [1863-sum-of-all-subset-xor-totals](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1863-sum-of-all-subset-xor-totals) |
+| [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/2033-minimum-operations-to-make-a-uni-value-grid) |
 | [2807-insert-greatest-common-divisors-in-linked-list](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/2807-insert-greatest-common-divisors-in-linked-list) |
 | [3783-mirror-distance-of-an-integer](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/3783-mirror-distance-of-an-integer) |
 ## Sorting
@@ -329,6 +331,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1552-magnetic-force-between-two-balls](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1552-magnetic-force-between-two-balls) |
 | [1679-max-number-of-k-sum-pairs](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1679-max-number-of-k-sum-pairs) |
 | [1834-single-threaded-cpu](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1834-single-threaded-cpu) |
+| [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/2033-minimum-operations-to-make-a-uni-value-grid) |
 ## Monotonic Stack
 |  |
 | ------- |
@@ -787,6 +790,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0994-rotting-oranges](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0994-rotting-oranges) |
 | [1036-rotting-oranges](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1036-rotting-oranges) |
 | [1074-number-of-submatrices-that-sum-to-target](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1074-number-of-submatrices-that-sum-to-target) |
+| [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/2033-minimum-operations-to-make-a-uni-value-grid) |
 ## Queue
 |  |
 | ------- |
