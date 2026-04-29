@@ -1,72 +1,26 @@
 class Solution {
+    Integer[][] memo;
+
     public int change(int amount, int[] coins) {
+        memo = new Integer[coins.length][amount + 1];
+        return dfs(0, amount, coins);
+    }
 
-        /*
-         below[j] = number of ways to form amount j
-                    using coins from (i+1) to end
-         top[j]   = number of ways to form amount j
-                    using coins from i to end
-        */
-        int[] below = new int[amount + 1];
-        int[] top   = new int[amount + 1];
+    private int dfs(int index, int amount, int[] coins) {
+        if (amount == 0) return 1;
+        if (amount < 0 || index == coins.length) return 0;
 
-        /*
-         Base case:
-         There is exactly 1 way to make amount 0 — choose nothing.
-         With no coins left, only below[0] = 1 is valid.
-        */
-        below[0] = 1;
-
-        /*
-         Iterate coins from last to first to enforce combinations
-         (so order does NOT matter).
-        */
-        for (int i = coins.length - 1; i >= 0; i--) {
-
-            /*
-             For every coin, amount 0 is always achievable in 1 way:
-             by choosing no coins.
-            */
-            top[0] = 1;
-            int coin = coins[i];
-
-            /*
-             For each target amount j:
-             - Exclude current coin: use result from below[j]
-             - Include current coin: stay on same row (top)
-               and reduce amount by coin value
-            */
-            for (int j = 1; j <= amount; j++) {
-
-                /*
-                 Exclude case:
-                 Do not use current coin at all.
-                */
-                top[j] = below[j];
-
-                /*
-                 Include case:
-                 Use current coin at least once.
-                 Since coins are unlimited, we stay in same row (top).
-                */
-                if (j >= coin) {
-                    top[j] += top[j - coin];
-                }
-            }
-
-            /*
-             Move current row up for next iteration
-             and reset top for reuse.
-            */
-            below = top;
-            top = new int[amount + 1];
+        if (memo[index][amount] != null) {
+            return memo[index][amount];
         }
 
-        /*
-         Final answer:
-         Number of ways to form `amount`
-         using all coins.
-        */
-        return below[amount];
+        // take current coin (stay on same index)
+        int take = dfs(index, amount - coins[index], coins);
+
+        // skip current coin (move to next)
+        int skip = dfs(index + 1, amount, coins);
+
+        memo[index][amount] = take + skip;
+        return memo[index][amount];
     }
 }
