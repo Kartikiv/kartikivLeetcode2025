@@ -34,6 +34,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1793-maximum-score-of-a-good-subarray](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1793-maximum-score-of-a-good-subarray) |
 | [1855-maximum-distance-between-a-pair-of-values](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1855-maximum-distance-between-a-pair-of-values) |
 | [2422-merge-operations-to-turn-array-into-a-palindrome](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/2422-merge-operations-to-turn-array-into-a-palindrome) |
+| [2540-minimum-common-value](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/2540-minimum-common-value) |
 ## String
 |  |
 | ------- |
@@ -276,6 +277,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2187-minimum-time-to-complete-trips](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/2187-minimum-time-to-complete-trips) |
 | [2422-merge-operations-to-turn-array-into-a-palindrome](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/2422-merge-operations-to-turn-array-into-a-palindrome) |
 | [2461-maximum-sum-of-distinct-subarrays-with-length-k](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/2461-maximum-sum-of-distinct-subarrays-with-length-k) |
+| [2540-minimum-common-value](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/2540-minimum-common-value) |
 ## Math
 |  |
 | ------- |
@@ -412,6 +414,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1793-maximum-score-of-a-good-subarray](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1793-maximum-score-of-a-good-subarray) |
 | [1855-maximum-distance-between-a-pair-of-values](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1855-maximum-distance-between-a-pair-of-values) |
 | [2187-minimum-time-to-complete-trips](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/2187-minimum-time-to-complete-trips) |
+| [2540-minimum-common-value](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/2540-minimum-common-value) |
 ## Linked List
 |  |
 | ------- |
@@ -514,6 +517,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1679-max-number-of-k-sum-pairs](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1679-max-number-of-k-sum-pairs) |
 | [1695-maximum-erasure-value](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1695-maximum-erasure-value) |
 | [2461-maximum-sum-of-distinct-subarrays-with-length-k](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/2461-maximum-sum-of-distinct-subarrays-with-length-k) |
+| [2540-minimum-common-value](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/2540-minimum-common-value) |
 ## Doubly-Linked List
 |  |
 | ------- |
