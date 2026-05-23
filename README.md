@@ -267,6 +267,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1679-max-number-of-k-sum-pairs](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1679-max-number-of-k-sum-pairs) |
 | [1695-maximum-erasure-value](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1695-maximum-erasure-value) |
 | [1732-find-the-highest-altitude](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1732-find-the-highest-altitude) |
+| [1752-check-if-array-is-sorted-and-rotated](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1752-check-if-array-is-sorted-and-rotated) |
 | [1793-maximum-score-of-a-good-subarray](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1793-maximum-score-of-a-good-subarray) |
 | [1834-single-threaded-cpu](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1834-single-threaded-cpu) |
 | [1855-maximum-distance-between-a-pair-of-values](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1855-maximum-distance-between-a-pair-of-values) |
