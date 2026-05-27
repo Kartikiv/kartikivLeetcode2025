@@ -25,10 +25,12 @@ class Solution {
     return true; 
     }
     public boolean checkRange(char c){ 
-        if(c < 48) return false; 
+        /* if(c < 48) return false; 
         if(c > 57 && c < 65) return false; 
         if (c > 90 && c < 97) return false; 
-        if(c > 122) return false; 
+        if(c > 122) return false; */ 
+        if(! Character.isLetterOrDigit(c)) return false; 
+        
     return true; 
     }
 }
