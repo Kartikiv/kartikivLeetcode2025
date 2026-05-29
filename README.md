@@ -21,6 +21,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0202-happy-number](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0202-happy-number) |
 | [0234-palindrome-linked-list](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0234-palindrome-linked-list) |
 | [0295-find-median-from-data-stream](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0295-find-median-from-data-stream) |
+| [0350-intersection-of-two-arrays-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0567-permutation-in-string](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0567-permutation-in-string) |
 | [0647-palindromic-substrings](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0647-palindromic-substrings) |
 | [0658-find-k-closest-elements](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0658-find-k-closest-elements) |
@@ -209,6 +210,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0327-count-of-range-sum](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0327-count-of-range-sum) |
 | [0346-moving-average-from-data-stream](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0346-moving-average-from-data-stream) |
 | [0347-top-k-frequent-elements](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0347-top-k-frequent-elements) |
+| [0350-intersection-of-two-arrays-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0362-design-hit-counter](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0362-design-hit-counter) |
 | [0380-insert-delete-getrandom-o1](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0380-insert-delete-getrandom-o1) |
 | [0416-partition-equal-subset-sum](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0416-partition-equal-subset-sum) |
@@ -332,6 +334,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0268-missing-number](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0268-missing-number) |
 | [0295-find-median-from-data-stream](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0295-find-median-from-data-stream) |
 | [0347-top-k-frequent-elements](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0347-top-k-frequent-elements) |
+| [0350-intersection-of-two-arrays-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0621-task-scheduler](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0621-task-scheduler) |
 | [0658-find-k-closest-elements](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0658-find-k-closest-elements) |
 | [0721-accounts-merge](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0721-accounts-merge) |
@@ -400,6 +403,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0268-missing-number](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0268-missing-number) |
 | [0300-longest-increasing-subsequence](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0300-longest-increasing-subsequence) |
 | [0327-count-of-range-sum](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0327-count-of-range-sum) |
+| [0350-intersection-of-two-arrays-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0362-design-hit-counter](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0362-design-hit-counter) |
 | [0367-valid-perfect-square](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0367-valid-perfect-square) |
 | [0374-guess-number-higher-or-lower](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0374-guess-number-higher-or-lower) |
@@ -492,6 +496,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0325-maximum-size-subarray-sum-equals-k](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0325-maximum-size-subarray-sum-equals-k) |
 | [0340-longest-substring-with-at-most-k-distinct-characters](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0340-longest-substring-with-at-most-k-distinct-characters) |
 | [0347-top-k-frequent-elements](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0347-top-k-frequent-elements) |
+| [0350-intersection-of-two-arrays-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0355-design-twitter](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0355-design-twitter) |
 | [0380-insert-delete-getrandom-o1](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0380-insert-delete-getrandom-o1) |
 | [0387-first-unique-character-in-a-string](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0387-first-unique-character-in-a-string) |
