@@ -1,22 +1,29 @@
 class Solution {
     public boolean wordPattern(String pattern, String s) {
-        Map mapIndex = new HashMap<>();
-        String[] words = s.split(" ");
+        //encode the two string and compare 
 
-        if (words.length != pattern.length()) return false;
+        return encodePattern(pattern).equals(encodeString(s));
+    }
 
-        for (int i = 0; i < words.length; i++) {
-            char c = pattern.charAt(i);
-            String w = words[i];
-
-            mapIndex.putIfAbsent(c, i);
-            mapIndex.putIfAbsent(w, i);
-
-            if (!mapIndex.get(c).equals(mapIndex.get(w))) {
-                return false;
-            }
+    public String encodePattern(String pattern) {
+        int[] charMap = new int[26];
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < pattern.length(); i++) {
+            if (charMap[pattern.charAt(i) - 'a'] == 0)
+                charMap[pattern.charAt(i) - 'a'] = i + 1;
+            sb.append(charMap[pattern.charAt(i) - 'a']).append(":");
         }
+        return sb.toString();
+    }
 
-        return true;
+    public String encodeString(String s) {
+        String[] divideStrings = s.split("\\s");
+        StringBuilder sb = new StringBuilder();
+        HashMap<String, Integer> sMap = new HashMap<>();
+        for (int i = 0; i < divideStrings.length; i++) {
+            sMap.putIfAbsent(divideStrings[i], i + 1);
+            sb.append(sMap.get(divideStrings[i])).append(":"); // adding a delimeter 
+        }
+        return sb.toString();
     }
 }
