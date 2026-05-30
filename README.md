@@ -283,6 +283,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1991-find-the-middle-index-in-array](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1991-find-the-middle-index-in-array) |
 | [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/2033-minimum-operations-to-make-a-uni-value-grid) |
 | [2187-minimum-time-to-complete-trips](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/2187-minimum-time-to-complete-trips) |
+| [2352-equal-row-and-column-pairs](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/2352-equal-row-and-column-pairs) |
 | [2422-merge-operations-to-turn-array-into-a-palindrome](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/2422-merge-operations-to-turn-array-into-a-palindrome) |
 | [2461-maximum-sum-of-distinct-subarrays-with-length-k](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/2461-maximum-sum-of-distinct-subarrays-with-length-k) |
 | [2540-minimum-common-value](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/2540-minimum-common-value) |
@@ -531,6 +532,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1679-max-number-of-k-sum-pairs](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1679-max-number-of-k-sum-pairs) |
 | [1695-maximum-erasure-value](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1695-maximum-erasure-value) |
 | [1726-tuple-with-same-product](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1726-tuple-with-same-product) |
+| [2352-equal-row-and-column-pairs](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/2352-equal-row-and-column-pairs) |
 | [2461-maximum-sum-of-distinct-subarrays-with-length-k](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/2461-maximum-sum-of-distinct-subarrays-with-length-k) |
 | [2540-minimum-common-value](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/2540-minimum-common-value) |
 ## Doubly-Linked List
@@ -818,6 +820,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1036-rotting-oranges](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1036-rotting-oranges) |
 | [1074-number-of-submatrices-that-sum-to-target](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1074-number-of-submatrices-that-sum-to-target) |
 | [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/2033-minimum-operations-to-make-a-uni-value-grid) |
+| [2352-equal-row-and-column-pairs](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/2352-equal-row-and-column-pairs) |
 ## Queue
 |  |
 | ------- |
@@ -928,6 +931,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0867-transpose-matrix](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0867-transpose-matrix) |
 | [1094-car-pooling](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1094-car-pooling) |
 | [1929-concatenation-of-array](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1929-concatenation-of-array) |
+| [2352-equal-row-and-column-pairs](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/2352-equal-row-and-column-pairs) |
 ## Enumeration
 |  |
 | ------- |
