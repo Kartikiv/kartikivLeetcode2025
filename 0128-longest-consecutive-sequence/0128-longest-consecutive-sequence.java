@@ -1,43 +1,26 @@
-/**
- * Finds the length of the longest consecutive sequence in an unsorted array of integers.
- * This method uses a HashSet to achieve O(n) time complexity. It first adds all numbers
- * to the set, then iterates through the set to find the start of each sequence (a number
- * whose predecessor is not in the set). For each such start, it counts the length of the
- * consecutive sequence. The search can terminate early if the longest streak found so far
- * is at least half the length of the input array plus one.
- * @param nums the input array of integers
- * @return the length of the longest consecutive sequence
- */
-import java.util.HashSet;
-
 class Solution {
- 
     public int longestConsecutive(int[] nums) {
+        // start from the beginning
+        int finalCount = 0;
         HashSet<Integer> numSet = new HashSet<>();
         for (int num : nums) {
-            
             numSet.add(num);
         }
-        int longestStreak = 0;
-
-        for (int num : numSet) {
-            if (!numSet.contains(num - 1)) {
-                int currentNum = num;
-                int currentStreak = 1;
-
-                while (numSet.contains(currentNum + 1)) {
-                    currentNum += 1;
-                    currentStreak += 1;
+        for (int i = 0; i < nums.length; i++) {
+            // if we are the begining of the sequence
+            if (!numSet.contains(nums[i] - 1)) {
+                int num = nums[i];
+                int count = 0;
+                while (numSet.contains(num)) {
+                    count++;
+                    num++;
                 }
-
-                longestStreak = Math.max(longestStreak, currentStreak);
-                if (longestStreak >= nums.length / 2 + 1) {
-                    break;
-                }
+                finalCount = Math.max(count, finalCount);
+                if (finalCount > nums.length / 2)
+                    return finalCount;
             }
         }
-        
 
-        return longestStreak;
+        return finalCount;
     }
 }
