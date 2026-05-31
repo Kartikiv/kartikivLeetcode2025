@@ -1,20 +1,15 @@
-import java.util.*;
 class Solution {
     public boolean checkSubarraySum(int[] nums, int k) {
-        // if we have seen the reminder before we know that the total - seen reminder is 
-        // divisible by 6 
-        HashMap<Integer, Integer> map = new HashMap<>();
-        int sum = 0 ; 
-        for (int i = 0; i < nums.length; i++) {
-            sum += nums[i]; 
-            map.put(0,0);
-            if(map.containsKey(sum % k)){
-                if(i - map.get(sum % k) + 1 >= 2)
-                return  true;
-            }
-            map.putIfAbsent(sum % k, i + 1);
+        HashMap<Integer,Integer> reminderMap = new HashMap<>(); 
+        reminderMap.put(0, -1);
+        int sum = 0; 
+        for(int i = 0 ; i < nums.length; i++){ 
+            sum += nums[i];
+            int reminder = sum % k ; 
+            if(reminderMap.containsKey(reminder) && i - reminderMap.get(reminder) >= 2) return true;
+            // add the reminder to the map 
+            reminderMap.putIfAbsent(reminder, i);
         }
-
     return false; 
-}
+    }
 }
