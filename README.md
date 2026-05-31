@@ -288,6 +288,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1991-find-the-middle-index-in-array](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1991-find-the-middle-index-in-array) |
 | [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/2033-minimum-operations-to-make-a-uni-value-grid) |
 | [2187-minimum-time-to-complete-trips](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/2187-minimum-time-to-complete-trips) |
+| [2270-number-of-ways-to-split-array](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/2270-number-of-ways-to-split-array) |
 | [2352-equal-row-and-column-pairs](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/2352-equal-row-and-column-pairs) |
 | [2422-merge-operations-to-turn-array-into-a-palindrome](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/2422-merge-operations-to-turn-array-into-a-palindrome) |
 | [2461-maximum-sum-of-distinct-subarrays-with-length-k](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/2461-maximum-sum-of-distinct-subarrays-with-length-k) |
@@ -1002,6 +1003,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1658-minimum-operations-to-reduce-x-to-zero](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1658-minimum-operations-to-reduce-x-to-zero) |
 | [1732-find-the-highest-altitude](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1732-find-the-highest-altitude) |
 | [1991-find-the-middle-index-in-array](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1991-find-the-middle-index-in-array) |
+| [2270-number-of-ways-to-split-array](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/2270-number-of-ways-to-split-array) |
 ## Sweep Line
 |  |
 | ------- |
