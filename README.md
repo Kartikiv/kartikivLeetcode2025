@@ -73,6 +73,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0290-word-pattern](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0290-word-pattern) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0340-longest-substring-with-at-most-k-distinct-characters](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0340-longest-substring-with-at-most-k-distinct-characters) |
+| [0383-ransom-note](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0383-ransom-note) |
 | [0387-first-unique-character-in-a-string](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0387-first-unique-character-in-a-string) |
 | [0394-decode-string](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0394-decode-string) |
 | [0424-longest-repeating-character-replacement](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0424-longest-repeating-character-replacement) |
@@ -507,6 +508,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0350-intersection-of-two-arrays-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0355-design-twitter](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0355-design-twitter) |
 | [0380-insert-delete-getrandom-o1](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0380-insert-delete-getrandom-o1) |
+| [0383-ransom-note](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0383-ransom-note) |
 | [0387-first-unique-character-in-a-string](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0387-first-unique-character-in-a-string) |
 | [0398-random-pick-index](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0398-random-pick-index) |
 | [0424-longest-repeating-character-replacement](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0424-longest-repeating-character-replacement) |
@@ -765,6 +767,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0169-majority-element](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0169-majority-element) |
 | [0347-top-k-frequent-elements](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0347-top-k-frequent-elements) |
+| [0383-ransom-note](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0383-ransom-note) |
 | [0387-first-unique-character-in-a-string](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0387-first-unique-character-in-a-string) |
 | [0621-task-scheduler](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0621-task-scheduler) |
 | [0992-subarrays-with-k-different-integers](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0992-subarrays-with-k-different-integers) |
