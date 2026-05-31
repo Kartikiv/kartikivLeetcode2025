@@ -1,30 +1,23 @@
 class Solution {
     public List<String> findAndReplacePattern(String[] words, String pattern) {
         List<String> ans = new ArrayList<>();
-        for (String s : words){
-            if(isMatch(s, pattern)){
-                ans.add(s);
-            }            
+        String patternEncode = encode(pattern);
+        for (int i = 0; i < words.length; i++) {
+            if (patternEncode.equals(encode(words[i]))) {
+                ans.add(words[i]);
+            }
         }
-    return ans; 
+        return ans;
     }
 
-    boolean isMatch(String s,String p) {
-        int[] wMap = new int[26];
-        int [] pMap = new int[26];
+    public String encode(String s) {
+        HashMap<Character, Integer> charMap = new HashMap<>();
+        StringBuilder sb = new StringBuilder();
         for (int i = 0; i < s.length(); i++) {
-            if(wMap[s.charAt(i) - 'a'] != pMap[p.charAt(i) - 'a']){
-                return false;
-            }
-            if (wMap[s.charAt(i) - 'a'] == 0) {
-                wMap[s.charAt(i) - 'a'] = i + 1;
-            }
-            
-            if (pMap[p.charAt(i) - 'a'] == 0) {
-                pMap[p.charAt(i) - 'a'] = i + 1;
-            }
+            // replace charater with the first index of the charater 
+            charMap.putIfAbsent(s.charAt(i), i);
+            sb.append(charMap.get(s.charAt(i))).append(":");
         }
-
-        return true;
+        return sb.toString();
     }
 }
