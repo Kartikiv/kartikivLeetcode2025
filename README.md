@@ -12,6 +12,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0018-4sum](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0018-4sum) |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0027-remove-element](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0027-remove-element) |
+| [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0028-find-the-index-of-the-first-occurrence-in-a-string) |
 | [0061-rotate-list](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0061-rotate-list) |
 | [0125-valid-palindrome](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0125-valid-palindrome) |
 | [0141-linked-list-cycle](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0141-linked-list-cycle) |
@@ -49,6 +50,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0014-longest-common-prefix](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0014-longest-common-prefix) |
 | [0017-letter-combinations-of-a-phone-number](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0017-letter-combinations-of-a-phone-number) |
 | [0020-valid-parentheses](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0020-valid-parentheses) |
+| [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0028-find-the-index-of-the-first-occurrence-in-a-string) |
 | [0032-longest-valid-parentheses](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0032-longest-valid-parentheses) |
 | [0038-count-and-say](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0038-count-and-say) |
 | [0049-group-anagrams](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0049-group-anagrams) |
@@ -735,6 +737,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## String Matching
 |  |
 | ------- |
+| [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0028-find-the-index-of-the-first-occurrence-in-a-string) |
 | [0572-subtree-of-another-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0572-subtree-of-another-tree) |
 ## Hash Function
 |  |
