@@ -9,17 +9,24 @@ class Solution {
         if (m == 0) return 0;
         if (n < m) return -1;
 
-        long hashNeedle = hashString(needle);
-        long hashHaystack = hashString(haystack.substring(0, m));
-
+        long needleHash = 0;
+        long windowHash = 0;
         long power = 1;
+
+        // power = BASE^(m - 1)
         for (int i = 0; i < m - 1; i++) {
             power = (power * BASE) % MOD;
         }
 
+        // initial hashes
+        for (int i = 0; i < m; i++) {
+            needleHash = (needleHash * BASE + needle.charAt(i)) % MOD;
+            windowHash = (windowHash * BASE + haystack.charAt(i)) % MOD;
+        }
+
         for (int i = 0; i <= n - m; i++) {
-            if (hashHaystack == hashNeedle) {
-                if (haystack.substring(i, i + m).equals(needle)) {
+            if (windowHash == needleHash) {
+                if (matches(haystack, needle, i)) {
                     return i;
                 }
             }
@@ -28,26 +35,24 @@ class Solution {
                 char leftChar = haystack.charAt(i);
                 char rightChar = haystack.charAt(i + m);
 
-                hashHaystack = hashHaystack - (leftChar * power) % MOD;
-
-                if (hashHaystack < 0) {
-                    hashHaystack += MOD;
+                windowHash = windowHash - (leftChar * power) % MOD;
+                if (windowHash < 0) {
+                    windowHash += MOD;
                 }
 
-                hashHaystack = (hashHaystack * BASE + rightChar) % MOD;
+                windowHash = (windowHash * BASE + rightChar) % MOD;
             }
         }
 
         return -1;
     }
 
-    public long hashString(String s) {
-        long hash = 0;
-
-        for (int i = 0; i < s.length(); i++) {
-            hash = (hash * BASE + s.charAt(i)) % MOD;
+    private boolean matches(String haystack, String needle, int start) {
+        for (int i = 0; i < needle.length(); i++) {
+            if (haystack.charAt(start + i) != needle.charAt(i)) {
+                return false;
+            }
         }
-
-        return hash;
+        return true;
     }
 }
