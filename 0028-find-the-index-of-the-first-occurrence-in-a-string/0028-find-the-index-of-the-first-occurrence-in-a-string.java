@@ -26,9 +26,9 @@ class Solution {
 
         for (int i = 0; i <= n - m; i++) {
             if (windowHash == needleHash) {
-                if (matches(haystack, needle, i)) {
+                
                     return i;
-                }
+                
             }
 
             if (i < n - m) {
