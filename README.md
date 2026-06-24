@@ -330,6 +330,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1863-sum-of-all-subset-xor-totals](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1863-sum-of-all-subset-xor-totals) |
 | [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/2033-minimum-operations-to-make-a-uni-value-grid) |
 | [2807-insert-greatest-common-divisors-in-linked-list](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/2807-insert-greatest-common-divisors-in-linked-list) |
+| [3700-number-of-zigzag-arrays-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/3700-number-of-zigzag-arrays-ii) |
 | [3783-mirror-distance-of-an-integer](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/3783-mirror-distance-of-an-integer) |
 ## Sorting
 |  |
@@ -402,6 +403,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1137-n-th-tribonacci-number](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1137-n-th-tribonacci-number) |
 | [1143-longest-common-subsequence](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1143-longest-common-subsequence) |
 | [1493-longest-subarray-of-1s-after-deleting-one-element](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1493-longest-subarray-of-1s-after-deleting-one-element) |
+| [3700-number-of-zigzag-arrays-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/3700-number-of-zigzag-arrays-ii) |
 ## Binary Search
 |  |
 | ------- |
