@@ -3,6 +3,7 @@ class Solution {
         int [] lps = constructLps(needle);
         int i = 0; 
         int j = 0; 
+        List<Integer> ansAllMatchingIndex = new ArrayList<>();
         while(i < haystack.length()){ 
             if(needle.charAt(j) == haystack.charAt(i)){ 
                 i++; 
@@ -15,10 +16,11 @@ class Solution {
                 }
             }
             if(j == needle.length()){ 
-                return i - needle.length();
+                ansAllMatchingIndex.add(i - needle.length());
+                j = 0;
             }
         }
-        return -1;
+        return ansAllMatchingIndex.isEmpty()? -1 : ansAllMatchingIndex.get(0);
     }
 
     public int[] constructLps(String needle) {
