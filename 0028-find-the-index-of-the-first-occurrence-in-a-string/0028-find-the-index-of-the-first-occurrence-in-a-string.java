@@ -1,58 +1,47 @@
 class Solution {
-    static final long BASE = 31;
-    static final long MOD = 1_000_000_007;
-
     public int strStr(String haystack, String needle) {
-        int n = haystack.length();
-        int m = needle.length();
-
-        if (m == 0) return 0;
-        if (n < m) return -1;
-
-        long needleHash = 0;
-        long windowHash = 0;
-        long power = 1;
-
-        // power = BASE^(m - 1)
-        for (int i = 0; i < m - 1; i++) {
-            power = (power * BASE) % MOD;
-        }
-
-        // initial hashes
-        for (int i = 0; i < m; i++) {
-            needleHash = (needleHash * BASE + needle.charAt(i)) % MOD;
-            windowHash = (windowHash * BASE + haystack.charAt(i)) % MOD;
-        }
-
-        for (int i = 0; i <= n - m; i++) {
-            if (windowHash == needleHash) {
-                if (matches(haystack, needle, i)) {
-                    return i;
+        int [] lps = constructLps(needle);
+        int i = 0; 
+        int j = 0; 
+        while(i < haystack.length()){ 
+            if(needle.charAt(j) == haystack.charAt(i)){ 
+                i++; 
+                j++;
+            }else{ 
+                if(j == 0){ 
+                    i++;
+                }else{ 
+                    j = lps[j - 1];
                 }
             }
-
-            if (i < n - m) {
-                char leftChar = haystack.charAt(i);
-                char rightChar = haystack.charAt(i + m);
-
-                windowHash = windowHash - (leftChar * power) % MOD;
-                if (windowHash < 0) {
-                    windowHash += MOD;
-                }
-
-                windowHash = (windowHash * BASE + rightChar) % MOD;
+            if(j == needle.length()){ 
+                return i - needle.length();
             }
         }
-
         return -1;
     }
 
-    private boolean matches(String haystack, String needle, int start) {
-        for (int i = 0; i < needle.length(); i++) {
-            if (haystack.charAt(start + i) != needle.charAt(i)) {
-                return false;
+    public int[] constructLps(String needle) {
+        int previousLps = 0;
+        int lengthNeedle = needle.length();
+        int[] lps = new int[lengthNeedle];
+        int i = 1;
+        while (i < lengthNeedle) {
+            // if the character's are equal
+            char needleChar = needle.charAt(i);
+            char previousLpsChar = needle.charAt(previousLps);
+            if (needleChar == previousLpsChar) {
+                lps[i] = previousLps + 1;
+                previousLps++;
+                i++;
+            } else if (previousLps == 0) {
+                lps[i] = 0;
+                i++;
+            } else {
+                previousLps = lps[previousLps - 1];
             }
+
         }
-        return true;
+        return lps;
     }
 }
