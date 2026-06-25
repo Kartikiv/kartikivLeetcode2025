@@ -17,7 +17,7 @@ class Solution {
             }
             if(j == needle.length()){ 
                 ansAllMatchingIndex.add(i - needle.length());
-                j = 0;
+                j = lps[j - 1];
             }
         }
         return ansAllMatchingIndex.isEmpty()? -1 : ansAllMatchingIndex.get(0);
