@@ -296,6 +296,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2422-merge-operations-to-turn-array-into-a-palindrome](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/2422-merge-operations-to-turn-array-into-a-palindrome) |
 | [2461-maximum-sum-of-distinct-subarrays-with-length-k](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/2461-maximum-sum-of-distinct-subarrays-with-length-k) |
 | [2540-minimum-common-value](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/2540-minimum-common-value) |
+| [3020-find-the-maximum-number-of-elements-in-subset](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/3020-find-the-maximum-number-of-elements-in-subset) |
 ## Math
 |  |
 | ------- |
@@ -552,6 +553,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2352-equal-row-and-column-pairs](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/2352-equal-row-and-column-pairs) |
 | [2461-maximum-sum-of-distinct-subarrays-with-length-k](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/2461-maximum-sum-of-distinct-subarrays-with-length-k) |
 | [2540-minimum-common-value](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/2540-minimum-common-value) |
+| [3020-find-the-maximum-number-of-elements-in-subset](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/3020-find-the-maximum-number-of-elements-in-subset) |
 ## Doubly-Linked List
 |  |
 | ------- |
@@ -958,6 +960,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1863-sum-of-all-subset-xor-totals](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1863-sum-of-all-subset-xor-totals) |
+| [3020-find-the-maximum-number-of-elements-in-subset](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/3020-find-the-maximum-number-of-elements-in-subset) |
 ## Interactive
 |  |
 | ------- |
