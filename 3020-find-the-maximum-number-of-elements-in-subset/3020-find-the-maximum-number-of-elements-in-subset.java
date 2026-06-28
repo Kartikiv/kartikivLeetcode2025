@@ -1,6 +1,5 @@
 class Solution {
     public int maximumLength(int[] nums) {
-        Arrays.sort(nums);
         HashMap<Integer, Integer> freMap = new HashMap<>(); 
         for(int num: nums){ 
             freMap.put(num, freMap.getOrDefault(num, 0) + 1);
