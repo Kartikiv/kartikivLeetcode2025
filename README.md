@@ -299,6 +299,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2461-maximum-sum-of-distinct-subarrays-with-length-k](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/2461-maximum-sum-of-distinct-subarrays-with-length-k) |
 | [2540-minimum-common-value](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/2540-minimum-common-value) |
 | [3020-find-the-maximum-number-of-elements-in-subset](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/3020-find-the-maximum-number-of-elements-in-subset) |
+| [3976-maximum-subarray-sum-after-multiplier](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/3976-maximum-subarray-sum-after-multiplier) |
 ## Math
 |  |
 | ------- |
@@ -408,6 +409,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1143-longest-common-subsequence](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1143-longest-common-subsequence) |
 | [1493-longest-subarray-of-1s-after-deleting-one-element](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1493-longest-subarray-of-1s-after-deleting-one-element) |
 | [3700-number-of-zigzag-arrays-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/3700-number-of-zigzag-arrays-ii) |
+| [3976-maximum-subarray-sum-after-multiplier](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/3976-maximum-subarray-sum-after-multiplier) |
 ## Binary Search
 |  |
 | ------- |
