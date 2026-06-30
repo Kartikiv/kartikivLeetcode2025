@@ -293,6 +293,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/2033-minimum-operations-to-make-a-uni-value-grid) |
 | [2126-destroying-asteroids](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/2126-destroying-asteroids) |
 | [2187-minimum-time-to-complete-trips](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/2187-minimum-time-to-complete-trips) |
+| [2258-escape-the-spreading-fire](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/2258-escape-the-spreading-fire) |
 | [2270-number-of-ways-to-split-array](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/2270-number-of-ways-to-split-array) |
 | [2352-equal-row-and-column-pairs](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/2352-equal-row-and-column-pairs) |
 | [2422-merge-operations-to-turn-array-into-a-palindrome](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/2422-merge-operations-to-turn-array-into-a-palindrome) |
@@ -447,6 +448,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1793-maximum-score-of-a-good-subarray](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1793-maximum-score-of-a-good-subarray) |
 | [1855-maximum-distance-between-a-pair-of-values](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1855-maximum-distance-between-a-pair-of-values) |
 | [2187-minimum-time-to-complete-trips](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/2187-minimum-time-to-complete-trips) |
+| [2258-escape-the-spreading-fire](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/2258-escape-the-spreading-fire) |
 | [2540-minimum-common-value](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/2540-minimum-common-value) |
 ## Linked List
 |  |
@@ -713,6 +715,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1161-maximum-level-sum-of-a-binary-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1161-maximum-level-sum-of-a-binary-tree) |
 | [1302-deepest-leaves-sum](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1302-deepest-leaves-sum) |
 | [1448-count-good-nodes-in-binary-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1448-count-good-nodes-in-binary-tree) |
+| [2258-escape-the-spreading-fire](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/2258-escape-the-spreading-fire) |
 ## Binary Tree
 |  |
 | ------- |
@@ -851,6 +854,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1036-rotting-oranges](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1036-rotting-oranges) |
 | [1074-number-of-submatrices-that-sum-to-target](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1074-number-of-submatrices-that-sum-to-target) |
 | [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/2033-minimum-operations-to-make-a-uni-value-grid) |
+| [2258-escape-the-spreading-fire](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/2258-escape-the-spreading-fire) |
 | [2352-equal-row-and-column-pairs](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/2352-equal-row-and-column-pairs) |
 ## Queue
 |  |
