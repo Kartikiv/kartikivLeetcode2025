@@ -302,6 +302,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2461-maximum-sum-of-distinct-subarrays-with-length-k](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/2461-maximum-sum-of-distinct-subarrays-with-length-k) |
 | [2540-minimum-common-value](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/2540-minimum-common-value) |
 | [3020-find-the-maximum-number-of-elements-in-subset](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/3020-find-the-maximum-number-of-elements-in-subset) |
+| [3471-find-the-largest-almost-missing-integer](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/3471-find-the-largest-almost-missing-integer) |
 | [3976-maximum-subarray-sum-after-multiplier](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/3976-maximum-subarray-sum-after-multiplier) |
 ## Math
 |  |
@@ -566,6 +567,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2461-maximum-sum-of-distinct-subarrays-with-length-k](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/2461-maximum-sum-of-distinct-subarrays-with-length-k) |
 | [2540-minimum-common-value](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/2540-minimum-common-value) |
 | [3020-find-the-maximum-number-of-elements-in-subset](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/3020-find-the-maximum-number-of-elements-in-subset) |
+| [3471-find-the-largest-almost-missing-integer](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/3471-find-the-largest-almost-missing-integer) |
 ## Doubly-Linked List
 |  |
 | ------- |
