@@ -13,15 +13,16 @@ class Solution {
             if (nums[mid] == target) {
                 return mid;
             }
-            // check if the left half is sorted
-            if (nums[mid] > nums[left]) {
+            // Check if the left half is sorted
+            if (nums[mid] >= nums[left]) {
                 if (target >= nums[left] && target <= nums[mid]) {
                     right = mid - 1;
                 } else {
                     left = mid + 1;
                 }
-            } else {
-               if (target > nums[mid] && target <= nums[right]) {
+
+            } else { // Then the right half is sorted
+                if (target > nums[mid] && target <= nums[right]) {
                     left = mid + 1;
                 } else {
                     right = mid - 1;
