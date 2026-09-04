@@ -1,62 +1,52 @@
 class Solution {
-    List<HashMap<Integer, Integer>> ans = new ArrayList<>();
+    List<List<String>> ans;
     int n;
     public List<List<String>> solveNQueens(int n) {
-        this.n = n ;
+        this.ans = new ArrayList<>();
+        this.n = n;
+        dfs(n - 1, new boolean[n], new boolean[n], new boolean[2*n], new boolean[2 * n], new boolean[n][n]);
         
-        for(int j = 0 ; j < n ; j++){
-            HashMap<Integer,Integer> current = new HashMap<>();
-            boolean [] canVisit  = new boolean[n];
-            boolean[] diag1 = new boolean[2*n];
-            boolean[] diag2 = new boolean[2*n];
-            int id1 = 0 - j + (n - 1);
-            int id2 = 0 + j;
-            Arrays.fill(canVisit, true);
-            Arrays.fill(diag1, true);
-            Arrays.fill(diag2, true);
-            current.put(0,j);
-            canVisit[j] = diag1[id1] = diag2[id2] = false;
-            helper(current, 1, j, 1, canVisit, diag1, diag2);
-        }
-            System.out.println(ans);
-    return  getBoard(ans);}
-
-    public void helper(HashMap<Integer,Integer> current, int index , int prevJ, int count, boolean [] canVisit,boolean[] diag1,boolean[] diag2){
-        if (count == n) {
-            ans.add(new HashMap<>(current));
-        }
-        if ( index > n){
+    return ans;
+    }
+    public void dfs(int r,boolean [] row, boolean[] col, boolean[] diagnol, boolean [] antiDiagnol, boolean[][] board){ 
+        if(r == -1){ 
+            ans.add(buildAns(board));
+            board = new boolean[n][n];
             return;
         }
-        for(int j = 0; j < n ; j++){
-            int id1 = index - j + (n - 1);
-            int id2 = index + j;
-            if ( canVisit[j] && diag1[id1] && diag2[id2] ){
-                current.put(index, j);
-                canVisit[j] = diag1[id1] = diag2[id2] = false;
-                count++;
-                helper(current, index + 1, j, count, canVisit,diag1, diag2);
-              canVisit[j] = diag1[id1] = diag2[id2]  = true;
-                current.remove(index);
-                count--;
+        for(int i = 0; i < n ; i++){ 
+            // check if we can place a queen in the row, col and diag and anti diag
+            if(!row[r] && !col[i] && !diagnol[r + i] && !antiDiagnol[i - r + n - 1]){
+                row[r] = true;
+                col[i] = true; 
+                diagnol[r + i] = true;
+                antiDiagnol[i - r + n - 1] = true;
+                board[r][i] = true;
+                dfs(r - 1, row, col, diagnol, antiDiagnol, board);
+                row[r] = false;
+                col[i] = false; 
+                diagnol[r + i] = false;
+                antiDiagnol[i - r + n - 1] = false;
+                board[r][i] = false;
             }
-        }
-        
 
+        }
     }
-    public List<List<String>> getBoard(List<HashMap<Integer, Integer>> ans){
-        List<List<String>> board = new ArrayList<>();
-        for(HashMap<Integer, Integer> map : ans){
-            List<String> row = new ArrayList<>();
-            for(int i = 0 ; i < n; i++){
-                StringBuilder sb = new StringBuilder(".".repeat(n));
-                sb.setCharAt(map.get(i), 'Q');
-                row.add(sb.toString());
+    public List<String> buildAns(boolean[][] board){ 
+        StringBuilder sb = new StringBuilder();
+        List<String> ans = new ArrayList<>();
+        for(int i = 0; i < board.length; i++){ 
+            sb = new StringBuilder();
+            for(int j = 0; j < board[0].length; j++){ 
+                if(board[i][j]){
+                    sb.append('Q');
+                }else{
+                    sb.append('.');
+                }
             }
-            board.add(row);
-
-
+            ans.add(sb.toString());
         }
-   return board; }
-    
+    return ans;
+    }
+
 }
