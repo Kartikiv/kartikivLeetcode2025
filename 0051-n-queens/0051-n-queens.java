@@ -16,7 +16,7 @@ class Solution {
         }
         for(int i = 0; i < n ; i++){ 
             // check if we can place a queen in the row, col and diag and anti diag
-            if(!row[r] && !col[i] && !diagnol[r + i] && !antiDiagnol[i - r + n - 1]){
+            if(!col[i] && !diagnol[r + i] && !antiDiagnol[i - r + n - 1]){
                 row[r] = true;
                 col[i] = true; 
                 diagnol[r + i] = true;
