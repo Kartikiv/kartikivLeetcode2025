@@ -1,48 +1,35 @@
 class Solution {
-    char[][] board;
-    String word;
-    boolean flag = false;
-
     public boolean exist(char[][] board, String word) {
-        this.board = board;
-        this.word = word;
-        StringBuilder current = new StringBuilder();
-        boolean[][] visited = new boolean[board.length][board[0].length];
-        for (int i = 0; i < board.length; i++) {
-            for (int j = 0; j < board[0].length; j++) {
-                if(board[i][j] == word.charAt(0)){
-                helper(i, j, current, visited,0);
-                }
-            }
+       for(int i = 0; i < board.length; i++){
+        for(int j = 0; j < board[0].length; j++){ 
+           if (dfs(i, j, board, word, 0)){
+            return true;
+           }
         }
-        return flag;
+       } 
+    return false;
     }
-
-    public void helper(int i, int j, StringBuilder current, boolean visited[][], int index) {
-        if (flag || i < 0 || j < 0 || i >= board.length || j >= board[0].length) {
-            return;
+    public boolean dfs(int i, int j,char[][] board, String word, int index){ 
+       
+        if(index == word.length()){ 
+            return true;
         }
-        if (visited[i][j]) {
-            return;
+        
+         if(i < 0 || i >= board.length || j < 0 || j >= board[0].length){
+            return false;
         }
-          if (board[i][j] != word.charAt(index)) {
-            return;
+        if(word.charAt(index) != board[i][j]){
+            return false;
         }
+        char temp = board[i][j];
+        board[i][j] = '#';
+       boolean left =  dfs(i + 1, j,board, word, index + 1);
+       boolean right =  dfs(i - 1, j,board, word, index + 1);
+        boolean top = dfs(i, j + 1,board, word, index + 1);
+        boolean bottom = dfs(i, j - 1,board, word, index + 1);
+      
+        board[i][j] = temp;
 
-        current.append(board[i][j]);
-        if (current.toString().equals(word)) {
-            flag = true;
-            return;
-        }
-        visited[i][j] = true;
-        helper(i + 1, j, current, visited,index + 1);
-        helper(i, j - 1, current, visited, index + 1);
-
-        helper(i - 1, j, current, visited, index + 1);
-        helper(i, j + 1, current, visited, index + 1);
-
-        visited[i][j] = false;
-        current.deleteCharAt(current.length() - 1);
-
+    return top || bottom || left || right; 
     }
 }
