@@ -4,11 +4,11 @@ class Solution {
     public List<List<String>> solveNQueens(int n) {
         this.ans = new ArrayList<>();
         this.n = n;
-        dfs(n - 1, new boolean[n], new boolean[n], new boolean[2*n], new boolean[2 * n], new boolean[n][n]);
+        dfs(n - 1, new boolean[n], new boolean[2*n], new boolean[2 * n], new boolean[n][n]);
         
     return ans;
     }
-    public void dfs(int r,boolean [] row, boolean[] col, boolean[] diagnol, boolean [] antiDiagnol, boolean[][] board){ 
+    public void dfs(int r, boolean[] col, boolean[] diagnol, boolean [] antiDiagnol, boolean[][] board){ 
         if(r == -1){ 
             ans.add(buildAns(board));
             board = new boolean[n][n];
@@ -17,13 +17,12 @@ class Solution {
         for(int i = 0; i < n ; i++){ 
             // check if we can place a queen in the row, col and diag and anti diag
             if(!col[i] && !diagnol[r + i] && !antiDiagnol[i - r + n - 1]){
-                row[r] = true;
+                
                 col[i] = true; 
                 diagnol[r + i] = true;
                 antiDiagnol[i - r + n - 1] = true;
                 board[r][i] = true;
-                dfs(r - 1, row, col, diagnol, antiDiagnol, board);
-                row[r] = false;
+                dfs(r - 1, col, diagnol, antiDiagnol, board);
                 col[i] = false; 
                 diagnol[r + i] = false;
                 antiDiagnol[i - r + n - 1] = false;
