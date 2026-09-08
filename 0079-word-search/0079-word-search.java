@@ -5,7 +5,9 @@ class Solution {
         boolean ans = false;
         for (int i = 0; i < board.length; i++) {
             for (int j = 0; j < board[0].length; j++) {
-               ans = ans || dfs(board, 0, i, j, word);
+                if (dfs(board, 0, i, j, word)) {
+                    return true;
+                }
             }
         }
         return ans;
