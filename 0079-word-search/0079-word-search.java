@@ -25,18 +25,16 @@ class Solution {
         }
         char temp = board[i][j];
         board[i][j] = '#';
-        boolean ans = false;
-        int[][] directions = new int[][] { { -1, 0 }, { 1, 0 }, { 0, 1 }, { 0, -1 } };
-        for (int[] direction : directions) {
-            int newI = i + direction[0];
-            int newJ = j + direction[1];
-            ans = ans || dfs(board, index + 1, newI, newJ, word);
-        }
+        boolean found =
+                dfs(board, index + 1, i + 1, j, word) ||
+                dfs(board, index + 1, i - 1, j, word) ||
+                dfs(board, index + 1, i, j + 1, word) ||
+                dfs(board, index + 1, i, j - 1, word);
         // back tracking and marking the steps as we visit here we can also maintain a visited bool array 
         // but the consequences are extra memory consumption. 
         board[i][j] = temp;
 
-        return ans;
+        return found;
     }
 
 }
