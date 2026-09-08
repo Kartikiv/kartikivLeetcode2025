@@ -28,9 +28,7 @@ class Solution {
         for (int[] direction : directions) {
             int newI = i + direction[0];
             int newJ = j + direction[1];
-
             dfs(board, index + 1, newI, newJ, word);
-
         }
         // back tracking and marking the steps as we visit here we can also maintain a visited bool array 
         // but the consequences are extra memory consumption. 
