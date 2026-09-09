@@ -1,72 +1,99 @@
-class Solution {
-    public int ladderLength(String beginWord, String endWord, List<String> wordList) {
-        if (!wordList.contains(endWord)) return 0;
+import java.util.*;
 
-        int L = beginWord.length();
+class GraphNode {
+    String word;
+    List<GraphNode> children;
 
-        // 1. Build pattern map
-        Map<String, List<String>> patternMap = new HashMap<>();
-        List<String> allWords = new ArrayList<>(wordList);
-        if (!allWords.contains(beginWord)) {
-            allWords.add(beginWord);
-        }
-
-        for (String word : allWords) {
-            for (int i = 0; i < L; i++) {
-                String pattern = word.substring(0, i) + "*" + word.substring(i + 1);
-                patternMap
-                    .computeIfAbsent(pattern, k -> new ArrayList<>())
-                    .add(word);
-            }
-        }
-
-        // 2. BFS
-        Queue<String> queue = new LinkedList<>();
-        Set<String> visited = new HashSet<>();
-
-        queue.add(beginWord);
-        visited.add(beginWord);
-
-        int steps = 1; // beginWord itself
-
-        while (!queue.isEmpty()) {
-            int size = queue.size();
-            // each layer = one transformation step
-            for (int i = 0; i < size; i++) {
-                String word = queue.poll();
-                if (word.equals(endWord)) {
-                    return steps;
-                }
-
-                // expand neighbors via patterns
-                for (int pos = 0; pos < L; pos++) {
-                    String pattern = word.substring(0, pos) + "*" + word.substring(pos + 1);
-                    List<String> list = patternMap.get(pattern);
-                    if (list == null) continue;
-
-                    for (String next : list) {
-                        if (!visited.contains(next)) {
-                            visited.add(next);
-                            queue.add(next);
-                        }
-                    }
-
-                    // optional optimization: clear to avoid re-traversing this bucket
-                    patternMap.put(pattern, new ArrayList<>());
-                }
-            }
-            steps++;
-        }
-
-        return 0; // no path
+    public GraphNode(String word) {
+        this.word = word;
     }
 }
 
-/* 
-1. We need connect all the words that are one letter apart from each other in a graph and then when we traverse the created graph one layer at a time 
-2. We know that we are traversing the graph one layer at time so the first time we encounter the end word we know that we reached there in the shortest transformation. 
-3. Till here the problem seems simple, the key trick is how do get all the words that differ by one word from a give word ?
-4. can we use a prefix Trie 
-5. cam we use any other structure that does this effectively ?
-6. Okay we will add all the words into a tree now, for hot we search *ot, ho*, h*t. 
-*/
+class Solution {
+
+    public int ladderLength(String beginWord, String endWord, List<String> wordList) {
+        return createGraph(beginWord, new HashSet<>(wordList), endWord);
+    }
+
+    public int createGraph(String beginWord, Set<String> wordList, String endWord) {
+
+        if (!wordList.contains(endWord)) {
+            return 0;
+        }
+
+        GraphNode root = new GraphNode(beginWord);
+
+        wordList.remove(root.word);
+
+        Queue<GraphNode> queue = new LinkedList<>();
+        queue.add(root);
+
+        int level = 0;
+
+        while (!queue.isEmpty()) {
+
+            int levelSize = queue.size();
+
+            for (int i = 0; i < levelSize; i++) {
+
+                GraphNode node = queue.poll();
+                String target = node.word;
+
+                node.children = new ArrayList<>();
+
+                List<String> visited = new ArrayList<>();
+
+                // build children
+                for (String word : wordList) {
+
+                    if (checkDistance(word, target)) {
+
+                        if (word.equals(endWord)) {
+                            return level + 2;
+                        }
+
+                        node.children.add(new GraphNode(word));
+                        visited.add(word);
+                    }
+                }
+
+                // remove visited
+                for (String word : visited) {
+                    wordList.remove(word);
+                }
+
+                // add children to queue
+                for (GraphNode child : node.children) {
+                    queue.add(child);
+                }
+            }
+
+            level++;
+        }
+
+        return 0;
+    }
+
+    public boolean checkDistance(String word, String target) {
+
+        if (word.length() != target.length()) {
+            return false;
+        }
+
+        int difference = 0;
+
+        for (int i = 0; i < word.length(); i++) {
+
+            if (word.charAt(i) != target.charAt(i)) {
+
+                difference++;
+
+                if (difference > 1) {
+                    return false;
+                }
+            }
+        }
+
+        return difference == 1;
+    }
+}
