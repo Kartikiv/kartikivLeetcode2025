@@ -1,70 +1,53 @@
-import java.util.*;
-
-class GraphNode {
-    String word;
-    List<GraphNode> children;
-
-    public GraphNode(String word) {
-        this.word = word;
-    }
-}
-
 class Solution {
+    public int ladderLength(
+        String beginWord,
+        String endWord,
+        List<String> wordList
+    ) {
+        Set<String> words = new HashSet<>(wordList);
 
-    public int ladderLength(String beginWord, String endWord, List<String> wordList) {
-        return createGraph(beginWord, new HashSet<>(wordList), endWord);
-    }
-
-    public int createGraph(String beginWord, Set<String> wordList, String endWord) {
-
-        if (!wordList.contains(endWord)) {
+        if (!words.contains(endWord)) {
             return 0;
         }
 
-        GraphNode root = new GraphNode(beginWord);
+        Queue<String> queue = new LinkedList<>();
+        queue.add(beginWord);
 
-        wordList.remove(root.word);
+        words.remove(beginWord);
 
-        Queue<GraphNode> queue = new LinkedList<>();
-        queue.add(root);
-
-        int level = 0;
+        int level = 1;
 
         while (!queue.isEmpty()) {
-
             int levelSize = queue.size();
 
-            for (int i = 0; i < levelSize; i++) {
+            for (int k = 0; k < levelSize; k++) {
+                String current = queue.poll();
 
-                GraphNode node = queue.poll();
-                String target = node.word;
+                if (current.equals(endWord)) {
+                    return level;
+                }
 
-                node.children = new ArrayList<>();
+                char[] chars = current.toCharArray();
 
-                List<String> visited = new ArrayList<>();
+                for (int i = 0; i < chars.length; i++) {
+                    char original = chars[i];
 
-                // build children
-                for (String word : wordList) {
-
-                    if (checkDistance(word, target)) {
-
-                        if (word.equals(endWord)) {
-                            return level + 2;
+                    for (char c = 'a'; c <= 'z'; c++) {
+                        if (c == original) {
+                            continue;
                         }
 
-                        node.children.add(new GraphNode(word));
-                        visited.add(word);
+                        chars[i] = c;
+
+                        String next = new String(chars);
+
+                        if (words.contains(next)) {
+                            queue.add(next);
+                            words.remove(next);
+                        }
                     }
-                }
 
-                // remove visited
-                for (String word : visited) {
-                    wordList.remove(word);
-                }
-
-                // add children to queue
-                for (GraphNode child : node.children) {
-                    queue.add(child);
+                    chars[i] = original;
                 }
             }
 
@@ -72,28 +55,5 @@ class Solution {
         }
 
         return 0;
-    }
-
-    public boolean checkDistance(String word, String target) {
-
-        if (word.length() != target.length()) {
-            return false;
-        }
-
-        int difference = 0;
-
-        for (int i = 0; i < word.length(); i++) {
-
-            if (word.charAt(i) != target.charAt(i)) {
-
-                difference++;
-
-                if (difference > 1) {
-                    return false;
-                }
-            }
-        }
-
-        return difference == 1;
     }
 }
