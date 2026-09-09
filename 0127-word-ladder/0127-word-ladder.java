@@ -4,35 +4,45 @@ class Solution {
         String endWord,
         List<String> wordList
     ) {
+
         Set<String> words = new HashSet<>(wordList);
 
         if (!words.contains(endWord)) {
             return 0;
         }
 
-        Queue<String> queue = new LinkedList<>();
-        queue.add(beginWord);
+        Set<String> beginSet = new HashSet<>();
+        Set<String> endSet = new HashSet<>();
+
+        beginSet.add(beginWord);
+        endSet.add(endWord);
 
         words.remove(beginWord);
+        words.remove(endWord);
 
         int level = 1;
 
-        while (!queue.isEmpty()) {
-            int levelSize = queue.size();
+        while (!beginSet.isEmpty() && !endSet.isEmpty()) {
 
-            for (int k = 0; k < levelSize; k++) {
-                String current = queue.poll();
+            // Always expand the smaller side
+            if (beginSet.size() > endSet.size()) {
+                Set<String> temp = beginSet;
+                beginSet = endSet;
+                endSet = temp;
+            }
 
-                if (current.equals(endWord)) {
-                    return level;
-                }
+            Set<String> nextLevel = new HashSet<>();
 
-                char[] chars = current.toCharArray();
+            for (String word : beginSet) {
+
+                char[] chars = word.toCharArray();
 
                 for (int i = 0; i < chars.length; i++) {
+
                     char original = chars[i];
 
                     for (char c = 'a'; c <= 'z'; c++) {
+
                         if (c == original) {
                             continue;
                         }
@@ -41,8 +51,13 @@ class Solution {
 
                         String next = new String(chars);
 
+                        // Two searches have met
+                        if (endSet.contains(next)) {
+                            return level + 1;
+                        }
+
                         if (words.contains(next)) {
-                            queue.add(next);
+                            nextLevel.add(next);
                             words.remove(next);
                         }
                     }
@@ -51,6 +66,7 @@ class Solution {
                 }
             }
 
+            beginSet = nextLevel;
             level++;
         }
 
