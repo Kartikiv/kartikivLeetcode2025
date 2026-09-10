@@ -1,33 +1,33 @@
 import java.util.*;
-
 class Solution {
-    List<Integer>[] g;   // g[u] = list of prerequisites of u
-    int[] state;         // 0=unvisited, 1=visiting, 2=done
-
+    // Here we can use kahns bfs algorithm to see if cycles exist 
     public boolean canFinish(int numCourses, int[][] prerequisites) {
-        g = new ArrayList[numCourses];
-        for (int i = 0; i < numCourses; i++) g[i] = new ArrayList<>();
-        for (int[] p : prerequisites) {
-            int course = p[0], pre = p[1];
-            g[course].add(pre); // follow prereqs
+       int order = 0;
+        // calculate indegree 
+        int [] inDegree = new int[numCourses];
+        List<Integer>[] graph = new List[numCourses];
+        Arrays.setAll(graph, i -> new ArrayList<>());
+        for(int [] prerequisite : prerequisites){ 
+            inDegree[prerequisite[0]]++;
+            graph[prerequisite[1]].add(prerequisite[0]);
         }
-
-        state = new int[numCourses];
-        for (int i = 0; i < numCourses; i++) {
-            if (state[i] == 0 && !dfs(i)) return false; // cycle found
+        Queue<Integer> queue = new LinkedList<>();
+        for(int i = 0; i < inDegree.length; i++){ 
+            if(inDegree[i] == 0){
+                queue.add(i);
+            }
         }
-        return true; // no cycles
-    }
-
-    private boolean dfs(int u) {
-        if (state[u] == 1) return false; // back-edge -> cycle
-        if (state[u] == 2) return true;  // already processed
-
-        state[u] = 1; // mark as on recursion stack
-        for (int v : g[u]) {
-            if (!dfs(v)) return false;
+        while (!queue.isEmpty()) {
+            int node = queue.poll();
+            order++;
+            for(int child : graph[node]){ 
+                inDegree[child]--;
+                if(inDegree[child] == 0){ 
+                    queue.add(child);
+                }
+            }
+            
         }
-        state[u] = 2; // done
-        return true;
-    }
+    return order == numCourses; 
+}
 }
