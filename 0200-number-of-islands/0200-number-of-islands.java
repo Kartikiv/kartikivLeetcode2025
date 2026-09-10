@@ -1,56 +1,31 @@
-class Node{ 
-    int i ; 
-    int j ; 
-    public Node(int i, int j){ 
-        this.i = i; 
-        this.j = j;
-    }
-}
+import java.util.*;
+
 class Solution {
     public int numIslands(char[][] grid) {
-        int count = 0 ;
-        int m = grid.length; 
-        int n = grid[0].length;
-        for(int i =0 ; i < m ; i++){ 
-            for(int j = 0 ; j < n ; j++){
-                if(grid[i][j] == '1') {
-                    bfs(grid, new Node(i, j));
-                    count++;
+        int islands = 0;
+        for (int i = 0; i < grid.length; i++) {
+            for (int j = 0; j < grid[0].length; j++) {
+                if (grid[i][j] == '1') {
+                    dfs(grid, i, j);
+                    islands++;
                 }
+
             }
         }
-
-   return count; 
+        return islands;
     }
-    public void bfs(char[][] grid, Node root){ 
-        int m = grid.length; 
-        int n = grid[0].length;
-        Queue<Node> queue = new LinkedList<>();
-        queue.add(root); 
-        grid[root.i][root.j] = '0';
-        int [][] directions = new int [][]{{0,1} , {1,0}, {0, -1}, {-1,0}};
-        while(!queue.isEmpty()){ 
-            Node node = queue.poll();
-            int i = node.i; 
-            int j = node.j;
-            // insert valid children 
-            for(int [] direction : directions){ 
-                int newi = i + direction[0];
-                int newj = j + direction[1];
-                if(newi >= 0 && newj >= 0 
-                    && newi < m && newj < n 
-                    && grid[newi][newj] == '1'
-                ){ 
-                   // mark visited
-                    grid[newi][newj] = '0';
-                    queue.add(new Node(newi , newj));
-                }
+
+    public void dfs(char[][] grid, int i, int j) {
+        grid[i][j] = '0';
+        int[][] directions = new int[][] { { 1, 0 }, { -1, 0 }, { 0, 1 }, { 0, -1 } };
+        for (int[] direction : directions) {
+            int newI = i + direction[0];
+            int newJ = j + direction[1];
+            if (newI >= 0 && newI < grid.length && newJ >= 0 && newJ < grid[0].length
+                    && grid[newI][newJ] == '1') {
+
+                dfs(grid, newI, newJ);
             }
-
-
-            
         }
-
     }
-    
 }
