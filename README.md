@@ -1009,6 +1009,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0200-number-of-islands](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0200-number-of-islands) |
 | [0261-graph-valid-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0261-graph-valid-tree) |
 | [0547-number-of-provinces](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0547-number-of-provinces) |
+| [0684-redundant-connection](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0684-redundant-connection) |
 | [0695-max-area-of-island](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0695-max-area-of-island) |
 | [0721-accounts-merge](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0721-accounts-merge) |
 ## Number Theory
@@ -1076,6 +1077,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0210-course-schedule-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0210-course-schedule-ii) |
 | [0261-graph-valid-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0261-graph-valid-tree) |
 | [0547-number-of-provinces](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0547-number-of-provinces) |
+| [0684-redundant-connection](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0684-redundant-connection) |
 | [0797-all-paths-from-source-to-target](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0797-all-paths-from-source-to-target) |
 ## Reservoir Sampling
 |  |
