@@ -668,6 +668,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
 | [0261-graph-valid-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0261-graph-valid-tree) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0297-serialize-and-deserialize-binary-tree) |
+| [0310-minimum-height-trees](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0310-minimum-height-trees) |
 | [0323-number-of-connected-components-in-an-undirected-graph](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0323-number-of-connected-components-in-an-undirected-graph) |
 | [0332-reconstruct-itinerary](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0332-reconstruct-itinerary) |
 | [0339-nested-list-weight-sum](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0339-nested-list-weight-sum) |
@@ -709,6 +710,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0261-graph-valid-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0261-graph-valid-tree) |
 | [0279-perfect-squares](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0279-perfect-squares) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0297-serialize-and-deserialize-binary-tree) |
+| [0310-minimum-height-trees](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0310-minimum-height-trees) |
 | [0322-coin-change](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0322-coin-change) |
 | [0323-number-of-connected-components-in-an-undirected-graph](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0323-number-of-connected-components-in-an-undirected-graph) |
 | [0339-nested-list-weight-sum](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0339-nested-list-weight-sum) |
@@ -948,6 +950,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0207-course-schedule](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0210-course-schedule-ii) |
+| [0310-minimum-height-trees](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0310-minimum-height-trees) |
 ## Eulerian Circuit
 |  |
 | ------- |
@@ -1076,6 +1079,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0207-course-schedule](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0210-course-schedule-ii) |
 | [0261-graph-valid-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0261-graph-valid-tree) |
+| [0310-minimum-height-trees](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0310-minimum-height-trees) |
 | [0547-number-of-provinces](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0547-number-of-provinces) |
 | [0684-redundant-connection](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0684-redundant-connection) |
 | [0797-all-paths-from-source-to-target](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0797-all-paths-from-source-to-target) |
