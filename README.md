@@ -255,6 +255,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0739-daily-temperatures](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0739-daily-temperatures) |
 | [0746-min-cost-climbing-stairs](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0746-min-cost-climbing-stairs) |
 | [0832-flipping-an-image](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0832-flipping-an-image) |
+| [0851-loud-and-rich](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0851-loud-and-rich) |
 | [0860-lemonade-change](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0860-lemonade-change) |
 | [0867-transpose-matrix](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0867-transpose-matrix) |
 | [0875-koko-eating-bananas](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0875-koko-eating-bananas) |
@@ -693,6 +694,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0743-network-delay-time](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0743-network-delay-time) |
 | [0797-all-paths-from-source-to-target](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0797-all-paths-from-source-to-target) |
 | [0802-find-eventual-safe-states](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0802-find-eventual-safe-states) |
+| [0851-loud-and-rich](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0851-loud-and-rich) |
 | [1161-maximum-level-sum-of-a-binary-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1161-maximum-level-sum-of-a-binary-tree) |
 | [1302-deepest-leaves-sum](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1302-deepest-leaves-sum) |
 | [1448-count-good-nodes-in-binary-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1448-count-good-nodes-in-binary-tree) |
@@ -962,6 +964,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0444-sequence-reconstruction](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0444-sequence-reconstruction) |
 | [0631-design-excel-sum-formula](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0631-design-excel-sum-formula) |
 | [0802-find-eventual-safe-states](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0802-find-eventual-safe-states) |
+| [0851-loud-and-rich](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0851-loud-and-rich) |
 ## Eulerian Circuit
 |  |
 | ------- |
@@ -1097,6 +1100,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0684-redundant-connection](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0684-redundant-connection) |
 | [0797-all-paths-from-source-to-target](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0797-all-paths-from-source-to-target) |
 | [0802-find-eventual-safe-states](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0802-find-eventual-safe-states) |
+| [0851-loud-and-rich](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0851-loud-and-rich) |
 ## Reservoir Sampling
 |  |
 | ------- |
@@ -1136,6 +1140,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0207-course-schedule](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0207-course-schedule) |
 | [0444-sequence-reconstruction](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0444-sequence-reconstruction) |
 | [0797-all-paths-from-source-to-target](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0797-all-paths-from-source-to-target) |
+| [0851-loud-and-rich](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0851-loud-and-rich) |
 ## Kosaraju's Algorithm
 |  |
 | ------- |
