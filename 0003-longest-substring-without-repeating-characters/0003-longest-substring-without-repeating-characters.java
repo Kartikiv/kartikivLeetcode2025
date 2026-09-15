@@ -1,21 +1,18 @@
-import java.util.*;
 class Solution {
     public int lengthOfLongestSubstring(String s) {
-        // expand  the window till you hit a repeating char then start from that position 
+        if(s.isEmpty()) return 0;
+        int longestSubString = 1;
         int i = 0; 
         int j = 0; 
-        int maxWindow = 0 ; 
-        HashMap<Integer, Integer> map = new HashMap<>();
-        while (j < s.length()) {
-          int c = s.codePointAt(j);
-          int width = Character.charCount(c);
-           if(map.containsKey(c)){
-            i = Math.max(i, map.get(c) + 1);
-           }
-           map.put(c, j);
-           maxWindow = Math.max(maxWindow, j - i + 1);
-           j = j + width;
-        }
-    return maxWindow; 
-  }
+        HashMap<Character, Integer> map = new HashMap<>();
+        while(j < s.length()){ 
+            if(map.containsKey(s.charAt(j))){ 
+                i = Math.max(i,map.get(s.charAt(j)) + 1);
+            }
+                map.put(s.charAt(j), j);
+            longestSubString = Math.max(longestSubString, j - i + 1);
+            j++;
+        } 
+    return longestSubString; 
+    }
 }
