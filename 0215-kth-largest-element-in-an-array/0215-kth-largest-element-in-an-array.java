@@ -5,14 +5,8 @@ class Solution {
     // we can also use quick select with dutch national flag partitioning so that
     // we can get n time complexity
     public int findKthLargest(int[] nums, int k) {
-        PriorityQueue<Integer> pq = new PriorityQueue<>();
-        for (int i = 0; i < nums.length; i++) {
-            pq.add(nums[i]);
-            if (pq.size() > k) {
-                pq.poll();
-            }
-        }
-        return pq.peek();
+        
+        return quickSelect(nums, k);
     }
 
     public int quickSelect(int[] arr, int k) {
@@ -20,7 +14,7 @@ class Solution {
         int low = 0;
         int high = arr.length - 1;
         while (low <= high) {
-            int[] range = partition(arr, 0, arr.length - 1);
+            int[] range = partition(arr, low, high);
             if (target < range[0]) {
                 high = range[0] - 1;
             } else if (target > range[1]) {
