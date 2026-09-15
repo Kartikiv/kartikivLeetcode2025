@@ -3,9 +3,10 @@ import java.util.*;
 
 class Solution {
     public List<Integer> eventualSafeNodes(int[][] graph) {
-        // Build a reveerse directed graph add all the processed nodes
+        // Build a reverse directed graph add all the processed nodes
         // return the nodes in sorted order
         // the one that are in the queue and not processed are unsafe
+        //  
         int[] inDegree = new int[graph.length];
         List<Integer>[] adjacencyList = new ArrayList[graph.length];
         Arrays.setAll(adjacencyList, n -> new ArrayList<>());
