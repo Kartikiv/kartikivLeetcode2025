@@ -692,6 +692,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0733-flood-fill](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0733-flood-fill) |
 | [0743-network-delay-time](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0743-network-delay-time) |
 | [0797-all-paths-from-source-to-target](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0797-all-paths-from-source-to-target) |
+| [0802-find-eventual-safe-states](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0802-find-eventual-safe-states) |
 | [1161-maximum-level-sum-of-a-binary-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1161-maximum-level-sum-of-a-binary-tree) |
 | [1302-deepest-leaves-sum](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1302-deepest-leaves-sum) |
 | [1448-count-good-nodes-in-binary-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1448-count-good-nodes-in-binary-tree) |
@@ -730,6 +731,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0733-flood-fill](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0733-flood-fill) |
 | [0743-network-delay-time](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0743-network-delay-time) |
 | [0797-all-paths-from-source-to-target](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0797-all-paths-from-source-to-target) |
+| [0802-find-eventual-safe-states](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0802-find-eventual-safe-states) |
 | [0994-rotting-oranges](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0994-rotting-oranges) |
 | [1036-rotting-oranges](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1036-rotting-oranges) |
 | [1161-maximum-level-sum-of-a-binary-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1161-maximum-level-sum-of-a-binary-tree) |
@@ -959,6 +961,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0310-minimum-height-trees](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0310-minimum-height-trees) |
 | [0444-sequence-reconstruction](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0444-sequence-reconstruction) |
 | [0631-design-excel-sum-formula](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0631-design-excel-sum-formula) |
+| [0802-find-eventual-safe-states](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0802-find-eventual-safe-states) |
 ## Eulerian Circuit
 |  |
 | ------- |
@@ -1093,6 +1096,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0631-design-excel-sum-formula](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0631-design-excel-sum-formula) |
 | [0684-redundant-connection](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0684-redundant-connection) |
 | [0797-all-paths-from-source-to-target](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0797-all-paths-from-source-to-target) |
+| [0802-find-eventual-safe-states](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0802-find-eventual-safe-states) |
 ## Reservoir Sampling
 |  |
 | ------- |
@@ -1132,4 +1136,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0207-course-schedule](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0207-course-schedule) |
 | [0444-sequence-reconstruction](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0444-sequence-reconstruction) |
 | [0797-all-paths-from-source-to-target](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0797-all-paths-from-source-to-target) |
+## Kosaraju's Algorithm
+|  |
+| ------- |
+| [0802-find-eventual-safe-states](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0802-find-eventual-safe-states) |
+## Tarjan's SCC Algorithm
+|  |
+| ------- |
+| [0802-find-eventual-safe-states](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0802-find-eventual-safe-states) |
 <!---LeetCode Topics End-->
