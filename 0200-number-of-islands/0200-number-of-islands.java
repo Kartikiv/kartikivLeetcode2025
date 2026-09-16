@@ -1,29 +1,29 @@
 class Solution {
 
-    static final int[][] DIRECTIONS = {
-        {1, 0},
-        {-1, 0},
-        {0, 1},
-        {0, -1}
-    };
-
     int rows;
     int cols;
-    int[] queue;
+
+    int[] rowQueue;
+    int[] colQueue;
 
     public int numIslands(char[][] grid) {
+
         rows = grid.length;
         cols = grid[0].length;
 
-        // Allocate once and reuse for every island
-        queue = new int[rows * cols];
+        int capacity = rows * cols;
+
+        rowQueue = new int[capacity];
+        colQueue = new int[capacity];
 
         int islands = 0;
 
         for (int row = 0; row < rows; row++) {
+            char[] currentRow = grid[row];
+
             for (int col = 0; col < cols; col++) {
 
-                if (grid[row][col] == '1') {
+                if (currentRow[col] == '1') {
                     bfs(grid, row, col);
                     islands++;
                 }
@@ -38,34 +38,50 @@ class Solution {
         int head = 0;
         int tail = 0;
 
-        // Encode row/col into one int
-        queue[tail++] = startRow * cols + startCol;
+        rowQueue[tail] = startRow;
+        colQueue[tail++] = startCol;
+
         grid[startRow][startCol] = '0';
 
         while (head < tail) {
 
-            int position = queue[head++];
+            int row = rowQueue[head];
+            int col = colQueue[head++];
 
-            int row = position / cols;
-            int col = position % cols;
+            // DOWN
+            if (row + 1 < rows && grid[row + 1][col] == '1') {
 
-            for (int[] direction : DIRECTIONS) {
+                grid[row + 1][col] = '0';
 
-                int newRow = row + direction[0];
-                int newCol = col + direction[1];
+                rowQueue[tail] = row + 1;
+                colQueue[tail++] = col;
+            }
 
-                if (
-                    newRow >= 0 &&
-                    newRow < rows &&
-                    newCol >= 0 &&
-                    newCol < cols &&
-                    grid[newRow][newCol] == '1'
-                ) {
+            // UP
+            if (row > 0 && grid[row - 1][col] == '1') {
 
-                    grid[newRow][newCol] = '0';
+                grid[row - 1][col] = '0';
 
-                    queue[tail++] = newRow * cols + newCol;
-                }
+                rowQueue[tail] = row - 1;
+                colQueue[tail++] = col;
+            }
+
+            // RIGHT
+            if (col + 1 < cols && grid[row][col + 1] == '1') {
+
+                grid[row][col + 1] = '0';
+
+                rowQueue[tail] = row;
+                colQueue[tail++] = col + 1;
+            }
+
+            // LEFT
+            if (col > 0 && grid[row][col - 1] == '1') {
+
+                grid[row][col - 1] = '0';
+
+                rowQueue[tail] = row;
+                colQueue[tail++] = col - 1;
             }
         }
     }
