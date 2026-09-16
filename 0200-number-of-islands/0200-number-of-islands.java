@@ -1,13 +1,10 @@
 class Solution {
 
-    int rows;
-    int cols;
-
+    int rows, cols;
     int[] rowQueue;
     int[] colQueue;
 
     public int numIslands(char[][] grid) {
-
         rows = grid.length;
         cols = grid[0].length;
 
@@ -18,13 +15,13 @@ class Solution {
 
         int islands = 0;
 
-        for (int row = 0; row < rows; row++) {
-            char[] currentRow = grid[row];
+        for (int r = 0; r < rows; r++) {
+            char[] row = grid[r];
 
-            for (int col = 0; col < cols; col++) {
+            for (int c = 0; c < cols; c++) {
 
-                if (currentRow[col] == '1') {
-                    bfs(grid, row, col);
+                if (row[c] == '1') {
+                    flood(grid, r, c);
                     islands++;
                 }
             }
@@ -33,7 +30,7 @@ class Solution {
         return islands;
     }
 
-    private void bfs(char[][] grid, int startRow, int startCol) {
+    private void flood(char[][] grid, int startRow, int startCol) {
 
         int head = 0;
         int tail = 0;
@@ -41,48 +38,64 @@ class Solution {
         rowQueue[tail] = startRow;
         colQueue[tail++] = startCol;
 
-        grid[startRow][startCol] = '0';
-
         while (head < tail) {
 
-            int row = rowQueue[head];
-            int col = colQueue[head++];
+            int r = rowQueue[head];
+            int c = colQueue[head++];
 
-            // DOWN
-            if (row + 1 < rows && grid[row + 1][col] == '1') {
+            if (grid[r][c] != '1')
+                continue;
 
-                grid[row + 1][col] = '0';
+            char[] current = grid[r];
 
-                rowQueue[tail] = row + 1;
-                colQueue[tail++] = col;
-            }
+            int left = c;
+            int right = c;
 
-            // UP
-            if (row > 0 && grid[row - 1][col] == '1') {
+            while (left > 0 && current[left - 1] == '1')
+                left--;
 
-                grid[row - 1][col] = '0';
+            while (right + 1 < cols && current[right + 1] == '1')
+                right++;
 
-                rowQueue[tail] = row - 1;
-                colQueue[tail++] = col;
-            }
+            for (int x = left; x <= right; x++)
+                current[x] = '0';
 
-            // RIGHT
-            if (col + 1 < cols && grid[row][col + 1] == '1') {
+            if (r > 0)
+                tail = scanRow(grid, r - 1, left, right, tail);
 
-                grid[row][col + 1] = '0';
+            if (r + 1 < rows)
+                tail = scanRow(grid, r + 1, left, right, tail);
+        }
+    }
 
-                rowQueue[tail] = row;
-                colQueue[tail++] = col + 1;
-            }
+    private int scanRow(
+        char[][] grid,
+        int r,
+        int left,
+        int right,
+        int tail
+    ) {
 
-            // LEFT
-            if (col > 0 && grid[row][col - 1] == '1') {
+        char[] row = grid[r];
 
-                grid[row][col - 1] = '0';
+        int c = left;
 
-                rowQueue[tail] = row;
-                colQueue[tail++] = col - 1;
+        while (c <= right) {
+
+            if (row[c] == '1') {
+
+                // enqueue only once for this contiguous run
+                rowQueue[tail] = r;
+                colQueue[tail++] = c;
+
+                while (c <= right && row[c] == '1')
+                    c++;
+
+            } else {
+                c++;
             }
         }
+
+        return tail;
     }
 }
