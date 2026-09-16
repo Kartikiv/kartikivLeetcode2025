@@ -30,10 +30,10 @@ class Solution {
 
     private int[] partition(int[][] points, int low, int high) {
         int pivotIndex = (int) (Math.random() * (high - low + 1)) + low;
-        double pivot = calculateDistance(points[pivotIndex]);
+        int pivot = calculateDistance(points[pivotIndex]);
         int i = low;
         while (i <= high) {
-            double distance = calculateDistance(points[i]);
+            int distance = calculateDistance(points[i]);
             if (distance < pivot) {
                 swap(points, low, i);
                 low++;
@@ -54,7 +54,7 @@ class Solution {
         arr[j] = temp;
     }
 
-    private double calculateDistance(int[] point) {
-        return Math.pow(point[0], 2) + Math.pow(point[1], 2);
+    private int calculateDistance(int[] point) {
+        return point[0] * point[0] + point[1] * point[1];
     }
 }
