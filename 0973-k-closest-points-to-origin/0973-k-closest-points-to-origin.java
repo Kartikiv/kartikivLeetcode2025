@@ -1,19 +1,15 @@
 class Solution {
     public int[][] kClosest(int[][] points, int k) {
-        double[] distances = new double[points.length];
-        for (int i = 0; i < points.length; i++) {
-            distances[i] = calculateDistance(points[i]);
-        }
-
-        return quickSelect(distances, points, k);
+       
+        return quickSelect(points, k);
     }
 
-    private int[][] quickSelect(double[] arr, int[][] points, int k) {
+    private int[][] quickSelect(int[][] points, int k) {
         int target = k - 1;
         int low = 0;
-        int high = arr.length - 1;
+        int high = points.length - 1;
         while (low <= high) {
-            int[] range = partition(arr, points, low, high);
+            int[] range = partition (points, low, high);
             if (target < range[0]) {
                 high = range[0] - 1;
             } else if (target > range[1]) {
@@ -32,18 +28,17 @@ class Solution {
         return new int[][] { { -1, -1 } };
     }
 
-    private int[] partition(double[] arr, int[][] points, int low, int high) {
+    private int[] partition(int[][] points, int low, int high) {
         int pivotIndex = (int) (Math.random() * (high - low + 1)) + low;
-        double pivot = arr[pivotIndex];
+        double pivot = calculateDistance(points[pivotIndex]);
         int i = low;
         while (i <= high) {
-            if (arr[i] < pivot) {
-                swap(arr, low, i);
+            double distance = calculateDistance(points[i]);
+            if (distance < pivot) {
                 swap(points, low, i);
                 low++;
                 i++;
-            } else if (arr[i] > pivot) {
-                swap(arr, high, i);
+            } else if (distance > pivot) {
                 swap(points, high, i);
                 high--;
             } else {
@@ -51,13 +46,6 @@ class Solution {
             }
         }
         return new int[] { low, high };
-    }
-
-    private void swap(double[] arr, int i, int j) {
-        double temp = arr[i];
-        arr[i] = arr[j];
-        arr[j] = temp;
-
     }
 
     private void swap(int[][] arr, int i, int j) {
