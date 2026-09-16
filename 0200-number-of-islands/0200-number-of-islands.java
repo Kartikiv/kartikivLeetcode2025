@@ -16,17 +16,17 @@ class Solution {
     }
 
     public void bfs(char[][] grid, int i, int j) {
-        Queue<Pair<Integer, Integer>> queue = new LinkedList<>();
-        queue.add(new Pair<>(i, j));
+        Queue<int[]> queue = new LinkedList<>();
+        queue.add(new int[]{i,j});
         grid[i][j] = '0';
         while (!queue.isEmpty()) {
-            Pair<Integer, Integer> node = queue.poll();
+            int[] node = queue.poll();
             int[][] directions = new int[][] { { 1, 0 }, { 0, 1 }, { -1, 0 }, { 0, -1 } };
             for (int[] direction : directions) {
-                int newI = node.getKey() + direction[0];
-                int newJ = node.getValue() + direction[1];
+                int newI = node[0] + direction[0];
+                int newJ = node[1] + direction[1];
                 if (newI >= 0 && newI < grid.length && newJ >= 0 && newJ < grid[0].length && grid[newI][newJ] == '1') {
-                    queue.add(new Pair<>(newI, newJ));
+                    queue.add(new int []{newI, newJ});
                     grid[newI][newJ] = '0';
                 }
             }
