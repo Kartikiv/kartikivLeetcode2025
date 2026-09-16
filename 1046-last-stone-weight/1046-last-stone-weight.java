@@ -1,19 +1,38 @@
-import java.util.Comparator;
-import java.util.PriorityQueue;
-
 class Solution {
     public int lastStoneWeight(int[] stones) {
-        PriorityQueue<Integer> queue = new PriorityQueue<>(Comparator.reverseOrder());
+        if(stones.length <= 1) return stones[0];
+        int [] weightOrder = new int [1001];
         for (int stone : stones) {
-            queue.add(stone);
+            weightOrder[stone]++;
         }
-        while (queue.size() > 1) {
-            int firstHeavyStone = queue.poll();
-            int secondHeavyStone = queue.poll();
-            if (firstHeavyStone != secondHeavyStone) {
-                queue.offer(firstHeavyStone - secondHeavyStone);
+        int stonesInQueue = stones.length;
+        int j = 1000; 
+        while(stonesInQueue > 1){ 
+            int firstHeavyStone = -1;
+            int secondHeavyStone = -1;
+            while(j >= 0 && weightOrder[j] == 0){
+                j--;
+            }
+            weightOrder[j]--;
+            firstHeavyStone = j;
+            stonesInQueue--;
+            while(j >= 0 && weightOrder[j] == 0){
+                j--;
+            }
+            weightOrder[j]--;
+            secondHeavyStone = j; 
+            stonesInQueue--;
+            if(firstHeavyStone != secondHeavyStone){ 
+                weightOrder[firstHeavyStone - secondHeavyStone]++;
+                stonesInQueue++;
+                if(j < firstHeavyStone - secondHeavyStone){
+                    j = firstHeavyStone - secondHeavyStone;
+                }
             }
         }
-        return queue.isEmpty() ?  0: queue.poll();
+        while (j >= 0 && weightOrder[j] == 0) {
+            j--;
+        }
+        return stonesInQueue == 0 ? 0 : j;
     }
 }
