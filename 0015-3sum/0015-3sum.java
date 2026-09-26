@@ -1,42 +1,83 @@
+import java.util.*;
+
 class Solution {
     public List<List<Integer>> threeSum(int[] nums) {
-        List<List<Integer>> ans = new ArrayList<>();
         Arrays.sort(nums);
-        for (int i = 0; i < nums.length; i++) {
-            if (i > 0 && nums[i] == nums[i - 1]) {
-                continue;
-            }
-            int target = -1 * nums[i];
-            int j = i + 1;
+        return nSum(nums, 3, 0, 0);
+    }
+
+    public List<List<Integer>> nSum(
+            int[] nums,
+            int n,
+            long target,
+            int index) {
+
+        List<List<Integer>> ans = new ArrayList<>();
+
+        // Base case: 2-sum
+        if (n == 2) {
+            int j = index;
             int k = nums.length - 1;
+
             while (j < k) {
-                if (nums[k] + nums[j] > target) {
-                    int num = nums[k];
-                    while (k >= j && num == nums[k]) {
-                        k--;
-                    }
-                } else if (nums[k] + nums[j] < target) {
-                    int num = nums[j];
-                    while ( j <= k && num == nums[j]) {
+                long sum = (long) nums[j] + nums[k];
+
+                if (sum < target) {
+                    int left = nums[j];
+
+                    while (j < k && nums[j] == left) {
                         j++;
                     }
+
+                } else if (sum > target) {
+                    int right = nums[k];
+
+                    while (j < k && nums[k] == right) {
+                        k--;
+                    }
+
                 } else {
-                    List<Integer> temp = new ArrayList<>();
-                    temp.add(nums[i]);
-                    temp.add(nums[j]);
-                    temp.add(nums[k]);
-                    ans.add(temp);
-                    int num = nums[k];
-                    while (k >= j && num == nums[k]) {
-                        k--;
-                    }
-                    num = nums[j];
-                    while ( j <= k && num == nums[j]) {
+                    ans.add(new ArrayList<>(
+                            Arrays.asList(nums[j], nums[k])
+                    ));
+
+                    int left = nums[j];
+                    int right = nums[k];
+
+                    while (j < k && nums[j] == left) {
                         j++;
+                    }
+
+                    while (j < k && nums[k] == right) {
+                        k--;
                     }
                 }
             }
+
+            return ans;
         }
+
+        // Recursive n-sum
+        for (int i = index; i <= nums.length - n; i++) {
+
+            // Skip duplicate choice at this recursion level
+            if (i > index && nums[i] == nums[i - 1]) {
+                continue;
+            }
+
+            List<List<Integer>> temp =
+                    nSum(nums, n - 1, target - nums[i], i + 1);
+
+            for (List<Integer> list : temp) {
+                List<Integer> current = new ArrayList<>();
+
+                current.add(nums[i]);
+                current.addAll(list);
+
+                ans.add(current);
+            }
+        }
+
         return ans;
     }
 }
