@@ -1,81 +1,71 @@
 import java.util.*;
 
 class Solution {
-
     public List<List<Integer>> threeSum(int[] nums) {
 
-        final int MIN = -100000;
-        final int MAX = 100000;
-        final int OFFSET = 100000;
-
-        int[] freq = new int[200001];
+        Map<Integer, Integer> freq = new HashMap<>();
 
         // O(n)
         for (int x : nums) {
-            freq[x + OFFSET]++;
+            freq.merge(x, 1, Integer::sum);
         }
 
-        List<List<Integer>> result = new ArrayList<>();
+        int[] values = new int[freq.size()];
+        int p = 0;
 
-        // IMPORTANT:
-        // Don't iterate from -100000 to 100000 twice.
-        // Extract only values that actually exist.
-        List<Integer> values = new ArrayList<>();
-
-        for (int x = MIN; x <= MAX; x++) {
-            if (freq[x + OFFSET] > 0) {
-                values.add(x);
-            }
+        for (int x : freq.keySet()) {
+            values[p++] = x;
         }
 
-        for (int i = 0; i < values.size(); i++) {
+        Arrays.sort(values);
 
-            int a = values.get(i);
+        List<List<Integer>> ans = new ArrayList<>();
 
-            for (int j = i; j < values.size(); j++) {
+        // O(D²)
+        for (int i = 0; i < values.length; i++) {
 
-                int b = values.get(j);
+            int a = values[i];
 
-                // a <= b <= c
-                int c = -(a + b);
+            for (int j = i; j < values.length; j++) {
 
-                if (c < b)
+                int b = values[j];
+
+                long cLong = -(long) a - b;
+
+                // Since values are sorted and we require a <= b <= c
+                if (cLong < b)
+                    break;
+
+                if (cLong < Integer.MIN_VALUE ||
+                    cLong > Integer.MAX_VALUE)
                     continue;
 
-                if (c < MIN || c > MAX)
+                int c = (int) cLong;
+
+                Integer countC = freq.get(c);
+
+                // O(1) average lookup
+                if (countC == null)
                     continue;
 
-                if (freq[c + OFFSET] == 0)
-                    continue;
-
-                // a == b == c
                 if (a == b && b == c) {
+                    if (freq.get(a) >= 3)
+                        ans.add(Arrays.asList(a, b, c));
 
-                    if (freq[a + OFFSET] >= 3) {
-                        result.add(Arrays.asList(a, b, c));
-                    }
-
-                // a == b
                 } else if (a == b) {
+                    if (freq.get(a) >= 2)
+                        ans.add(Arrays.asList(a, b, c));
 
-                    if (freq[a + OFFSET] >= 2) {
-                        result.add(Arrays.asList(a, b, c));
-                    }
-
-                // b == c
                 } else if (b == c) {
+                    if (freq.get(b) >= 2)
+                        ans.add(Arrays.asList(a, b, c));
 
-                    if (freq[b + OFFSET] >= 2) {
-                        result.add(Arrays.asList(a, b, c));
-                    }
-
-                // all different
                 } else {
-                    result.add(Arrays.asList(a, b, c));
+                    ans.add(Arrays.asList(a, b, c));
                 }
             }
         }
 
-        return result;
+        return ans;
     }
 }
