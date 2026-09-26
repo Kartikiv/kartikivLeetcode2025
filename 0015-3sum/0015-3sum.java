@@ -12,53 +12,63 @@ class Solution {
         int min = 100_000;
         int max = -100_000;
 
-        // O(n)
+        // 1. Frequency table: O(n)
         for (int x : nums) {
             freq[x + OFFSET]++;
 
-            min = Math.min(min, x);
-            max = Math.max(max, x);
+            if (x < min) min = x;
+            if (x > max) max = x;
+        }
+
+        // 2. Build sorted distinct values
+        int distinctCount = 0;
+
+        for (int x = min; x <= max; x++) {
+            if (freq[x + OFFSET] != 0)
+                distinctCount++;
+        }
+
+        int[] values = new int[distinctCount];
+
+        int k = 0;
+
+        for (int x = min; x <= max; x++) {
+            if (freq[x + OFFSET] != 0)
+                values[k++] = x;
         }
 
         List<List<Integer>> ans = new ArrayList<>();
 
-        // a must be <= 0
-        for (int a = min; a <= Math.min(0, max); a++) {
+        // 3. Iterate only existing values
+        for (int i = 0; i < distinctCount; i++) {
 
-            int fa = freq[a + OFFSET];
+            int a = values[i];
 
-            if (fa == 0)
+            // a <= b <= c and sum = 0
+            // therefore a cannot be positive.
+            if (a > 0)
+                break;
+
+            // Even using the two largest values can't reach zero
+            if ((long) a +
+                values[distinctCount - 1] +
+                values[distinctCount - 1] < 0) {
                 continue;
+            }
 
-            /*
-             * We enforce:
-             *
-             * a <= b <= c
-             *
-             * c = -a-b
-             */
+            for (int j = i; j < distinctCount; j++) {
 
-            int startB = a;
+                int b = values[j];
 
-            // b <= c
-            // b <= -a-b
-            // 2b <= -a
-            int endB = Math.min(max, (-a) / 2);
-
-            for (int b = startB; b <= endB; b++) {
-
-                int fb = freq[b + OFFSET];
-
-                if (fb == 0)
-                    continue;
-
+                // c = -a-b
                 int c = -a - b;
 
                 // enforce b <= c
                 if (c < b)
-                    continue;
+                    break;
 
-                if (c < -100_000 || c > 100_000)
+                // c can't exist outside our actual input range
+                if (c > max)
                     continue;
 
                 int fc = freq[c + OFFSET];
@@ -66,23 +76,20 @@ class Solution {
                 if (fc == 0)
                     continue;
 
-                // -----------------------
-                // Multiplicity checking
-                // -----------------------
+                // Multiplicity
+                if (a == b) {
 
-                if (a == b && b == c) {
-
-                    if (fa < 3)
-                        continue;
-
-                } else if (a == b) {
-
-                    if (fa < 2)
-                        continue;
+                    if (b == c) {
+                        if (freq[a + OFFSET] < 3)
+                            continue;
+                    } else {
+                        if (freq[a + OFFSET] < 2)
+                            continue;
+                    }
 
                 } else if (b == c) {
 
-                    if (fb < 2)
+                    if (freq[b + OFFSET] < 2)
                         continue;
                 }
 
