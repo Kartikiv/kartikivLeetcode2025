@@ -1,93 +1,92 @@
 import java.util.*;
 
 class Solution {
-    public List<List<Integer>> threeSum(int[] nums) {
 
-        final int OFFSET = 100000;
-        final int SIZE = 200001;
+    private static final int OFFSET = 100_000;
+    private static final int SIZE = 200_001;
+
+    public List<List<Integer>> threeSum(int[] nums) {
 
         int[] freq = new int[SIZE];
 
-        int min = 100000;
-        int max = -100000;
+        int min = 100_000;
+        int max = -100_000;
 
         // O(n)
         for (int x : nums) {
             freq[x + OFFSET]++;
+
             min = Math.min(min, x);
             max = Math.max(max, x);
         }
 
-        // Extract distinct values in sorted order
-        int distinct = 0;
-
-        for (int x = min; x <= max; x++) {
-            if (freq[x + OFFSET] != 0)
-                distinct++;
-        }
-
-        int[] values = new int[distinct];
-        int p = 0;
-
-        for (int x = min; x <= max; x++) {
-            if (freq[x + OFFSET] != 0)
-                values[p++] = x;
-        }
-
         List<List<Integer>> ans = new ArrayList<>();
 
-        // Two pointers over DISTINCT values
-        for (int i = 0; i < distinct; i++) {
+        // a must be <= 0
+        for (int a = min; a <= Math.min(0, max); a++) {
 
-            int a = values[i];
+            int fa = freq[a + OFFSET];
 
-            if (a > 0)
-                break;
+            if (fa == 0)
+                continue;
 
-            int left = i;
-            int right = distinct - 1;
+            /*
+             * We enforce:
+             *
+             * a <= b <= c
+             *
+             * c = -a-b
+             */
 
-            while (left <= right) {
+            int startB = a;
 
-                int b = values[left];
-                int c = values[right];
+            // b <= c
+            // b <= -a-b
+            // 2b <= -a
+            int endB = Math.min(max, (-a) / 2);
 
-                long sum = (long) a + b + c;
+            for (int b = startB; b <= endB; b++) {
 
-                if (sum < 0) {
-                    left++;
+                int fb = freq[b + OFFSET];
+
+                if (fb == 0)
+                    continue;
+
+                int c = -a - b;
+
+                // enforce b <= c
+                if (c < b)
+                    continue;
+
+                if (c < -100_000 || c > 100_000)
+                    continue;
+
+                int fc = freq[c + OFFSET];
+
+                if (fc == 0)
+                    continue;
+
+                // -----------------------
+                // Multiplicity checking
+                // -----------------------
+
+                if (a == b && b == c) {
+
+                    if (fa < 3)
+                        continue;
+
+                } else if (a == b) {
+
+                    if (fa < 2)
+                        continue;
+
+                } else if (b == c) {
+
+                    if (fb < 2)
+                        continue;
                 }
-                else if (sum > 0) {
-                    right--;
-                }
-                else {
 
-                    // Check multiplicity
-                    if (a == b && b == c) {
-
-                        if (freq[a + OFFSET] >= 3)
-                            ans.add(Arrays.asList(a, b, c));
-
-                    }
-                    else if (a == b) {
-
-                        if (freq[a + OFFSET] >= 2)
-                            ans.add(Arrays.asList(a, b, c));
-
-                    }
-                    else if (b == c) {
-
-                        if (freq[b + OFFSET] >= 2)
-                            ans.add(Arrays.asList(a, b, c));
-
-                    }
-                    else {
-                        ans.add(Arrays.asList(a, b, c));
-                    }
-
-                    left++;
-                    right--;
-                }
+                ans.add(Arrays.asList(a, b, c));
             }
         }
 
