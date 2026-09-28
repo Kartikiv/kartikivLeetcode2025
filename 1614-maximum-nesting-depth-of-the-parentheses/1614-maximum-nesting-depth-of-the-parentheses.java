@@ -1,12 +1,11 @@
 class Solution {
     public int maxDepth(String s) {
         // Perform the same calculation
-        char[] formula = s.toCharArray();
         // every char is a either a digit, bracket or a operator
         int maxDepth = 0;
         int currentDepth = 0;
-        for (int i = 0; i < formula.length; i++) {
-            char c = formula[i];
+        for (int i = 0; i < s.length(); i++) {
+            char c = s.charAt(i);
             if (isOpenBracket(c)) {
                 currentDepth++;
             }
