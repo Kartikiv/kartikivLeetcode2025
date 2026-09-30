@@ -1,52 +1,103 @@
 class Solution {
     public String minWindow(String s, String t) {
-        if (s.length() == 0 || t.length() == 0)
+        if (s.length() < t.length())
             return "";
-        if (s.equals(t))
-            return s;
-        // step 1 : Frequency map of t
-        int[] tMap = new int[60];
+        int indexI = 0;
+        int indexJ = s.length();
         int needed = 0;
-        for (int i = 0; i < t.length(); i++) {
-            if (tMap[t.charAt(i) - 'A'] == 0)
+        int minLen = Integer.MAX_VALUE;
+        HashMap<Character, Integer> map = new HashMap<>();
+        for (char c : t.toCharArray()) {
+            if (!map.containsKey(c))
                 needed++;
-            tMap[t.charAt(i) - 'A']++;
+            map.put(c, map.getOrDefault(c, 0) + 1);
         }
-        int minl = -1;
-        int minr = -1;
-        int formed = 0;
-
-        // Step 2 : apply sliding window and move right till the window is valid 
-        // window is valid when formed == neeeded 
-        // when window is valid move left pointer right till the window becomes invalid while moving get the minwindow 
         int i = 0;
-        int j = 0;
-        int[] sMap = new int[60];
-        while (j < s.length()) {
-            // expand till valid
-            sMap[s.charAt(j) - 'A']++;
-            if (tMap[s.charAt(j) - 'A'] != 0 && tMap[s.charAt(j) - 'A'] == sMap[s.charAt(j) - 'A']) {
-                formed++;
+        for (int j = 0; j < s.length(); j++) {
+            if (map.containsKey(s.charAt(j))) {
+                map.put(s.charAt(j), map.get(s.charAt(j)) - 1);
+                if (map.get(s.charAt(j)) == 0) {
+                    needed--;
+                }
             }
+            // expand till the condition is valid
+            while (i <= j && needed == 0) {
+                if (j - i < indexJ - indexI) {
+                    indexI = i;
+                    indexJ = j;
+                    minLen = j - i;
+                }
+                if (map.containsKey(s.charAt(i))) {
+                    map.put(s.charAt(i), map.get(s.charAt(i)) + 1);
 
-            // shrink here
-            while (i <= j && formed == needed) {
-                if (minl == -1 || j - i < minr - minl) {
-                    minl = i;
-                    minr = j;
+                    if (map.get(s.charAt(i)) > 0) {
+                        needed++;
+                    }
                 }
-                sMap[s.charAt(i) - 'A']--;
-                if (tMap[s.charAt(i) - 'A'] != 0 && sMap[s.charAt(i) - 'A'] < tMap[s.charAt(i) - 'A']) {
-                    formed--;
-                }
+
                 i++;
             }
 
-            j++;
+        }
+        return minLen == Integer.MAX_VALUE ? "" : s.substring(indexI, indexJ + 1);
+    }
+}
+/*
+
+import java.util.HashMap;
+
+/**
+ * Find the shortest substring containing every required character with its
+ * multiplicity.
+ *
+ * <p>
+ * Contract: s and t contain ASCII characters. Return the earliest window on
+ * ties,
+ * or the empty string if t is empty or no window exists.
+ *
+ * <p>
+ * Example: s="ADOBECODEBANC", t="ABC" returns "BANC".
+ * <p>
+ * Target: O(s.length() + t.length()) time and O(1) alphabet space.
+
+public class MinimumWindowSubstring {
+    public String minWindow(String s, String t) {
+        if (s.length() < t.length())
+            return "";
+        int indexI = 0;
+        int indexJ = s.length();
+        int needed = t.length();
+        HashMap<Character, Integer> map = new HashMap<>();
+        for (char c : t.toCharArray()) {
+            if (!map.containsKey(c))
+                needed++;
+            map.put(c, map.getOrDefault(c, 0) + 1);
+        }
+        int i = 0;
+        for (int j = 0; j < s.length(); j++) {
+            if (map.containsKey(s.charAt(j))) {
+                map.put(s.charAt(j), map.get(s.charAt(j)) - 1);
+                if (map.get(s.charAt(j)) == 0) {
+                    needed--;
+                }
+            }
+            // expand till the condition is valid
+            while (i < j && needed == 0) {
+                if (map.containsKey(s.charAt(i))) {
+                    map.put(s.charAt(i), map.get(s.charAt(i)) + 1);
+                }
+                if (map.get(s.charAt(i)) > 0) {
+                    needed++;
+                }
+                if (j - i < indexJ - indexI) {
+                    indexI = i;
+                    indexJ = j;
+                }
+            }
 
         }
-
-        return minl == -1 ? "" : s.substring(minl, minr + 1);
+        return s.substring(indexI, indexJ + 1);
     }
-
 }
+
+*/
