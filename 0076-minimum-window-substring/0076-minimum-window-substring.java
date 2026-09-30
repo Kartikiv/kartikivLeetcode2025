@@ -2,8 +2,8 @@ class Solution {
     public String minWindow(String s, String t) {
         if (s.length() < t.length())
             return "";
-        int indexI = 0;
-        int indexJ = s.length();
+        int minI = 0;
+        int minJ = s.length();
         int needed = 0;
         int minLen = Integer.MAX_VALUE;
         HashMap<Character, Integer> map = new HashMap<>();
@@ -22,9 +22,9 @@ class Solution {
             }
             // expand till the condition is valid
             while (i <= j && needed == 0) {
-                if (j - i < indexJ - indexI) {
-                    indexI = i;
-                    indexJ = j;
+                if (j - i < minJ - minI) {
+                    minI = i;
+                    minJ = j;
                     minLen = j - i;
                 }
                 if (map.containsKey(s.charAt(i))) {
@@ -39,7 +39,7 @@ class Solution {
             }
 
         }
-        return minLen == Integer.MAX_VALUE ? "" : s.substring(indexI, indexJ + 1);
+        return minLen == Integer.MAX_VALUE ? "" : s.substring(minI, minJ + 1);
     }
 }
 /*
