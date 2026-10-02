@@ -29,6 +29,7 @@ class Solution {
         if (queue.size() > k) {
             if(Math.abs(queue.peekFirst() - target) <= Math.abs(queue.peekLast() - target)){ 
                 queue.pollLast();
+                return;
             }else{ 
                 queue.pollFirst();
             }
