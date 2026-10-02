@@ -26,6 +26,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0202-happy-number](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0202-happy-number) |
 | [0234-palindrome-linked-list](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0234-palindrome-linked-list) |
 | [0253-meeting-rooms-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0253-meeting-rooms-ii) |
+| [0272-closest-binary-search-tree-value-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0272-closest-binary-search-tree-value-ii) |
 | [0295-find-median-from-data-stream](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0295-find-median-from-data-stream) |
 | [0349-intersection-of-two-arrays](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0349-intersection-of-two-arrays) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0350-intersection-of-two-arrays-ii) |
@@ -121,6 +122,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0227-basic-calculator-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0227-basic-calculator-ii) |
 | [0232-implement-queue-using-stacks](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0232-implement-queue-using-stacks) |
 | [0234-palindrome-linked-list](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0234-palindrome-linked-list) |
+| [0272-closest-binary-search-tree-value-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0272-closest-binary-search-tree-value-ii) |
 | [0364-nested-list-weight-sum-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0364-nested-list-weight-sum-ii) |
 | [0394-decode-string](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0394-decode-string) |
 | [0496-next-greater-element-i](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0496-next-greater-element-i) |
@@ -618,6 +620,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0215-kth-largest-element-in-an-array](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0215-kth-largest-element-in-an-array) |
 | [0239-sliding-window-maximum](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0239-sliding-window-maximum) |
 | [0253-meeting-rooms-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0253-meeting-rooms-ii) |
+| [0272-closest-binary-search-tree-value-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0272-closest-binary-search-tree-value-ii) |
 | [0295-find-median-from-data-stream](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0295-find-median-from-data-stream) |
 | [0347-top-k-frequent-elements](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0347-top-k-frequent-elements) |
 | [0355-design-twitter](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0355-design-twitter) |
@@ -657,6 +660,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0230-kth-smallest-element-in-a-bst](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0230-kth-smallest-element-in-a-bst) |
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
+| [0272-closest-binary-search-tree-value-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0272-closest-binary-search-tree-value-ii) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0437-path-sum-iii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0437-path-sum-iii) |
 | [0543-diameter-of-binary-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0543-diameter-of-binary-tree) |
@@ -693,6 +697,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
 | [0261-graph-valid-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0261-graph-valid-tree) |
+| [0272-closest-binary-search-tree-value-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0272-closest-binary-search-tree-value-ii) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0310-minimum-height-trees](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0310-minimum-height-trees) |
 | [0323-number-of-connected-components-in-an-undirected-graph](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0323-number-of-connected-components-in-an-undirected-graph) |
@@ -780,6 +785,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0230-kth-smallest-element-in-a-bst](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0230-kth-smallest-element-in-a-bst) |
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
+| [0272-closest-binary-search-tree-value-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0272-closest-binary-search-tree-value-ii) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0437-path-sum-iii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0437-path-sum-iii) |
 | [0543-diameter-of-binary-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0543-diameter-of-binary-tree) |
@@ -808,6 +814,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0098-validate-binary-search-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0098-validate-binary-search-tree) |
 | [0230-kth-smallest-element-in-a-bst](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0230-kth-smallest-element-in-a-bst) |
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
+| [0272-closest-binary-search-tree-value-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0272-closest-binary-search-tree-value-ii) |
 | [0703-kth-largest-element-in-a-stream](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0703-kth-largest-element-in-a-stream) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0789-kth-largest-element-in-a-stream) |
 ## Data Stream
