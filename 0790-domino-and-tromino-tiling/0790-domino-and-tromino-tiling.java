@@ -2,18 +2,22 @@ class Solution {
     private static long MOD = 1_000_000_007l;
 
     public int numTilings(int n) {
-        long[] dp = new long[n + 1];
-        for (int i = 0; i < dp.length; i++) {
-            if (i == 0) {
-                dp[i] = 1;
-            } else if (i == 1) {
-                dp[i] = 1;
-            } else if (i == 2) {
-                dp[i] = 2;
-            } else {
-                dp[i] = (2 * dp[i - 1] + dp[i - 3]) % MOD;
-            }
+        if(n == 0){ 
+            return 0;
         }
-        return (int) (dp[n]);
+        if(n == 1) return 1; 
+        if(n == 2) return 2;
+        long previous = 2;
+        long secondPrevious = 1;
+        long thirdPrevious = 1;
+        long currentPossibillities = 0;
+        for (int i = 3; i <= n; i++) {
+            currentPossibillities = (2 * previous + thirdPrevious) % MOD;
+            thirdPrevious = secondPrevious;
+            secondPrevious = previous;
+            previous = currentPossibillities;
+
+        }
+        return (int) (currentPossibillities);
     }
 }
