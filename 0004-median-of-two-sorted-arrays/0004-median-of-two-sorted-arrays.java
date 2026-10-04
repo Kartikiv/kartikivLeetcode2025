@@ -1,31 +1,49 @@
 class Solution {
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
-        // One basic way is maintaing a min heap
-        // and a maxheap
-        PriorityQueue<Integer> minQueue = new PriorityQueue<>();
-        PriorityQueue<Integer> maxQueue = new PriorityQueue<>((a,b) -> b - a);
-        int i = 0;
-        int j = 0;
-        double median = 0;
-        while (i < nums1.length || j < nums2.length) {
-            if (i < nums1.length)
-                minQueue.add(nums1[i]);
-                i++;
-            if (j < nums2.length)
-                minQueue.add(nums2[j]);
-                j++;
+        if (nums1.length > nums2.length) {
+            return findMedianSortedArrays(nums2, nums1);
+        }
+        int m = nums1.length; 
+        int n = nums2.length; 
+        int totalLeftSize = (m + n + 1) / 2;
 
-            while (minQueue.size() > maxQueue.size()) {
-                int node = minQueue.poll();
-                maxQueue.add(node);
+        int left = 0; 
+        int right = m; 
+
+        while(left <= right){ 
+            int partitionA = left + (right - left) / 2; 
+            int partitionB = totalLeftSize - partitionA;
+
+            int Aleft = partitionA == 0 ? 
+                        Integer.MIN_VALUE :
+                        nums1[partitionA - 1];
+            int Aright = partitionA == m ?
+                        Integer.MAX_VALUE:
+                        nums1[partitionA]; 
+            int Bleft = partitionB == 0 ? 
+                        Integer.MIN_VALUE : 
+                        nums2[partitionB - 1];
+            int Bright = partitionB == n ?
+                        Integer.MAX_VALUE:
+                        nums2[partitionB]; 
+            if(Aleft <= Bright && Bleft <= Aright){ 
+                if((m + n) % 2 == 1){ 
+                    return Math.max(Aleft, Bleft);
+                }
+
+                return (
+                    Math.max(Aleft, Bleft) 
+                    +
+                    Math.min(Aright, Bright)
+                ) / 2.0;
+            }else if(Aleft > Bright){ 
+                right = partitionA - 1;
+            } else{ 
+                left = partitionA + 1;
             }
+             
         }
-        if(minQueue.size() == maxQueue.size()){ 
-            double a = (double)minQueue.peek();
-            double b = (double)maxQueue.peek();
-            return (a + b) / 2;
-        }else{ 
-            return (double) maxQueue.peek();
-        }
+
+    return 0; 
     }
 }
