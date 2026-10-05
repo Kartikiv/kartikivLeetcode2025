@@ -1,89 +1,101 @@
 class Node {
     int val;
+    long id;
     Node next;
     Node prev;
+    boolean isDelete = false;
+
+    public Node(int x,long id, Node prev, Node next) {
+        this.val = x;
+        this.id = id;
+        this.prev = prev;
+        this.next = next;
+    }
 }
 
 class MaxStack {
-    TreeMap<Integer, List<Node>> map;
+    static long id;
+    PriorityQueue<Node> pq;
     Node head;
 
     public MaxStack() {
-        this.map = new TreeMap<>();
+         pq = new PriorityQueue<>((a, b) -> {
+            if (a.val != b.val) {
+                return Integer.compare(b.val, a.val);
+            }
+
+            // more recently pushed node first
+            return Long.compare(b.id, a.id);
+        });
     }
 
     public void push(int x) {
-        Node node;
-        // check head 
+        
         if (head == null) {
-            node = new Node();
-            node.val = x;
-            head = node;
+            head = new Node(x, id++, null, null);
+            pq.add(head);
         } else {
-            node = new Node();
-            node.val = x;
-            node.next = head;
+            Node node = new Node(x,id++, null, head);
             head.prev = node;
             head = node;
+            pq.add(node);
         }
-        map.putIfAbsent(x, new ArrayList<>());
-        map.get(x).add(node);
     }
 
     public int pop() {
-        Node node = head;
-        if (node == null)
+        if (head == null)
             return -1;
-        head = node.next;
+        Node nodeRemoved = head;
+        head = nodeRemoved.next;
+        nodeRemoved.isDelete = true;
         if (head != null) {
             head.prev = null;
         }
 
-        List<Node> nodeList = map.get(node.val);
-        if (nodeList.size() == 1) {
-            map.remove(node.val);
-        } else {
-            nodeList.remove(nodeList.size() - 1);
-        }
-
-        return node.val;
+        return nodeRemoved.val;
     }
 
     public int top() {
-        Node node = head;
-        if (node == null)
+        if (head == null) {
             return -1;
-
+        }
         return head.val;
     }
 
     public int peekMax() {
-        if (map.isEmpty()) {
+        cleanup();
+        if (pq.isEmpty()) {
             return -1;
         }
-        return map.lastKey();
+        return pq.peek().val;
+    }
+
+    public void cleanup() {
+        while (!pq.isEmpty() && pq.peek().isDelete) {
+        pq.poll();
+    }
     }
 
     public int popMax() {
-        List<Node> nodeList = map.get(map.lastKey());
-        Node node = nodeList.get(nodeList.size() - 1);
-        nodeList.remove(nodeList.size() - 1);
-        Node prev = node.prev;
-        Node next = node.next;
-        if (prev != null) {
-            prev.next = next;
-
+        cleanup();
+        if (pq.isEmpty())
+            return -1;
+        Node node = pq.poll();
+        Node prevNode = node.prev;
+        Node nextNode = node.next;
+        if(node == head){ 
+            head = nextNode;
         }
-        if (next != null) {
-            next.prev = prev;
+        if (prevNode != null) {
+            prevNode.next = nextNode;
         }
-        if (node == head) {
-            head = next;
+        if (nextNode != null) {
+            nextNode.prev = prevNode;
         }
-        if(nodeList.size() == 0){ 
-            map.remove(node.val);
-        }
-
+       
+        node.next = null;
+        node.prev = null;
+        node.isDelete = true;
         return node.val;
     }
 }
