@@ -1,3 +1,6 @@
+import java.util.*;
+import java.util.concurrent.locks.ReentrantLock;
+
 class Node {
     int val;
     long id;
@@ -5,7 +8,7 @@ class Node {
     Node prev;
     boolean isDelete = false;
 
-    public Node(int x,long id, Node prev, Node next) {
+    public Node(int x, long id, Node prev, Node next) {
         this.val = x;
         this.id = id;
         this.prev = prev;
@@ -17,9 +20,10 @@ class MaxStack {
     static long id;
     PriorityQueue<Node> pq;
     Node head;
+    private final ReentrantLock lock = new ReentrantLock();
 
     public MaxStack() {
-         pq = new PriorityQueue<>((a, b) -> {
+        pq = new PriorityQueue<>((a, b) -> {
             if (a.val != b.val) {
                 return Integer.compare(b.val, a.val);
             }
@@ -30,73 +34,111 @@ class MaxStack {
     }
 
     public void push(int x) {
-        
-        if (head == null) {
-            head = new Node(x, id++, null, null);
-            pq.add(head);
-        } else {
-            Node node = new Node(x,id++, null, head);
-            head.prev = node;
-            head = node;
-            pq.add(node);
+        lock.lock();
+        try {
+            if (head == null) {
+                head = new Node(x, id++, null, null);
+                pq.add(head);
+            } else {
+                Node node = new Node(x, id++, null, head);
+                head.prev = node;
+                head = node;
+                pq.add(node);
+            }
+        } catch (Exception e) {
+
+        } finally {
+            lock.unlock();
         }
+
     }
 
     public int pop() {
-        if (head == null)
+        lock.lock();
+        try {
+            if (head == null)
+                return -1;
+            Node nodeRemoved = head;
+            head = nodeRemoved.next;
+            nodeRemoved.isDelete = true;
+            if (head != null) {
+                head.prev = null;
+            }
+
+            return nodeRemoved.val;
+        } catch (Exception e) {
             return -1;
-        Node nodeRemoved = head;
-        head = nodeRemoved.next;
-        nodeRemoved.isDelete = true;
-        if (head != null) {
-            head.prev = null;
+        } finally {
+            lock.unlock();
         }
 
-        return nodeRemoved.val;
     }
 
     public int top() {
-        if (head == null) {
+        lock.lock();
+        try {
+            if (head == null) {
+                return -1;
+            }
+            return head.val;
+        } catch (Exception e) {
             return -1;
+        } finally {
+            lock.unlock();
+            ;
         }
-        return head.val;
+
     }
 
     public int peekMax() {
-        cleanup();
-        if (pq.isEmpty()) {
+        lock.lock();
+        try {
+            cleanup();
+            if (pq.isEmpty()) {
+                return -1;
+            }
+            return pq.peek().val;
+        } catch (Exception e) {
             return -1;
+        } finally {
+            lock.unlock();
         }
-        return pq.peek().val;
     }
 
     public void cleanup() {
         while (!pq.isEmpty() && pq.peek().isDelete) {
-        pq.poll();
-    }
+            pq.poll();
+        }
     }
 
     public int popMax() {
-        cleanup();
-        if (pq.isEmpty())
+        lock.lock();
+        try {
+            cleanup();
+            if (pq.isEmpty())
+                return -1;
+            Node node = pq.poll();
+            Node prevNode = node.prev;
+            Node nextNode = node.next;
+            if (node == head) {
+                head = nextNode;
+            }
+            if (prevNode != null) {
+                prevNode.next = nextNode;
+            }
+            if (nextNode != null) {
+                nextNode.prev = prevNode;
+            }
+
+            node.next = null;
+            node.prev = null;
+            node.isDelete = true;
+            return node.val;
+        } catch (Exception e) {
             return -1;
-        Node node = pq.poll();
-        Node prevNode = node.prev;
-        Node nextNode = node.next;
-        if(node == head){ 
-            head = nextNode;
+        } finally {
+            lock.unlock();
         }
-        if (prevNode != null) {
-            prevNode.next = nextNode;
-        }
-        if (nextNode != null) {
-            nextNode.prev = prevNode;
-        }
-       
-        node.next = null;
-        node.prev = null;
-        node.isDelete = true;
-        return node.val;
     }
 }
 
