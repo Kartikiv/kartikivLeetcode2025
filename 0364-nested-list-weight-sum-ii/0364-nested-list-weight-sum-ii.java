@@ -27,31 +27,29 @@
  * }
  */
 class Solution {
+    int maxDepth = 0;
+    int depthWeightedSum = 0;
+    int sum = 0;
+    int totalIntegers = 0;
 
     public int depthSumInverse(List<NestedInteger> nestedList) {
-        int totalSum = 0;
-        int prevSum = 0;
-        Queue<NestedInteger> queue = new LinkedList<>();
-        // add everthing to the queue
-        for (NestedInteger integer : nestedList) {
-            queue.add(integer);
-        }
-        // process each level
-        while (!queue.isEmpty()) {
-            int size = queue.size();
-            for (int i = 0; i < size; i++) {
-                NestedInteger nestedInteger = queue.poll();
-                if (nestedInteger.isInteger()) {
-                    prevSum += nestedInteger.getInteger();
-                } else {
-                    queue.addAll(nestedInteger.getList());
-                }
+        for (NestedInteger integer : nestedList)
+            dfdHelper(integer, 0);
+        return (maxDepth + 1) * sum - depthWeightedSum;
 
-            }
-            totalSum += prevSum;
-
-        }
-        return totalSum;
     }
 
+    public void dfdHelper(NestedInteger nestedInteger, int depth) {
+        depth++;
+        maxDepth = Math.max(maxDepth, depth);
+        if (nestedInteger.isInteger()) {
+            sum += nestedInteger.getInteger();
+            depthWeightedSum += nestedInteger.getInteger() * depth;
+            totalIntegers++;
+            return;
+        }
+        for (NestedInteger integer : nestedInteger.getList()) {
+            dfdHelper(integer, depth);
+        }
+    }
 }
