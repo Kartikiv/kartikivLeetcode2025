@@ -1,33 +1,36 @@
-import java.util.*;
 class Solution {
-    // Here we can use kahns bfs algorithm to see if cycles exist 
     public boolean canFinish(int numCourses, int[][] prerequisites) {
-       int order = 0;
-        // calculate indegree 
-        int [] inDegree = new int[numCourses];
-        List<Integer>[] graph = new List[numCourses];
-        Arrays.setAll(graph, i -> new ArrayList<>());
-        for(int [] prerequisite : prerequisites){ 
-            inDegree[prerequisite[0]]++;
-            graph[prerequisite[1]].add(prerequisite[0]);
+        List<Integer>[] adjacencyList = new ArrayList[numCourses];
+        Arrays.setAll(adjacencyList, n -> new ArrayList<>());
+        // Bfs with inDegree 
+        int[] inDegree = new int[numCourses];
+        for (int[] prerequisite : prerequisites) {
+            int u = prerequisite[1];
+            int v = prerequisite[0];
+            inDegree[u]++;
+            adjacencyList[v].add(u);
         }
         Queue<Integer> queue = new LinkedList<>();
-        for(int i = 0; i < inDegree.length; i++){ 
-            if(inDegree[i] == 0){
+        for (int i = 0; i < inDegree.length; i++) {
+            if (inDegree[i] == 0) {
                 queue.add(i);
             }
         }
+        int processedNodes = 0;
         while (!queue.isEmpty()) {
-            int node = queue.poll();
-            order++;
-            for(int child : graph[node]){ 
-                inDegree[child]--;
-                if(inDegree[child] == 0){ 
-                    queue.add(child);
+            int size = queue.size();
+            processedNodes += size;
+            for(int i = 0; i < size; i++){ 
+                int node = queue.poll();
+
+                for(int child : adjacencyList[node]){ 
+                    inDegree[child]--;
+                    if(inDegree[child] == 0){ 
+                        queue.add(child);
+                    }
                 }
             }
-            
         }
-    return order == numCourses; 
-}
+    return processedNodes == numCourses; 
+    }
 }
