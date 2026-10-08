@@ -1,60 +1,42 @@
-class Cell{
-    int i,j;
-    public Cell(int i , int j ){
-        this.i = i;
-        this.j = j; 
-    }
-}
 class Solution {
-    public int orangesRotting(int[][] rooms) {
-        
-        int count = 0 ;
-        Queue<Cell> queue = new LinkedList<Cell>();
-        for (int i = 0 ; i < rooms.length; i++){
-            for(int j =0; j < rooms[0].length; j++){
-                if(rooms[i][j] == 2){
-                    queue.add(new Cell(i, j));
-                }
-            }
-        } 
-        boolean flag = true;
-        for (int i = 0 ; i < rooms.length; i++){
-            for(int j =0; j < rooms[0].length; j++){
-                if(rooms[i][j] == 1){
-                    flag = false;
+    private static int[][] directions = new int[][] { { 0, 1 }, { 1, 0 }, { -1, 0 }, { 0, -1 } };
+
+    public int orangesRotting(int[][] grid) {
+        int freshOranges = 0;
+        Queue<int []> queue = new LinkedList<>();
+        for(int i = 0; i < grid.length; i++){ 
+            for(int j = 0; j < grid[0].length; j++){ 
+                // Add all the rotten oranges to the queue
+                if(grid[i][j] == 2){ 
+                    queue.add(new int [] {i, j});
+                }else if(grid[i][j] == 1){ 
+                    freshOranges++;
                 }
             }
         }
-        if(queue.isEmpty() && flag ) return 0 ;
-        if(queue.isEmpty() && !flag ) return -1 ;
-        return bfs(rooms, queue); 
+        if(freshOranges == 0){ 
+            return 0; 
         }
-    public int bfs(int [][] rooms, Queue<Cell> queue){
-        int[][] directions = {{ -1, 0 }, { 1, 0 }, { 0, -1 } ,{ 0, 1 }};
-        int count = 0 ;
-        while(!queue.isEmpty()){
+        int timeTaken = 0; 
+        while(!queue.isEmpty()){ 
             int size = queue.size();
-            count ++;
-            for(int i =0 ; i < size; i++){
-            Cell cell = queue.poll();
-           for (int [] direction : directions){
-            int newI = cell.i + direction[0];
-            int newJ = cell.j + direction[1];
-            if(newI >= 0 && newI < rooms.length && newJ >= 0 && newJ < rooms[0].length && rooms[newI][newJ] == 1){
-                rooms[newI][newJ] = 2;
-                queue.add(new Cell(newI, newJ));
-            }
-           } 
-            }
-        }    
-        boolean flag = true;
-        for (int i = 0 ; i < rooms.length; i++){
-            for(int j =0; j < rooms[0].length; j++){
-                if(rooms[i][j] == 1){
-                    flag = false;
+            
+            for(int i = 0; i < size; i++){ 
+                int [] node = queue.poll();
+                for(int [] direction : directions){ 
+                    int newI = node[0] + direction[0]; 
+                    int newJ = node[1] + direction[1];
+                    if(newI >= 0 && newJ >= 0 && 
+                    newI < grid.length && newJ < grid[0].length &&
+                    grid[newI][newJ] == 1){ 
+                        queue.add(new int[] {newI, newJ});
+                        freshOranges--;
+                        grid[newI][newJ] = 2; // turn fresh oranges to rotten oranges
+                    }
                 }
             }
+            timeTaken++;
         }
-    return flag ? count - 1 : -1 ;
+        return freshOranges == 0 ? timeTaken - 1 : -1;
     }
 }
