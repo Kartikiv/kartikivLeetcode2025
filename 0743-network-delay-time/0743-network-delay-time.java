@@ -1,53 +1,65 @@
-record Pair(int vertex, int weight) {
-};
-
-record QueueNode(int bestDistance, int vertex) {
-};
-
 class Solution {
     public int networkDelayTime(int[][] times, int n, int k) {
+
+        List<Pair<Integer, Integer>>[] adjacencyList = new List[n + 1];
+        Arrays.setAll(adjacencyList, i -> new ArrayList<>());
+
+        for (int[] time : times) {
+            int source = time[0];
+            int destination = time[1];
+            int weight = time[2];
+
+            adjacencyList[source].add(new Pair<>(destination, weight));
+        }
+
         int[] distances = new int[n + 1];
-
-        int ans = Integer.MIN_VALUE;
-        // Fill in all the distances with Infinity
         Arrays.fill(distances, Integer.MAX_VALUE);
-        distances[0] = 0;
-        // Building Adjacency List
-        Map<Integer, List<Pair>> adjacencyList = buildAdjacencyList(times, n);
-       
 
-        // Select the target or start node push it into the queue 
         distances[k] = 0;
-        Queue<QueueNode> queue = new LinkedList<>();
-        queue.add(new QueueNode(0, k));
-        while (!queue.isEmpty()) {
-            QueueNode qNode = queue.poll();
-            List<Pair> pairs = adjacencyList.getOrDefault(qNode.vertex(), new ArrayList<Pair>());
-            for (Pair pair : pairs) {
-                // Relaxation is performed if we find any distances shorter than the present distances 
-                if (distances[pair.vertex()] > qNode.bestDistance() + pair.weight()) {
-                    distances[pair.vertex()] = qNode.bestDistance() + pair.weight();
-                    queue.add(new QueueNode(distances[pair.vertex()], pair.vertex()));
+
+        // Pair = <distance, node>
+        PriorityQueue<Pair<Integer, Integer>> pq =
+                new PriorityQueue<>((a, b) ->
+                        Integer.compare(a.getKey(), b.getKey()));
+
+        pq.add(new Pair<>(0, k));
+
+        while (!pq.isEmpty()) {
+
+            Pair<Integer, Integer> current = pq.poll();
+
+            int currentDistance = current.getKey();
+            int node = current.getValue();
+
+            // stale entry
+            if (currentDistance > distances[node]) {
+                continue;
+            }
+
+            for (Pair<Integer, Integer> edge : adjacencyList[node]) {
+
+                int child = edge.getKey();
+                int weight = edge.getValue();
+
+                int newDistance = currentDistance + weight;
+
+                if (newDistance < distances[child]) {
+                    distances[child] = newDistance;
+                    pq.add(new Pair<>(newDistance, child));
                 }
             }
-
         }
 
-        for (int distance : distances) {
-            if (distance == Integer.MAX_VALUE) {
+        int maxDistance = 0;
+
+        for (int node = 1; node <= n; node++) {
+            if (distances[node] == Integer.MAX_VALUE) {
                 return -1;
             }
-            ans = Math.max(ans, distance);
-        }
-        return ans;
-    }
 
-    public Map<Integer, List<Pair>> buildAdjacencyList(int[][] times, int n) {
-        Map<Integer, List<Pair>> map = new HashMap<>();
-        for (int[] edge : times) {
-            map.computeIfAbsent(edge[0], _ -> new ArrayList<>()).add(new Pair(edge[1], edge[2]));
+            maxDistance = Math.max(maxDistance, distances[node]);
         }
 
-        return map;
+        return maxDistance;
     }
 }
