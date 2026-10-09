@@ -1140,6 +1140,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0547-number-of-provinces](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0547-number-of-provinces) |
 | [0631-design-excel-sum-formula](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0631-design-excel-sum-formula) |
 | [0684-redundant-connection](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0684-redundant-connection) |
+| [0743-network-delay-time](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0743-network-delay-time) |
 | [0797-all-paths-from-source-to-target](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0797-all-paths-from-source-to-target) |
 | [0802-find-eventual-safe-states](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0802-find-eventual-safe-states) |
 | [0851-loud-and-rich](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0851-loud-and-rich) |
@@ -1211,4 +1212,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0646-maximum-length-of-pair-chain](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0646-maximum-length-of-pair-chain) |
+## Dijkstra's Algorithm
+|  |
+| ------- |
+| [0743-network-delay-time](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0743-network-delay-time) |
 <!---LeetCode Topics End-->
