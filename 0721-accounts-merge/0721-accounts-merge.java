@@ -1,88 +1,75 @@
-import java.util.*;
-
 class Solution {
     public List<List<String>> accountsMerge(List<List<String>> accounts) {
-        // email -> groupId
-        Map<String, Integer> emailToGroup = new HashMap<>();
-
-        // groupId -> emails
-        List<Set<String>> groupEmails = new ArrayList<>();
-
-        // groupId -> name
-        List<String> groupName = new ArrayList<>();
-
-        for (List<String> acc : accounts) {
-            String name = acc.get(0);
-
-            // Collect all groupIds referenced by this account's emails
-            Set<Integer> seenGroups = new HashSet<>();
-            for (int j = 1; j < acc.size(); j++) {
-                String email = acc.get(j);
-                Integer gid = emailToGroup.get(email);
-                if (gid != null) seenGroups.add(gid);
-            }
-
-            if (seenGroups.isEmpty()) {
-                // Create new group
-                int newG = groupEmails.size();
-                groupEmails.add(new HashSet<>());
-                groupName.add(name);
-
-                for (int j = 1; j < acc.size(); j++) {
-                    String email = acc.get(j);
-                    groupEmails.get(newG).add(email);
-                    emailToGroup.put(email, newG);
-                }
-            } else {
-                // Merge into one main group (pick any; we pick the smallest for stability)
-                int main = Integer.MAX_VALUE;
-                for (int g : seenGroups) main = Math.min(main, g);
-
-                // Ensure main group has a name (it always should)
-                if (groupName.get(main) == null) groupName.set(main, name);
-
-                // First, add this account's emails to main
-                for (int j = 1; j < acc.size(); j++) {
-                    String email = acc.get(j);
-                    groupEmails.get(main).add(email);
-                    emailToGroup.put(email, main);
-                }
-
-                // Then, merge other groups into main
-                for (int g : seenGroups) {
-                    if (g == main) continue;
-                    Set<String> otherSet = groupEmails.get(g);
-                    if (otherSet == null) continue; // already merged earlier
-
-                    for (String email : otherSet) {
-                        groupEmails.get(main).add(email);
-                        emailToGroup.put(email, main);
-                    }
-
-                    // Mark merged group as deleted
-                    groupEmails.set(g, null);
-                    groupName.set(g, null);
-                }
+        List<List<String>> mergedAccounts = new ArrayList<>();
+        Map<String, String> nameMap = new HashMap<>();
+        DSU dsu = new DSU(accounts.size());
+        for (int i = 0; i < accounts.size(); i++) {
+            nameMap.put(accounts.get(i).get(1), accounts.get(i).get(0));
+        }
+        for (int i = 0; i < accounts.size(); i++) {
+            String emailOne = accounts.get(i).get(1);
+            dsu.find(emailOne);
+            for (int j = 2; j < accounts.get(i).size(); j++) {
+                String emailTwo = accounts.get(i).get(j);
+                dsu.union(emailOne, emailTwo);
             }
         }
+        
+        HashMap<String, Set<String>> map = new HashMap<>();
+        for (int i = 0; i < accounts.size(); i++) {
+            for(int j = 1; j < accounts.get(i).size(); j++){ 
+                String email = accounts.get(i).get(j);
+                String key = dsu.find(email);
+                Set<String> keyList = map.getOrDefault(key, new TreeSet<>());
+                keyList.add(email);
+                map.put(key, keyList);
+            }
 
-        // Build result: skip deleted groups, sort emails
-        List<List<String>> res = new ArrayList<>();
-        for (int g = 0; g < groupEmails.size(); g++) {
-            Set<String> emails = groupEmails.get(g);
-            String name = groupName.get(g);
-            if (emails == null || name == null) continue;
-
-            List<String> merged = new ArrayList<>();
-            merged.add(name);
-
-            List<String> sortedEmails = new ArrayList<>(emails);
-            Collections.sort(sortedEmails);
-            merged.addAll(sortedEmails);
-
-            res.add(merged);
+        }
+        int index = 0;
+        for(String key : map.keySet()){ 
+            mergedAccounts.add(new ArrayList<>());
+            mergedAccounts.get(index).add(nameMap.get(key));
+            Set<String> allEmails = map.get(key);
+            mergedAccounts.get(index).addAll(map.get(key));
+           
+            index++;
         }
 
-        return res;
+    return mergedAccounts ;}
+}
+class DSU {
+    Map<String, String> parentMap;
+
+    public DSU(int size) {
+        this.parentMap = new HashMap<>();
+    }
+
+    public String find(String email) {
+        if (!parentMap.containsKey(email) || parentMap.get(email).equals(email)) {
+            parentMap.put(email, email);
+            return email;
+        }
+        parentMap.put(email, find(parentMap.get(email)));
+        return parentMap.get(email);
+    }
+
+    public List<String> getParents() {
+        List<String> parentList = new ArrayList<>();
+        for (String key : parentMap.keySet()) {
+            if (key.equals(parentMap.get(key))) {
+                parentList.add(key);
+            }
+        }
+        return parentList;
+    }
+
+    public void union(String a, String b) {
+        String parentA = find(a);
+        String parentB = find(b);
+        if (parentA == parentB) {
+            return;
+        }
+        parentMap.put(parentB, parentA);
     }
 }
