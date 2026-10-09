@@ -60,7 +60,7 @@ class Solution {
             String rootEmail = idToEmail.get(entry.getKey());
             String name = emailToName.get(rootEmail);
 
-            List<String> mergedAccount = new ArrayList<>(emails.size() + 1);
+            List<String> mergedAccount = new ArrayList<>();
 
             mergedAccount.add(name);
             mergedAccount.addAll(emails);
