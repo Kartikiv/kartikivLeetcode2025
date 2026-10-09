@@ -1,65 +1,36 @@
 class Solution {
     public int networkDelayTime(int[][] times, int n, int k) {
-
-        List<Pair<Integer, Integer>>[] adjacencyList = new List[n + 1];
-        Arrays.setAll(adjacencyList, i -> new ArrayList<>());
-
-        for (int[] time : times) {
-            int source = time[0];
-            int destination = time[1];
-            int weight = time[2];
-
-            adjacencyList[source].add(new Pair<>(destination, weight));
-        }
-
         int[] distances = new int[n + 1];
         Arrays.fill(distances, Integer.MAX_VALUE);
 
         distances[k] = 0;
 
-        // Pair = <distance, node>
-        PriorityQueue<Pair<Integer, Integer>> pq =
-                new PriorityQueue<>((a, b) ->
-                        Integer.compare(a.getKey(), b.getKey()));
+        // Bellman-Ford
+        for (int i = 0; i < n - 1; i++) {
+            for (int[] time : times) {
+                int u = time[0];
+                int v = time[1];
+                int w = time[2];
 
-        pq.add(new Pair<>(0, k));
+                if (distances[u] != Integer.MAX_VALUE &&
+                    distances[u] + w < distances[v]) {
 
-        while (!pq.isEmpty()) {
-
-            Pair<Integer, Integer> current = pq.poll();
-
-            int currentDistance = current.getKey();
-            int node = current.getValue();
-
-            // stale entry
-            if (currentDistance > distances[node]) {
-                continue;
-            }
-
-            for (Pair<Integer, Integer> edge : adjacencyList[node]) {
-
-                int child = edge.getKey();
-                int weight = edge.getValue();
-
-                int newDistance = currentDistance + weight;
-
-                if (newDistance < distances[child]) {
-                    distances[child] = newDistance;
-                    pq.add(new Pair<>(newDistance, child));
+                    distances[v] = distances[u] + w;
                 }
             }
         }
 
-        int maxDistance = 0;
+        int totalMaxPropagationTime = 0;
 
-        for (int node = 1; node <= n; node++) {
-            if (distances[node] == Integer.MAX_VALUE) {
+        for (int i = 1; i <= n; i++) {
+            if (distances[i] == Integer.MAX_VALUE) {
                 return -1;
             }
 
-            maxDistance = Math.max(maxDistance, distances[node]);
+            totalMaxPropagationTime =
+                Math.max(totalMaxPropagationTime, distances[i]);
         }
 
-        return maxDistance;
+        return totalMaxPropagationTime;
     }
 }
