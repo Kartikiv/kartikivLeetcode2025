@@ -9,6 +9,10 @@ class Node {
 
 class Solution {
     public int ladderLength(String beginWord, String endWord, List<String> wordList) {
+        
+        return bfs(beginWord,endWord,wordList);
+    }
+    public int bfs(String beginWord, String endWord, List<String> wordList){
         Queue<Node> queue = new LinkedList<>();
         Set<String> wordSet = new HashSet<>(wordList);
         if(!wordSet.contains(endWord)){ 
