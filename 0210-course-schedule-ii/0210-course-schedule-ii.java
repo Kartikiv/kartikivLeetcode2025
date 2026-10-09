@@ -1,34 +1,35 @@
-import java.util.*;
 class Solution {
-    // Here we can use kahns bfs algorithm to see if cycles exist 
-    public int [] findOrder(int numCourses, int[][] prerequisites) {
-       int [] order = new int [numCourses];
-        // calculate indegree 
-        int [] inDegree = new int[numCourses];
-        List<Integer>[] graph = new List[numCourses];
-        Arrays.setAll(graph, i -> new ArrayList<>());
-        for(int [] prerequisite : prerequisites){ 
-            inDegree[prerequisite[0]]++;
-            graph[prerequisite[1]].add(prerequisite[0]);
+    public int[] findOrder(int numCourses, int[][] prerequisites) {
+        List<Integer>[] adjacencyList = new List[numCourses]; 
+        Arrays.setAll(adjacencyList, n -> new ArrayList<>());
+        int [] order = new int [numCourses];
+        int [] inDegree = new int [numCourses];
+        int orderIndex = 0;
+        for(int [] prerequisite: prerequisites){ 
+            int prerequisiteCourse = prerequisite[1];
+            int course = prerequisite[0]; 
+            inDegree[course]++;
+            adjacencyList[prerequisiteCourse].add(course);
         }
         Queue<Integer> queue = new LinkedList<>();
-        for(int i = 0; i < inDegree.length; i++){ 
+        for(int i = 0 ; i < inDegree.length; i++){
             if(inDegree[i] == 0){
                 queue.add(i);
             }
         }
-        int i = 0;
-        while (!queue.isEmpty()) {
-            int node = queue.poll();
-            order[i++] = node;
-            for(int child : graph[node]){ 
-                inDegree[child]--;
-                if(inDegree[child] == 0){ 
-                    queue.add(child);
+        while(!queue.isEmpty()){
+            int size = queue.size();
+            for(int i = 0; i < size; i++){
+                int node = queue.poll();
+                order[orderIndex++] = node;
+                for(int child : adjacencyList[node]){
+                    inDegree[child]--; 
+                    if(inDegree[child] == 0){
+                        queue.add(child);
+                    }
                 }
             }
-            
         }
-    return i == numCourses ? order : new int [0];
-}
+    return orderIndex == order.length ? order : new int []{}; 
+    }
 }
