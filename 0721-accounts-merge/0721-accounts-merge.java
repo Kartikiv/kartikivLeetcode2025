@@ -14,10 +14,10 @@ class Solution {
                 dsu.union(emailOne, emailTwo);
             }
         }
-        
+
         HashMap<String, Set<String>> map = new HashMap<>();
         for (int i = 0; i < accounts.size(); i++) {
-            for(int j = 1; j < accounts.get(i).size(); j++){ 
+            for (int j = 1; j < accounts.get(i).size(); j++) {
                 String email = accounts.get(i).get(j);
                 String key = dsu.find(email);
                 Set<String> keyList = map.getOrDefault(key, new TreeSet<>());
@@ -27,17 +27,19 @@ class Solution {
 
         }
         int index = 0;
-        for(String key : map.keySet()){ 
+        for (String key : map.keySet()) {
             mergedAccounts.add(new ArrayList<>());
             mergedAccounts.get(index).add(nameMap.get(key));
             Set<String> allEmails = map.get(key);
             mergedAccounts.get(index).addAll(map.get(key));
-           
+
             index++;
         }
 
-    return mergedAccounts ;}
+        return mergedAccounts;
+    }
 }
+
 class DSU {
     Map<String, String> parentMap;
 
@@ -67,7 +69,7 @@ class DSU {
     public void union(String a, String b) {
         String parentA = find(a);
         String parentB = find(b);
-        if (parentA == parentB) {
+        if (parentA.equals(parentB)) {
             return;
         }
         parentMap.put(parentB, parentA);
