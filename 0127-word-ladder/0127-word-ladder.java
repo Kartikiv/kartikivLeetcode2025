@@ -1,59 +1,78 @@
-class Node {
-    String s;
-    List<Node> children;
-
-    public Node(String s) {
-        this.s = s;
-    }
-}
-
 class Solution {
-    public int ladderLength(String beginWord, String endWord, List<String> wordList) {
-        
-        return bfs(beginWord,endWord,wordList);
-    }
-    public int bfs(String beginWord, String endWord, List<String> wordList){
-        Queue<Node> queue = new LinkedList<>();
+
+    public int ladderLength(
+            String beginWord,
+            String endWord,
+            List<String> wordList) {
+
         Set<String> wordSet = new HashSet<>(wordList);
-        if(!wordSet.contains(endWord)){ 
+
+        if (!wordSet.contains(endWord)) {
             return 0;
         }
-        queue.add(new Node(beginWord));
+
+        Set<String> start = new HashSet<>();
+        Set<String> end = new HashSet<>();
+
+        start.add(beginWord);
+        end.add(endWord);
+
         wordSet.remove(beginWord);
-        int level = 0;
-        while (!queue.isEmpty()) {
-            int size = queue.size();
-            level++;
-            for (int i = 0; i < size; i++) {
-                Node node = queue.poll();
-                char[] wordArr = node.s.toCharArray();
-                for (int j = 0; j < wordArr.length; j++) {
-                    char original = wordArr[j];
+        wordSet.remove(endWord);
+
+        int level = 1;
+
+        while (!start.isEmpty() && !end.isEmpty()) {
+
+            // Always expand smaller frontier
+            if (start.size() > end.size()) {
+                Set<String> temp = start;
+                start = end;
+                end = temp;
+            }
+
+            Set<String> next = new HashSet<>();
+
+            for (String current : start) {
+
+                char[] arr = current.toCharArray();
+
+                for (int i = 0; i < arr.length; i++) {
+
+                    char original = arr[i];
+
                     for (char c = 'a'; c <= 'z'; c++) {
+
                         if (c == original) {
                             continue;
                         }
-                        wordArr[j] = c;
-                        String word = new String(wordArr);
-                        if (wordSet.contains(word)) {
-                            queue.add(new Node(word));
-                            if (word.equals(endWord)) {
-                                return level + 1;
-                            }
-                            wordSet.remove(word);
-                        }
-                        wordArr[j] = original;
 
+                        arr[i] = c;
+
+                        String neighbor = new String(arr);
+
+                        // The two BFS searches meet
+                        if (end.contains(neighbor)) {
+                            return level + 1;
+                        }
+
+                        if (wordSet.contains(neighbor)) {
+
+                            next.add(neighbor);
+
+                            // globally mark consumed
+                            wordSet.remove(neighbor);
+                        }
                     }
+
+                    arr[i] = original;
                 }
             }
-            
+
+            start = next;
+            level++;
         }
+
         return 0;
     }
-    // I need to do bfs but also at the sametime i need to create 
-    // list of string which are 1 character apart 
-    // how to efficiently create list of string that are one char apart
-    // from a given String
-
 }
