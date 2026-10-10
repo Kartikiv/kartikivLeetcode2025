@@ -1,36 +1,34 @@
 class Solution {
-    int [] pDistribution;
-    int maxWeight ;    
-    public Solution(int[] w) {
-        this.pDistribution = new int [w.length]; 
-        int sum = 0 ; 
-        for (int i = 0; i < w.length; i++) {
-            sum += w[i]; 
-            pDistribution[i] = sum ;
-        }
-        // assign the max weight
-        this.maxWeight = sum; 
+    int totalWeight;
+    int[] weight;
 
+    public Solution(int[] w) {
+        weight = new int[w.length];
+
+        for (int i = 0; i < w.length; i++) {
+            totalWeight += w[i];
+            weight[i] = totalWeight;
+        }
     }
-    
+
     public int pickIndex() {
-       int target = (int) (Math.random() * maxWeight) + 1;
-        int left = 0 ; 
-        int right = pDistribution.length - 1;
-        while (left < right) {
-            int mid = left + (right - left) / 2;  
-            if(pDistribution[mid] >= target){
-                right = mid;
-            }else{
-                left = mid + 1; 
+        // target is in [0, totalWeight - 1]
+        int target = (int) (Math.random() * totalWeight);
+
+        int low = 0;
+        int high = weight.length - 1;
+
+        // Find first prefix sum > target
+        while (low < high) {
+            int mid = low + (high - low) / 2;
+
+            if (target < weight[mid]) {
+                high = mid;
+            } else {
+                low = mid + 1;
             }
         }
 
-    return right; }
+        return low;
+    }
 }
-
-/**
- * Your Solution object will be instantiated and called as such:
- * Solution obj = new Solution(w);
- * int param_1 = obj.pickIndex();
- */
