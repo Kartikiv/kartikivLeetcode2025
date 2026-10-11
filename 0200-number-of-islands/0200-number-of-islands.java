@@ -1,101 +1,83 @@
 class Solution {
 
-    int rows, cols;
-    int[] rowQueue;
-    int[] colQueue;
-
     public int numIslands(char[][] grid) {
-        rows = grid.length;
-        cols = grid[0].length;
 
-        int capacity = rows * cols;
+        Set<Character> islandSet = new HashSet<>();
+        Map<Character, Character> parent = new HashMap<>();
 
-        rowQueue = new int[capacity];
-        colQueue = new int[capacity];
+        char islandNo = '2';
 
-        int islands = 0;
+        for (int i = 0; i < grid.length; i++) {
+            for (int j = 0; j < grid[0].length; j++) {
 
-        for (int r = 0; r < rows; r++) {
-            char[] row = grid[r];
+                if (grid[i][j] != '1') {
+                    continue;
+                }
 
-            for (int c = 0; c < cols; c++) {
+                char top = '0';
+                char left = '0';
 
-                if (row[c] == '1') {
-                    flood(grid, r, c);
-                    islands++;
+                if (i > 0 && grid[i - 1][j] != '0') {
+                    top = find(grid[i - 1][j], parent);
+                }
+
+                if (j > 0 && grid[i][j - 1] != '0') {
+                    left = find(grid[i][j - 1], parent);
+                }
+
+                // No processed land neighbor
+                if (top == '0' && left == '0') {
+
+                    grid[i][j] = islandNo;
+
+                    parent.put(islandNo, islandNo);
+                    islandSet.add(islandNo);
+
+                    islandNo++;
+                }
+
+                // Only left exists
+                else if (top == '0') {
+                    grid[i][j] = left;
+                }
+
+                // Only top exists
+                else if (left == '0') {
+                    grid[i][j] = top;
+                }
+
+                // Same island
+                else if (top == left) {
+                    grid[i][j] = top;
+                }
+
+                // Two different islands just connected
+                else {
+
+                    char keep = top < left ? top : left;
+                    char remove = top < left ? left : top;
+
+                    parent.put(remove, keep);
+
+                    grid[i][j] = keep;
+
+                    islandSet.remove(remove);
                 }
             }
         }
 
-        return islands;
+        return islandSet.size();
     }
 
-    private void flood(char[][] grid, int startRow, int startCol) {
+    private char find(char x, Map<Character, Character> parent) {
 
-        int head = 0;
-        int tail = 0;
-
-        rowQueue[tail] = startRow;
-        colQueue[tail++] = startCol;
-
-        while (head < tail) {
-
-            int r = rowQueue[head];
-            int c = colQueue[head++];
-
-            if (grid[r][c] != '1')
-                continue;
-
-            char[] current = grid[r];
-
-            int left = c;
-            int right = c;
-
-            while (left > 0 && current[left - 1] == '1')
-                left--;
-
-            while (right + 1 < cols && current[right + 1] == '1')
-                right++;
-
-            for (int x = left; x <= right; x++)
-                current[x] = '0';
-
-            if (r > 0)
-                tail = scanRow(grid, r - 1, left, right, tail);
-
-            if (r + 1 < rows)
-                tail = scanRow(grid, r + 1, left, right, tail);
-        }
-    }
-
-    private int scanRow(
-        char[][] grid,
-        int r,
-        int left,
-        int right,
-        int tail
-    ) {
-
-        char[] row = grid[r];
-
-        int c = left;
-
-        while (c <= right) {
-
-            if (row[c] == '1') {
-
-                // enqueue only once for this contiguous run
-                rowQueue[tail] = r;
-                colQueue[tail++] = c;
-
-                while (c <= right && row[c] == '1')
-                    c++;
-
-            } else {
-                c++;
-            }
+        if (parent.get(x) == x) {
+            return x;
         }
 
-        return tail;
+        char root = find(parent.get(x), parent);
+        parent.put(x, root);
+
+        return root;
     }
 }
