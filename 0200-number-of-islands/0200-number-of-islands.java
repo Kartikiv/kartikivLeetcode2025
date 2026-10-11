@@ -1,83 +1,84 @@
 class Solution {
 
     public int numIslands(char[][] grid) {
+        int rows = grid.length;
+        int cols = grid[0].length;
 
-        Set<Character> islandSet = new HashSet<>();
-        Map<Character, Character> parent = new HashMap<>();
+        int[][] labels = new int[rows][cols];
 
-        char islandNo = '2';
+        // Maximum possible number of islands = rows * cols
+        int[] parent = new int[rows * cols + 1];
 
-        for (int i = 0; i < grid.length; i++) {
-            for (int j = 0; j < grid[0].length; j++) {
+        int nextIslandId = 1;
+        int islandCount = 0;
 
-                if (grid[i][j] != '1') {
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
+
+                if (grid[i][j] == '0') {
                     continue;
                 }
 
-                char top = '0';
-                char left = '0';
+                int top = 0;
+                int left = 0;
 
-                if (i > 0 && grid[i - 1][j] != '0') {
-                    top = find(grid[i - 1][j], parent);
+                if (i > 0 && labels[i - 1][j] != 0) {
+                    top = find(labels[i - 1][j], parent);
                 }
 
-                if (j > 0 && grid[i][j - 1] != '0') {
-                    left = find(grid[i][j - 1], parent);
+                if (j > 0 && labels[i][j - 1] != 0) {
+                    left = find(labels[i][j - 1], parent);
                 }
 
-                // No processed land neighbor
-                if (top == '0' && left == '0') {
+                // No existing island around us
+                if (top == 0 && left == 0) {
 
-                    grid[i][j] = islandNo;
+                    int id = nextIslandId++;
 
-                    parent.put(islandNo, islandNo);
-                    islandSet.add(islandNo);
+                    labels[i][j] = id;
+                    parent[id] = id;
 
-                    islandNo++;
+                    islandCount++;
                 }
 
-                // Only left exists
-                else if (top == '0') {
-                    grid[i][j] = left;
+                // Only left
+                else if (top == 0) {
+                    labels[i][j] = left;
                 }
 
-                // Only top exists
-                else if (left == '0') {
-                    grid[i][j] = top;
+                // Only top
+                else if (left == 0) {
+                    labels[i][j] = top;
                 }
 
-                // Same island
+                // Both belong to same component
                 else if (top == left) {
-                    grid[i][j] = top;
+                    labels[i][j] = top;
                 }
 
-                // Two different islands just connected
+                // Two previously separate islands are connected
                 else {
+                    int rootTop = find(top, parent);
+                    int rootLeft = find(left, parent);
 
-                    char keep = top < left ? top : left;
-                    char remove = top < left ? left : top;
+                    if (rootTop != rootLeft) {
+                        parent[rootLeft] = rootTop;
+                        islandCount--;
+                    }
 
-                    parent.put(remove, keep);
-
-                    grid[i][j] = keep;
-
-                    islandSet.remove(remove);
+                    labels[i][j] = rootTop;
                 }
             }
         }
 
-        return islandSet.size();
+        return islandCount;
     }
 
-    private char find(char x, Map<Character, Character> parent) {
-
-        if (parent.get(x) == x) {
-            return x;
+    private int find(int x, int[] parent) {
+        if (parent[x] != x) {
+            parent[x] = find(parent[x], parent);
         }
 
-        char root = find(parent.get(x), parent);
-        parent.put(x, root);
-
-        return root;
+        return parent[x];
     }
 }
