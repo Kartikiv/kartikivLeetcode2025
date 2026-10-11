@@ -326,6 +326,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2540-minimum-common-value](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/2540-minimum-common-value) |
 | [3020-find-the-maximum-number-of-elements-in-subset](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/3020-find-the-maximum-number-of-elements-in-subset) |
 | [3471-find-the-largest-almost-missing-integer](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/3471-find-the-largest-almost-missing-integer) |
+| [3607-power-grid-maintenance](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/3607-power-grid-maintenance) |
 | [3976-maximum-subarray-sum-after-multiplier](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/3976-maximum-subarray-sum-after-multiplier) |
 ## Math
 |  |
@@ -604,6 +605,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2540-minimum-common-value](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/2540-minimum-common-value) |
 | [3020-find-the-maximum-number-of-elements-in-subset](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/3020-find-the-maximum-number-of-elements-in-subset) |
 | [3471-find-the-largest-almost-missing-integer](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/3471-find-the-largest-almost-missing-integer) |
+| [3607-power-grid-maintenance](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/3607-power-grid-maintenance) |
 ## Doubly-Linked List
 |  |
 | ------- |
@@ -647,6 +649,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1094-car-pooling](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1094-car-pooling) |
 | [1438-longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1438-longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit) |
 | [1834-single-threaded-cpu](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1834-single-threaded-cpu) |
+| [3607-power-grid-maintenance](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/3607-power-grid-maintenance) |
 ## Merge Sort
 |  |
 | ------- |
@@ -739,6 +742,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1302-deepest-leaves-sum](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1302-deepest-leaves-sum) |
 | [1448-count-good-nodes-in-binary-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1448-count-good-nodes-in-binary-tree) |
 | [2467-most-profitable-path-in-a-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/2467-most-profitable-path-in-a-tree) |
+| [3607-power-grid-maintenance](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/3607-power-grid-maintenance) |
 ## Breadth-First Search
 |  |
 | ------- |
@@ -783,6 +787,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1448-count-good-nodes-in-binary-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1448-count-good-nodes-in-binary-tree) |
 | [2258-escape-the-spreading-fire](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/2258-escape-the-spreading-fire) |
 | [2467-most-profitable-path-in-a-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/2467-most-profitable-path-in-a-tree) |
+| [3607-power-grid-maintenance](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/3607-power-grid-maintenance) |
 ## Binary Tree
 |  |
 | ------- |
@@ -1081,6 +1086,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0684-redundant-connection](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0684-redundant-connection) |
 | [0695-max-area-of-island](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0695-max-area-of-island) |
 | [0721-accounts-merge](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0721-accounts-merge) |
+| [3607-power-grid-maintenance](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/3607-power-grid-maintenance) |
 ## Number Theory
 |  |
 | ------- |
@@ -1123,6 +1129,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0327-count-of-range-sum](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0327-count-of-range-sum) |
 | [0716-max-stack](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0716-max-stack) |
 | [1438-longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1438-longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit) |
+| [3607-power-grid-maintenance](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/3607-power-grid-maintenance) |
 ## Binary Indexed Tree
 |  |
 | ------- |
@@ -1155,6 +1162,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0802-find-eventual-safe-states](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0802-find-eventual-safe-states) |
 | [0851-loud-and-rich](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0851-loud-and-rich) |
 | [2467-most-profitable-path-in-a-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/2467-most-profitable-path-in-a-tree) |
+| [3607-power-grid-maintenance](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/3607-power-grid-maintenance) |
 ## Reservoir Sampling
 |  |
 | ------- |
