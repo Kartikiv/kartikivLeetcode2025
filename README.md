@@ -187,6 +187,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0049-group-anagrams](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0049-group-anagrams) |
 | [0051-n-queens](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0051-n-queens) |
 | [0053-maximum-subarray](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0053-maximum-subarray) |
+| [0056-merge-intervals](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0056-merge-intervals) |
 | [0063-unique-paths-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0063-unique-paths-ii) |
 | [0066-plus-one](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0066-plus-one) |
 | [0074-search-a-2d-matrix](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0074-search-a-2d-matrix) |
@@ -374,6 +375,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0018-4sum](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0018-4sum) |
 | [0047-permutations-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0047-permutations-ii) |
 | [0049-group-anagrams](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0049-group-anagrams) |
+| [0056-merge-intervals](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0056-merge-intervals) |
 | [0169-majority-element](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0169-majority-element) |
 | [0215-kth-largest-element-in-an-array](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0215-kth-largest-element-in-an-array) |
 | [0217-contains-duplicate](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0217-contains-duplicate) |
@@ -1235,4 +1237,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0743-network-delay-time](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0743-network-delay-time) |
+## Quicksort
+|  |
+| ------- |
+| [0056-merge-intervals](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0056-merge-intervals) |
 <!---LeetCode Topics End-->
