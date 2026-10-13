@@ -1,77 +1,90 @@
-import java.util.*;
-
 class Solution {
     public List<List<Integer>> threeSum(int[] nums) {
         Arrays.sort(nums);
-
-        List<List<Integer>> ans = new ArrayList<>();
-        List<Integer> path = new ArrayList<>();
-
-        nSum(nums, 3, 0L, 0, path, ans);
-
-        return ans;
+        return kSum(nums, 3, 0, 0);
     }
 
-    private void nSum(
-            int[] nums,
-            int n,
-            long target,
-            int index,
-            List<Integer> path,
-            List<List<Integer>> ans) {
+    private List<List<Integer>> kSum(
+        int[] nums,
+        int k,
+        int index,
+        long target
+    ) {
+        List<List<Integer>> ans = new ArrayList<>();
 
-        if (n == 2) {
-            int left = index;
-            int right = nums.length - 1;
-
-            while (left < right) {
-                long sum = (long) nums[left] + nums[right];
-
-                if (sum < target) {
-                    left++;
-                } else if (sum > target) {
-                    right--;
-                } else {
-                    List<Integer> result = new ArrayList<>(path);
-                    result.add(nums[left]);
-                    result.add(nums[right]);
-
-                    ans.add(result);
-
-                    int leftValue = nums[left];
-                    int rightValue = nums[right];
-
-                    while (left < right && nums[left] == leftValue) {
-                        left++;
-                    }
-
-                    while (left < right && nums[right] == rightValue) {
-                        right--;
-                    }
-                }
-            }
-
-            return;
+        if (k == 2) {
+            return twoSum(nums, index, target);
         }
 
-        for (int i = index; i <= nums.length - n; i++) {
+        for (int i = index; i <= nums.length - k; i++) {
 
+            // Skip duplicate choices at this recursion level
             if (i > index && nums[i] == nums[i - 1]) {
                 continue;
             }
 
-            path.add(nums[i]);
+            List<List<Integer>> subLists =
+                kSum(nums, k - 1, i + 1, target - nums[i]);
 
-            nSum(
-                nums,
-                n - 1,
-                target - nums[i],
-                i + 1,
-                path,
-                ans
-            );
+            for (List<Integer> list : subLists) {
+                List<Integer> current = new ArrayList<>();
+                current.add(nums[i]);
+                current.addAll(list);
 
-            path.remove(path.size() - 1);
+                ans.add(current);
+            }
         }
+
+        return ans;
+    }
+
+    private List<List<Integer>> twoSum(
+        int[] nums,
+        int index,
+        long target
+    ) {
+        List<List<Integer>> ans = new ArrayList<>();
+
+        int left = index;
+        int right = nums.length - 1;
+
+        while (left < right) {
+
+            long sum = (long) nums[left] + nums[right];
+
+            if (sum == target) {
+
+                ans.add(Arrays.asList(
+                    nums[left],
+                    nums[right]
+                ));
+
+                left++;
+                right--;
+
+                // Skip duplicate left values
+                while (
+                    left < right &&
+                    nums[left] == nums[left - 1]
+                ) {
+                    left++;
+                }
+
+                // Skip duplicate right values
+                while (
+                    left < right &&
+                    nums[right] == nums[right + 1]
+                ) {
+                    right--;
+                }
+
+            } else if (sum < target) {
+                left++;
+            } else {
+                right--;
+            }
+        }
+
+        return ans;
     }
 }
