@@ -88,6 +88,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0394-decode-string](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0394-decode-string) |
 | [0424-longest-repeating-character-replacement](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0424-longest-repeating-character-replacement) |
 | [0438-find-all-anagrams-in-a-string](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0438-find-all-anagrams-in-a-string) |
+| [0468-validate-ip-address](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0468-validate-ip-address) |
 | [0567-permutation-in-string](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0567-permutation-in-string) |
 | [0604-design-compressed-string-iterator](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0604-design-compressed-string-iterator) |
 | [0631-design-excel-sum-formula](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0631-design-excel-sum-formula) |
