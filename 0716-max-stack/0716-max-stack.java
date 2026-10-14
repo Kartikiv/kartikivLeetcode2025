@@ -17,12 +17,12 @@ class MaxStack {
 
     public MaxStack() {
         this.pq = new PriorityQueue<>((a, b) -> {
-            if(Integer.compare(b.val, a.val) == 0){ 
+            if (Integer.compare(b.val, a.val) == 0) {
                 return Integer.compare(b.id, a.id);
             }
             return Integer.compare(b.val, a.val);
         });
-          
+
     }
 
     public void push(int x) {
@@ -60,7 +60,7 @@ class MaxStack {
     }
 
     public int top() {
-        if(head == null){ 
+        if (head == null) {
             return -1;
         }
         return head.val;
@@ -73,29 +73,30 @@ class MaxStack {
 
     public int popMax() {
         cleanUp();
-        if(pq.isEmpty()){
+        if (pq.isEmpty()) {
             return -1;
         }
         Node node = pq.poll();
         Node prev = node.prev;
-        Node next = node.next; 
-        if(prev != null){
+        Node next = node.next;
+        if (prev != null) {
             prev.next = next;
         }
-        if(next != null){ 
-             next.prev = prev;
+        if (next != null) {
+            next.prev = prev;
         }
         // Gc to clear node 
         node.next = null;
         node.prev = null;
-        if(node == head){
+        if (node == head) {
             head = next;
         }
         return node.val;
     }
-    void cleanUp(){ 
-        while(!pq.isEmpty() && pq.peek().isDeleted){
-             pq.poll();
+
+    void cleanUp() {
+        while (!pq.isEmpty() && pq.peek().isDeleted) {
+            pq.poll();
         }
     }
 }
