@@ -1,143 +1,100 @@
-import java.util.*;
-import java.util.concurrent.locks.ReentrantLock;
-
 class Node {
     int val;
-    long id;
     Node next;
     Node prev;
-    boolean isDelete = false;
+    boolean isDeleted;
+    int id;
 
-    public Node(int x, long id, Node prev, Node next) {
-        this.val = x;
-        this.id = id;
-        this.prev = prev;
-        this.next = next;
+    public Node(int val) {
+        this.val = val;
     }
 }
 
 class MaxStack {
-    static long id;
-    PriorityQueue<Node> pq;
+    int id = 0;
     Node head;
-    private final ReentrantLock lock = new ReentrantLock();
+    PriorityQueue<Node> pq;
 
     public MaxStack() {
-        pq = new PriorityQueue<>((a, b) -> {
-            if (a.val != b.val) {
-                return Integer.compare(b.val, a.val);
+        this.pq = new PriorityQueue<>((a, b) -> {
+            if(Integer.compare(b.val, a.val) == 0){ 
+                return Integer.compare(b.id, a.id);
             }
-
-            // more recently pushed node first
-            return Long.compare(b.id, a.id);
+            return Integer.compare(b.val, a.val);
         });
+          
     }
 
     public void push(int x) {
-        lock.lock();
-        try {
-            if (head == null) {
-                head = new Node(x, id++, null, null);
-                pq.add(head);
-            } else {
-                Node node = new Node(x, id++, null, head);
-                head.prev = node;
-                head = node;
-                pq.add(node);
-            }
-        } catch (Exception e) {
-
-        } finally {
-            lock.unlock();
+        // If head is null -> create a node and return
+        // if not create a node make it the head 
+        Node node = new Node(x);
+        node.id = id++;
+        pq.add(node);
+        if (head == null) {
+            head = node;
+            return;
+        } else {
+            head.prev = node;
+            node.next = head;
+            head = node;
         }
-
     }
 
     public int pop() {
-        lock.lock();
-        try {
-            if (head == null)
-                return -1;
-            Node nodeRemoved = head;
-            head = nodeRemoved.next;
-            nodeRemoved.isDelete = true;
-            if (head != null) {
-                head.prev = null;
-            }
-
-            return nodeRemoved.val;
-        } catch (Exception e) {
+        Node node = head;
+        if (node == null) {
             return -1;
-        } finally {
-            lock.unlock();
+        } else {
+            Node next = head.next;
+            node.next = null;
+            if (next != null) {
+                next.prev = null;
+            }
+            node.isDeleted = true;
+            head = next;
+            // we marked the node deleted , we replace the connected and assigned the new head
         }
-
+        return node.val;
     }
 
     public int top() {
-        lock.lock();
-        try {
-            if (head == null) {
-                return -1;
-            }
-            return head.val;
-        } catch (Exception e) {
+        if(head == null){ 
             return -1;
-        } finally {
-            lock.unlock();
-            ;
         }
-
+        return head.val;
     }
 
     public int peekMax() {
-        lock.lock();
-        try {
-            cleanup();
-            if (pq.isEmpty()) {
-                return -1;
-            }
-            return pq.peek().val;
-        } catch (Exception e) {
-            return -1;
-        } finally {
-            lock.unlock();
-        }
-    }
-
-    public void cleanup() {
-        while (!pq.isEmpty() && pq.peek().isDelete) {
-            pq.poll();
-        }
+        cleanUp();
+        return pq.isEmpty() ? -1 : pq.peek().val;
     }
 
     public int popMax() {
-        lock.lock();
-        try {
-            cleanup();
-            if (pq.isEmpty())
-                return -1;
-            Node node = pq.poll();
-            Node prevNode = node.prev;
-            Node nextNode = node.next;
-            if (node == head) {
-                head = nextNode;
-            }
-            if (prevNode != null) {
-                prevNode.next = nextNode;
-            }
-            if (nextNode != null) {
-                nextNode.prev = prevNode;
-            }
-
-            node.next = null;
-            node.prev = null;
-            node.isDelete = true;
-            return node.val;
-        } catch (Exception e) {
+        cleanUp();
+        if(pq.isEmpty()){
             return -1;
-        } finally {
-            lock.unlock();
+        }
+        Node node = pq.poll();
+        Node prev = node.prev;
+        Node next = node.next; 
+        if(prev != null){
+            prev.next = next;
+        }
+        if(next != null){ 
+             next.prev = prev;
+        }
+        // Gc to clear node 
+        node.next = null;
+        node.prev = null;
+        if(node == head){
+            head = next;
+        }
+        return node.val;
+    }
+    void cleanUp(){ 
+        while(!pq.isEmpty() && pq.peek().isDeleted){
+             pq.poll();
         }
     }
 }
