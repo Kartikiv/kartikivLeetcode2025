@@ -42,6 +42,7 @@ class MaxStack {
     }
 
     public int pop() {
+        cleanUp();
         Node node = head;
         if (node == null) {
             return -1;
