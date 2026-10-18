@@ -1,68 +1,98 @@
+import java.util.*;
+import java.util.concurrent.ThreadLocalRandom;
+
 class Solution {
-    int[] count;
-    int[] nums;
-    int[] indices;
-    int[] temp;
+    static class Node {
+        int val, priority;
+        int count = 1;
+        int size = 1;
+        Node left, right;
 
-    public List<Integer> countSmaller(int[] nums) {
-        int n = nums.length;
+        Node(int val) {
+            this.val = val;
+            this.priority = ThreadLocalRandom.current().nextInt();
+        }
+    }
 
-        this.nums = nums;
-        count = new int[n];
-        indices = new int[n];
-        temp = new int[n];
+    Node root;
 
-        for (int i = 0; i < n; i++) {
-            indices[i] = i;
+    int size(Node n) {
+        return n == null ? 0 : n.size;
+    }
+
+    void update(Node n) {
+        if (n != null) {
+            n.size = size(n.left) + size(n.right) + n.count;
+        }
+    }
+
+    Node rotateRight(Node y) {
+        Node x = y.left;
+        y.left = x.right;
+        x.right = y;
+
+        update(y);
+        update(x);
+        return x;
+    }
+
+    Node rotateLeft(Node x) {
+        Node y = x.right;
+        x.right = y.left;
+        y.left = x;
+
+        update(x);
+        update(y);
+        return y;
+    }
+
+    Node insert(Node node, int val) {
+        if (node == null) return new Node(val);
+
+        if (val < node.val) {
+            node.left = insert(node.left, val);
+
+            if (node.left.priority > node.priority) {
+                node = rotateRight(node);
+            }
+        } else if (val > node.val) {
+            node.right = insert(node.right, val);
+
+            if (node.right.priority > node.priority) {
+                node = rotateLeft(node);
+            }
+        } else {
+            node.count++;
         }
 
-        mergeSort(0, n - 1);
+        update(node);
+        return node;
+    }
 
-        List<Integer> result = new ArrayList<>();
-        for (int x : count) result.add(x);
+    int countLess(Node node, int val) {
+        int result = 0;
+
+        while (node != null) {
+            if (val <= node.val) {
+                node = node.left;
+            } else {
+                result += size(node.left) + node.count;
+                node = node.right;
+            }
+        }
 
         return result;
     }
 
-    void mergeSort(int left, int right) {
-        if (left >= right) return;
+    public List<Integer> countSmaller(int[] nums) {
+        root = null;
+        Integer[] ans = new Integer[nums.length];
 
-        int mid = left + (right - left) / 2;
-
-        mergeSort(left, mid);
-        mergeSort(mid + 1, right);
-
-        merge(left, mid, right);
-    }
-
-    void merge(int left, int mid, int right) {
-        int i = left;
-        int j = mid + 1;
-        int k = left;
-
-        int smaller = 0;
-
-        while (i <= mid && j <= right) {
-            if (nums[indices[j]] < nums[indices[i]]) {
-                smaller++;
-                temp[k++] = indices[j++];
-            } else {
-                count[indices[i]] += smaller;
-                temp[k++] = indices[i++];
-            }
+        for (int i = nums.length - 1; i >= 0; i--) {
+            ans[i] = countLess(root, nums[i]);
+            root = insert(root, nums[i]);
         }
 
-        while (i <= mid) {
-            count[indices[i]] += smaller;
-            temp[k++] = indices[i++];
-        }
-
-        while (j <= right) {
-            temp[k++] = indices[j++];
-        }
-
-        for (int p = left; p <= right; p++) {
-            indices[p] = temp[p];
-        }
+        return Arrays.asList(ans);
     }
 }
