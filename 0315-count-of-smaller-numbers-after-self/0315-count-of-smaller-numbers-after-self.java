@@ -1,6 +1,3 @@
-import java.util.*;
-import java.util.concurrent.ThreadLocalRandom;
-
 class Solution {
     static class Node {
         int val, priority;
