@@ -1,50 +1,40 @@
 
-class TreeNodeModified extends TreeNode {
-    TreeNodeModified parent;
-    long pathSum;
-
-    TreeNodeModified(TreeNode node, TreeNodeModified parent, long parentSum) {
-        super(node.val, node.left, node.right);
-        this.parent = parent;
-        this.pathSum = parentSum + node.val;
-    }
-}
-
 class Solution {
     public List<List<Integer>> pathSum(TreeNode root, int targetSum) {
         List<List<Integer>> result = new ArrayList<>();
-        if (root == null) return result;
+        List<Integer> path = new ArrayList<>();
+        Deque<TreeNode> stack = new ArrayDeque<>();
 
-        Queue<TreeNodeModified> queue = new ArrayDeque<>();
-        queue.offer(new TreeNodeModified(root, null, 0));
+        TreeNode current = root;
+        TreeNode lastVisited = null;
+        long sum = 0;
 
-        while (!queue.isEmpty()) {
-            TreeNodeModified node = queue.poll();
+        while (current != null || !stack.isEmpty()) {
 
-            if (node.left == null && node.right == null
-                    && node.pathSum == targetSum) {
+            // Enter nodes along the left path
+            while (current != null) {
+                stack.push(current);
+                path.add(current.val);
+                sum += current.val;
+                current = current.left;
+            }
 
-                LinkedList<Integer> path = new LinkedList<>();
-                TreeNodeModified current = node;
+            TreeNode node = stack.peek();
 
-                while (current != null) {
-                    path.addFirst(current.val);
-                    current = current.parent;
+            // Explore right subtree if not already visited
+            if (node.right != null && node.right != lastVisited) {
+                current = node.right;
+            } else {
+                // Both subtrees completed
+                if (node.left == null && node.right == null
+                        && sum == targetSum) {
+                    result.add(new ArrayList<>(path));
                 }
 
-                result.add(path);
-            }
-
-            if (node.left != null) {
-                queue.offer(new TreeNodeModified(
-                    node.left, node, node.pathSum
-                ));
-            }
-
-            if (node.right != null) {
-                queue.offer(new TreeNodeModified(
-                    node.right, node, node.pathSum
-                ));
+                stack.pop();
+                path.remove(path.size() - 1);
+                sum -= node.val;
+                lastVisited = node;
             }
         }
 
