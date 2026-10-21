@@ -1196,6 +1196,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1114-print-in-order](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1114-print-in-order) |
+| [1117-building-h2o](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1117-building-h2o) |
 ## Iterator
 |  |
 | ------- |
