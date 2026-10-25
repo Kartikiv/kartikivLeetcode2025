@@ -1,40 +1,88 @@
+import java.util.*;
+
+class Frame {
+    int i, j;
+    int direction = 0;
+
+    Frame(int i, int j) {
+        this.i = i;
+        this.j = j;
+    }
+}
+
 class Solution {
-    boolean ans;
+    private static final int[][] directions = {
+        {1, 0}, {0, 1}, {0, -1}, {-1, 0}
+    };
 
     public boolean exist(char[][] board, String word) {
-        boolean ans = false;
+        if (word.isEmpty()) return true;
+        if (board.length == 0 || board[0].length == 0)
+            return false;
+
         for (int i = 0; i < board.length; i++) {
             for (int j = 0; j < board[0].length; j++) {
-                if (dfs(board, 0, i, j, word)) {
+                if (dfs(i, j, board, word)) {
                     return true;
                 }
             }
         }
-        return ans;
+
+        return false;
     }
 
-    public boolean dfs(char[][] board, int index, int i, int j, String word) {
-        if (index == word.length()) {
-            return true;
-        }
-        if (i < 0 || i >= board.length || j < 0 || j >= board[0].length) {
-            return false;
-        }
-        if (word.charAt(index) != board[i][j]) {
-            return false;
-        }
-        char temp = board[i][j];
-        board[i][j] = '#';
-        boolean found =
-                dfs(board, index + 1, i + 1, j, word) ||
-                dfs(board, index + 1, i - 1, j, word) ||
-                dfs(board, index + 1, i, j + 1, word) ||
-                dfs(board, index + 1, i, j - 1, word);
-        // back tracking and marking the steps as we visit here we can also maintain a visited bool array 
-        // but the consequences are extra memory consumption. 
-        board[i][j] = temp;
+    private boolean dfs(int i, int j,
+                        char[][] board, String word) {
 
-        return found;
+        if (board[i][j] != word.charAt(0))
+            return false;
+
+        boolean[][] visited =
+            new boolean[board.length][board[0].length];
+
+        Deque<Frame> stack = new ArrayDeque<>();
+
+        stack.push(new Frame(i, j));
+        visited[i][j] = true;
+
+        while (!stack.isEmpty()) {
+
+            Frame current = stack.peek();
+
+            // Depth of stack = characters matched
+            int index = stack.size() - 1;
+
+            if (index == word.length() - 1)
+                return true;
+
+            // All directions explored: BACKTRACK
+            if (current.direction == 4) {
+                visited[current.i][current.j] = false;
+                stack.pop();
+                continue;
+            }
+
+            // Explore exactly ONE direction
+            int[] d = directions[current.direction++];
+
+            int ni = current.i + d[0];
+            int nj = current.j + d[1];
+
+            if (ni < 0 || nj < 0 ||
+                ni >= board.length ||
+                nj >= board[0].length)
+                continue;
+
+            if (visited[ni][nj])
+                continue;
+
+            if (board[ni][nj] != word.charAt(index + 1))
+                continue;
+
+            visited[ni][nj] = true;
+            stack.push(new Frame(ni, nj));
+        }
+
+        return false;
     }
-
 }
