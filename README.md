@@ -243,6 +243,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0350-intersection-of-two-arrays-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0362-design-hit-counter](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0362-design-hit-counter) |
 | [0380-insert-delete-getrandom-o1](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0380-insert-delete-getrandom-o1) |
+| [0410-split-array-largest-sum](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0410-split-array-largest-sum) |
 | [0416-partition-equal-subset-sum](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0416-partition-equal-subset-sum) |
 | [0417-pacific-atlantic-water-flow](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0417-pacific-atlantic-water-flow) |
 | [0444-sequence-reconstruction](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0444-sequence-reconstruction) |
@@ -437,6 +438,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0312-burst-balloons](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0312-burst-balloons) |
 | [0322-coin-change](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0322-coin-change) |
 | [0338-counting-bits](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0338-counting-bits) |
+| [0410-split-array-largest-sum](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0410-split-array-largest-sum) |
 | [0416-partition-equal-subset-sum](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0416-partition-equal-subset-sum) |
 | [0464-can-i-win](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0464-can-i-win) |
 | [0494-target-sum](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0494-target-sum) |
@@ -474,6 +476,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0362-design-hit-counter](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0362-design-hit-counter) |
 | [0367-valid-perfect-square](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0367-valid-perfect-square) |
 | [0374-guess-number-higher-or-lower](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0374-guess-number-higher-or-lower) |
+| [0410-split-array-largest-sum](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0410-split-array-largest-sum) |
 | [0528-random-pick-with-weight](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0528-random-pick-with-weight) |
 | [0658-find-k-closest-elements](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0658-find-k-closest-elements) |
 | [0702-search-in-a-sorted-array-of-unknown-size](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0702-search-in-a-sorted-array-of-unknown-size) |
@@ -865,6 +868,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0011-container-with-most-water](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0011-container-with-most-water) |
 | [0253-meeting-rooms-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0253-meeting-rooms-ii) |
+| [0410-split-array-largest-sum](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0410-split-array-largest-sum) |
 | [0621-task-scheduler](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0621-task-scheduler) |
 | [0646-maximum-length-of-pair-chain](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0646-maximum-length-of-pair-chain) |
 | [0649-dota2-senate](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0649-dota2-senate) |
@@ -1109,6 +1113,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0303-range-sum-query-immutable](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0303-range-sum-query-immutable) |
 | [0304-range-sum-query-2d-immutable](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0304-range-sum-query-2d-immutable) |
 | [0325-maximum-size-subarray-sum-equals-k](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0325-maximum-size-subarray-sum-equals-k) |
+| [0410-split-array-largest-sum](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0410-split-array-largest-sum) |
 | [0523-continuous-subarray-sum](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0523-continuous-subarray-sum) |
 | [0525-contiguous-array](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0525-contiguous-array) |
 | [0528-random-pick-with-weight](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0528-random-pick-with-weight) |
