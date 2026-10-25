@@ -1,46 +1,55 @@
-
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode() {}
+ *     TreeNode(int val) { this.val = val; }
+ *     TreeNode(int val, TreeNode left, TreeNode right) {
+ *         this.val = val;
+ *         this.left = left;
+ *         this.right = right;
+ *     }
+ * }
+ */
 class Solution {
     public List<List<Integer>> pathSum(TreeNode root, int targetSum) {
-        List<List<Integer>> result = new ArrayList<>();
+        List<List<Integer>> ans = new ArrayList<>(); 
         List<Integer> path = new ArrayList<>();
-
-        Deque<TreeNode> stack = new ArrayDeque<>();
-
-        TreeNode curr = root;
-        TreeNode lastVisited = null;
-        long sum = 0;
-
+        Stack<TreeNode> stack = new Stack<>(); 
+        TreeNode curr = root; 
+        TreeNode lastVisited = root;
+        int sum = 0;
         while (curr != null || !stack.isEmpty()) {
-
-            // Traverse left
+            
             while (curr != null) {
-                stack.push(curr);
+                stack.add(curr);
                 path.add(curr.val);
                 sum += curr.val;
-                curr = curr.left;
+                curr = curr.left; 
             }
-
             TreeNode node = stack.peek();
-
-            // Explore right subtree if not visited
-            if (node.right != null && node.right != lastVisited) {
+            // 3. Explore right subtree if not processed
+            if (node.right != null && lastVisited != node.right) {
                 curr = node.right;
-                continue;
+            } else {
+
+                // 4. Process leaf
+                if (node.left == null && node.right == null
+                        && sum == targetSum) {
+                    ans.add(new ArrayList<>(path));
+                }
+
+                // 5. Backtrack
+                stack.pop();
+                lastVisited = node;
+
+                sum -= node.val;
+                path.remove(path.size() - 1);
             }
 
-            // Both subtrees are processed
-            if (node.left == null && node.right == null
-                    && sum == targetSum) {
-                result.add(new ArrayList<>(path));
-            }
-
-            // Backtrack
-            stack.pop();
-            path.remove(path.size() - 1);
-            sum -= node.val;
-            lastVisited = node;
         }
-
-        return result;
+    return ans; 
     }
 }
