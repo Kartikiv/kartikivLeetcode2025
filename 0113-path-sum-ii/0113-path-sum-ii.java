@@ -1,56 +1,44 @@
 
 class Solution {
-    static class Frame {
-        TreeNode node;
-        boolean exit;
-
-        Frame(TreeNode node, boolean exit) {
-            this.node = node;
-            this.exit = exit;
-        }
-    }
-
     public List<List<Integer>> pathSum(TreeNode root, int targetSum) {
         List<List<Integer>> result = new ArrayList<>();
-        if (root == null) return result;
-
         List<Integer> path = new ArrayList<>();
-        Deque<Frame> stack = new ArrayDeque<>();
 
-        stack.push(new Frame(root, false));
+        Deque<TreeNode> stack = new ArrayDeque<>();
+
+        TreeNode curr = root;
+        TreeNode lastVisited = null;
         long sum = 0;
 
-        while (!stack.isEmpty()) {
-            Frame frame = stack.pop();
-            TreeNode node = frame.node;
+        while (curr != null || !stack.isEmpty()) {
 
-            if (frame.exit) {
-                // Backtrack after processing both children
-                sum -= node.val;
-                path.remove(path.size() - 1);
+            // Traverse left
+            while (curr != null) {
+                stack.push(curr);
+                path.add(curr.val);
+                sum += curr.val;
+                curr = curr.left;
+            }
+
+            TreeNode node = stack.peek();
+
+            // Explore right subtree if not visited
+            if (node.right != null && node.right != lastVisited) {
+                curr = node.right;
                 continue;
             }
 
-            // Enter node
-            path.add(node.val);
-            sum += node.val;
-
+            // Both subtrees are processed
             if (node.left == null && node.right == null
                     && sum == targetSum) {
                 result.add(new ArrayList<>(path));
             }
 
-            // Exit after both subtrees
-            stack.push(new Frame(node, true));
-
-            // Right first so left is processed first
-            if (node.right != null) {
-                stack.push(new Frame(node.right, false));
-            }
-
-            if (node.left != null) {
-                stack.push(new Frame(node.left, false));
-            }
+            // Backtrack
+            stack.pop();
+            path.remove(path.size() - 1);
+            sum -= node.val;
+            lastVisited = node;
         }
 
         return result;
