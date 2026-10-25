@@ -117,6 +117,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0032-longest-valid-parentheses](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0032-longest-valid-parentheses) |
 | [0071-simplify-path](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0071-simplify-path) |
 | [0084-largest-rectangle-in-histogram](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0084-largest-rectangle-in-histogram) |
+| [0094-binary-tree-inorder-traversal](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0094-binary-tree-inorder-traversal) |
 | [0143-reorder-list](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0143-reorder-list) |
 | [0145-binary-tree-postorder-traversal](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0145-binary-tree-postorder-traversal) |
 | [0150-evaluate-reverse-polish-notation](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0150-evaluate-reverse-polish-notation) |
@@ -670,6 +671,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Tree
 |  |
 | ------- |
+| [0094-binary-tree-inorder-traversal](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0094-binary-tree-inorder-traversal) |
 | [0098-validate-binary-search-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0098-validate-binary-search-tree) |
 | [0100-same-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0100-same-tree) |
 | [0101-symmetric-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0101-symmetric-tree) |
@@ -705,6 +707,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0079-word-search](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0079-word-search) |
+| [0094-binary-tree-inorder-traversal](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0094-binary-tree-inorder-traversal) |
 | [0098-validate-binary-search-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0098-validate-binary-search-tree) |
 | [0100-same-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0100-same-tree) |
 | [0101-symmetric-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0101-symmetric-tree) |
@@ -803,6 +806,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Binary Tree
 |  |
 | ------- |
+| [0094-binary-tree-inorder-traversal](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0094-binary-tree-inorder-traversal) |
 | [0098-validate-binary-search-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0098-validate-binary-search-tree) |
 | [0100-same-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0100-same-tree) |
 | [0101-symmetric-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0101-symmetric-tree) |
