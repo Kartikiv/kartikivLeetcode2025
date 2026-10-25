@@ -30,7 +30,7 @@ class Solution {
         
         // Define the left and right boundary of binary search
         int left = maxElement;
-        int right = sum;
+        int right = Integer.MAX_VALUE;
         int minimumLargestSplitSum = 0;
         while (left <= right) {
             // Find the mid value
