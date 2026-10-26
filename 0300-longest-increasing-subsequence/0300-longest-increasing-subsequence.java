@@ -1,66 +1,28 @@
-
-import java.util.*;
-
 class Solution {
     public int lengthOfLIS(int[] nums) {
-        List<Integer> tails = new ArrayList<>();
-
-        int[] parent = new int[nums.length];
-        int[] tailIndex = new int[nums.length];
-
+        int parent[] = new int[nums.length];
         Arrays.fill(parent, -1);
-
-        for (int i = 0; i < nums.length; i++) {
-
-            int pos;
-
-            if (tails.isEmpty() ||
-                tails.get(tails.size() - 1) < nums[i]) {
-
-                pos = tails.size();
-                tails.add(nums[i]);
-
-            } else {
-                int low = 0;
-                int high = tails.size() - 1;
-
-                while (low < high) {
-                    int mid = low + (high - low) / 2;
-
-                    if (tails.get(mid) < nums[i]) {
-                        low = mid + 1;
-                    } else {
-                        high = mid;
-                    }
+        int[] tails = new int[nums.length];
+        int start = 0;
+        int end = 1;
+        tails[0] = nums[0];
+        for (int i = 1; i < nums.length; i++) {
+            // search insert postion 
+            int left = start;
+            int right = end;
+            while (left < right) {
+                int mid = left + (right - left) / 2;
+                if (tails[mid] >= nums[i]) {
+                    right = mid;
+                } else {
+                    left = mid + 1;
                 }
-
-                pos = low;
-                tails.set(pos, nums[i]);
             }
-
-            // The predecessor belongs to the previous length
-            if (pos > 0) {
-                parent[i] = tailIndex[pos - 1];
+            int postion = right;
+            tails[postion] = nums[i];
+            if (end == postion) {
+                end++;
             }
-
-            // Store original index for this length
-            tailIndex[pos] = i;
         }
-
-        int[] result = new int[tails.size()];
-
-        if (tails.isEmpty()) return 0;
-
-        int index = tailIndex[tails.size() - 1];
-        int i = result.length - 1;
-
-        while (index != -1) {
-            result[i--] = nums[index];
-            index = parent[index];
-        }
-
-        System.out.println(Arrays.toString(result));
-
-        return tails.size();
-    }
+    return end - start; }
 }
