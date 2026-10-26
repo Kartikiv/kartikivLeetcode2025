@@ -5,15 +5,16 @@ class Solution {
             left = Math.max(left, w);
             right += w;
         }
+        left--;
         while (left < right) {
-            int mid = left + (right - left) / 2 ;
-            if(canShip(weights,mid, days)){
-                right = mid;
+            int mid = left + (right - left + 1) / 2 ;
+            if(!canShip(weights,mid, days)){
+                left = mid;
             }else{
-                left = mid + 1;
+                right = mid - 1;
             }
         }
-    return right; 
+    return left + 1; 
     }
     boolean canShip(int[] weights, int capacity, int days){
         int currentDays = 1; 
