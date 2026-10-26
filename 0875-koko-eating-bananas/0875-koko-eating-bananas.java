@@ -2,10 +2,10 @@ class Solution {
     public int minEatingSpeed(int[] piles, int h) {
         int low = 1; 
         int high = Arrays.stream(piles).max().getAsInt();
-        while(low <= high){ 
+        while(low < high){ 
             int mid = low + (high - low) / 2;
             if(canEat(piles, mid, h)){ 
-               high = mid - 1;
+               high = mid;
             }else{
                 low = mid + 1;
             }
