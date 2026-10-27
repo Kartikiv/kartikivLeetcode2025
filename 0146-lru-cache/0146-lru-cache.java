@@ -17,17 +17,17 @@ class LRUCache {
     Node tail;
 
     public LRUCache(int capacity) {
-        if(capacity <= 0 ){ 
-            throw new IllegalArgumentException(" Illegal Capacity");
+        if (capacity <= 0) {
+            throw new IllegalArgumentException("Illegal Capacity");
         }
         this.capacity = capacity;
         map = new HashMap<>();
     }
 
     public int get(int key) {
-        if (!map.containsKey(key)) {
+        Node node = map.get(key);
+        if (node == null)
             return -1;
-        }
         onKeyAccessed(key);
         return map.get(key).val;
     }
