@@ -28,8 +28,9 @@ class LRUCache {
         Node node = map.get(key);
         if (node == null)
             return -1;
-        onKeyAccessed(key);
-        return map.get(key).val;
+
+        onKeyAccessed(node.key);
+        return node.val;
     }
 
     public void put(int key, int value) {
