@@ -34,17 +34,18 @@ class LRUCache {
     }
 
     public void put(int key, int value) {
+        Node node = map.get(key);
 
-        Node node;
-        if (map.containsKey(key)) {
-            node = map.get(key);
+        if (node != null) {
             node.val = value;
             onKeyAccessed(node);
             return;
         }
-        if (capacity == map.size()) {
+
+        if (map.size() == capacity) {
             evict();
         }
+
         node = new Node(key, value);
         map.put(key, node);
         addFirst(node);
