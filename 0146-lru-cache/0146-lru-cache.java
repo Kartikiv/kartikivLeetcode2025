@@ -22,8 +22,7 @@ class LRUCache {
     }
 
     public int get(int key) {
-        Map<Integer, Node> newMap = map;
-        Node node = head;
+
         if (!map.containsKey(key)) {
             return -1;
         }
