@@ -29,27 +29,29 @@ class LRUCache {
         if (node == null)
             return -1;
 
-        onKeyAccessed(node.key);
+        onKeyAccessed(node);
         return node.val;
     }
 
     public void put(int key, int value) {
+
+        Node node;
         if (map.containsKey(key)) {
-            map.get(key).val = value;
-            onKeyAccessed(key);
+            node = map.get(key);
+            node.val = value;
+            onKeyAccessed(node);
             return;
         }
         if (capacity == map.size()) {
             evict();
         }
-        Node node = new Node(key, value);
+        node = new Node(key, value);
         map.put(key, node);
         addFirst(node);
     }
 
-    private void onKeyAccessed(int key) {
-        Node node = map.get(key);
-        remove(key);
+    private void onKeyAccessed(Node node) {
+        remove(node);
         addFirst(node);
 
     }
@@ -57,7 +59,7 @@ class LRUCache {
     private void evict() {
         if (tail != null) {
             int victim = tail.key;
-            remove(tail.key);
+            remove(tail);
             map.remove(victim);
         }
     }
@@ -74,8 +76,8 @@ class LRUCache {
         head = node;
     }
 
-    private void remove(int key) {
-        Node node = map.get(key);
+    private void remove(Node node) {
+
         if (node == null) {
             return;
         }
