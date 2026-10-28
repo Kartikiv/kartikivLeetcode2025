@@ -335,6 +335,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3020-find-the-maximum-number-of-elements-in-subset](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/3020-find-the-maximum-number-of-elements-in-subset) |
 | [3471-find-the-largest-almost-missing-integer](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/3471-find-the-largest-almost-missing-integer) |
 | [3607-power-grid-maintenance](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/3607-power-grid-maintenance) |
+| [3882-minimum-xor-path-in-a-grid](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/3882-minimum-xor-path-in-a-grid) |
 | [3976-maximum-subarray-sum-after-multiplier](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/3976-maximum-subarray-sum-after-multiplier) |
 ## Math
 |  |
@@ -456,6 +457,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1143-longest-common-subsequence](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1143-longest-common-subsequence) |
 | [1493-longest-subarray-of-1s-after-deleting-one-element](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1493-longest-subarray-of-1s-after-deleting-one-element) |
 | [3700-number-of-zigzag-arrays-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/3700-number-of-zigzag-arrays-ii) |
+| [3882-minimum-xor-path-in-a-grid](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/3882-minimum-xor-path-in-a-grid) |
 | [3976-maximum-subarray-sum-after-multiplier](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/3976-maximum-subarray-sum-after-multiplier) |
 ## Binary Search
 |  |
@@ -933,6 +935,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0698-partition-to-k-equal-sum-subsets](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0698-partition-to-k-equal-sum-subsets) |
 | [0832-flipping-an-image](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0832-flipping-an-image) |
 | [1863-sum-of-all-subset-xor-totals](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1863-sum-of-all-subset-xor-totals) |
+| [3882-minimum-xor-path-in-a-grid](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/3882-minimum-xor-path-in-a-grid) |
 ## Matrix
 |  |
 | ------- |
@@ -957,6 +960,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/2033-minimum-operations-to-make-a-uni-value-grid) |
 | [2258-escape-the-spreading-fire](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/2258-escape-the-spreading-fire) |
 | [2352-equal-row-and-column-pairs](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/2352-equal-row-and-column-pairs) |
+| [3882-minimum-xor-path-in-a-grid](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/3882-minimum-xor-path-in-a-grid) |
 ## Queue
 |  |
 | ------- |
