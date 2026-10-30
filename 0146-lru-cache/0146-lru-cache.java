@@ -1,104 +1,87 @@
-class Node {
-    int key;
-    int val;
-    Node next;
-    Node prev;
-
-    public Node(int key, int val) {
-        this.key = key;
-        this.val = val;
+class Node { 
+    Node prev; 
+    Node next; 
+    int val; 
+    int key; 
+    public Node(int key, int val){ 
+        this.key = key; 
+        this.val = val; 
     }
 }
-
 class LRUCache {
+    Node head; 
+    Node tail; 
+    Map<Integer, Node> map; 
     int capacity;
-    Map<Integer, Node> map;
-    Node head;
-    Node tail;
-
     public LRUCache(int capacity) {
-        if (capacity <= 0) {
-            throw new IllegalArgumentException("Illegal Capacity");
+        if(capacity < 0){ 
+            throw new IllegalArgumentException();
         }
-        this.capacity = capacity;
-        map = new HashMap<>();
+        this.capacity = capacity; 
+        this.map = new HashMap<>();
     }
-
+    
     public int get(int key) {
         Node node = map.get(key);
-        if (node == null)
+        if (node == null) {
             return -1;
-
+        }
         onKeyAccessed(node);
         return node.val;
     }
-
+    
     public void put(int key, int value) {
-        Node node = map.get(key);
-
-        if (node != null) {
+        
+        Node node = map.get(key); 
+        if(node!= null){ 
             node.val = value;
             onKeyAccessed(node);
             return;
         }
-
-        if (map.size() == capacity) {
+        if(map.size() == capacity){
             evict();
         }
-
         node = new Node(key, value);
+        addToFront(node);
         map.put(key, node);
-        addFirst(node);
     }
-
-    private void onKeyAccessed(Node node) {
-        remove(node);
-        addFirst(node);
-
-    }
-
-    private void evict() {
-        if (tail != null) {
-            int victim = tail.key;
-            remove(tail);
-            map.remove(victim);
+    private void addToFront(Node node){ 
+        if(head == null){ 
+            head = node; 
+            tail = node; 
+            return ; 
         }
-    }
-
-    private void addFirst(Node node) {
-        node.prev = null;
-        node.next = head;
-        if (head == null) {
-            head = node;
-            tail = node;
-            return;
-        }
-        head.prev = node;
+        node.prev = null; 
+        node.next = head; 
+        head.prev = node; 
         head = node;
     }
-
-    private void remove(Node node) {
-
-        if (node == null) {
-            return;
-        }
-        Node nodePrev = node.prev;
-        Node nodeNext = node.next;
-        if (nodePrev != null) {
-            nodePrev.next = nodeNext;
-        } else {
-            head = nodeNext;
-        }
-        if (nodeNext != null) {
-            nodeNext.prev = nodePrev;
-        } else {
-            tail = nodePrev;
-        }
-        node.prev = null;
-        node.next = null;
-
+    private void onKeyAccessed(Node node){ 
+        remove(node);
+        addToFront(node);
     }
+    private void evict(){ 
+        if(tail != null){
+            map.remove(tail.key); 
+            remove(tail);
+        }
+    }
+    private void remove(Node node){ 
+        if(node.prev != null){ 
+            node.prev.next = node.next; 
+        }else{ 
+            head = node.next;
+        }
 
+        if(node.next != null){ 
+            node.next.prev = node.prev; 
+        }else{ 
+            tail = node.prev;
+        }
+        node.next = null; 
+        node.prev = null;
+    }
+     
 }
 
 /**
