@@ -14,7 +14,7 @@ class LRUCache {
     Map<Integer, Node> map; 
     int capacity;
     public LRUCache(int capacity) {
-        if(capacity < 0){ 
+        if(capacity <= 0){ 
             throw new IllegalArgumentException();
         }
         this.capacity = capacity; 
