@@ -1,89 +1,87 @@
-class Node { 
-    Node prev; 
-    Node next; 
-    int val; 
-    int key; 
-    public Node(int key, int val){ 
-        this.key = key; 
-        this.val = val; 
-    }
-}
 class LRUCache {
-    Node head; 
+    Node head;
     Node tail; 
     Map<Integer, Node> map; 
     int capacity;
     public LRUCache(int capacity) {
-        if(capacity <= 0){ 
-            throw new IllegalArgumentException();
+        if(capacity <= 0){
+            throw new IllegalArgumentException("Capacity is illegal");
         }
-        this.capacity = capacity; 
         this.map = new HashMap<>();
+        this.capacity = capacity;
     }
     
     public int get(int key) {
-        Node node = map.get(key);
-        if (node == null) {
+        Node node = map.get(key); 
+        if(node == null){
             return -1;
         }
-        onKeyAccessed(node);
+        onKeyAccessed(node); 
         return node.val;
     }
-    
-    public void put(int key, int value) {
-        
+    public void put(int key, int val) {
         Node node = map.get(key); 
-        if(node!= null){ 
-            node.val = value;
-            onKeyAccessed(node);
+        if(node != null){
+            node.val = val; 
+            onKeyAccessed(node); 
             return;
         }
-        if(map.size() == capacity){
-            evict();
+        if(capacity == map.size()){ 
+            evicit();
         }
-        node = new Node(key, value);
+        node = new Node(key, val); 
+        map.put(key, node); 
         addToFront(node);
-        map.put(key, node);
     }
-    private void addToFront(Node node){ 
-        if(head == null){ 
+    private void onKeyAccessed(Node node){
+        remove(node); 
+        addToFront(node); 
+    }
+    private void addToFront(Node node){
+        if(head == null){
             head = node; 
             tail = node; 
-            return ; 
+            return; 
         }
         node.prev = null; 
-        node.next = head; 
         head.prev = node; 
+        node.next = head; 
         head = node;
     }
-    private void onKeyAccessed(Node node){ 
-        remove(node);
-        addToFront(node);
-    }
-    private void evict(){ 
-        if(tail != null){
-            map.remove(tail.key); 
-            remove(tail);
-        }
-    }
-    private void remove(Node node){ 
-        if(node.prev != null){ 
+    private void remove(Node node){
+        if(node.prev != null){
             node.prev.next = node.next; 
-        }else{ 
-            head = node.next;
+        }else{
+            head = node.next; 
+            
         }
-
-        if(node.next != null){ 
-            node.next.prev = node.prev; 
-        }else{ 
+        if(node.next != null){
+            node.next.prev = node.prev;
+        }else{
             tail = node.prev;
+            
         }
         node.next = null; 
         node.prev = null;
     }
-     
+    private void evicit(){ 
+        Node victim = tail; 
+        if(victim != null){ 
+            remove(victim);
+            map.remove(victim.key);
+        }
+    }
 }
-
+class Node{
+    int val; 
+    int key; 
+    Node next; 
+    Node prev;
+    public Node(int key, int val){
+        this.key = key; 
+        this.val = val; 
+    }
+}
 /**
  * Your LRUCache object will be instantiated and called as such:
  * LRUCache obj = new LRUCache(capacity);
