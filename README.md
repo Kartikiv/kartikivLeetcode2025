@@ -215,6 +215,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0152-maximum-product-subarray](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0152-maximum-product-subarray) |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0154-find-minimum-in-rotated-sorted-array-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0154-find-minimum-in-rotated-sorted-array-ii) |
+| [0157-read-n-characters-given-read4](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0157-read-n-characters-given-read4) |
 | [0162-find-peak-element](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0162-find-peak-element) |
 | [0169-majority-element](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0169-majority-element) |
 | [0170-two-sum-iii-data-structure-design](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0170-two-sum-iii-data-structure-design) |
@@ -1089,6 +1090,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0043-multiply-strings](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0043-multiply-strings) |
 | [0067-add-binary](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0067-add-binary) |
+| [0157-read-n-characters-given-read4](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0157-read-n-characters-given-read4) |
 | [0682-baseball-game](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0682-baseball-game) |
 | [0832-flipping-an-image](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0832-flipping-an-image) |
 | [0867-transpose-matrix](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0867-transpose-matrix) |
@@ -1103,6 +1105,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Interactive
 |  |
 | ------- |
+| [0157-read-n-characters-given-read4](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0157-read-n-characters-given-read4) |
 | [0374-guess-number-higher-or-lower](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0374-guess-number-higher-or-lower) |
 | [0702-search-in-a-sorted-array-of-unknown-size](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0702-search-in-a-sorted-array-of-unknown-size) |
 ## Bucket Sort
