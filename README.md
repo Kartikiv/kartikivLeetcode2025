@@ -354,6 +354,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0067-add-binary](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0067-add-binary) |
 | [0069-sqrtx](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0069-sqrtx) |
 | [0070-climbing-stairs](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0070-climbing-stairs) |
+| [0096-unique-binary-search-trees](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0096-unique-binary-search-trees) |
 | [0150-evaluate-reverse-polish-notation](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0168-excel-sheet-column-title](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0168-excel-sheet-column-title) |
 | [0202-happy-number](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0202-happy-number) |
@@ -435,6 +436,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0063-unique-paths-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0063-unique-paths-ii) |
 | [0070-climbing-stairs](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0070-climbing-stairs) |
 | [0072-edit-distance](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0072-edit-distance) |
+| [0096-unique-binary-search-trees](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0096-unique-binary-search-trees) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0124-binary-tree-maximum-path-sum](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0124-binary-tree-maximum-path-sum) |
 | [0131-palindrome-partitioning](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0131-palindrome-partitioning) |
@@ -684,6 +686,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0094-binary-tree-inorder-traversal](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0094-binary-tree-inorder-traversal) |
+| [0096-unique-binary-search-trees](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0096-unique-binary-search-trees) |
 | [0098-validate-binary-search-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0098-validate-binary-search-tree) |
 | [0100-same-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0100-same-tree) |
 | [0101-symmetric-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0101-symmetric-tree) |
@@ -819,6 +822,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0094-binary-tree-inorder-traversal](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0094-binary-tree-inorder-traversal) |
+| [0096-unique-binary-search-trees](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0096-unique-binary-search-trees) |
 | [0098-validate-binary-search-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0098-validate-binary-search-tree) |
 | [0100-same-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0100-same-tree) |
 | [0101-symmetric-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0101-symmetric-tree) |
@@ -863,6 +867,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Binary Search Tree
 |  |
 | ------- |
+| [0096-unique-binary-search-trees](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0096-unique-binary-search-trees) |
 | [0098-validate-binary-search-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0098-validate-binary-search-tree) |
 | [0230-kth-smallest-element-in-a-bst](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0230-kth-smallest-element-in-a-bst) |
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
