@@ -14,12 +14,13 @@ public class Solution extends Reader4 {
      int count =0;
      int nval = n;
      
+    char [] temp = new char[4];
      while(!flag && n>0 ){
-        char [] temp = new char[4];
         int val = read4(temp);
         if(val == 0) flag = true;
         
-        for(char c : temp){
+        for(int i = 0 ; i < val; i++){
+            char c = temp[i];
             if(c != '\u0000' && n>0){
             buf[count++] = c;
             n--;
