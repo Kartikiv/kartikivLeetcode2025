@@ -217,6 +217,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0154-find-minimum-in-rotated-sorted-array-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0154-find-minimum-in-rotated-sorted-array-ii) |
 | [0157-read-n-characters-given-read4](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0157-read-n-characters-given-read4) |
 | [0162-find-peak-element](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0162-find-peak-element) |
+| [0163-missing-ranges](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0163-missing-ranges) |
 | [0169-majority-element](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0169-majority-element) |
 | [0170-two-sum-iii-data-structure-design](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0170-two-sum-iii-data-structure-design) |
 | [0198-house-robber](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0198-house-robber) |
