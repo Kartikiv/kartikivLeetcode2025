@@ -1,87 +1,68 @@
-class Node {
-    int key, val, freq;
-    long timestamp;
-    boolean isDeleted;
+import java.util.LinkedHashSet;
+import java.util.Map;
 
-    Node(int key, int val, int freq, long timestamp) {
-        this.key = key;
-        this.val = val;
-        this.freq = freq;
-        this.timestamp = timestamp;
+public class LFUCache {
+
+    // key: original key, value: frequency and original value.
+    private Map<Integer, Pair<Integer, Integer>> cache;
+    // key: frequency, value: All keys that have the same frequency.
+    private Map<Integer, LinkedHashSet<Integer>> frequencies;
+    private int minf;
+    private int capacity;
+
+    private void insert(int key, int frequency, int value) {
+        cache.put(key, new Pair<>(frequency, value));
+        frequencies.putIfAbsent(frequency, new LinkedHashSet<>());
+        frequencies.get(frequency).add(key);
     }
-}
-
-class LFUCache {
-    private final int capacity;
-    private final Map<Integer, Node> map = new HashMap<>();
-    private final PriorityQueue<Node> pq;
-
-    private long clock = 0;
 
     public LFUCache(int capacity) {
+        cache = new HashMap<>();
+        frequencies = new HashMap<>();
+        minf = 0;
         this.capacity = capacity;
-
-        pq = new PriorityQueue<>((a, b) -> {
-            int cmp = Integer.compare(a.freq, b.freq);
-            return cmp != 0
-                ? cmp
-                : Long.compare(a.timestamp, b.timestamp);
-        });
     }
 
     public int get(int key) {
-        Node node = map.get(key);
-        if (node == null) return -1;
+        Pair<Integer, Integer> frequencyAndValue = cache.get(key);
+        if (frequencyAndValue == null) {
+            return -1;
+        }
+        final int frequency = frequencyAndValue.getKey();
+        final Set<Integer> keys = frequencies.get(frequency);
+        keys.remove(key);
+        if (keys.isEmpty()) {
+            frequencies.remove(frequency);
 
-        update(node, node.val);
-        return node.val;
+            if (minf == frequency) {
+                ++minf;
+            }
+        }
+        final int value = frequencyAndValue.getValue();
+        insert(key, frequency + 1, value);
+        return value;
     }
 
     public void put(int key, int value) {
-        if (capacity == 0) return;
-
-        Node node = map.get(key);
-
-        if (node != null) {
-            update(node, value);
+        if (capacity <= 0) {
             return;
         }
-
-        if (map.size() == capacity) {
-            evict();
+        Pair<Integer, Integer> frequencyAndValue = cache.get(key);
+        if (frequencyAndValue != null) {
+            cache.put(key, new Pair<>(frequencyAndValue.getKey(), value));
+            get(key);
+            return;
         }
-
-        Node newNode = new Node(key, value, 1, ++clock);
-        map.put(key, newNode);
-        pq.offer(newNode);
-    }
-
-    private void update(Node oldNode, int value) {
-        oldNode.isDeleted = true;
-
-        Node newNode = new Node(
-            oldNode.key,
-            value,
-            oldNode.freq + 1,
-            ++clock
-        );
-
-        map.put(newNode.key, newNode);
-        pq.offer(newNode);
-    }
-
-    private void evict() {
-        cleanUp();
-
-        if (!pq.isEmpty()) {
-            Node victim = pq.poll();
-            map.remove(victim.key);
+        if (capacity == cache.size()) {
+            final Set<Integer> keys = frequencies.get(minf);
+            final int keyToDelete = keys.iterator().next();
+            cache.remove(keyToDelete);
+            keys.remove(keyToDelete);
+            if (keys.isEmpty()) {
+                frequencies.remove(minf);
+            }
         }
-    }
-
-    private void cleanUp() {
-        while (!pq.isEmpty() && pq.peek().isDeleted) {
-            pq.poll();
-        }
+        minf = 1;
+        insert(key, 1, value);
     }
 }
