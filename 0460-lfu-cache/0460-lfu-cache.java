@@ -1,6 +1,3 @@
-
-import java.util.*;
-
 class Node {
     int key, val, freq;
     long timestamp;
