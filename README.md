@@ -205,6 +205,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0084-largest-rectangle-in-histogram](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0084-largest-rectangle-in-histogram) |
 | [0090-subsets-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0090-subsets-ii) |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
+| [0119-pascals-triangle-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0119-pascals-triangle-ii) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0128-longest-consecutive-sequence](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0128-longest-consecutive-sequence) |
 | [0130-surrounded-regions](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0130-surrounded-regions) |
@@ -437,6 +438,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0070-climbing-stairs](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0070-climbing-stairs) |
 | [0072-edit-distance](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0072-edit-distance) |
 | [0096-unique-binary-search-trees](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0096-unique-binary-search-trees) |
+| [0119-pascals-triangle-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0119-pascals-triangle-ii) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0124-binary-tree-maximum-path-sum](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0124-binary-tree-maximum-path-sum) |
 | [0131-palindrome-partitioning](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0131-palindrome-partitioning) |
