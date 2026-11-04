@@ -258,6 +258,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0417-pacific-atlantic-water-flow](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0417-pacific-atlantic-water-flow) |
 | [0444-sequence-reconstruction](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0444-sequence-reconstruction) |
 | [0463-island-perimeter](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0463-island-perimeter) |
+| [0485-max-consecutive-ones](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0485-max-consecutive-ones) |
 | [0494-target-sum](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0494-target-sum) |
 | [0496-next-greater-element-i](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0496-next-greater-element-i) |
 | [0503-next-greater-element-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0503-next-greater-element-ii) |
