@@ -8,10 +8,10 @@ class Solution {
                 j++;
                 i = j;
             }
-            if (j < nums.length) {
-
-                maxOnes = Math.max(maxOnes, j - i + 1);
+            if (j >= nums.length) {
+                break;
             }
+                maxOnes = Math.max(maxOnes, j - i + 1);
             j++;
         }
         return maxOnes;
