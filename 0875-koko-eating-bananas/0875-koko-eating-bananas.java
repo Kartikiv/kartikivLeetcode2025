@@ -1,22 +1,24 @@
 class Solution {
     public int minEatingSpeed(int[] piles, int h) {
-        int low = 1; 
-        int high = Arrays.stream(piles).max().getAsInt();
-        while(low < high){ 
+        int low = 1;
+        int high = Integer.MAX_VALUE;
+
+        while (low < high) {
             int mid = low + (high - low) / 2;
-            if(canEat(piles, mid, h)){ 
-               high = mid;
-            }else{
+            if (canEat(piles, h, mid)) {
+                high = mid;
+            } else {
                 low = mid + 1;
             }
         }
-    return low; 
+        return low;
     }
 
-    public boolean canEat(int[] piles, int speed, int h) {
-        long eattenTime = 0;
+    public boolean canEat(int[] piles, int h, int k) {
+        int totalTime = 0;
         for (int pile : piles) {
-            eattenTime += Math.ceilDiv(pile, speed);
+            totalTime += Math.ceilDiv(pile, k);
         }
-    return eattenTime <= h; }
+        return totalTime <= h;
+    }
 }
