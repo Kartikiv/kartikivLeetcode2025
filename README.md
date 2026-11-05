@@ -1315,4 +1315,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0315-count-of-smaller-numbers-after-self](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0315-count-of-smaller-numbers-after-self) |
+## Newton's Method
+|  |
+| ------- |
+| [0069-sqrtx](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0069-sqrtx) |
 <!---LeetCode Topics End-->
