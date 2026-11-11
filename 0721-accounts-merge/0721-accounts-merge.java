@@ -1,114 +1,77 @@
-import java.util.*;
-
 class Solution {
     public List<List<String>> accountsMerge(List<List<String>> accounts) {
-
-        Map<String, Integer> emailToId = new HashMap<>();
-        List<String> idToEmail = new ArrayList<>();
+        DSU dsu = new DSU();
         Map<String, String> emailToName = new HashMap<>();
 
-        int id = 0;
-
-        // 1. Assign each unique email an integer ID
         for (List<String> account : accounts) {
             String name = account.get(0);
+            String firstEmail = account.get(1);
 
             for (int i = 1; i < account.size(); i++) {
                 String email = account.get(i);
 
-                if (!emailToId.containsKey(email)) {
-                    emailToId.put(email, id++);
-                    idToEmail.add(email);
-                }
-
                 emailToName.put(email, name);
+                dsu.union(firstEmail, email);
             }
         }
 
-        // 2. Build DSU
-        DSU dsu = new DSU(id);
+        Map<String, List<String>> groups = new HashMap<>();
 
-        // 3. Union all emails belonging to the same account
-        for (List<String> account : accounts) {
-            int firstEmailId = emailToId.get(account.get(1));
+        for (String email : emailToName.keySet()) {
+            String root = dsu.find(email);
 
-            for (int i = 2; i < account.size(); i++) {
-                int currentEmailId = emailToId.get(account.get(i));
-                dsu.union(firstEmailId, currentEmailId);
-            }
+            groups.computeIfAbsent(root, k -> new ArrayList<>())
+                  .add(email);
         }
 
-        // 4. Group emails by DSU root
-        Map<Integer, List<String>> groups = new HashMap<>();
-
-        for (int emailId = 0; emailId < id; emailId++) {
-            int root = dsu.find(emailId);
-
-            groups
-                .computeIfAbsent(root, k -> new ArrayList<>())
-                .add(idToEmail.get(emailId));
-        }
-
-        // 5. Sort each group and build answer
         List<List<String>> result = new ArrayList<>();
 
-        for (Map.Entry<Integer, List<String>> entry : groups.entrySet()) {
-
+        for (Map.Entry<String, List<String>> entry : groups.entrySet()) {
             List<String> emails = entry.getValue();
             Collections.sort(emails);
 
-            String rootEmail = idToEmail.get(entry.getKey());
-            String name = emailToName.get(rootEmail);
+            List<String> merged = new ArrayList<>();
+            merged.add(emailToName.get(entry.getKey()));
+            merged.addAll(emails);
 
-            List<String> mergedAccount = new ArrayList<>();
-
-            mergedAccount.add(name);
-            mergedAccount.addAll(emails);
-
-            result.add(mergedAccount);
+            result.add(merged);
         }
 
         return result;
     }
 }
 
-
 class DSU {
-    int[] parent;
-    int[] rank;
+    Map<String, String> parent = new HashMap<>();
+    Map<String, Integer> rank = new HashMap<>();
 
-    public DSU(int size) {
-        parent = new int[size];
-        rank = new int[size];
+    String find(String x) {
+        parent.putIfAbsent(x, x);
+        rank.putIfAbsent(x, 0);
 
-        for (int i = 0; i < size; i++) {
-            parent[i] = i;
+        if (!parent.get(x).equals(x)) {
+            parent.put(x, find(parent.get(x)));
         }
+
+        return parent.get(x);
     }
 
-    public int find(int a) {
-        if (parent[a] != a) {
-            parent[a] = find(parent[a]);
-        }
+    void union(String a, String b) {
+        String rootA = find(a);
+        String rootB = find(b);
 
-        return parent[a];
-    }
+        if (rootA.equals(rootB)) return;
 
-    public void union(int a, int b) {
-        int parentA = find(a);
-        int parentB = find(b);
+        int rankA = rank.get(rootA);
+        int rankB = rank.get(rootB);
 
-        if (parentA == parentB) {
-            return;
-        }
-
-        if (rank[parentA] < rank[parentB]) {
-            parent[parentA] = parentB;
-        } else if (rank[parentA] > rank[parentB]) {
-            parent[parentB] = parentA;
+        if (rankA > rankB) {
+            parent.put(rootB, rootA);
+        } else if (rankA < rankB) {
+            parent.put(rootA, rootB);
         } else {
-            parent[parentB] = parentA;
-            rank[parentA]++;
+            parent.put(rootB, rootA);
+            rank.put(rootA, rankA + 1);
         }
     }
 }
