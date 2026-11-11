@@ -89,6 +89,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0383-ransom-note](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0383-ransom-note) |
 | [0387-first-unique-character-in-a-string](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0387-first-unique-character-in-a-string) |
 | [0394-decode-string](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0394-decode-string) |
+| [0399-evaluate-division](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0399-evaluate-division) |
 | [0424-longest-repeating-character-replacement](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0424-longest-repeating-character-replacement) |
 | [0438-find-all-anagrams-in-a-string](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0438-find-all-anagrams-in-a-string) |
 | [0468-validate-ip-address](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0468-validate-ip-address) |
@@ -253,6 +254,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0350-intersection-of-two-arrays-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0362-design-hit-counter](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0362-design-hit-counter) |
 | [0380-insert-delete-getrandom-o1](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0380-insert-delete-getrandom-o1) |
+| [0399-evaluate-division](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0399-evaluate-division) |
 | [0410-split-array-largest-sum](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0410-split-array-largest-sum) |
 | [0416-partition-equal-subset-sum](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0416-partition-equal-subset-sum) |
 | [0417-pacific-atlantic-water-flow](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0417-pacific-atlantic-water-flow) |
@@ -763,6 +765,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0332-reconstruct-itinerary](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0332-reconstruct-itinerary) |
 | [0339-nested-list-weight-sum](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0339-nested-list-weight-sum) |
 | [0364-nested-list-weight-sum-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0364-nested-list-weight-sum-ii) |
+| [0399-evaluate-division](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0399-evaluate-division) |
 | [0417-pacific-atlantic-water-flow](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0417-pacific-atlantic-water-flow) |
 | [0437-path-sum-iii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0437-path-sum-iii) |
 | [0463-island-perimeter](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0463-island-perimeter) |
@@ -810,6 +813,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0323-number-of-connected-components-in-an-undirected-graph](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0323-number-of-connected-components-in-an-undirected-graph) |
 | [0339-nested-list-weight-sum](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0339-nested-list-weight-sum) |
 | [0364-nested-list-weight-sum-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0364-nested-list-weight-sum-ii) |
+| [0399-evaluate-division](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0399-evaluate-division) |
 | [0417-pacific-atlantic-water-flow](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0417-pacific-atlantic-water-flow) |
 | [0463-island-perimeter](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0463-island-perimeter) |
 | [0547-number-of-provinces](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0547-number-of-provinces) |
@@ -1079,6 +1083,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Shortest Path
 |  |
 | ------- |
+| [0399-evaluate-division](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0399-evaluate-division) |
 | [0743-network-delay-time](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0743-network-delay-time) |
 ## Minimum Spanning Tree
 |  |
@@ -1137,6 +1142,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0200-number-of-islands](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0200-number-of-islands) |
 | [0261-graph-valid-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0261-graph-valid-tree) |
 | [0305-number-of-islands-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0305-number-of-islands-ii) |
+| [0399-evaluate-division](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0399-evaluate-division) |
 | [0547-number-of-provinces](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0547-number-of-provinces) |
 | [0684-redundant-connection](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0684-redundant-connection) |
 | [0695-max-area-of-island](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0695-max-area-of-island) |
@@ -1212,6 +1218,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0210-course-schedule-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0210-course-schedule-ii) |
 | [0261-graph-valid-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0261-graph-valid-tree) |
 | [0310-minimum-height-trees](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0310-minimum-height-trees) |
+| [0399-evaluate-division](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0399-evaluate-division) |
 | [0444-sequence-reconstruction](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0444-sequence-reconstruction) |
 | [0547-number-of-provinces](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0547-number-of-provinces) |
 | [0631-design-excel-sum-formula](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0631-design-excel-sum-formula) |
@@ -1324,4 +1331,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0069-sqrtx](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0069-sqrtx) |
+## Bellman–Ford Algorithm
+|  |
+| ------- |
+| [0399-evaluate-division](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0399-evaluate-division) |
+## Floyd–Warshall Algorithm
+|  |
+| ------- |
+| [0399-evaluate-division](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0399-evaluate-division) |
 <!---LeetCode Topics End-->
