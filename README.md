@@ -388,6 +388,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3700-number-of-zigzag-arrays-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/3700-number-of-zigzag-arrays-ii) |
 | [3736-minimum-moves-to-equal-array-elements-iii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/3736-minimum-moves-to-equal-array-elements-iii) |
 | [3783-mirror-distance-of-an-integer](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/3783-mirror-distance-of-an-integer) |
+| [3789-minimum-cost-to-acquire-required-items](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/3789-minimum-cost-to-acquire-required-items) |
 ## Sorting
 |  |
 | ------- |
@@ -909,6 +910,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1846-maximum-element-after-decreasing-and-rearranging](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1846-maximum-element-after-decreasing-and-rearranging) |
 | [2126-destroying-asteroids](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/2126-destroying-asteroids) |
 | [2422-merge-operations-to-turn-array-into-a-palindrome](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/2422-merge-operations-to-turn-array-into-a-palindrome) |
+| [3789-minimum-cost-to-acquire-required-items](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/3789-minimum-cost-to-acquire-required-items) |
 ## Counting
 |  |
 | ------- |
