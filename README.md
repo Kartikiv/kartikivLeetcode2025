@@ -24,6 +24,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0141-linked-list-cycle](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0141-linked-list-cycle) |
 | [0142-linked-list-cycle-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0142-linked-list-cycle-ii) |
 | [0143-reorder-list](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0143-reorder-list) |
+| [0167-two-sum-ii-input-array-is-sorted](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0170-two-sum-iii-data-structure-design](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0170-two-sum-iii-data-structure-design) |
 | [0202-happy-number](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0202-happy-number) |
 | [0234-palindrome-linked-list](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0234-palindrome-linked-list) |
@@ -221,6 +222,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0157-read-n-characters-given-read4](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0157-read-n-characters-given-read4) |
 | [0162-find-peak-element](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0162-find-peak-element) |
 | [0163-missing-ranges](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0163-missing-ranges) |
+| [0167-two-sum-ii-input-array-is-sorted](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0169-majority-element](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0169-majority-element) |
 | [0170-two-sum-iii-data-structure-design](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0170-two-sum-iii-data-structure-design) |
 | [0198-house-robber](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0198-house-robber) |
@@ -490,6 +492,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0154-find-minimum-in-rotated-sorted-array-ii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0154-find-minimum-in-rotated-sorted-array-ii) |
 | [0162-find-peak-element](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0162-find-peak-element) |
+| [0167-two-sum-ii-input-array-is-sorted](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0209-minimum-size-subarray-sum](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0209-minimum-size-subarray-sum) |
 | [0268-missing-number](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0268-missing-number) |
 | [0300-longest-increasing-subsequence](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0300-longest-increasing-subsequence) |
