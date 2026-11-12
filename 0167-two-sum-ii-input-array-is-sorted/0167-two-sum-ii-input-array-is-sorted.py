@@ -1,6 +1,5 @@
 class Solution:
     def twoSum(self, nums: list[int], target: int) -> list[int]:
-        nums.sort()
 
     # Return the indices of the matching pair
         i = 0
