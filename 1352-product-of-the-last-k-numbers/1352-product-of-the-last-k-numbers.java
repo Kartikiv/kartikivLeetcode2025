@@ -1,20 +1,26 @@
 class ProductOfNumbers {
     List<Integer> stream;
+    int size;
     public ProductOfNumbers() {
         this.stream = new ArrayList<>();
+        this.stream.add(1);
+        this.size = 0;
     }
     
     public void add(int num) {
-        stream.add(num);
+        if(num == 0){
+            stream = new ArrayList<>();
+            stream.add(1); 
+            size =0;
+        }else{ 
+            stream.add(stream.get(size) * num); 
+            size++;
+        }
     }
     
     public int getProduct(int k) {
-        int size = stream.size(); 
-        int product = 1;
-        for(int i = size - 1; i >= size - k; i--){
-            product *= stream.get(i);
-        }
-        return product;
+        if(k > size) return 0;
+        return stream.get(size) / stream.get(size - k);
     }
 }
 
