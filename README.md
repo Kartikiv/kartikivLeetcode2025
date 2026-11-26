@@ -351,6 +351,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3607-power-grid-maintenance](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/3607-power-grid-maintenance) |
 | [3736-minimum-moves-to-equal-array-elements-iii](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/3736-minimum-moves-to-equal-array-elements-iii) |
 | [3882-minimum-xor-path-in-a-grid](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/3882-minimum-xor-path-in-a-grid) |
+| [3934-smallest-unique-subarray](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/3934-smallest-unique-subarray) |
 | [3976-maximum-subarray-sum-after-multiplier](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/3976-maximum-subarray-sum-after-multiplier) |
 ## Math
 |  |
@@ -526,6 +527,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2187-minimum-time-to-complete-trips](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/2187-minimum-time-to-complete-trips) |
 | [2258-escape-the-spreading-fire](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/2258-escape-the-spreading-fire) |
 | [2540-minimum-common-value](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/2540-minimum-common-value) |
+| [3934-smallest-unique-subarray](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/3934-smallest-unique-subarray) |
 ## Linked List
 |  |
 | ------- |
@@ -650,6 +652,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3020-find-the-maximum-number-of-elements-in-subset](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/3020-find-the-maximum-number-of-elements-in-subset) |
 | [3471-find-the-largest-almost-missing-integer](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/3471-find-the-largest-almost-missing-integer) |
 | [3607-power-grid-maintenance](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/3607-power-grid-maintenance) |
+| [3934-smallest-unique-subarray](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/3934-smallest-unique-subarray) |
 ## Doubly-Linked List
 |  |
 | ------- |
@@ -888,6 +891,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0572-subtree-of-another-tree](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0572-subtree-of-another-tree) |
 | [0705-design-hashset](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0705-design-hashset) |
 | [0706-design-hashmap](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0706-design-hashmap) |
+| [3934-smallest-unique-subarray](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/3934-smallest-unique-subarray) |
 ## Binary Search Tree
 |  |
 | ------- |
@@ -1353,4 +1357,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0399-evaluate-division](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/0399-evaluate-division) |
 | [1334-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/1334-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance) |
+## Rolling Hash
+|  |
+| ------- |
+| [3934-smallest-unique-subarray](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/3934-smallest-unique-subarray) |
+## Suffix Array
+|  |
+| ------- |
+| [3934-smallest-unique-subarray](https://github.com/Kartikiv/kartikivLeetcode2025/tree/master/3934-smallest-unique-subarray) |
 <!---LeetCode Topics End-->
